@@ -27,7 +27,6 @@ Then(
             cy.get('@last').find('a').eq(0).click({ force: true })
             cy.visit(Cypress.config().baseUrl + `orders/${lastOrder_id}`)
           } else {
-            // If the lastOrder_id row doesn't exist, use the first row in the table
             cy.get('table.chakra-table')
               .find('tbody tr')
               .first()
@@ -170,10 +169,6 @@ When('I click the Resend Button', async () => {
 Then(
   'I should see a bottom toast with Background color {string} with title {string} and body {string} and the modal should not be displayed',
   async (bgcolor, title, text) => {
-    // A wait.then has been removed here (cy.wait().then(() => {})
-    // cy.get('div.chakra-modal__content-container')
-    // .should('not.be.visible')
-
     cy.get('div.chakra-alert')
       .as('toast')
       .should('have.css', 'background-color', bgcolor)

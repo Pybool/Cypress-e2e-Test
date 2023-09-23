@@ -18,12 +18,10 @@ function completeOrderExternal(url, cartToken) {
     method: 'POST',
     url: url,
     body: {
-      // Request body payload
       key1: 'value1',
       key2: 'value2',
     },
     headers: {
-      // Request headers
       'Content-Type': 'application/json',
       'cart-token': cartToken,
       Accept: '*/*',
@@ -35,18 +33,6 @@ function completeOrderExternal(url, cartToken) {
     rs2.saveToSessionStorage('order_id', extractedValue)
   })
 }
-
-
-// after(function () {
-//   cy.window().then((win) => {
-//     const resp = win.console.logs[win.console.logs.length - 1][1]
-//     const url = resp?.completionUrl
-//     const cartToken = resp.cart.token
-//     win.localStorage.setItem('url', url)
-//     win.localStorage.setItem('cartToken', cartToken)
-//     completeOrderExternal(url, cartToken)
-//   })
-// })
 
 function executeFnInWindow() {
   cy.window().then((win) => {
@@ -97,14 +83,14 @@ function clickAddSeatsAndCheckout() {
   cy.get('footer.chakra-modal__footer').find('button').click({ force: true })
   executeFnInWindow()
 
-  // A wait.then has been removed here (cy.wait().then(() => {})
+  
   cy.get('div.chakra-collapse')
     .parent()
     .find('button')
     .contains('Checkout',{timeout:x6})
     .should('exist')
     .click({ force: true })
-  // A wait.then has been removed here (cy.wait().then(() => {})
+  
   cy.window().then((win) => {
     const resp = win.console.logs[win.console.logs.length - 1][1]
     const url = resp?.completionUrl
@@ -136,7 +122,7 @@ Then(
   'The {string} pill is displayed in the select reservation modal with {string} selected',
   async (type, selectedComp) => {
     const number = '4'
-    // A wait.then has been removed here (cy.wait().then(() => {})
+    
     cy.get('h3.chakra-heading')
       .contains('RES Single Train Ride',{timeout:x6})
       .parent()
@@ -145,7 +131,7 @@ Then(
       .children()
       .eq(2)
       .click({ force: true })
-    // A wait.then has been removed here (cy.wait().then(() => {})
+    
     cy.get('div.chakra-button__spinner')
       .should('not.exist',{timeout:x6})
       .then(()=>{
@@ -182,7 +168,6 @@ And('I click The {string} button', async (button) => {
 })
 
 async function fn(number, secondchoice = 0) {
-  // await rs2.cancelLastOrder()
   await rs2.startCreateOrder(number, secondchoice)
 }
 

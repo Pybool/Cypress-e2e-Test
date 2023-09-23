@@ -24,7 +24,6 @@ Given('I login as an admin user on Reservations 2 web application', () => {
 })
 
 Given('A previous set db dump and capacity allocation fixture', () => {
-  // ToDo
 })
 
 When('I go to New Order > Capacity Allocation page', () => {
@@ -59,38 +58,3 @@ And('I select a date time and add to the cart', () => {
   cy.findByTestId(`test-booking-availability-option-0`).should('exist').click()
   cy.findByTestId(`test-booking-add-to-cart`).should('exist').click()
 })
-
-// Then('I select a date time and to the carta', (type) => {
-//   cy.findByTestId(`test-availability-option-0`).should('exist').click()
-//   cy.findByTestId(`test-booking-add-to-cart`).should('exist').click()
-// })
-
-// if (type == 'numbered') {
-//   for (const [key, capacityOption] of Object.entries(capacityOptions)) {
-//     cy.findByTestId(`test-select-capacity_areas[${key}].capacity_option_id`)
-//       .should('exist')
-//       .select(capacityOption)
-
-//     cy.findByTestId(`test-input-capacity_areas[${key}].name`).fastType(
-//       `CP Name ${key}`,
-//     )
-//     cy.findByTestId(`test-input-capacity_areas[${key}].group`).fastType(
-//       `CP Group ${key}`,
-//     )
-
-//     if (key < capacityOptions.length - 1) {
-//       cy.findByTestId('test-table-add-simplified-capacity-plan-list').click()
-//     }
-//   }
-// }
-
-// if (type == 'unnumbered') {
-//   cy.findByTestId(`test-select-capacity_areas[${key}].capacity_option_id`)
-//     .should('exist')
-//     .select('gin-train')
-
-//   cy.findByTestId(`test-input-capacity_areas[${key}].quantity`).fastType(
-//     '100',
-//   )
-// }
-// })

@@ -30,8 +30,6 @@ var sectionsList = []
 
 async function createTestRun() {
    await getsectionsList()
-  //  let response = await axios.get(`${options.url}/index.php?/api/v2/get_plans/${projectId}`,opt)
-  //  console.log(response.data)
     const response = await axios.post(
       `${options.url}/index.php?/api/v2/add_plan_entry/${testrailPlan}`,
       {
@@ -79,24 +77,20 @@ async function createTestRun() {
     }
     else{
       const section = getSectionObject(sectionsList,_case.title.split(" ")[1])
-      //Split by space to get environment Format: On "env" ...
       return section.id
     }
   })
   async function createCaseAndPublishResult(test,runId){
-    // test[0].elements returns an array of Scenarios, get the first in array and extract environment
-    console.log(test)
     await getsectionsList()
     if(test.length > 0){
       const testEnvironment = test[0].uri.replaceAll("."," ")
     const section = getSectionObject(sectionsList,testEnvironment)
  
     if(section==undefined){
-      //Create a new section if it doesn't already exist
         var response = await axios.post(
           `${options.url}/index.php?/api/v2/add_section/${projectId}`,{"suite_id":suiteId,"name":testEnvironment},opt
         );
-        await getsectionsList() //Update sections list
+        await getsectionsList() 
         var response = await axios.get(
           `${options.url}/index.php?/api/v2/get_cases/${projectId}&suite_id=${suiteId}&section_id=${section.id}`,opt
         );
@@ -112,7 +106,6 @@ async function createTestRun() {
 
     
     let genratedCase=generateEachCase(test)
-    // console.log("Generated case ----> ", genratedCase)
     var cases
  
     for(i=0;i<genratedCase.length;i++){
@@ -138,7 +131,6 @@ async function createTestRun() {
       }
       else{
         try{
-          // console.log("Adding cases ----> ", section.id)
           let resp = await axios.post(`${options.url}/index.php?/api/v2/add_case/${section.id}`,genratedCase[i][0],opt)
           await publishTestRun(resp.data.id,genratedCase[i][1],runId)
           
@@ -427,7 +419,6 @@ async function createDirectoryTree(paths) {
       ids.push(section.id)
     }
     if (section.parent_id == null) {
-      // Do something with the existing section
       for (let i = 1; i < paths.length; i++) {
         const _path = paths[i];
         let response;
@@ -459,7 +450,6 @@ async function deleteSections(){
     );
   })
 }
-console.log(argv)
 try{
   
   if (argv.delete) {

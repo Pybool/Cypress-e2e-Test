@@ -1,7 +1,7 @@
 import { Then, When, And } from 'cypress-cucumber-preprocessor/steps'
 
 When('I am on the New Order page', () => {
-  // A wait.then has been removed here (cy.wait().then(() => {})
+  
   cy.visit('/booking')
 })
 

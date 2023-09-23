@@ -3,7 +3,7 @@ export function getFutureDate(days) {
   futureDate.setDate(futureDate.getDate() + days)
 
   const options = {
-    month: 'long', // Use 'long' for full month name
+    month: 'long',
     day: 'numeric',
     year: 'numeric',
     hour12: true,
@@ -20,7 +20,7 @@ export function getFutureDate(days) {
 
 export function getTomorrowDate() {
   const tomorrow = new Date()
-  tomorrow.setDate(tomorrow.getDate() + 1) // even 32 is acceptable
+  tomorrow.setDate(tomorrow.getDate() + 1) 
   const options = {
     month: 'long',
     day: 'numeric',

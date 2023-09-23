@@ -45,7 +45,7 @@ export function containsStringInCells($table, searchString) {
     const cellText = Cypress.$(cell).text()
     if (cellText.includes(searchString)) {
       found = true
-      return false // Exit the loop early once the string is found
+      return false
     }
   })
   return found
@@ -75,23 +75,13 @@ async function cancelOrderFn(lastOrderId, amend) {
               })
             } else {
               cy.visit(`/orders/${lastOrderId}/amend`).then(() => {
-                // A wait.then has been removed here (cy.wait().then(() => {})
-                cy.get('button.chakra-button').contains('Cancel order',{timeout:x6}).then(
-                  // ($buttons) => {
-                  //   const cancelButton = $buttons.filter(
-                  //     ':contains("Cancel order")',
-                  //   )
-                  //   if (cancelButton.length > 0) {
-                  //     cy.wrap(cancelButton).click({ force: true })
-                  //   }
-                  // },
-                )
+                cy.get('button.chakra-button').contains('Cancel order',{timeout:x6})
     
                 cy.get('button.chakra-button', { timeout: 30000 })
                   .contains('Refund',{timeout:x6})
                   .click({ force: true })
     
-                // A wait.then has been removed here (cy.wait().then(() => {})
+                
                 cy.get('button.chakra-button')
                   .get('div.chakra-stack')
                   .contains('Complete refund',{timeout:x6})
@@ -140,8 +130,6 @@ export async function cancelLastOrder(amend = false) {
                     window.localStorage.setItem('actionType', 'new')
                     cy.visit('/booking')
                   }
-                } else {
-                  // Handle the case when the table has no rows
                 }
               })
           })
@@ -240,7 +228,7 @@ export function startCreateOrder(number, secondchoice,market='') {
       cy.get('button.chakra-button').contains('Next Day',{timeout:x6}).click({ force: true })
     }
 
-    // A wait.then has been removed here (cy.wait().then(() => {})RES Open Return Tickets
+    
     cy.get('h2.chakra-heading')
       .contains('Available Options',{timeout:x6})
       .parent()
@@ -261,7 +249,7 @@ export function startCreateOrder(number, secondchoice,market='') {
       .children()
       .eq(1)
       .click({ force: true })
-    // A wait.then has been removed here (cy.wait().then(() => {})
+    
     cy.get('div.chakra-button__spinner')
       .should('not.exist',{timeout:x6})
       .then(()=>{

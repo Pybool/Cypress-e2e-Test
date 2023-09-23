@@ -226,11 +226,4 @@ Then('The {string} is downloaded', (report) => {
     cy.readFile(`src/downloads/${report}.xlsx`).should('exist')
   }
 })
-
-// after(() => {
-//   let directory = 'src\\downloads'
-//   if (Cypress.platform != 'win32'){
-//     directory = 'src/downloads'
-//   }
-//   rmDir(directory)
-// });
+;

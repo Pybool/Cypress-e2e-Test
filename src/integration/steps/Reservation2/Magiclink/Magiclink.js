@@ -219,15 +219,6 @@ Then('The {string} section displays data consistent with the order created',asyn
       case 'Payment Method':
           value = DATA_OBJECT.Payment_Method
           break;
-      // case 'Order Created At':
-      //     value = 'Date'
-      //     cy.get('div.chakra-collapse').eq(collapseIndex)
-      //     .find('div').contains(field)
-      //     .siblings().eq(0).invoke('text')
-      //     .then((txt)=>{
-      //         expect(txt.includes(getTodaysDate())).to.eq(true)
-      //     })
-      //     break;
       case 'First Name':
           value = DATA_OBJECT.firstname
           break;
@@ -460,12 +451,8 @@ When('I select a time for RES Single Train Ride', (type) => {
       .find('p.chakra-text')
       .eq(0)
       .as('singleTrainRide')
-      // .parent()
-      // .parent()
-      // .siblings()
-      // .eq(0)
+
       cy.get('@singleTrainRide')
-   
       .siblings()
       .eq(0)
       .children()
@@ -628,7 +615,7 @@ Then('I process a refund or checkout', () => {
       .parent()
       .parent()
       .click(__force__)
-    // A wait.then has been removed here (cy.wait().then(() => {})
+    
     rs2.fillPaymentInformationForm()
   }
 })

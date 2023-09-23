@@ -1,7 +1,6 @@
 function findObjectsWithSumAndSameCompartment(dataArray, targetSum) {
   const compartmentMap = new Map();
 
-  // Iterate through the data array to group objects by compartment name
   for (const item of dataArray) {
     const key = Object.keys(item)[0];
     const obj = item[key];
@@ -12,7 +11,6 @@ function findObjectsWithSumAndSameCompartment(dataArray, targetSum) {
     compartmentMap.get(compartment).push({ key: parseInt(key), obj });
   }
 
-  // Find objects with keys that add up to the targetSum and have the same compartment name
   const result = [];
   for (const [compartment, items] of compartmentMap.entries()) {
     for (let i = 0; i < items.length; i++) {
@@ -22,7 +20,7 @@ function findObjectsWithSumAndSameCompartment(dataArray, targetSum) {
             result.push({ [items[i].key]: items[i].obj });
             return result.filter((obj) => {
                 const compartmentNames = new Set(Object.values(obj).map((item) => item.compartment));
-                return compartmentNames.size === 1; // Return true if all compartment names are the same
+                return compartmentNames.size === 1; 
             });
         }
 
@@ -36,10 +34,9 @@ function findObjectsWithSumAndSameCompartment(dataArray, targetSum) {
     }
   }
 
-  // Filter out the results where compartment names are different
   return result.filter((obj) => {
     const compartmentNames = new Set(Object.values(obj).map((item) => item.compartment));
-    return compartmentNames.size === 1; // Return true if all compartment names are the same
+    return compartmentNames.size === 1; 
   });
 }
 
@@ -51,7 +48,6 @@ export function findSuitableSeats(seatData, numPeople) {
     for (const compartment in seatData) {
       const entries = seatData[compartment];
   
-      // Check for single seats within a carriage
       for (const entry of entries) {
         const carriageName = entry.carriage;
         const seatsInfo = entry.seats;
@@ -70,7 +66,6 @@ export function findSuitableSeats(seatData, numPeople) {
         }
       }
   
-      // Check for consecutive seats with a difference of 3
       for (const entry of entries) {
         const carriageName = entry.carriage;
         const seatsInfo = entry.seats;
@@ -86,9 +81,7 @@ export function findSuitableSeats(seatData, numPeople) {
                 
         }
       }
-  
-      // Check for consecutive seats with a difference of 2 and a single seat
-      
+        
       for (const entry of entries) {
         const carriageName = entry.carriage;
         const seatsInfo = entry.seats;

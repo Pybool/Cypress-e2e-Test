@@ -60,9 +60,9 @@ function executeFnInWindow(){
 }
 
 function generateID() {
-const timestamp = Date.now().toString(); // get current timestamp as string
-const randomChars = Math.random().toString(36).substr(2, 6); // generate 6 random characters
-const id = timestamp + randomChars; // concatenate timestamp and random characters
+const timestamp = Date.now().toString();
+const randomChars = Math.random().toString(36).substr(2, 6); 
+const id = timestamp + randomChars;
 return id;
 }
 
@@ -83,13 +83,6 @@ async function validateConfirmationPage(){
   cy.get("@emaillabel").siblings().eq(0).invoke('text').then((txt)=>{
     expect(txt).to.eq(DATA_OBJECT.email)
   })
-
-  // const from_to = DATA_OBJECT.from + ' - ' + DATA_OBJECT.to
-  // cy.get('h5.chakra-heading').contains(from_to).as('fromto').scrollIntoView().should('exist').and('be.visible')
-  // cy.get("@fromto").invoke('text').then((txt)=>{
-  //   expect(txt).to.contain(DATA_OBJECT.to);
-  //   expect(txt).to.contain(DATA_OBJECT.from);
-  // })
 
   cy.get('p.chakra-text').contains('Order reference',{timeout:x6}).as('reflabel').scrollIntoView().should('exist').and('be.visible')
   cy.get("@reflabel").siblings().eq(0).scrollIntoView().should('exist').and('be.visible').invoke('text').then((txt)=>{

@@ -11,13 +11,11 @@ function isNumberFirst(str) {
 }
 
 function selectAllForEachTab(capacity,partial = false, data = {}) {
-  console.log(capacity)
   cy.get('div.chakra-tabs__tablist').eq(0).children().as('selected')
   cy.get('@selected').contains(capacity.trim().split(' - ')[0],{timeout:x6})
   .as('capacityCompartment')
   cy.get('@capacityCompartment').click().then((sel)=>{
     const idx = parseInt(Cypress.$(sel).prop('id').split('--tab-')[1])
-    console.log("@node index ===> ", idx)
     cy.get('div.chakra-tabs__tab-panels')
     .eq(0)
     .children()
@@ -28,11 +26,9 @@ function selectAllForEachTab(capacity,partial = false, data = {}) {
     .eq(0)
     .children()
     .then((tabs) => {
-      console.log(`Tabs for ${idx} `, Array.from(Cypress.$(tabs)))
       if (!partial) {
         
         for (let i = 0; i < Array.from(Cypress.$(tabs)).length; i++) {
-          cy.wait(4000)
           Array.from(Cypress.$(tabs))[i].click()
           cy.get('@nodes')
             .eq(1)
@@ -43,7 +39,6 @@ function selectAllForEachTab(capacity,partial = false, data = {}) {
             .children()
             .each((el, index) => {
               let bgColor = Cypress.$(el).css("background-color");
-              console.log(bgColor)
               if (bgColor == 'rgb(210, 210, 210)'){
                 cy.wrap(el).click({ force: true })
               }
@@ -52,11 +47,8 @@ function selectAllForEachTab(capacity,partial = false, data = {}) {
       } 
       else {
         data = data.replaceAll('(', '').replaceAll(')', '')
-        console.log("Partial ran",Array.from(data.split('and')))
         for (let i = 0; i < Array.from(data.split('and')).length; i++) {
-          cy.wait(3000)
           if (containsNumber(Array.from(data.split('and'))[i].trim())) {
-            console.log("Dont run ")
             if (isNumberFirst(Array.from(data.split('and'))[i].trim())) {
               cy.get('@nodes')
                 .eq(1)
@@ -67,7 +59,6 @@ function selectAllForEachTab(capacity,partial = false, data = {}) {
                 .children()
                 .eq(0)
                 .then((seats) => {
-                  console.log("Seats to click ==> ", seats)
                   Array.from(Cypress.$(seats)).forEach((seat) => {
                     seat.click()
                   })
@@ -79,7 +70,6 @@ function selectAllForEachTab(capacity,partial = false, data = {}) {
               .find('button',{timeout:x6})
               .contains(Array.from(data.split('and'))[i].trim(),{timeout:x6})
               .click()
-            console.log("click section")
 
             cy.get('@nodes')
               .eq(1)
@@ -90,7 +80,6 @@ function selectAllForEachTab(capacity,partial = false, data = {}) {
               .children()
               .each((el, index) => {
                 let bgColor = Cypress.$(el).css("background-color");
-                console.log(bgColor)
                 if (bgColor == 'rgb(210, 210, 210)'){
                   cy.wrap(el).click({ force: true })
                 }
@@ -137,7 +126,6 @@ Then('I click the the refund or checkout button', () => {
 
 And('I select the following options from the Cart:', (dataTable) => {
   const data = dataTable.hashes()[0]
-  console.log(data['Accessibility carriage'].split(','))
   for (let capacity of data['Accessibility carriage'].split(',')) {
     cy.get('div.chakra-tabs__tablist').eq(0).children().as('selected')
     cy.get('@selected').contains(capacity.trim().split(' - ')[0],{timeout:x6}).as('compartment')

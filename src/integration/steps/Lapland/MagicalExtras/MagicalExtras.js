@@ -5,14 +5,14 @@ let timesCount = 0
 const x6 = 60000
 
 When('I am on the extra page', async () => {
-  // A wait.then has been removed here (cy.wait().then(() => {})
+  
   await continueBooking('Continue Booking')
 })
 
 When(
   'I click + button {string} times in {string}',
   async (times, buttonText) => {
-    // A wait.then has been removed here (cy.wait().then(() => {})
+    
     cy.iframe('#ticknovate-frame')
       .find('p')
       .contains(buttonText)
@@ -39,9 +39,6 @@ When(
 )
 
 When('I input {string} data for tour for extras', async (data) => {
-  // await btndivspan('Your tour')
-  // const date = data.split(' ')
-  // const month = date[1]
 
   await btndivspan('Your tour')
   const date = data.split(' ')
@@ -85,7 +82,7 @@ Then('the price in {string} booking is updated by {string}', async (buttonText,p
 })
 
 And('the price for {string} is added to the Booking Summary', async (type) => {
-  // A wait.then has been removed here (cy.wait().then(() => {})
+  
   cy.iframe('#ticknovate-frame')
     .find('h4')
     .contains('Booking Summary')
@@ -124,7 +121,7 @@ Then('the packaging and postage fee is updated', async () => {
 
 And('I click {string} in Cancellation Protection screen', async () => {
   await continueBooking('Continue booking')
-  // A wait.then has been removed here (cy.wait().then(() => {})
+  
   cy.iframe('#ticknovate-frame')
     .find('h1')
     .contains('TicketPlan Cancellation Protection')
@@ -140,7 +137,7 @@ And('I click {string} in Cancellation Protection screen', async () => {
 })
 
 Then('a cancellation protection is added to the booking', async () => {
-  // A wait.then has been removed here (cy.wait().then(() => {})
+  
   cy.iframe('#ticknovate-frame')
     .find('h4')
     .contains('Booking Summary')
@@ -170,7 +167,7 @@ And(
 )
 
 And('I click continue booking', async () => {
-  // A wait.then has been removed here (cy.wait().then(() => {})
+  
   await continueBooking('Continue booking')
 })
 
@@ -185,7 +182,6 @@ And('{string} button is clickable', async (btn) => {
 function stripPriceInt(price) {
   return parseInt(price.split('.')[0].split('£')[1])
 }
-// MagicalExtras.feature
 
 function extractPrice(price) {
   const priceInt = parseInt(price.split('.')[0].split('£')[1])

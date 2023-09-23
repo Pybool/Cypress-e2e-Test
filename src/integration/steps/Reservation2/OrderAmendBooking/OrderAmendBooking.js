@@ -7,20 +7,9 @@ const __force__ = { force: true }
 var btnText
 const x6 = 60000
 
-// function clickNewOrder() {
-//   return new Promise((resolve, reject) => {
-//     resolve(
-//       cy
-//         .get(`a[href*="${'booking'}"]`, { timeout: 60000 })
-//         .eq(1)
-//         .click(__force__),
-//     )
-//   })
-// }
-
 When('I click the view button for an order in the orders table', async () => {
   rs2.cancelLastOrder(true).then(() => {
-    // A wait.then has been removed here (cy.wait().then(() => {})
+    
     cy.log('ACTION 2: ' + window.localStorage.getItem('actionType'))
     if (
       window.localStorage.getItem('actionType') == 'new' ||
@@ -34,7 +23,6 @@ When('I click the view button for an order in the orders table', async () => {
         }
         const data = { adults: 2, children: 2, step: '2 adults 2 children' }
         await rs2.startCreateOrder(data.adults, data.children)
-        // await rs2.selectCompartments(data.step);//OBsolete code has issues when seats are disabled
         core.selectSeats('Who')
         await rs2.internalCheckOut('Checkout')
       })
@@ -45,11 +33,6 @@ When('I click the view button for an order in the orders table', async () => {
 Then(
   'I ensure the order to be amended matches my last created order',
   async () => {
-    // function getParameterFromURL(url, paramName) {
-    //   const searchParams = new URLSearchParams(new URL(url).search)
-    //   return searchParams.get(paramName)
-    // }
-
     cy.readFile('store.txt').then((lastOrderId) => {
       cy.url().then((url) => {
         window.localStorage.setItem('lastOrderID', lastOrderId)
@@ -108,7 +91,7 @@ And('I should see {string} sections', (sections) => {
 And(
   'I should see {string} card which should contain {string} and {string}',
   (cardName, previousBtn, nextBtn) => {
-    // A wait.then has been removed here (cy.wait().then(() => {})
+    
     cy.get('h2.chakra-heading', { timeout: 30000 }).contains(cardName)
     cy.get('button.chakra-button')
       .contains(previousBtn,{timeout:x6})
@@ -368,7 +351,7 @@ Then('I process a refund or checkout', () => {
       .parent()
       .parent()
       .click(__force__)
-    // A wait.then has been removed here (cy.wait().then(() => {})
+    
     rs2.fillPaymentInformationForm()
   }
 })
@@ -401,12 +384,3 @@ Then(
   'I ckick the view order button to verify all changes are reflected',
   () => {},
 )
-
-// cy.readFile('store.txt').then((lastOrderId)=>{
-//     cy.url().then((url) => {
-//         window.localStorage.setItem('lastOrderID',lastOrderId)
-//         const extractedOrderId =  url.split('/').pop();
-//         expect(extractedOrderId.length).to.be.greaterThan(5)
-//         expect(extractedOrderId).to.include(lastOrderId)
-//     });
-// })

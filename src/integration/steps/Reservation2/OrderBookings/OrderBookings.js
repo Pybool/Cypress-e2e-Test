@@ -239,7 +239,7 @@ Then(
 )
 
 When('I click the {string} History on bookings page', () => {
-  // A wait.then has been removed here (cy.wait().then(() => {})
+  
   cy.get('div.chakra-stack>div.chakra-stack>div.chakra-card')
     .siblings()
     .eq(0)
@@ -303,7 +303,7 @@ Then('I ensure that the Redeem Selected Ticket Button is enabled', () => {
 })
 
 When('I click Transaction History icon on bookings page', () => {
-  // A wait.then has been removed here (cy.wait().then(() => {})
+  
   cy.get('h2.chakra-heading')
     .contains('Bookings')
     .siblings()
@@ -316,7 +316,7 @@ Then('I click the Redeem Selected Ticket Button', () => {
 })
 
 Then('The modal is closed and i should see Redeemed under the QR Code', () => {
-  // A wait.then has been removed here (cy.wait().then(() => {})
+  
   cy.get('@modal').should('not.be.exist')
   cy.get('p.chakra-text')
     .contains('Redeemed')

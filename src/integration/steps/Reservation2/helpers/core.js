@@ -5,7 +5,7 @@ function sumNumbersFromText(text) {
   const parts = text.split(',')
   let sum = 0
   for (const part of parts) {
-    const number = parseInt(part.trim(), 10) // Convert to integer with base 10
+    const number = parseInt(part.trim(), 10)
     if (!isNaN(number)) {
       sum += number
     }
@@ -113,7 +113,6 @@ async function x(data) {
   )
   if (compartmentPill.attr('aria-selected') != 'true') {
     compartmentPill.click()
-    // compartmentPill.should('have.attr', 'aria-selected', 'true')
   }
   const _max = new Array()
   const _max_clicked = new Array()
@@ -159,9 +158,9 @@ async function x(data) {
     delay(2000).then(() => {
       if (_max_clicked.includes(btn) == false) {
         btn.scrollIntoView({
-          behavior: 'smooth', // You can use "auto" or "smooth" scrolling behavior
-          block: 'start', // You can use "start", "center", "end", or "nearest"
-          inline: 'nearest', // You can use "start", "center", "end", or "nearest"
+          behavior: 'smooth', 
+          block: 'start', 
+          inline: 'nearest', 
         })
         btn.click()
         _max_clicked.push(btn)

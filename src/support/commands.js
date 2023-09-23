@@ -78,31 +78,6 @@ Cypress.Commands.add('getCompartmentNames', () => {
     })
 });
 
-// Function to find suitable seats for a specific compartment
-// Cypress.Commands.add('findSuitableSeats', (compartmentIndex, numPeople) => {
-//   cy.get(`@carriage_${compartmentIndex}_*`)
-//     .its('length')
-//     .then((carriageCount) => {
-//       let suitableSeats = []
-//       for (let idx = 0; idx < carriageCount; idx++) {
-//         cy.get(`@carriage_${compartmentIndex}_${idx}`).then((carriageObj) => {
-//           const suitableCarriageSeats = sorter.findSuitableSeats(
-//             { [compartmentName]: [carriageObj] },
-//             numPeople,
-//           )
-
-//           suitableSeats = suitableSeats.concat(suitableCarriageSeats)
-
-//           if (suitableSeats.length >= numPeople) {
-//             suitableSeats = suitableSeats.slice(0, numPeople)
-//             return suitableSeats
-//           }
-//         })
-//       }
-//     })
-// })
-
-// Function to convert the data format
 Cypress.Commands.add('smoothenFormat', (data) => {
   const convertedData = {}
   for (const compartment in data) {

@@ -143,7 +143,7 @@ async function fn(number, secondchoice = 0) {
       .children()
       .eq(1)
       .click({ force: true })
-    // A wait.then has been removed here (cy.wait().then(() => {})
+    
     cy.get('button.chakra-button')
       .contains('Add To Cart',{timeout:x6})
       .click({ force: true })
@@ -212,7 +212,7 @@ Then(
                   discountPrices.push(getPriceFromString(price))
                 })
             }
-            // A wait.then has been removed here (cy.wait().then(() => {})
+            
             const isApplied = isDiscountApplied(
               realPrice,
               discountPrices,

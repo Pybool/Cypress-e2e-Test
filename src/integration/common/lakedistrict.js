@@ -75,8 +75,7 @@ Then('I should be taken to the {string} page', (header) => {
 
   if (header == 'Logout') {
     return cy.url().then((currentURL) => {
-      const expectedURL = '/login' // Replace this with the expected URL
-      // Use Cypress assertion to check if the current URL matches the expected URL
+      const expectedURL = '/login'
       expect(currentURL).to.equal(expectedURL)
     })
   }

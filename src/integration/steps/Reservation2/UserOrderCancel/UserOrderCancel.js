@@ -76,7 +76,7 @@ Then('I go to the orders table and click on edit for the order', async () => {
 When(
   'I am on the Amending Booking page I click cancel order button',
   async () => {
-    // A wait.then has been removed here (cy.wait().then(() => {})
+    
     cy.get('h2.chakra-heading')
       .invoke('text')
       .then((txt) => {
@@ -137,7 +137,7 @@ Then(
       .should('be.visible')
     cy.get('@cancelledH3').should('have.css', 'color', val2)
     cy.get('h5.chakra-heading').contains(val3).should('be.visible')
-    // A wait.then has been removed here (cy.wait().then(() => {})
+    
     cy.visit('/')
   },
 )
