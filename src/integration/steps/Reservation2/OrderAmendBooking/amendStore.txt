@@ -1,0 +1,16 @@
+{
+  "orderId": "ULOPVNO2HR8OR",
+  "data": {
+    "sections": [
+      {
+        "sectionName": "Who",
+        "actions": [
+          "remove"
+        ],
+        "value": [
+          "1x Adult"
+        ]
+      }
+    ]
+  }
+}

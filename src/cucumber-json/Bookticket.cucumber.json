@@ -1,0 +1,756 @@
+[
+  {
+    "description": "    Lapland Booking Ticket",
+    "keyword": "Feature",
+    "name": "Feature name",
+    "line": 1,
+    "id": "feature-name",
+    "tags": [],
+    "uri": "Bookticket.feature",
+    "elements": [
+      {
+        "id": "feature-name;on-lapland-as-a-customer-i-can-successfully-create-a-booking-with-minimum-number-of-one-adult-and-one-child",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "On Lapland As a customer I can successfully create a booking with minimum number of one Adult And one child",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@lapland",
+            "line": 4
+          },
+          {
+            "name": "@lapland-bookticket",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 27910000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I input \"1x Adult, 1x Child\" data",
+            "result": {
+              "status": "passed",
+              "duration": 1866000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "'Next' button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 835000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "'Your Party' is populated with selected option",
+            "result": {
+              "status": "passed",
+              "duration": 360000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-name;on-lapland-as-a-customer-i-can-successfully-create-a-booking-with-minimum-number-of-one-adult-and-one-child",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "On Lapland As a customer I can successfully create a booking with minimum number of one Adult And one child",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@lapland",
+            "line": 4
+          },
+          {
+            "name": "@lapland-bookticket",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 28957000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I input \"1x Adult, 1x Child, 1x Infant, 1x Personal Assistant\" data",
+            "result": {
+              "status": "passed",
+              "duration": 2789000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "'Next' button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 624000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "'Your Party' is populated with selected option",
+            "result": {
+              "status": "passed",
+              "duration": 351000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-name;on-lapland-as-a-customer-i-can-successfully-create-a-booking-with-minimum-number-of-one-adult-and-one-child",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "On Lapland As a customer I can successfully create a booking with minimum number of one Adult And one child",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@lapland",
+            "line": 4
+          },
+          {
+            "name": "@lapland-bookticket",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 16677000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I input \"1x Adult, 1x Child, 1x Infant\" data",
+            "result": {
+              "status": "passed",
+              "duration": 2053000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "'Next' button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 840000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "'Your Party' is populated with selected option",
+            "result": {
+              "status": "passed",
+              "duration": 372000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-name;on-lapland-as-a-customer-i-can-successfully-create-a-booking-with-minimum-number-of-one-adult-and-one-child",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "On Lapland As a customer I can successfully create a booking with minimum number of one Adult And one child",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@lapland",
+            "line": 4
+          },
+          {
+            "name": "@lapland-bookticket",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 16902000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I input \"1x Adult, 1x Child, 1x Personal Assistant\" data",
+            "result": {
+              "status": "passed",
+              "duration": 2814000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "'Next' button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 936000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "'Your Party' is populated with selected option",
+            "result": {
+              "status": "passed",
+              "duration": 355000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-name;on-lapland-unsuccessfully-create-a-booking-with-minimum-number-of-adult-and-no-child",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "On Lapland Unsuccessfully create a booking with minimum number of adult and no child",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 20
+          },
+          {
+            "name": "@lapland",
+            "line": 20
+          },
+          {
+            "name": "@lapland-bookticket",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 16296000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I input \"1x Adult\" data",
+            "result": {
+              "status": "passed",
+              "duration": 677000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "'Next' button is not active",
+            "result": {
+              "status": "passed",
+              "duration": 277000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-name;on-lapland-unsuccessfully-create-a-booking-with-minimum-number-of-child-and-no-child",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "On Lapland Unsuccessfully create a booking with minimum number of child and no child",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 30
+          },
+          {
+            "name": "@lapland",
+            "line": 30
+          },
+          {
+            "name": "@lapland-bookticket",
+            "line": 30
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 15671000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I input \"1x Child\" data",
+            "result": {
+              "status": "passed",
+              "duration": 780000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "'Next' button is not active",
+            "result": {
+              "status": "passed",
+              "duration": 272000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-name;on-lapland-unsuccessfully-create-a-booking-with-only-an-infant",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "On Lapland Unsuccessfully create a booking with only an infant",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 41
+          },
+          {
+            "name": "@lapland",
+            "line": 41
+          },
+          {
+            "name": "@lapland-bookticket",
+            "line": 41
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 44,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 16684000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "I input \"1x Personal Assistant\" data",
+            "result": {
+              "status": "passed",
+              "duration": 788000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "'Next' button is not active",
+            "result": {
+              "status": "passed",
+              "duration": 419000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "I am not able to select 'Personal Assistant'",
+            "result": {
+              "status": "passed",
+              "duration": 110000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-name;on-lapland-as-a-customer-i-can-successfully-create-a-booking-with-a-personal-assistant-and-1-child",
+        "keyword": "Scenario",
+        "line": 68,
+        "name": "On Lapland As a customer I can successfully create a booking with a Personal Assistant and 1 child",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 54
+          },
+          {
+            "name": "@lapland",
+            "line": 54
+          },
+          {
+            "name": "@lapland-bookticket",
+            "line": 54
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 15455000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "I input \"1x Child, 1x Personal Assistant\" data",
+            "result": {
+              "status": "passed",
+              "duration": 1486000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "I am not able to select 'Personal Assistant'",
+            "result": {
+              "status": "passed",
+              "duration": 97000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "'Next' button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 998000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 61,
+            "name": "\"1x Child, 1x Personal Assistant\" is populated with selected option",
+            "result": {
+              "status": "passed",
+              "duration": 411000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 62,
+            "name": "I input '15 Nov' data for tour",
+            "result": {
+              "status": "passed",
+              "duration": 10749000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 63,
+            "name": "I input time \"12:00\" data for tour",
+            "result": {
+              "status": "passed",
+              "duration": 3546000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 64,
+            "name": "'Cart' Summary displays with time \"<Time>\" and date \"15 Nov\"",
+            "result": {
+              "status": "passed",
+              "duration": 483000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-name;on-lapland-unsuccessfully-create-a-booking-with-4-adults-and-6-children",
+        "keyword": "Scenario",
+        "line": 79,
+        "name": "On Lapland Unsuccessfully create a booking with 4 adults and 6 children",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 70
+          },
+          {
+            "name": "@lapland",
+            "line": 70
+          },
+          {
+            "name": "@lapland-bookticket",
+            "line": 70
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 73,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 16134000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 74,
+            "name": "I input \"4x Adult, 6x Child\" data for multiple",
+            "result": {
+              "status": "passed",
+              "duration": 14721000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 75,
+            "name": "Child count should remain 4",
+            "result": {
+              "status": "passed",
+              "duration": 1181000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-name;on-lapland-unsuccessfully-select-unavailable-date-and-price",
+        "keyword": "Scenario",
+        "line": 92,
+        "name": "On Lapland Unsuccessfully select unavailable Date and Price",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 81
+          },
+          {
+            "name": "@lapland",
+            "line": 81
+          },
+          {
+            "name": "@lapland-bookticket",
+            "line": 81
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 84,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 29319000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 85,
+            "name": "I input \"1x Adult, 1x Child\" data",
+            "result": {
+              "status": "passed",
+              "duration": 3315000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 86,
+            "name": "'Next' button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 1249000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 87,
+            "name": "I input '<Your tour>' data for tour with \"Current Date -1\"",
+            "result": {
+              "status": "passed",
+              "duration": 991000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 88,
+            "name": "I am not able to select the greyed out date",
+            "result": {
+              "status": "passed",
+              "duration": 478000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-name;on-lapland-book-tickets-as-a-customer-i-can-successfully-select-available-date-and-price",
+        "keyword": "Scenario",
+        "line": 109,
+        "name": "On Lapland Book tickets As a customer I can successfully select available Date and Price",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 95
+          },
+          {
+            "name": "@lapland",
+            "line": 95
+          },
+          {
+            "name": "@lapland-bookticket",
+            "line": 95
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 98,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 21532000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 99,
+            "name": "I input \"1x Adult, 1x Child\" data",
+            "result": {
+              "status": "passed",
+              "duration": 1748000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 100,
+            "name": "'Next' button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 737000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 101,
+            "name": "\"1x Adult, 1x Child\" is populated with selected option",
+            "result": {
+              "status": "passed",
+              "duration": 381000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 102,
+            "name": "I input '18 Nov' data for tour",
+            "result": {
+              "status": "passed",
+              "duration": 9914000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 103,
+            "name": "I input time \"09:30\" data for tour",
+            "result": {
+              "status": "passed",
+              "duration": 5139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 104,
+            "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
+            "result": {
+              "status": "passed",
+              "duration": 498000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

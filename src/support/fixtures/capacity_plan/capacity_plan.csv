@@ -1,0 +1,45 @@
+ID,Quantity,Capacity Option,Name (en),Group (en)
+Carriage_A_Seats_1-6,5,closed-carriage-6-seat,Seats 1-6,Carriage A
+Carriage_A_Seats_7-10,1,closed-carriage-4-seat,Seats 7-10,Carriage A
+Carriage_A_Seats_11-14,1,closed-carriage-4-seat,Seats 11-14,Carriage A
+Carriage_A_Seats_15-20,1,closed-carriage-6-seat,Seats 15-20,Carriage A
+Carriage_B_Seats_1-6,1,closed-carriage-6-seat,Seats 1-6,Carriage B
+Carriage_B_Seats_7-10,1,closed-carriage-4-seat,Seats 7-10,Carriage B
+Carriage_B_Seats_11-14,3,closed-carriage-4-seat,Seats 11-14,Carriage B
+Carriage_B_Seats_15-20,1,closed-carriage-6-seat,Seats 15-20,Carriage B
+Carriage_C_Seats_1-2,1,open-carriage-2-seat,Seats 1-2,Carriage C
+Carriage_C_Seats_3-6,1,open-carriage-4-seat,Seats 3-6,Carriage C
+Carriage_C_Seats_7-10,1,open-carriage-4-seat,Seats 7-10,Carriage C
+Carriage_C_Seats_11-14,1,open-carriage-4-seat,Seats 11-14,Carriage C
+Carriage_C_Seats_15-18,1,open-carriage-4-seat,Seats 15-18,Carriage C
+Carriage_C_Seats_19-20,1,open-carriage-2-seat,Seats 19-20,Carriage C
+Carriage_D_Seats_1-2,1,open-carriage-2-seat,Seats 1-2,Carriage D
+Carriage_D_Seats_3-6,3,open-carriage-4-seat,Seats 3-6,Carriage D
+Carriage_D_Seats_7-10,1,open-carriage-4-seat,Seats 7-10,Carriage D
+Carriage_D_Seats_11-14,1,open-carriage-4-seat,Seats 11-14,Carriage D
+Carriage_D_Seats_15-18,1,open-carriage-4-seat,Seats 15-18,Carriage D
+Carriage_E_Seats_1-6,1,closed-carriage-6-seat,Seats 1-6,Carriage E
+Carriage_E_Seats_7-10,1,closed-carriage-4-seat,Seats 7-10,Carriage E
+Carriage_E_Seats_11-14,1,closed-carriage-4-seat,Seats 11-14,Carriage E
+Carriage_F,2,accessible-carriage,Sit anywhere,Carriage F
+Carriage_G_Seats_1-2,1,semi-open-carriage-2-seat,Seats 1-2,Carriage G
+Carriage_G_Seats_3-6,1,semi-open-carriage-4-seat,Seats 3-6,Carriage G
+Carriage_G_Seats_7-10,1,semi-open-carriage-4-seat,Seats 7-10,Carriage G
+Carriage_G_Seats_11-14,1,semi-open-carriage-4-seat,Seats 11-14,Carriage G
+Carriage_G_Seats_15-18,1,semi-open-carriage-4-seat,Seats 15-18,Carriage G
+Carriage_G_Seats_19-20,1,semi-open-carriage-2-seat,Seats 19-20,Carriage G
+Carriage_H_Seats_1-2,1,semi-open-carriage-2-seat,Seats 1-2,Carriage H
+Carriage_H_Seats_3-6,1,semi-open-carriage-4-seat,Seats 3-6,Carriage H
+Carriage_H_Seats_7-10,1,semi-open-carriage-4-seat,Seats 7-10,Carriage H
+Carriage_H_Seats_11-14,1,semi-open-carriage-4-seat,Seats 11-14,Carriage H
+Carriage_H_Seats_15-18,1,semi-open-carriage-4-seat,Seats 15-18,Carriage H
+Carriage_H_Seats_19-20,1,semi-open-carriage-2-seat,Seats 19-20,Carriage H
+Joan_Seats_1-4,1,joan-carriage-4-seat,Seats 1-4,Joan Comp. 1
+Joan_Seats_5-8,1,joan-carriage-4-seat,Seats 5-8,Joan Comp. 2
+Joan_Seat_9,1,joan-individual-seat,Seat 9,Joan Comp. 3
+Joan_Seat_10,1,joan-individual-seat,Seat 10,Joan Comp. 3
+Joan_Seat_11,1,joan-individual-seat,Seat 11,Joan Comp. 4
+Joan_Seat_12,1,joan-individual-seat,Seat 12,Joan Comp. 4
+Joan_Seat_13,1,joan-individual-seat,Seat 13,Joan Comp. 5
+Joan_Seat_14,1,joan-individual-seat,Seat 14,Joan Comp. 5
+Joan_Seat_66,1,joan-individual-seat,Seat 66,Joan Comp. 66

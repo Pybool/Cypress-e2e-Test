@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "es6",
+    "paths": {
+      "@harmony/*": ["*"],
+      "@harmony/assets/*": ["assets/*"],
+      "@harmony/api/*": ["api/*"],
+      "@harmony/libs/*": ["libs/*"],
+      "@harmony/config/*": ["config/*"],
+      "@harmony/data/*": ["data/*"],
+      "@harmony/atoms/*": ["components/atoms/*"],
+      "@harmony/hooks/*": ["components/hooks/*"],
+      "@harmony/molecules/*": ["components/molecules/*"],
+      "@harmony/organisms/*": ["components/organisms/*"],
+      "@harmony/templates/*": ["components/templates/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

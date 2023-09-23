@@ -1,0 +1,378 @@
+[
+  {
+    "description": "    As a User I want to click pages So all main menu loads",
+    "keyword": "Feature",
+    "name": "Admin regression page load",
+    "line": 1,
+    "id": "admin-regression-page-load",
+    "tags": [],
+    "uri": "Lakedistrict.feature",
+    "elements": [
+      {
+        "id": "admin-regression-page-load;on-lakedistrictadmin-tab-menus-in-user-administration-page-is-searchable",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "On LakedistrictAdmin Tab Menus in User Administration page is searchable",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 4
+          },
+          {
+            "name": "@lakedistrict-admin-nav",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am a user on Admin Page for 'lakedistrict'",
+            "result": {
+              "status": "passed",
+              "duration": 3783000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click User Admin on the Nav bar",
+            "result": {
+              "status": "passed",
+              "duration": 2353000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I click a \"All users\" tab on 'User Admin' page",
+            "result": {
+              "status": "passed",
+              "duration": 237000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I type \"Tayé\" in search box",
+            "result": {
+              "status": "passed",
+              "duration": 5136000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Search returns result containing 'Tayé'",
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "admin-regression-page-load;on-lakedistrictadmin-tab-menus-in-user-administration-page-is-searchable",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "On LakedistrictAdmin Tab Menus in User Administration page is searchable",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 4
+          },
+          {
+            "name": "@lakedistrict-admin-nav",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am a user on Admin Page for 'lakedistrict'",
+            "result": {
+              "status": "passed",
+              "duration": 5210000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click User Admin on the Nav bar",
+            "result": {
+              "status": "passed",
+              "duration": 2331000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I click a \"Admin users\" tab on 'User Admin' page",
+            "result": {
+              "status": "passed",
+              "duration": 282000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I type \"Tayé\" in search box",
+            "result": {
+              "status": "passed",
+              "duration": 1921000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Search returns result containing 'Tayé'",
+            "result": {
+              "status": "passed",
+              "duration": 71000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "admin-regression-page-load;on-lakedistrictadmin-tab-menus-in-user-administration-page-is-searchable",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "On LakedistrictAdmin Tab Menus in User Administration page is searchable",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 4
+          },
+          {
+            "name": "@lakedistrict-admin-nav",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am a user on Admin Page for 'lakedistrict'",
+            "result": {
+              "status": "passed",
+              "duration": 3084000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click User Admin on the Nav bar",
+            "result": {
+              "status": "passed",
+              "duration": 2283000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I click a \"POS users\" tab on 'User Admin' page",
+            "result": {
+              "status": "passed",
+              "duration": 330000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I type \"Beccy\" in search box",
+            "result": {
+              "status": "passed",
+              "duration": 1748000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Search returns result containing 'Beccy'",
+            "result": {
+              "status": "passed",
+              "duration": 155000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "admin-regression-page-load;on-lakedistrictadmin-tab-menus-in-user-administration-page-is-searchable",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "On LakedistrictAdmin Tab Menus in User Administration page is searchable",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 4
+          },
+          {
+            "name": "@lakedistrict-admin-nav",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am a user on Admin Page for 'lakedistrict'",
+            "result": {
+              "status": "passed",
+              "duration": 2938000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click User Admin on the Nav bar",
+            "result": {
+              "status": "passed",
+              "duration": 1952000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I click a \"Reservations users\" tab on 'User Admin' page",
+            "result": {
+              "status": "passed",
+              "duration": 207000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I type \"Tayé\" in search box",
+            "result": {
+              "status": "passed",
+              "duration": 1527000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Search returns result containing 'Tayé'",
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "admin-regression-page-load;on-lakedistrictadmin-tab-menus-in-user-administration-page-is-searchable",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "On LakedistrictAdmin Tab Menus in User Administration page is searchable",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 4
+          },
+          {
+            "name": "@lakedistrict-admin-nav",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am a user on Admin Page for 'lakedistrict'",
+            "result": {
+              "status": "passed",
+              "duration": 2901000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click User Admin on the Nav bar",
+            "result": {
+              "status": "passed",
+              "duration": 1654000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I click a \"Scanning app users\" tab on 'User Admin' page",
+            "result": {
+              "status": "passed",
+              "duration": 217000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I type \"Olamide\" in search box",
+            "result": {
+              "status": "passed",
+              "duration": 1932000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Search returns result containing 'Olamide'",
+            "result": {
+              "status": "passed",
+              "duration": 70000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

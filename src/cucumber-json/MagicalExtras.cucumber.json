@@ -1,0 +1,648 @@
+[
+  {
+    "description": "    As a user I want to visit Lapland website So I can book magical/extras ticket",
+    "keyword": "Feature",
+    "name": "Book Magical/Other extras",
+    "line": 1,
+    "id": "book-magical/other-extras",
+    "tags": [],
+    "uri": "MagicalExtras.feature",
+    "elements": [
+      {
+        "id": "book-magical/other-extras;on-lapland-user-can-purchase-one-extra-invitation-boxes",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "On Lapland User can purchase one extra invitation boxes",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 5
+          },
+          {
+            "name": "@lapland",
+            "line": 5
+          },
+          {
+            "name": "@lapland-extras",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 18800000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I input \"1x Adult, 1x Child\" data",
+            "result": {
+              "status": "passed",
+              "duration": 981000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "'Next' button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 492000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I input '18 Nov' data for tour for extras",
+            "result": {
+              "status": "passed",
+              "duration": 6439000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I input time \"09:30\" data for tour",
+            "result": {
+              "status": "passed",
+              "duration": 2221000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
+            "result": {
+              "status": "passed",
+              "duration": 336000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I am on the extra page",
+            "result": {
+              "status": "passed",
+              "duration": 1677000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I click + button '1' times in 'Additional Invitation Box'",
+            "result": {
+              "status": "passed",
+              "duration": 5281000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the price in 'Additional Invitation Box' booking is updated by '£5.00'",
+            "result": {
+              "status": "passed",
+              "duration": 402000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the price for 'Additional Invitation Box' is added to the Booking Summary",
+            "result": {
+              "status": "passed",
+              "duration": 2478000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "book-magical/other-extras;on-lapland-user-can-purchase-seven-extra-invitation-boxes",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "On Lapland User can purchase seven extra invitation boxes",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 24
+          },
+          {
+            "name": "@lapland",
+            "line": 24
+          },
+          {
+            "name": "@lapland-extras",
+            "line": 24
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 15247000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I input \"1x Adult, 1x Child\" data",
+            "result": {
+              "status": "passed",
+              "duration": 1359000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "'Next' button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 567000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "I input '18 Nov' data for tour for extras",
+            "result": {
+              "status": "passed",
+              "duration": 6853000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I input time \"09:30\" data for tour",
+            "result": {
+              "status": "passed",
+              "duration": 2127000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
+            "result": {
+              "status": "passed",
+              "duration": 325000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I am on the extra page",
+            "result": {
+              "status": "passed",
+              "duration": 1920000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I click + button '7' times in 'Additional Invitation Box'",
+            "result": {
+              "status": "passed",
+              "duration": 8815000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "the price in 'Additional Invitation Box' booking is updated by '£35.00'",
+            "result": {
+              "status": "passed",
+              "duration": 714000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "the price for 'Additional Invitation Box' is added to the Booking Summary",
+            "result": {
+              "status": "passed",
+              "duration": 3047000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "book-magical/other-extras;on-lapland-user-should-see-extra-packaging-and-postage-fee-when-adding-invitation-boxes",
+        "keyword": "Scenario",
+        "line": 57,
+        "name": "On Lapland User should see extra packaging and postage fee when adding invitation boxes",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 41
+          },
+          {
+            "name": "@lapland",
+            "line": 41
+          },
+          {
+            "name": "@lapland-extras",
+            "line": 41
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 44,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 15473000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "I input \"1x Adult, 1x Child\" data",
+            "result": {
+              "status": "passed",
+              "duration": 1292000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "'Next' button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 691000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 47,
+            "name": "I input '18 Nov' data for tour for extras",
+            "result": {
+              "status": "passed",
+              "duration": 8744000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "I input time \"09:30\" data for tour",
+            "result": {
+              "status": "passed",
+              "duration": 4073000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
+            "result": {
+              "status": "passed",
+              "duration": 371000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "I am on the extra page",
+            "result": {
+              "status": "passed",
+              "duration": 4329000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 51,
+            "name": "I click + button '1' times in 'Additional Invitation Box'",
+            "result": {
+              "status": "passed",
+              "duration": 8058000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "the packaging and postage fee is updated",
+            "result": {
+              "status": "passed",
+              "duration": 1133000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "the price for 'Additional Invitation Box' is added to the Booking Summary",
+            "result": {
+              "status": "passed",
+              "duration": 3531000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "book-magical/other-extras;on-lapland-user-should-be-able-to-purchase-elf-jingles-in-increments-of-£30",
+        "keyword": "Scenario",
+        "line": 74,
+        "name": "On Lapland User should be able to purchase Elf Jingles in increments of £30",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 59
+          },
+          {
+            "name": "@lapland",
+            "line": 59
+          },
+          {
+            "name": "@lapland-extras",
+            "line": 59
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 61,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 18214000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 62,
+            "name": "I input \"1x Adult, 1x Child\" data",
+            "result": {
+              "status": "passed",
+              "duration": 2097000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 63,
+            "name": "'Next' button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 835000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 64,
+            "name": "I input '18 Nov' data for tour for extras",
+            "result": {
+              "status": "passed",
+              "duration": 8052000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 65,
+            "name": "I input time \"09:30\" data for tour",
+            "result": {
+              "status": "passed",
+              "duration": 4030000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 66,
+            "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
+            "result": {
+              "status": "passed",
+              "duration": 543000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 67,
+            "name": "I am on the extra page",
+            "result": {
+              "status": "passed",
+              "duration": 6178000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 68,
+            "name": "I click + button '1' times in 'Elf Jingles'",
+            "result": {
+              "status": "passed",
+              "duration": 7616000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "the price in 'Elf Jingles' booking is updated by '£30.00'",
+            "result": {
+              "status": "passed",
+              "duration": 506000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "the price for 'x Jingles' is added to the Booking Summary",
+            "result": {
+              "status": "passed",
+              "duration": 3876000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "book-magical/other-extras;on-lapland-user-can-purchase-cancellation-protection",
+        "keyword": "Scenario",
+        "line": 93,
+        "name": "On Lapland User can purchase cancellation protection",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 76
+          },
+          {
+            "name": "@lapland",
+            "line": 76
+          },
+          {
+            "name": "@lapland-extras",
+            "line": 76
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 78,
+            "name": "I am on Booking Page",
+            "result": {
+              "status": "passed",
+              "duration": 19881000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 79,
+            "name": "I input \"1x Adult, 1x Child\" data",
+            "result": {
+              "status": "passed",
+              "duration": 1381000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 80,
+            "name": "'Next' button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 706000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 81,
+            "name": "I input '18 Nov' data for tour for extras",
+            "result": {
+              "status": "passed",
+              "duration": 7980000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 82,
+            "name": "I input time \"09:30\" data for tour",
+            "result": {
+              "status": "passed",
+              "duration": 2728000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 83,
+            "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
+            "result": {
+              "status": "passed",
+              "duration": 475000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 84,
+            "name": "I am on the extra page",
+            "result": {
+              "status": "passed",
+              "duration": 4799000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 85,
+            "name": "I click + button '1' times in 'Elf Jingles'",
+            "result": {
+              "status": "passed",
+              "duration": 9480000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 86,
+            "name": "I click 'Add' in Cancellation Protection screen",
+            "result": {
+              "status": "passed",
+              "duration": 9942000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 87,
+            "name": "a cancellation protection is added to the booking",
+            "result": {
+              "status": "passed",
+              "duration": 3056000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 88,
+            "name": "the price in booking is updated with '£9.90' for cancellation",
+            "result": {
+              "status": "passed",
+              "duration": 846000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 89,
+            "name": "'Continue booking' button is clickable",
+            "result": {
+              "status": "passed",
+              "duration": 737000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

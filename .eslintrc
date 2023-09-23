@@ -1,0 +1,249 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:security/recommended",
+    "plugin:sonarjs/recommended",
+    "prettier",
+    "plugin:cypress/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "React": true,
+    "window": true,
+    "localStorage": true
+  },
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "plugins": ["sonarjs"],
+
+  "rules": {
+    "linebreak-style": ["error", "unix"],
+    "prefer-const": [
+      "warn",
+      {
+        "destructuring": "all"
+      }
+    ],
+    "semi": ["error", "never"],
+    "no-prototype-builtins": 0,
+    "no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "next|context|req|key|i|event" }
+    ],
+    "no-trailing-spaces": "error",
+    "no-undef": "error",
+    "no-redeclare": "off",
+    "no-shadow": "warn",
+    "security/detect-object-injection": "off",
+
+    "sonarjs/no-identical-functions": "warn",
+    "sonarjs/cognitive-complexity": "warn",
+    "sonarjs/no-nested-template-literals": "warn",
+    "sonarjs/no-duplicate-string": "warn",
+    "sonarjs/no-redundant-boolean": "warn",
+
+    "require-jsdoc": [
+      "warn",
+      {
+        "require": {
+          "FunctionDeclaration": false,
+          "MethodDefinition": false,
+          "ClassDeclaration": true,
+          "ArrowFunctionExpression": false,
+          "FunctionExpression": false
+        }
+      }
+    ]
+  },
+  "overrides": [
+    // Eslint rules for typescript specifically
+    {
+      "files": ["*.ts"],
+      "plugins": ["@typescript-eslint"],
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "no-undef": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            "ignoreRestSiblings": true,
+            "argsIgnorePattern": "key|value|i|doc|next|jpath|event|params|router"
+          }
+        ],
+        "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/camelcase": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-redeclare": [
+          0,
+          {
+            "ignoreDeclarationMerge": true
+          }
+        ]
+      }
+    },
+
+    // Eslint rules for frontend code
+    {
+      "files": [
+        "*.jsx",
+        "**/frontend-*/**/*.js",
+        "**/mail/**/*.js",
+        "**/ticket-pdf/**/*.js"
+      ],
+      "env": {
+        "browser": true
+      },
+      "extends": ["plugin:react/recommended"],
+      "parser": "@babel/eslint-parser",
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "babelOptions": {
+          "rootMode": "upward"
+        }
+      },
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      },
+      "rules": {
+        "react/prop-types": "off",
+        "react/display-name": "off",
+        "react/no-children-prop": "off",
+        "react/jsx-key": "off",
+        "react/jsx-no-target-blank": "off",
+        "no-shadow": "off",
+        "no-unused-vars": "warn"
+      }
+    },
+
+    // Eslint rules for typescript frontend code
+    {
+      "files": [
+        "*.tsx",
+        "**/frontend-*/**/*.ts",
+        "**/mail/**/*.ts",
+        "**/ticket-pdf/**/*.ts"
+      ],
+      "env": {
+        "browser": true
+      },
+      "extends": ["plugin:react/recommended"],
+
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      },
+
+      "plugins": ["@typescript-eslint"],
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "react/prop-types": "off",
+        "react/display-name": "off",
+        "react/no-children-prop": "off",
+        "react/jsx-key": "off",
+        "react/jsx-no-target-blank": "off",
+        "no-shadow": "off",
+        "no-undef": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            "ignoreRestSiblings": true,
+            "argsIgnorePattern": "key|value|i|doc|next|jpath|event|params|router"
+          }
+        ],
+        "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/camelcase": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-redeclare": [
+          0,
+          {
+            "ignoreDeclarationMerge": true
+          }
+        ]
+      }
+    },
+
+    // Eslint rules for jest and cypress tests
+    {
+      "files": [
+        "**/*.test.js",
+        "**/*.test.ts",
+        "**/tests/**/*",
+        "**/__mocks__/**/*",
+        "**/cypress/**/*"
+      ],
+      "env": {
+        "jest": true,
+        "node": true
+      },
+      "parserOptions": {
+        "ecmaVersion": 2020
+      },
+      "settings": {
+        "jest": { "version": 26 }
+      },
+      "plugins": ["jest", "cypress"],
+      "globals": {
+        "afterAll": false,
+        "afterEach": false,
+        "beforeAll": false,
+        "beforeEach": false,
+        "describe": false,
+        "expect": false,
+        "fit": false,
+        "it": false,
+        "jest": false,
+        "test": false,
+        "xdescribe": false,
+        "xit": false,
+        "xtest": false,
+        "cy": false
+      },
+      "rules": {
+        "jest/no-alias-methods": "warn",
+        "jest/prefer-to-be": "error",
+        "jest/prefer-to-contain": "error",
+        "jest/prefer-to-have-length": "error",
+        "cypress/no-assigning-return-values": "error",
+        "cypress/no-unnecessary-waiting": "error",
+        "cypress/assertion-before-screenshot": "warn",
+        "cypress/no-force": "warn",
+        "cypress/no-async-tests": "error",
+        "cypress/no-pause": "error",
+        "sonarjs/no-duplicate-string": "off",
+        "no-import-assign": "off",
+        "no-shadow": "off"
+      }
+    }
+  ]
+}
