@@ -1,0 +1,461 @@
+[
+  {
+    "description": "As a User I want to crate orders with the available compartments",
+    "keyword": "Feature",
+    "name": "User should be able to create orders for various compartments",
+    "line": 1,
+    "id": "user-should-be-able-to-create-orders-for-various-compartments",
+    "tags": [],
+    "uri": "JoanComp.feature",
+    "elements": [
+      {
+        "id": "user-should-be-able-to-create-orders-for-various-compartments;on-reservationfunctional-:-joan-4-seat-minimum-requirement-is-met",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "On ReservationFunctional : Joan 4 Seat minimum requirement is met",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@rs2-order",
+            "line": 4
+          },
+          {
+            "name": "@rs2-compartments",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 5570000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click on 'New Order' button",
+            "result": {
+              "status": "passed",
+              "duration": 228000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I attempt to create an order selecting '4' adult for when choosing who",
+            "result": {
+              "status": "passed",
+              "duration": 11730000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "The 'Joan Pullman Observation 4-seat compartment' pill is displayed in the select reservation modal with 'Joan Comp. 1' selected",
+            "result": {
+              "status": "passed",
+              "duration": 2451000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click The 'Seats 1-4' button",
+            "result": {
+              "status": "passed",
+              "duration": 517000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The 'Add Seats' button should be active",
+            "result": {
+              "status": "passed",
+              "duration": 129000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-should-be-able-to-create-orders-for-various-compartments;on-reservationfunctional-:-joan-4-seat-minimum-requirement-is-met-if-reservation-for-2-children-and-2-adult-is-created",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "On ReservationFunctional : Joan 4 Seat minimum requirement is met if reservation for 2 children and 2 adult is created",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 13
+          },
+          {
+            "name": "@rs2-order",
+            "line": 13
+          },
+          {
+            "name": "@rs2-compartments",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 4729000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I click on 'New Order' button",
+            "result": {
+              "status": "passed",
+              "duration": 204000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I attempt to create an order selecting '2' adult and '2' child for when choosing who",
+            "result": {
+              "status": "passed",
+              "duration": 9322000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "The 'Joan Pullman Observation 4-seat compartment' pill is displayed in the select reservation modal with 'Joan Comp. 2' selected",
+            "result": {
+              "status": "passed",
+              "duration": 2389000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I click The 'Seats 5-8' button",
+            "result": {
+              "status": "passed",
+              "duration": 588000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "The 'Add Seats' button should be active",
+            "result": {
+              "status": "passed",
+              "duration": 137000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-should-be-able-to-create-orders-for-various-compartments;on-reservationfunctional-:for-closed-carriages-seats-minimum-requirement-is-met-if-reservation-for-3-children-and-3-adult-is-created",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "On ReservationFunctional :For closed carriages Seats minimum requirement is met if reservation for 3 children and 3 adult is created",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 22
+          },
+          {
+            "name": "@rs2-order",
+            "line": 22
+          },
+          {
+            "name": "@rs2-compartments",
+            "line": 22
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 4751000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I click on 'New Order' button",
+            "result": {
+              "status": "passed",
+              "duration": 247000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I attempt to create an order selecting '3' adult and '3' child for when choosing who",
+            "result": {
+              "status": "passed",
+              "duration": 13262000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "For '3 adults 3 children in closed carriages' I select the needed compartments and choose appropriate seats for each respectively",
+            "result": {
+              "status": "passed",
+              "duration": 3908000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "The 'Add Seats' button should be active and i proceed to checkout internally",
+            "result": {
+              "status": "passed",
+              "duration": 25173000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-should-be-able-to-create-orders-for-various-compartments;on-reservationfunctional-:for-semi-open-carriages-seats-minimum-requirement-is-met-if-reservation-for-3-children-and-3-adult-is-created",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "On ReservationFunctional :For semi-open carriages Seats minimum requirement is met if reservation for 3 children and 3 adult is created",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 31
+          },
+          {
+            "name": "@rs2-order",
+            "line": 31
+          },
+          {
+            "name": "@rs2-compartments",
+            "line": 31
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 5559000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I click on 'New Order' button",
+            "result": {
+              "status": "passed",
+              "duration": 218000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I attempt to create an order selecting '3' adult and '3' child for when choosing who",
+            "result": {
+              "status": "passed",
+              "duration": 13754000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "For '3 adults 3 children in semi-open carriages' I select the needed compartments and choose appropriate seats for each respectively",
+            "result": {
+              "status": "passed",
+              "duration": 4909000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "The 'Add Seats' button should be active and i proceed to checkout internally",
+            "result": {
+              "status": "passed",
+              "duration": 35989000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-should-be-able-to-create-orders-for-various-compartments;on-reservationfunctional-:for-open-carriages-seats-minimum-requirement-is-met-if-reservation-for-3-children-and-3-adult-is-created",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "On ReservationFunctional :For Open carriages Seats minimum requirement is met if reservation for 3 children and 3 adult is created",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 40
+          },
+          {
+            "name": "@rs2-order",
+            "line": 40
+          },
+          {
+            "name": "@rs2-compartments",
+            "line": 40
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 42,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 8108000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "I click on 'New Order' button",
+            "result": {
+              "status": "passed",
+              "duration": 319000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "I attempt to create an order selecting '3' adult and '3' child for when choosing who",
+            "result": {
+              "status": "passed",
+              "duration": 24653000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "For '3 adults 3 children in open carriages' I select the needed compartments and choose appropriate seats for each respectively",
+            "result": {
+              "status": "passed",
+              "duration": 5288000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "The 'Add Seats' button should be active and i proceed to checkout internally",
+            "result": {
+              "status": "passed",
+              "duration": 27860000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-should-be-able-to-create-orders-for-various-compartments;on-reservationfunctional-:for-accessible-carriages-seats-minimum-requirement-is-met-if-reservation-for-3-children-and-3-adult-is-created",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "On ReservationFunctional :For Accessible carriages Seats minimum requirement is met if reservation for 3 children and 3 adult is created",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 48
+          },
+          {
+            "name": "@rs2-order",
+            "line": 48
+          },
+          {
+            "name": "@rs2-compartment",
+            "line": 48
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 50,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 8031000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 51,
+            "name": "I click on 'New Order' button",
+            "result": {
+              "status": "passed",
+              "duration": 213000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 52,
+            "name": "I attempt to create an order selecting '3' adult and '3' child for when choosing who",
+            "result": {
+              "status": "passed",
+              "duration": 22712000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "For '3 adults 3 children in Accessible carriages' I select the needed compartments and choose appropriate seats for each respectively",
+            "result": {
+              "status": "passed",
+              "duration": 4480000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

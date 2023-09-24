@@ -1,0 +1,16 @@
+{
+  "orderId": null,
+  "data": {
+    "sections": [
+      {
+        "sectionName": "Who",
+        "actions": [
+          "remove"
+        ],
+        "value": [
+          "1x Adult"
+        ]
+      }
+    ]
+  }
+}

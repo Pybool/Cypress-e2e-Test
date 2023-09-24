@@ -82,7 +82,8 @@ function findMostCommonCompartment(data) {
   }
 }
 
-async function x(data) {
+ function getSeatsData(data) {
+  console.log(data)
   const isArray = Array.isArray(data);
 
     if(isArray) {
@@ -174,7 +175,8 @@ async function x(data) {
 
 function selectSuitableSeats(data, count) {
   try {
-    x(data).then(() => {})
+    getSeatsData(data)
+    console.log("Caolled normally ===> ", data)
   } catch (err) {
     const groupedData = fragment.groupByCompartment(data)
     const targetSum = count
@@ -182,7 +184,8 @@ function selectSuitableSeats(data, count) {
       groupedData,
       targetSum,
     )
-    x(firstObjectsWithSum).then(() => {})
+    console.log("Exception call normally ===> ", data)
+    getSeatsData(firstObjectsWithSum)
   }
 }
 
@@ -206,6 +209,7 @@ export function selectSeats(section) {
         let idx
         new Promise((resolve) => {
           for (let i = 0; i < Array.from(Cypress.$(compartments)).length; i++) {
+            cy.wait(1000)
             const compartmentTxt = Array.from(Cypress.$(compartments))[i].textContent
             if (
               compartmentTxt == 'Joan Pullman Observation seat' ||
@@ -219,6 +223,7 @@ export function selectSeats(section) {
             }
             cy.processCarriages(i, idx, compartmentTxt, newcompartments).then(
               (data) => {
+                console.log(data)
                 if (i + 1 >= Array.from(Cypress.$(compartments)).length) {
                   resolve(data)
                 }
@@ -226,6 +231,7 @@ export function selectSeats(section) {
             )
           }
         }).then((data) => {
+          console.log("Call to smoothen format ", data)
           const suitableSeats = sorter.findSuitableSeats(
             smoothenFormat(data),
             seatsNum,
@@ -238,8 +244,10 @@ export function selectSeats(section) {
 
 function smoothenFormat(data) {
   const convertedData = {}
+  console.log(Array.isArray(data), data[0])
 
   for (const compartment in data) {
+    console.log("Good array", compartment)
     for (const entry of data[compartment]) {
       const [carriageName] = Object.keys(entry)
       const compartmentName = entry[carriageName].compartment

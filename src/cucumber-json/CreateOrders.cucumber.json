@@ -1,0 +1,246 @@
+[
+  {
+    "description": "As a User I want to access orders section So I create orders",
+    "keyword": "Feature",
+    "name": "User should be able to create orders",
+    "line": 1,
+    "id": "user-should-be-able-to-create-orders",
+    "tags": [],
+    "uri": "CreateOrders.feature",
+    "elements": [
+      {
+        "id": "user-should-be-able-to-create-orders;on-reservationfunctional-:-create-an-order",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "On ReservationFunctional : Create an order",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@rs2-functional",
+            "line": 4
+          },
+          {
+            "name": "@rs2-create-order",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 36892000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click on 'New Order' button",
+            "result": {
+              "status": "passed",
+              "duration": 300000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I attempt to create an order selecting '2' adult and '2' child for when choosing who",
+            "result": {
+              "status": "passed",
+              "duration": 13354000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "For '2 adults 2 children' I select the needed compartments and choose appropriate seats for each respectively",
+            "result": {
+              "status": "passed",
+              "duration": 4730000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "The 'Add Seats' button should be active and i proceed to checkout internally",
+            "result": {
+              "status": "passed",
+              "duration": 26275000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I confirm the new order matches with the information from datasource",
+            "result": {
+              "status": "passed",
+              "duration": 3501000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-should-be-able-to-create-orders;on-reservationfunctional-:-create-an-order-with-payment-by-t2'-child-for-when-choosing-who",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "On ReservationFunctional : Create an order with Payment By T2' child for when choosing who",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 13
+          },
+          {
+            "name": "@rs2-functional",
+            "line": 13
+          },
+          {
+            "name": "@rs2-create-order",
+            "line": 13
+          },
+          {
+            "name": "@till",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 6047000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I click on 'New Order' button",
+            "result": {
+              "status": "passed",
+              "duration": 215000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I attempt to create an order selecting '2' adult and '2' child for when choosing who",
+            "result": {
+              "status": "passed",
+              "duration": 10338000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "For '2 adults 2 children' I select the needed compartments and choose appropriate seats for each respectively",
+            "result": {
+              "status": "passed",
+              "duration": 3316000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "The 'Add Seats' button should be active and i proceed to checkout by paying by till",
+            "result": {
+              "status": "passed",
+              "duration": 1960000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I confirm the new order is displayed in the orders table",
+            "result": {
+              "status": "passed",
+              "duration": 4709000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-should-be-able-to-create-orders;on-reservationfunctional-:-joan-4-seat-minimum-requirement-not-met",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "On ReservationFunctional : Joan 4 Seat minimum requirement not met",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 22
+          },
+          {
+            "name": "@rs2-order",
+            "line": 22
+          },
+          {
+            "name": "@rs2-functional",
+            "line": 22
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 4447000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I click on 'New Order' button",
+            "result": {
+              "status": "passed",
+              "duration": 197000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I attempt to create an order selecting '2' adult for when choosing who",
+            "result": {
+              "status": "passed",
+              "duration": 8957000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "The 'Joan Pullman Observation 4-seat compartment' pill is not displayed in the select reservation modal",
+            "result": {
+              "status": "passed",
+              "duration": 1056000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -87,7 +87,7 @@ Scenario: Amend an order nby removing an adult from the booking
     Then I should no longer see the "Reservation" Seating Compartments section
     When I edit the 'Date' section by clicking the 'Previous Day' button
     When I select a time for RES Single Train Ride
-    # Then I select seats in the reservation compartment section
+    Then I select seats in the reservation compartment section
     Then The "Commit Changes" Button should be Active
     Then I click the "Commit Changes" button on customer portal
     Then The "Refund" Button should be Active if The Sub Total is negative else the "Checkout" Button should be active where either button is the action button
@@ -122,23 +122,3 @@ Scenario: Expired bookings cannot be cancelled
     Then I should be taken to the Refund page
     When I click the "Complete refund" Button
     Then I should see "Booking cancelled" header with color "rgb(117, 164, 14)" and "Your booking has been cancelled" header
-
-
-# Expired bookings cannot be cancelled
-# ORDER CANCELLATIONS and REFUNDS
-
-#     Scenario: Expired bookings cannot be cancelled
-#     Scenario: Redeemed bookings cannot be cancelled
-#     Scenario: Initiate Cancellation process 
-#     Scenario: Refund for card payment can be processed automatically
-#     Scenario: Verify that refunds for mixed payment types (card + another type) or payment types other than card can be saved but put the whole order in a "pending refund" state and the customer is informed to contact customer service to process the refund.
-#     Scenario: Bookings in "pending refund" state can not be cancelled
-#     Scenario: Expired orders cannot be cancelled
-#     Scenario: Partially-redeemed orders cannot be cancelled
-#     Scenario: Redeemed orders cannot be cancelled
-#     Scenario: Cancel an order and refund manually
-#     Scenario: Cancel an order and refund automatically (check other options)
-#     Scenario: Donations can be  refunded 
-#     Scenario: Customer receives cancellation confirmation email
-#     Scenario: Cancellation status displays in portal
-#     Scenario: Cancelled tickets can not be redeemed

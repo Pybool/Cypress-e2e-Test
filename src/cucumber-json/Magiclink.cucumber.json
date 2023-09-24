@@ -1,0 +1,477 @@
+[
+  {
+    "description": "    As a customer i want to manage orders on the customer portal",
+    "keyword": "Feature",
+    "name": "Customer should be able to manage order",
+    "line": 1,
+    "id": "customer-should-be-able-to-manage-order",
+    "tags": [],
+    "uri": "Magiclink.feature",
+    "elements": [
+      {
+        "id": "customer-should-be-able-to-manage-order;amend-an-order-nby-removing-an-adult-from-the-booking",
+        "keyword": "Scenario",
+        "line": 75,
+        "name": "Amend an order nby removing an adult from the booking",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 74
+          },
+          {
+            "name": "@magiclink",
+            "line": 74
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 76,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 13028000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 77,
+            "name": "I get the previous order Order ID",
+            "result": {
+              "status": "passed",
+              "duration": 1313000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 78,
+            "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
+            "result": {
+              "status": "passed",
+              "duration": 2939000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 79,
+            "name": "I should see \"Order Information\" as a header in the page that loads",
+            "result": {
+              "status": "passed",
+              "duration": 1781000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 80,
+            "name": "I should see the \"Edit Order\" button",
+            "result": {
+              "status": "passed",
+              "duration": 161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 81,
+            "name": "I click the \"Edit Order\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1198000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 82,
+            "name": "I should be taken to \"Amending Booking\" page",
+            "result": {
+              "status": "passed",
+              "duration": 1835000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 83,
+            "name": "I should see \"From,To,Who,when\" sections",
+            "result": {
+              "status": "passed",
+              "duration": 1876000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 84,
+            "name": "I should see \"Available Options\" card which should contain \"Previous Day\" and \"Next Day\"",
+            "result": {
+              "status": "passed",
+              "duration": 4933000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 85,
+            "name": "I click the Edit Order Button beside More Actions dropdown",
+            "result": {
+              "status": "passed",
+              "duration": 6959000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 86,
+            "name": "I edit the 'Who' section by removing '1x Adult'",
+            "result": {
+              "status": "passed",
+              "duration": 6429000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 87,
+            "name": "I should no longer see the \"Reservation\" Seating Compartments section",
+            "result": {
+              "status": "passed",
+              "duration": 225000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 88,
+            "name": "I edit the 'Date' section by clicking the 'Previous Day' button",
+            "result": {
+              "status": "passed",
+              "duration": 1781000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 89,
+            "name": "I select a time for RES Single Train Ride",
+            "result": {
+              "status": "passed",
+              "duration": 2994000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 90,
+            "name": "I select seats in the reservation compartment section",
+            "result": {
+              "status": "passed",
+              "duration": 86456000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 91,
+            "name": "The \"Commit Changes\" Button should be Active",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 92,
+            "name": "I click the \"Commit Changes\" button on customer portal",
+            "result": {
+              "status": "passed",
+              "duration": 7124000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 93,
+            "name": "The \"Refund\" Button should be Active if The Sub Total is negative else the \"Checkout\" Button should be active where either button is the action button",
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "CypressError: The following error originated from your test code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Cypress detected that you returned a promise from a command while also invoking one or more cy commands in that promise.\n\nThe command that returned the promise was:\n\n  > `cy.contains()`\n\nThe cy command you invoked inside the promise was:\n\n  > `cy.log()`\n\nBecause Cypress commands are already promise-like, you don't need to wrap them or return your own promise.\n\nCypress will resolve your command with whatever the final Cypress command yields.\n\nThe reason this is an error instead of a warning is because Cypress internally queues commands serially whereas Promises execute as soon as they are invoked. Attempting to reconcile this would prevent Cypress from ever resolving.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n    at cy.<computed> [as log] (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:137643:64)\n    at Context.eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:597:11)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:162210:53)\n    at $Cypress.action (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:41015:28)\n    at Runnable.run (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:144798:13)\n    at next (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:154803:10)\n    at https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:154847:5\n    at timeslice (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:145082:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 94,
+            "name": "I click the action button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 95,
+            "name": "I process a refund or checkout",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 96,
+            "name": "I should see that the order completed successfully",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 97,
+            "name": "I ckick the view order button to verify all changes are reflected",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer-should-be-able-to-manage-order;customer-can-initiate-the-cancellation-process-for-a-booking-through-the-customer-portal.",
+        "keyword": "Scenario",
+        "line": 101,
+        "name": "Customer can initiate the cancellation process for a booking through the customer portal.",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 100
+          },
+          {
+            "name": "@magiclinkcancel",
+            "line": 100
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 102,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 14819000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 103,
+            "name": "I get the previous order Order ID",
+            "result": {
+              "status": "passed",
+              "duration": 640000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 104,
+            "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
+            "result": {
+              "status": "passed",
+              "duration": 9137000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 105,
+            "name": "I click the \"Edit Order\" button",
+            "result": {
+              "status": "passed",
+              "duration": 3467000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 106,
+            "name": "I am on the Amending Booking page I click cancel order button",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: expected 'BookingsRavenglass station - Dalegarth stationOrder Information' to include 'Amending Booking'\n    at Context.eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:520:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 107,
+            "name": "I should see a Refund Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 108,
+            "name": "I click on the Refund Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 109,
+            "name": "I should be taken to the Refund page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 110,
+            "name": "I click the \"Complete refund\" Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 111,
+            "name": "I should see \"Booking cancelled\" header with color \"rgb(117, 164, 14)\" and \"Your booking has been cancelled\" header",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer-should-be-able-to-manage-order;expired-bookings-cannot-be-cancelled",
+        "keyword": "Scenario",
+        "line": 114,
+        "name": "Expired bookings cannot be cancelled",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 113
+          },
+          {
+            "name": "@magiclinkcancel",
+            "line": 113
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 115,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 16740000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 116,
+            "name": "I get the previous order Order ID",
+            "result": {
+              "status": "passed",
+              "duration": 254000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 117,
+            "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
+            "result": {
+              "status": "passed",
+              "duration": 3547000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 118,
+            "name": "I click the \"Edit Order\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1532000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 119,
+            "name": "I am on the Amending Booking page I click cancel order button",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: expected 'BookingsRavenglass station - Dalegarth stationOrder Information' to include 'Amending Booking'\n    at Context.eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:520:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 120,
+            "name": "I should see a Refund Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 121,
+            "name": "I click on the Refund Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 122,
+            "name": "I should be taken to the Refund page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 123,
+            "name": "I click the \"Complete refund\" Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 124,
+            "name": "I should see \"Booking cancelled\" header with color \"rgb(117, 164, 14)\" and \"Your booking has been cancelled\" header",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

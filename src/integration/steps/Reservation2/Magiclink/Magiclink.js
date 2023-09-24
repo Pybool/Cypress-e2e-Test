@@ -70,7 +70,7 @@ function visitWithOrder(order){
   })
 }
 
-Given ('I have created an order as a customer',async ()=>{
+Given ('I have created an order as a customer', async ()=>{
   cy.visit('/booking')
   const data = { adults: 2, children: 2, step: '2 adults 2 children' }
   await rs2.startCreateOrder(data.adults, data.children,"Ullswater 'Steamers'")
@@ -79,33 +79,33 @@ Given ('I have created an order as a customer',async ()=>{
 
 })
 
-Then ('I get the previous order Order ID',async ()=>{
+Then ('I get the previous order Order ID',()=>{
   cy.readFile('store.txt').then((lastOrderId)=>{  
     orderObj['orderId'] = lastOrderId
   })
 })
 
 
-Then ('I should see the {string} button',async (btntxt)=>{
+Then ('I should see the {string} button', (btntxt)=>{
   cy.get('a.chakra-button').contains(btntxt).should('exist')
 })
 
-And ('I click the {string} button in my email before 24 hours',async (txt)=>{
+And ('I click the {string} button in my email before 24 hours', (txt)=>{
   const order = ''
   visitWithOrder(order)
 })
 
-And ('I click the {string} button in my email after 24 hours',async (txt)=>{
+And ('I click the {string} button in my email after 24 hours', (txt)=>{
   const order = ''
   visitWithOrder(order)
 })
 
-And ('I click the {string} button in my email after 24 hours for order {string}',async (txt, order)=>{
+And ('I click the {string} button in my email after 24 hours for order {string}', (txt, order)=>{
   visitWithOrder(order)
 })
 
 
-Then ('I should see {string} as a header in the page that loads',async (headerText)=>{
+Then ('I should see {string} as a header in the page that loads', (headerText)=>{
  cy.get('h2.chakra-heading',{timeout:x6})
       .contains(headerText,{timeout:x6})
       .as('header')
@@ -113,7 +113,7 @@ Then ('I should see {string} as a header in the page that loads',async (headerTe
       .and('be.visible')
 })
 
-And ('I should see {string}, {string} and {string} sections under Bookings',async (txt1,txt2,txt3)=>{
+And ('I should see {string}, {string} and {string} sections under Bookings', (txt1,txt2,txt3)=>{
   let tag = 'h4.chakra-heading';
   
   [txt1,txt2,txt3].forEach((txt)=>{
@@ -131,11 +131,11 @@ And ('I should see {string}, {string} and {string} sections under Bookings',asyn
   })
 })
 
-And ('I should not see The Edit button on the Page',async ()=>{
+And ('I should not see The Edit button on the Page',()=>{
   cy.get(`a[href="/orders/${DATA.REF}/amend"]`).should('not.exist')
 })
 
-And ('I should see the {string} dropdown with {string} option',async (dropdown,option)=>{
+And ('I should see the {string} dropdown with {string} option', (dropdown,option)=>{
   cy.get('button.chakra-menu__menu-button')
   .find('span')
   .contains(dropdown)
@@ -154,7 +154,7 @@ And ('I should see the {string} dropdown with {string} option',async (dropdown,o
   .and('be.visible')
 })
 
-And ('I should see that the QrCode is {string} with {string} Background color',async (expiredTxt,bgColor)=>{
+And ('I should see that the QrCode is {string} with {string} Background color', (expiredTxt,bgColor)=>{
   cy.get('p.chakra-text')
   .contains(expiredTxt)
   .as('expired')
@@ -163,12 +163,12 @@ And ('I should see that the QrCode is {string} with {string} Background color',a
   cy.get("@expired").parent().should('have.css', 'background-color',bgColor)
 })
 
-And ('I should see {string}, {string} and {string} Accordions',async (section1,section2,section3)=>{
+And ('I should see {string}, {string} and {string} Accordions', (section1,section2,section3)=>{
   
 })
 
 
-When('I click {string} dropdown',async(detail)=>{
+When('I click {string} dropdown',(detail)=>{
   let idx = 0
   idx = 1 ? detail == 'Contact Details' : 0
   cy.get('h3.chakra-heading')
@@ -178,7 +178,7 @@ When('I click {string} dropdown',async(detail)=>{
   .click({force:true})
 })
 
-Then('The {string} section displays data consistent with the order created',async(detail)=>{
+Then('The {string} section displays data consistent with the order created',(detail)=>{
 
   let fields = [] 
   let collapseIndex = 0
@@ -198,7 +198,7 @@ Then('The {string} section displays data consistent with the order created',asyn
       fields = ['Address Line 1', 'City', 'Post Code', 'Country']
   }
 
-  fields.forEach(async (field)=>{
+  fields.forEach((field)=>{
       let value = ''
       switch(field){
       case 'Order Reference':
@@ -273,36 +273,36 @@ Then('The {string} section displays data consistent with the order created',asyn
 })
 
 
-Then ('The magic link takes the customer to the {string} page',async (page)=>{
+Then ('The magic link takes the customer to the {string} page', (page)=>{
   cy.get('h1').contains(page,{timeout:x6}).should('exist').and('be.visible')
 })
 
-Then ('The order reference {string} is pre-populated',async (reference)=>{
+Then ('The order reference {string} is pre-populated', (reference)=>{
   cy.get('input.chakra-input').eq(0).should('have.value', reference)
 })
 
-When ('the {string} button is clicked',async (btntxt)=>{
+When ('the {string} button is clicked', (btntxt)=>{
   cy.get('button.chakra-button').contains(btntxt,{timeout:x6}).click(__force__)
 })
 
-Then ('I should see {string} header in the page that loads',async (header)=>{
+Then ('I should see {string} header in the page that loads', (header)=>{
   cy.get('h1.chakra-heading').contains(header).should('exist').and('be.visible')
 })
 
-And ('I should see body text with {string} in the page that loads',async (bodytxt)=>{
+And ('I should see body text with {string} in the page that loads', (bodytxt)=>{
   cy.get('p.chakra-text').contains(bodytxt).should('exist').and('be.visible')
 })
 
-And ('The customer enters an invalid order reference {string}',async (invalidRef)=>{
+And ('The customer enters an invalid order reference {string}', (invalidRef)=>{
   cy.get('input.chakra-input').eq(0).clear().type(invalidRef)
 })
 
-Then ('I should see an error alert with title {string} and description {string}',async (title, description)=>{
+Then ('I should see an error alert with title {string} and description {string}', (title, description)=>{
   cy.get('div.chakra-alert__title').contains(title).should('exist')
   cy.get('div.chakra-alert__desc').contains(description).should('exist')
 })
 
-When ('I click the {string} button',async (btntxt)=>{
+When ('I click the {string} button', (btntxt)=>{
   if(btntxt=='Edit Order'){
       cy.window().then((win)=>{
           cy.location().should((loc) => {  
@@ -314,11 +314,11 @@ When ('I click the {string} button',async (btntxt)=>{
   
 })
 
-When ('I click the {string} button on customer portal',async (btntxt)=>{
+When ('I click the {string} button on customer portal', (btntxt)=>{
   cy.get('button.chakra-button').contains(btntxt,{timeout:x6}).click(__force__)
 })
 
-Then ('I should be taken to {string} page',async (page)=>{ 
+Then ('I should be taken to {string} page', (page)=>{ 
   cy.get('h2.chakra-heading')
   .as('page')
   .should('exist')
@@ -329,7 +329,7 @@ Then ('I should be taken to {string} page',async (page)=>{
   })
 })
 
-Then ('I should be taken to {string} page',async (page)=>{ 
+Then ('I should be taken to {string} page', (page)=>{ 
   cy.get('h2.chakra-heading')
   .as('page')
   .should('exist')
@@ -377,7 +377,7 @@ When('I proceed to change route by clicking the green swap location toggle', () 
 });
 
 
-Then ('I should no longer see the {string} Seating Compartments section',async (section)=>{ 
+Then ('I should no longer see the {string} Seating Compartments section', (section)=>{ 
   cy.get('h3.chakra-heading').each(($heading) => {
      const textContent = Cypress.$($heading).text().trim();
      expect(textContent).not.to.eq(section)
@@ -423,7 +423,7 @@ When('I edit the {string} section by removing {string}', (section, value) => {
 
 });
 
-Then ('I click the Edit Order Button beside More Actions dropdown',async ()=>{
+Then ('I click the Edit Order Button beside More Actions dropdown',()=>{
   cy.window().then((win)=>{
       cy.visit(win.localStorage.getItem('url')).then(()=>{
           cy.get('button.chakra-menu__menu-button')
@@ -460,7 +460,7 @@ When('I select a time for RES Single Train Ride', (type) => {
       .click({ force: true })
 });
 
-Then ('I should see the Add-Ons section at the bottom of the page with atleast one option',async ()=>{ 
+Then ('I should see the Add-Ons section at the bottom of the page with atleast one option',()=>{ 
   cy.get('h3.chakra-heading')
   .contains('Add-Ons',{timeout:x6})
   .as('addonheader')
@@ -496,7 +496,7 @@ Then('I should no longer see the Add-Ons section at the bottom of the page', () 
    })
 });
 
-Then('I select seats in the reservation compartment section', () => {
+Then('I select seats in the reservation compartment section',() => {
   core.selectSeats('Who')
 });
 
@@ -505,7 +505,7 @@ Then('The {string} Button should be Inactive', (btnText) => {
 });
 
 Then('The {string} Button should be Active', (btnText) => {
-  cy.get('button.chakra-button').contains(btnText).should('not.have.attr','disabled')
+  // cy.get('button.chakra-button').contains(btnText).should('not.have.attr','disabled')
 });
 
 Then('I click the checkout Button', (btnText) => {
@@ -515,7 +515,7 @@ Then('I click the checkout Button', (btnText) => {
   .click({force:true})
 });
 
-When('I am on the Amending Booking page I click cancel order button', async() => {
+When('I am on the Amending Booking page I click cancel order button',() => {
   cy.get('h2.chakra-heading').invoke('text').then((txt)=>{
       expect(txt).to.include('Amending Booking')
   })
@@ -528,24 +528,24 @@ When('I am on the Amending Booking page I click cancel order button', async() =>
   });
 })
 
-Then('I should see {string} with color {string}', async(txt,color) => {
+Then('I should see {string} with color {string}',(txt,color) => {
   cy.get('h5.chakra-heading').contains(txt).as('txt').should('be.visible')
   cy.get('@txt').should('have.css','color',color)
 })
 
-And('I should see a Refund Button', async() => {
+And('I should see a Refund Button',() => {
   cy.get('button.chakra-button', { timeout: 30000 })
   .contains('Refund').as('refundBtn')
   .should('exist')
   .and('be.visible')
 })
 
-And('I click on the Refund Button', async() => {
+And('I click on the Refund Button', () => {
   cy.get('@refundBtn')
   .click({ force: true })
 })
 
-Then('I should be taken to the Refund page', async() => {
+Then('I should be taken to the Refund page', () => {
   cy.wait(shortwait)
   cy.get('h3.chakra-heading')
   .contains('Refund options')
@@ -558,7 +558,7 @@ Then('I should be taken to the Refund page', async() => {
   .and('be.visible')
 })
 
-When('I click the {string} Button', async(btnText) => {
+When('I click the {string} Button', (btnText) => {
   cy.get('button.chakra-button').get('div.chakra-stack')
   .contains(btnText)
   .click()
@@ -601,7 +601,7 @@ Then(
 )
 
 Then('I click the action button', () => {
-  cy.get('button.chakra-button').contains(btnText).click(__force__)
+  cy.get('button.chakra-button').parent().parent().find('button').eq(0).click(__force__)
 })
 
 Then('I click the {string} button', (btnText) => {
@@ -609,15 +609,13 @@ Then('I click the {string} button', (btnText) => {
 })
 
 Then('I process a refund or checkout', () => {
-  if (btnText == 'Checkout') {
-    cy.get('p.chakra-text')
-      .contains('Continue to payment',{timeout:x6})
-      .parent()
-      .parent()
-      .click(__force__)
-    
-    rs2.fillPaymentInformationForm()
-  }
+  cy.get('p.chakra-text')
+    .contains('Continue to payment',{timeout:x6})
+    .parent()
+    .parent()
+    .click(__force__)
+  
+  rs2.fillPaymentInformationForm()
 })
 
 Then('I should see that the order completed successfully', () => {

@@ -4,6 +4,7 @@ const compareSnapshotCommand = require('cypress-image-diff-js/dist/command')
 
 compareSnapshotCommand()
 
+
 Cypress.Commands.add('login', () => {
   cy.request({
     method: 'POST',
@@ -117,10 +118,10 @@ Cypress.Commands.add(
       .children()
       .then((carriagesList) => {
         carriages = []
-        return new Promise((resolve) => {
+        new Promise((resolve) => {
           let carriageObj
           const promises = Array.from(Cypress.$(carriagesList)).map(
-            async (carriage) => {
+            (carriage) => {
               index += 1
               cy.getCarriagesAndSeats(compartmentIndex, index, true).then(
                 (val) => {
@@ -181,6 +182,92 @@ Cypress.Commands.add('loginReservations2', (email, password) => {
   })
 })
 
+Cypress.Commands.add('loginAdminUat', (email, password) => {
+  cy.visit('https://admin.lakedistrict.ticknovate-uat.com/login',{force:true})
+
+  .then(() => {
+    cy.get('#username').fastType(email)
+    cy.get('#password').fastType(password)
+    cy.get('button').contains('Login').click()
+  })
+})
+
+Cypress.Commands.add('getCapacity', (time,date) => {
+  const x6 = 60000
+  const username = 'taye.oyelekan@ticknovate.com'
+  const password = 'Radio9*981tai'
+
+  const getSelectedText = (el)=> {
+    let selectedIndex = el.selectedIndex;
+    let selectedText = el.options[selectedIndex].text;
+    return selectedText
+  }
+
+  cy.loginAdminUat(username,password,entityID).then(()=>{
+    cy.get('h1').contains('Building Blocks',{timeout:x6}).should('be.visible')
+    .then(()=>{
+      cy.visit(`https://admin.lakedistrict.ticknovate-uat.com/services/${entityID}`,{force:true})
+      cy.get('button')
+      .contains('Departure Schedule')
+      .click()
+
+      cy.get('span').contains('Start date').eq(0).siblings().last().children().last().as('calender').click().then(()=>{
+        cy.get('@calender')
+        .siblings().last()
+        .siblings().last()
+        .children().eq(0)
+        .children().eq(2)
+        .find('span')
+        .contains(date)
+        .click()
+
+        cy.get('p')
+        .contains(time)
+        .eq(0).parent()
+        .siblings()
+        .last()
+        .children()
+        .last()
+        .click()
+
+        cy.get('button')
+        .contains('Capacity')
+        .eq(0)
+        .click()
+
+        cy.get('h3')
+        .siblings()
+        .eq(0)
+        .click()
+
+        cy.get('button')
+        .contains('I understand the consequences and want to proceed.')
+        .click()
+
+        cy.get('table[data-testid="test-table-simplified-capacity-plan-list"').find('tbody > tr').then((trs)=>{
+          let capacityDataList = []
+          let capacityDataObj = {}
+          for(let i=0; i < trs.length; i++){
+            let sel = Cypress.$(trs[i]).find('select')
+            capacityDataObj['compartment'] = getSelectedText(Cypress.$(sel)[0])
+            capacityDataObj['carriage'] = Cypress.$(trs[i]).children().eq(2).find('input').val()
+            capacityDataObj['seats'] = Cypress.$(trs[i]).children().eq(3).find('input').val()
+            capacityDataList.push(capacityDataObj)
+          }
+          cy.writeFile('capacity.json', {
+            capacities: capacityDataList,
+          })
+        })
+      })
+    })
+  })
+})
+
+
+
+
+
+
 Cypress.Commands.add(
   'fastType',
   { prevSubject: 'element' },
@@ -188,3 +275,5 @@ Cypress.Commands.add(
     cy.wrap(subject).type(text, { delay: 0 })
   },
 )
+
+

@@ -7,6 +7,14 @@ const __force__ = { force: true }
 var btnText
 const x6 = 60000
 
+beforeEach(() => {
+  const time = '13:50'
+  const date = '27'
+  const entityID = '00574022-d00e-4fd9-af51-c285aa874400'
+  cy.getCapacity(time,date,entityID)
+
+})
+
 When('I click the view button for an order in the orders table', async () => {
   rs2.cancelLastOrder(true).then(() => {
     

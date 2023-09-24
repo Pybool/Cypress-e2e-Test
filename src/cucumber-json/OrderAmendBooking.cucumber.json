@@ -1,0 +1,201 @@
+[
+  {
+    "description": "As a User I want to access orders section So I amend boookings",
+    "keyword": "Feature",
+    "name": "User should be able to amend boookings",
+    "line": 1,
+    "id": "user-should-be-able-to-amend-boookings",
+    "tags": [],
+    "uri": "OrderAmendBooking.feature",
+    "elements": [
+      {
+        "id": "user-should-be-able-to-amend-boookings;on-reservationfunctional-:-ensuring-that-a-booking-can-be-amended-by-removing-an-adult",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "On ReservationFunctional : Ensuring that a booking can be amended by removing an Adult",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 32
+          },
+          {
+            "name": "@amend-save-bookings",
+            "line": 32
+          },
+          {
+            "name": "@rs2",
+            "line": 32
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 76342000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click the view button for an order in the orders table",
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "TypeError: The following error originated from your test code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n    at _createForOfIteratorHelper (src/integration/steps/Reservation2/helpers/core.js:2:65)\n    at smoothenFormat (src/integration/steps/Reservation2/helpers/core.js:250:42)\n    at eval (src/integration/steps/Reservation2/helpers/core.js:236:12)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:162210:53)\n    at $Cypress.action (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:41015:28)\n    at Runnable.run (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:144798:13)\n    at next (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:154803:10)\n    at https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:154847:5\n    at timeslice (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:145082:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I ensure the order to be amended matches my last created order",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I click the \"Edit Order\" Button beside \"Go to Dashboard\" button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be taken to \"Amending Booking\" page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I proceed to change route by clicking the green swap location toggle",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "The \"Commit Changes\" Button should be Inactive",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I edit the 'Who' section by removing '1x Adult'",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I edit the 'Date' section by clicking the 'Next Day' button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I select a time for 'Add-Ons' Single Train ride",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "I select seats in the reservation compartment section",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "The \"Commit Changes\" Button should be Active",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "I click the \"Commit Changes\" button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "The \"Refund\" Button should be Active if The Sub Total is negative else the \"Checkout\" Button should be active where either button is the action button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "I click the action button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "I process a refund or checkout",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "I should see that the order completed successfully",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "I ckick the view order button to verify all changes are reflected",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

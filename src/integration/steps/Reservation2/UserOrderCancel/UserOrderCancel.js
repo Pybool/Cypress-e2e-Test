@@ -4,6 +4,8 @@ import * as rs2 from '../../../functions/rs2'
 import * as core from '../helpers/core'
 import { BASE_URL } from '../../../index'
 
+const x6 = 60000
+
 function cancelOrderFn(lastOrderId) {
   return cy.visit(`/orders/${lastOrderId}/amend`)
      
@@ -66,7 +68,6 @@ When('I create a an order', async () => {
 })
 
 Then('I go to the orders table and click on edit for the order', async () => {
- 
     cy.get('table')
     .should('exist')
     .and('be.visible')

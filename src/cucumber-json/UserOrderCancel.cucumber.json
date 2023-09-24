@@ -1,0 +1,46 @@
+[
+  {
+    "description": "As a User I cancel an order",
+    "keyword": "Feature",
+    "name": "User should be able to cancel an order",
+    "line": 2,
+    "id": "user-should-be-able-to-cancel-an-order",
+    "tags": [],
+    "uri": "UserOrderCancel.feature",
+    "elements": [
+      {
+        "id": "user-should-be-able-to-cancel-an-order;get-capacity-information",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Get capacity information",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 17
+          },
+          {
+            "name": "@order-cancel",
+            "line": 17
+          },
+          {
+            "name": "@rs2",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I have all capacity information",
+            "result": {
+              "status": "passed",
+              "duration": 19063000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
