@@ -86,7 +86,7 @@ Scenario: Amend an order nby removing an adult from the booking
     When I edit the 'Who' section by removing '1x Adult'
     Then I should no longer see the "Reservation" Seating Compartments section
     When I edit the 'Date' section by clicking the 'Previous Day' button
-    When I select a time for RES Single Train Ride
+    When I select a time for Cypress.env('product')
     Then I select seats in the reservation compartment section
     Then The "Commit Changes" Button should be Active
     Then I click the "Commit Changes" button on customer portal

@@ -1,5 +1,40 @@
-import * as sorter from './data'
-import * as fragment from '../../../functions/seatfragmentparser'
+let filename = 'src\\fixtures\\capacity.json'
+const scrollConfig = {behavior: 'smooth',block: 'start',inline: 'nearest',}
+
+function getObjectFromArray(arr,compartment){
+  const obj = arr.find(x => x.compartment === compartment);
+  return obj
+}
+
+function deleteObjectFromArray(arr,compartment){
+  console.log(arr, id)
+  const obj = arr.find(x => x.compartment === compartment);
+  let newObj = []
+  arr.forEach((arrObj)=>{
+    if (arrObj.compartment != compartment){
+      newObj.push(arrObj)
+    }
+  })
+  return newObj
+}
+
+function seatMapping(selector,unitTarget){
+  const offset = sumNumbersFromText(selector)/unitTarget
+  return cy.fixture("capacity.json").then((json) => {
+    let selectedCapacities = []
+    for (let capacity of json.capacities){
+      if(capacity.compartment.includes(String(unitTarget)+'-')){
+        if(!selectedCapacities.includes(capacity.compartment)){
+          selectedCapacities.push(capacity.compartment)
+        }
+        if(offset == selectedCapacities.length){
+          break;
+        }
+      }
+    }
+    return [selectedCapacities, json.capacities]
+  })
+}
 
 function sumNumbersFromText(text) {
   const parts = text.split(',')
@@ -19,10 +54,20 @@ function extractNumbersFromString(str) {
   return matches ? matches.map(Number) : []
 }
 
-function delay(milliseconds) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, milliseconds)
+export function processSeats(section,selector,unitTarget) {
+  if (section == 'Who' || section == 'when') {
+    cy.get('button.chakra-button').as('btn')
+  } else {
+    cy.get('button.chakra-menu__menu-button').as('btn')
+  }
+  
+  seatMapping(selector,unitTarget).then((seatsData)=>{
+    console.log("SEATS DATA ", seatsData)
+    for (let key of seatsData[0]){
+      selectSeats(key,seatsData[1])
+    }
   })
+    
 }
 
 function findParagraphWithSpecificText(element, searchText) {
@@ -44,226 +89,115 @@ function findParagraphWithSpecificText(element, searchText) {
       }
     }
   }
-
   return result
 }
 
-function findMostCommonCompartment(data) {
-  const compartmentCounts = {}
-  let mostCommonCompartment = null
-  let mostCommonCount = 0
-  let firstIndex = Infinity
-
-  data.forEach((obj, index) => {
-    let compartmentInfo
-
-    if (Object.keys(obj).length === 1) {
-      compartmentInfo = obj[Object.keys(obj)[0]].compartment
-    } else {
-      compartmentInfo = obj.compartment
-    }
-
-    if (!compartmentCounts[compartmentInfo]) {
-      compartmentCounts[compartmentInfo] = 1
-    } else {
-      compartmentCounts[compartmentInfo]++
-    }
-
-    if (compartmentCounts[compartmentInfo] > mostCommonCount) {
-      mostCommonCount = compartmentCounts[compartmentInfo]
-      mostCommonCompartment = compartmentInfo
-      firstIndex = index
-    }
-  })
-
-  return {
-    mostCommonCompartment: mostCommonCompartment,
-    firstIndex: firstIndex,
-  }
+function getTabsOrSeats(id,index){
+  return Cypress.$(`.chakra-tabs__tab-panels`)
+            .eq(0).children().eq(parseInt(id))
+            .children().eq(0).children().eq(index)
+            .children()
 }
-
- function getSeatsData(data) {
-  console.log(data)
-  const isArray = Array.isArray(data);
-
-    if(isArray) {
-        
-    }
-    else {
-        data = [data]
-    }
-  var seatname
-  var id
-  const result = findMostCommonCompartment(data)
-  const compartmentPill = Cypress.$('button.chakra-tabs__tab').filter(
+ function selectSeats(key,seatData) {
+  console.log(key,seatData)
+  let seatObj = getObjectFromArray(seatData,key)
+  const compartmentPill = Cypress.$('.chakra-tabs__tablist')
+  .eq(0).children().filter(
     function () {
+      console.log(Cypress.$(this).text(), seatObj.compartment)
       try {
-        if (result.mostCommonCompartment == undefined) {
+
+        if (seatObj.compartment == undefined) {
           throw new Error('Fail intentionally')
         }
-        return Cypress.$(this).text() === result.mostCommonCompartment
+        return Cypress.$(this).text() === seatObj.compartment
       } catch {
-        return Cypress.$(this).text() === result.mostCommonCompartment
+        return Cypress.$(this).text() === seatObj.compartment
       }
     },
   )
-  id = extractNumbersFromString(compartmentPill.attr('id').split("--")[1])[0]
-  window.localStorage.setItem(
-    'cmpid',
-    extractNumbersFromString(compartmentPill.attr('id'))[0],
-  )
+
+  let id = extractNumbersFromString(compartmentPill.attr('id').split("--")[1])[0]
+  window.localStorage.setItem('cmpid',id[0])
   if (compartmentPill.attr('aria-selected') != 'true') {
     compartmentPill.click()
   }
-  const _max = new Array()
-  const _max_clicked = new Array()
-  for (let i = 0; i < data.length; i++) {
-    const key = Object.keys(data[i])[0]
-    const tab = Cypress.$('button.chakra-tabs__tab').filter(function () {
+
+  const tab = getTabsOrSeats(parseInt(id),0)
+  .filter(function () {
       try {
-        if (data[i][key]['carriage'] == undefined) {
+        if (seatObj.carriage == undefined) {
           throw new Error('Fail intentionally')
         }
-        return Cypress.$(this).text() === data[i][key]['carriage']
-      } catch {
-        return Cypress.$(this).text() === data[i]['carriage']
-      }
+        return Cypress.$(this).text() === seatObj.carriage
+      } catch {}
     })
-    tab.click()
+    // tab.scrollIntoView(scrollConfig)
+    // tab.click()
+
+  const seat = getTabsOrSeats(parseInt(id),1)
+  .filter(function () {
     try {
-      seatname = data[i]['seat']['name']
-      if (seatname == undefined) {
+      if (seatObj.seats == undefined) {
         throw new Error('Fail intentionally')
       }
-    } catch (error) {
-      seatname = JSON.parse(data[i][key]['seat'])['name']
-    }
-    let children = []
-    let ps = Cypress.$('div.chakra-tabs__tab-panels')[0].children
-    for (let i=0; i< ps.length; i++){
-      children.push(ps[i])
-    }
-    const pElementWithText = findParagraphWithSpecificText(children[id],seatname);
-    if (pElementWithText) {
-      let abtn = pElementWithText.parentElement.parentElement;
-      if(abtn.hasAttribute('disabled') != true){
-        if(_max.length <= data.length){
-          _max.push(abtn)
-        }
-        
-      }
-    } 
-  }
-
-  _max.forEach((btn) => {
-    delay(2000).then(() => {
-      if (_max_clicked.includes(btn) == false) {
-        btn.scrollIntoView({
-          behavior: 'smooth', 
-          block: 'start', 
-          inline: 'nearest', 
-        })
-        btn.click()
-        _max_clicked.push(btn)
-        cy.log('clicked')
-      } else {
-        cy.log('Already clicked')
-      }
-    })
+      return Cypress.$(this).find('p').text() === seatObj.seats
+    } catch {}
   })
-}
+  // seats.scrollIntoView(scrollConfig)
+  // seats.click()
 
-function selectSuitableSeats(data, count) {
-  try {
-    getSeatsData(data)
-    console.log("Caolled normally ===> ", data)
-  } catch (err) {
-    const groupedData = fragment.groupByCompartment(data)
-    const targetSum = count
-    const firstObjectsWithSum = fragment.findFirstObjectsWithSum(
-      groupedData,
-      targetSum,
-    )
-    console.log("Exception call normally ===> ", data)
-    getSeatsData(firstObjectsWithSum)
+  const newCapacityJson = deleteObjectFromArray(seatData,key)
+  if (Cypress.platform != 'win32') {
+    filename = 'src/fixtures/capacity.json'
   }
-}
+  cy.writeFile(filename, {
+    capacities: newCapacityJson,
+  })
 
-export function selectSeats(section) {
-  if (section == 'Who' || section == 'when') {
-    cy.get('button.chakra-button').as('btn')
-  } else {
-    cy.get('button.chakra-menu__menu-button').as('btn')
-  }
-  cy.get('@btn')
-    .find('p')
-    .contains(section.trim())
-    .siblings()
-    .eq(0)
-    .invoke('text')
-    .then((txt) => {
-      const seatsNum = sumNumbersFromText(txt)
-      const newcompartments = {}
-      cy.getCompartmentNames().then((compartments) => {
-        cy.get('div.chakra-tabs__tab-panels').eq(0).as('root')
-        let idx
-        new Promise((resolve) => {
-          for (let i = 0; i < Array.from(Cypress.$(compartments)).length; i++) {
-            cy.wait(1000)
-            const compartmentTxt = Array.from(Cypress.$(compartments))[i].textContent
-            if (
-              compartmentTxt == 'Joan Pullman Observation seat' ||
-              compartmentTxt == 'Joan Pullman Observation 4-seat compartment' ||
-              compartmentTxt == 'Ruth Directors Saloon 4-seat compartment' ||
-              compartmentTxt == 'No 140 First Class seat'
-            ) {
-              idx = 1
-            } else {
-              idx = 0
-            }
-            cy.processCarriages(i, idx, compartmentTxt, newcompartments).then(
-              (data) => {
-                console.log(data)
-                if (i + 1 >= Array.from(Cypress.$(compartments)).length) {
-                  resolve(data)
-                }
-              },
-            )
-          }
-        }).then((data) => {
-          console.log("Call to smoothen format ", data)
-          const suitableSeats = sorter.findSuitableSeats(
-            smoothenFormat(data),
-            seatsNum,
-          )
-          selectSuitableSeats(suitableSeats, seatsNum)
-        })
-      })
-    })
-}
+  console.log("ID ===> ", id)
+  console.log("Carriage text ===>",seatObj.carriage)
+  console.log("Compartment ==> ",compartmentPill)
+  console.log("Carriage and seat ===>  ", tab, seat)
+  // 
+    // try {
+    //   seatname = data[i]['seat']['name']
+    //   if (seatname == undefined) {
+    //     throw new Error('Fail intentionally')
+    //   }
+    // } catch (error) {
+    //   seatname = JSON.parse(data[i][key]['seat'])['name']
+    // }
+    // let children = []
+    // let ps = Cypress.$('div.chakra-tabs__tab-panels')[0].children
+    // for (let i=0; i< ps.length; i++){
+    //   children.push(ps[i])
+    // }
+    // const pElementWithText = findParagraphWithSpecificText(children[id],seatname);
+    // if (pElementWithText) {
+    //   let abtn = pElementWithText.parentElement.parentElement;
+    //   if(abtn.hasAttribute('disabled') != true){
+    //     if(_max.length <= data.length){
+    //       _max.push(abtn)
+    //     }
+        
+    //   }
+    // } 
 
-function smoothenFormat(data) {
-  const convertedData = {}
-  console.log(Array.isArray(data), data[0])
-
-  for (const compartment in data) {
-    console.log("Good array", compartment)
-    for (const entry of data[compartment]) {
-      const [carriageName] = Object.keys(entry)
-      const compartmentName = entry[carriageName].compartment
-      const seats = entry[carriageName].seats.map((seat) => ({
-        name: seat.name,
-        is_disabled: seat.is_disabled,
-      }))
-      if (!convertedData[compartmentName]) {
-        convertedData[compartmentName] = []
-      }
-      convertedData[compartmentName].push({
-        carriage: carriageName,
-        seats: seats,
-      })
-    }
-  }
-
-  return convertedData
+  // _max.forEach((btn) => {
+  //   delay(2000).then(() => {
+  //     if (_max_clicked.includes(btn) == false) {
+  //       btn.scrollIntoView({
+  //         behavior: 'smooth', 
+  //         block: 'start', 
+  //         inline: 'nearest', 
+  //       })
+  //       btn.click()
+  //       _max_clicked.push(btn)
+  //       cy.log('clicked')
+  //     } else {
+  //       cy.log('Already clicked')
+  //     }
+  //   })
+  // })
 }

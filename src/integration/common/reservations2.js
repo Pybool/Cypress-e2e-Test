@@ -8,14 +8,6 @@ const password = {
   test: 'Radio9*981tai',
 }
 
-let index
-
-const hrefs = {
-  'Search Orders': 'orders',
-  'New Order': 'booking',
-  'Scan QR': 'scan',
-}
-
 const setBaseUrl = (name, env = '') => {
   Cypress.config('baseUrl', BASE_URL[name][Cypress.env('module')])
 }
@@ -48,9 +40,14 @@ When('I click on {string} button', (buttonText) => {
     .and('be.visible')
     .and('have.css', 'background-color','rgb(125, 227, 203)')
     .then((btn)=>{
-      Cypress.$(btn).click()
+      if(buttonText == 'New Order'){
+        cy.get('p.chakra-text').contains(buttonText).click({force:true})
+      }
+      else{
+        Cypress.$(btn).click()
+      }
+      
     })
-    .click({ force: true })
 })
 
 Then('The current page header should be {string}', (headerText) => {

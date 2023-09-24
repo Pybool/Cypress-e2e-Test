@@ -1,0 +1,249 @@
+{
+  "capacities": [
+    {
+      "compartment": "Closed carriage 6-seat compartment",
+      "carriage": "Carriage B",
+      "seats": "Seats 1-6"
+    },
+    {
+      "compartment": "Closed carriage 4-seat compartment",
+      "carriage": "Carriage B",
+      "seats": "Seats 7-10"
+    },
+    {
+      "compartment": "Closed carriage 4-seat compartment",
+      "carriage": "Carriage B",
+      "seats": "Seats 11-14"
+    },
+    {
+      "compartment": "Closed carriage 6-seat compartment",
+      "carriage": "Carriage B",
+      "seats": "Seats 15-20"
+    },
+    {
+      "compartment": "Closed carriage 6-seat compartment",
+      "carriage": "Carriage C",
+      "seats": "Seats 1-6"
+    },
+    {
+      "compartment": "Closed carriage 4-seat compartment",
+      "carriage": "Carriage C",
+      "seats": "Seats 7-10"
+    },
+    {
+      "compartment": "Closed carriage 4-seat compartment",
+      "carriage": "Carriage C",
+      "seats": "Seats 11-14"
+    },
+    {
+      "compartment": "Closed carriage 6-seat compartment",
+      "carriage": "Carriage C",
+      "seats": "Seats 15-20"
+    },
+    {
+      "compartment": "Open carriage 2-seat compartment",
+      "carriage": "Carriage D",
+      "seats": "Seats 1-2"
+    },
+    {
+      "compartment": "Open carriage 4-seat compartment",
+      "carriage": "Carriage D",
+      "seats": "Seats 3-6"
+    },
+    {
+      "compartment": "Open carriage 4-seat compartment",
+      "carriage": "Carriage D",
+      "seats": "Seats 7-10"
+    },
+    {
+      "compartment": "Open carriage 4-seat compartment",
+      "carriage": "Carriage D",
+      "seats": "Seats 11-14"
+    },
+    {
+      "compartment": "Open carriage 4-seat compartment",
+      "carriage": "Carriage D",
+      "seats": "Seats 15-18"
+    },
+    {
+      "compartment": "Closed carriage 6-seat compartment",
+      "carriage": "Carriage E",
+      "seats": "Seats 1-6"
+    },
+    {
+      "compartment": "Closed carriage 4-seat compartment",
+      "carriage": "Carriage E",
+      "seats": "Seats 7-10"
+    },
+    {
+      "compartment": "Closed carriage 4-seat compartment",
+      "carriage": "Carriage E",
+      "seats": "Seats 11-14"
+    },
+    {
+      "compartment": "Ruth Directors Saloon 4-seat compartment",
+      "carriage": "Ruth Directors Saloon",
+      "seats": "Seats 3-6"
+    },
+    {
+      "compartment": "Ruth Directors Saloon 4-seat compartment",
+      "carriage": "Ruth Directors Saloon",
+      "seats": "Seats 7-10"
+    },
+    {
+      "compartment": "Accessible carriage",
+      "carriage": "Carriage F",
+      "seats": "Sit anywhere"
+    },
+    {
+      "compartment": "Semi-open 2-seat compartment",
+      "carriage": "Carriage G",
+      "seats": "Seats 1-2"
+    },
+    {
+      "compartment": "Semi-open 4-seat compartment",
+      "carriage": "Carriage G",
+      "seats": "Seats 3-6"
+    },
+    {
+      "compartment": "Semi-open 4-seat compartment",
+      "carriage": "Carriage G",
+      "seats": "Seats 7-10"
+    },
+    {
+      "compartment": "Semi-open 4-seat compartment",
+      "carriage": "Carriage G",
+      "seats": "Seats 11-14"
+    },
+    {
+      "compartment": "Semi-open 4-seat compartment",
+      "carriage": "Carriage G",
+      "seats": "Seats 15-18"
+    },
+    {
+      "compartment": "Semi-open 2-seat compartment",
+      "carriage": "Carriage G",
+      "seats": "Seats 19-20"
+    },
+    {
+      "compartment": "Semi-open 2-seat compartment",
+      "carriage": "Carriage H",
+      "seats": "Seats 1-2"
+    },
+    {
+      "compartment": "Semi-open 4-seat compartment",
+      "carriage": "Carriage H",
+      "seats": "Seats 3-6"
+    },
+    {
+      "compartment": "Semi-open 4-seat compartment",
+      "carriage": "Carriage H",
+      "seats": "Seats 7-10"
+    },
+    {
+      "compartment": "Semi-open 4-seat compartment",
+      "carriage": "Carriage H",
+      "seats": "Seats 11-14"
+    },
+    {
+      "compartment": "Semi-open 4-seat compartment",
+      "carriage": "Carriage H",
+      "seats": "Seats 15-18"
+    },
+    {
+      "compartment": "Semi-open 2-seat compartment",
+      "carriage": "Carriage H",
+      "seats": "Seats 19-20"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 1",
+      "seats": "Seat 1"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 1",
+      "seats": "Seat 2"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 1",
+      "seats": "Seat 3"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 1",
+      "seats": "Seat 4"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 2",
+      "seats": "Seat 5"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 2",
+      "seats": "Seat 6"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 2",
+      "seats": "Seat 7"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 2",
+      "seats": "Seat 8"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 3",
+      "seats": "Seat 9"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 3",
+      "seats": "Seat 10"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 3",
+      "seats": "Seat 11"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 3",
+      "seats": "Seat 12"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 4",
+      "seats": "Seat 13"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 4",
+      "seats": "Seat 14"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 4",
+      "seats": "Seat 15"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 4",
+      "seats": "Seat 16"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 5",
+      "seats": "Seat 17"
+    },
+    {
+      "compartment": "No 140 First Class seat",
+      "carriage": "No. 140 Comp. 5",
+      "seats": "Seat 18"
+    }
+  ]
+}

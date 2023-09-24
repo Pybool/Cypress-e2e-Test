@@ -142,7 +142,7 @@ resolve(1)
     for(let i=0 ; i < 1;i++){
       cy.get('button.chakra-button').contains('Next Day',{timeout:x6}).click({force:true})
     }
-    cy.get('h3.chakra-heading').contains('RES Single Train Ride',{timeout:x6}).parent().siblings().eq(0).children().eq(2).click({force:true})
+    cy.get('h3.chakra-heading').contains(Cypress.env('product'),{timeout:x6}).parent().siblings().eq(0).children().eq(2).click({force:true})
     cy.get('button.chakra-button').contains('Add To Cart',{timeout:x6}).click({force:true})
 
     cy.get('div[class^="chakra-stack"]').eq(1).children().eq(3).find('button').click({force:true})
@@ -220,14 +220,14 @@ And('I click The {string} button', async(button) => {
 })
 
 Then('The {string} pill is not displayed in the select reservation modal', async(type) => {
-  cy.get('h3.chakra-heading').contains('RES Single Train Ride',{timeout:x6}).parent().siblings().eq(0).children().eq(2).click({force:true})
+  cy.get('h3.chakra-heading').contains(Cypress.env('product'),{timeout:x6}).parent().siblings().eq(0).children().eq(2).click({force:true})
   cy.get('button.chakra-button').contains('Add To Cart',{timeout:x6}).click({force:true})
   cy.get('button.chakra-tabs__tab').contains(type,{timeout:x6}).should('not.exist') 
 })
 
 Then('The {string} pill is displayed in the select reservation modal with {string} selected', async(type,selectedComp) => {
   let number = '4'
-    cy.get('h3.chakra-heading').contains('RES Single Train Ride',{timeout:x6}).parent().siblings().eq(0).children().eq(2).click({force:true})
+    cy.get('h3.chakra-heading').contains(Cypress.env('product'),{timeout:x6}).parent().siblings().eq(0).children().eq(2).click({force:true})
     cy.get('button.chakra-button').contains('Add To Cart',{timeout:x6}).click({force:true})
     if(parseInt(number) >= 4){
       cy.get('button.chakra-tabs__tab').contains(type,{timeout:x6}).as('selected').scrollIntoView().should('exist').and('be.visible')
@@ -304,7 +304,7 @@ Then('For {string} I select the needed compartments and choose appropriate seats
       for(let i=0 ; i < 1;i++){
           cy.get('button.chakra-button').contains('Next Day',{timeout:x6}).click({force:true})
       }
-      cy.get('h3.chakra-heading').contains('RES Single Train Ride',{timeout:x6}).parent().siblings().eq(0).children().eq(1).click({force:true})
+      cy.get('h3.chakra-heading').contains(Cypress.env('product'),{timeout:x6}).parent().siblings().eq(0).children().eq(1).click({force:true})
       cy.get('div.chakra-button__spinner')
       .should('not.exist',{timeout:x6})
       .then(()=>{

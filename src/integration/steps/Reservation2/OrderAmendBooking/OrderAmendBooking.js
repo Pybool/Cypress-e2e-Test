@@ -115,7 +115,7 @@ And(
 
 And('At least a time selection must be selected', () => {
   cy.get('p.chakra-text')
-    .contains('RES Single Train Ride',{timeout:x6})
+    .contains(Cypress.env('product'),{timeout:x6})
     .parent()
     .as('singleTrainRideAddon')
     .siblings()
@@ -251,7 +251,7 @@ When(
 
 When('I select a time for {string} Single Train ride', () => {
   cy.get('p.chakra-text')
-    .contains('RES Single Train Ride',{timeout:x6})
+    .contains(Cypress.env('product'),{timeout:x6})
     .parent()
     .as('singleTrainRideAddon')
     .find('button.chakra-button')

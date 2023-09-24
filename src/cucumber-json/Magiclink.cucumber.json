@@ -159,7 +159,7 @@
             "arguments": [],
             "keyword": "When ",
             "line": 89,
-            "name": "I select a time for RES Single Train Ride",
+            "name": "I select a time for Cypress.env('product')",
             "result": {
               "status": "passed",
               "duration": 2994000000

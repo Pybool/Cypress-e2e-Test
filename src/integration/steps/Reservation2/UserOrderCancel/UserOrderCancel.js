@@ -60,14 +60,16 @@ async function selectOrderFromTable() {
 }
 
 When('I create a an order', async () => {
+  cy.get('h2.chakra-heading').contains('Welcome to Reservations').should('be.visible')
   cy.visit('/booking')
-  const data = { adults: 4, children: 4, step: '4 adults 4 children' }
+  const data = { adults: 8, children: 8, step: '8 adults , 8 children' }
   await rs2.startCreateOrder(data.adults, data.children)
-  core.selectSeats('Who')
-  rs2.internalCheckOut('Checkout')
+  core.processSeats('Who',data.step, 4)
+  // rs2.internalCheckOut('Checkout')
 })
 
 Then('I go to the orders table and click on edit for the order', async () => {
+ 
     cy.get('table')
     .should('exist')
     .and('be.visible')

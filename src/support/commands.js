@@ -192,7 +192,7 @@ Cypress.Commands.add('loginAdminUat', (email, password) => {
   })
 })
 
-Cypress.Commands.add('getCapacity', (time,date) => {
+Cypress.Commands.add('getCapacity', (time,date,entityID) => {
   const x6 = 60000
   const username = 'taye.oyelekan@ticknovate.com'
   const password = 'Radio9*981tai'
@@ -203,7 +203,7 @@ Cypress.Commands.add('getCapacity', (time,date) => {
     return selectedText
   }
 
-  cy.loginAdminUat(username,password,entityID).then(()=>{
+  cy.loginAdminUat(username,password).then(()=>{
     cy.get('h1').contains('Building Blocks',{timeout:x6}).should('be.visible')
     .then(()=>{
       cy.visit(`https://admin.lakedistrict.ticknovate-uat.com/services/${entityID}`,{force:true})
@@ -246,15 +246,20 @@ Cypress.Commands.add('getCapacity', (time,date) => {
 
         cy.get('table[data-testid="test-table-simplified-capacity-plan-list"').find('tbody > tr').then((trs)=>{
           let capacityDataList = []
-          let capacityDataObj = {}
           for(let i=0; i < trs.length; i++){
+            let capacityDataObj = {}
             let sel = Cypress.$(trs[i]).find('select')
             capacityDataObj['compartment'] = getSelectedText(Cypress.$(sel)[0])
             capacityDataObj['carriage'] = Cypress.$(trs[i]).children().eq(2).find('input').val()
             capacityDataObj['seats'] = Cypress.$(trs[i]).children().eq(3).find('input').val()
             capacityDataList.push(capacityDataObj)
           }
-          cy.writeFile('capacity.json', {
+          console.log(capacityDataList)
+          let filename = 'src\\fixtures\\capacity.json'
+          if (Cypress.platform != 'win32') {
+            filename = 'src/fixtures/capacity.json'
+          }
+          cy.writeFile(filename, {
             capacities: capacityDataList,
           })
         })
@@ -262,11 +267,6 @@ Cypress.Commands.add('getCapacity', (time,date) => {
     })
   })
 })
-
-
-
-
-
 
 Cypress.Commands.add(
   'fastType',
