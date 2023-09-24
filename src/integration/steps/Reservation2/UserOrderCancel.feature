@@ -14,7 +14,3 @@ Scenario: User should be able to cancel an order
     # Then I should be taken to the Refund page
     # When I click the "Complete refund" Button
     # Then I should see "Booking cancelled" header with color "rgb(117, 164, 14)" and "Your booking has been cancelled" header
-
-# @automated @order-cancel @rs2
-# Scenario: Get capacity information
-#     Given I have all capacity information

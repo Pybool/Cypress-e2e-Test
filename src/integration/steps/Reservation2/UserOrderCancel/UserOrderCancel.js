@@ -1,9 +1,7 @@
 import { And, Then, When } from 'cypress-cucumber-preprocessor/steps'
 import * as rs2 from '../../../functions/rs2'
-
 import * as core from '../helpers/core'
 import { BASE_URL } from '../../../index'
-
 const x6 = 60000
 
 function cancelOrderFn(lastOrderId) {
@@ -19,7 +17,7 @@ async function selectOrderFromTable() {
         if (currentUrl !== orderUrl) {
           return cy.visit('/').then(() => {
             return cy
-              .get('table.chakra-table', { timeout: 30000 })
+              .get('table.chakra-table', { timeout: x6 })
               .as('o_table')
               .then(async ($table) => {
                 const hasRows = $table.find('tr').length > 1
@@ -64,8 +62,12 @@ When('I create a an order', async () => {
   cy.visit('/booking')
   const data = { adults: 8, children: 8, step: '8 adults , 8 children' }
   await rs2.startCreateOrder(data.adults, data.children)
-  core.processSeats('Who',data.step, 4)
-  // rs2.internalCheckOut('Checkout')
+  core.processSeats('Who',data.step, 4).then((modCapacityData)=>{
+    console.log("Modified Capacity data ==> ", modCapacityData)
+    Cypress.env('modCapacityData', modCapacityData);
+    rs2.internalCheckOut('Checkout')
+  })
+  
 })
 
 Then('I go to the orders table and click on edit for the order', async () => {

@@ -475,6 +475,17 @@ export function fillPaymentInformationForm() {
     .then((txt) => {
       expect(txt.length).to.be.greaterThan(5)
       saveToSessionStorage('order_id', txt)
+      const myModCapacityData = Cypress.env('modCapacityData');
+      /* Update capacity.json */
+      if(Array.isArray(myModCapacityData)){
+        let filename = 'src\\fixtures\\capacity.json'
+        if (Cypress.platform != 'win32') {
+          filename = 'src/fixtures/capacity.json'
+        }
+        cy.writeFile(filename, {
+          capacities: myModCapacityData,
+        })
+      }
     })
 }
 

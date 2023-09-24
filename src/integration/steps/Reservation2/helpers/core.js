@@ -1,21 +1,36 @@
-let filename = 'src\\fixtures\\capacity.json'
-const scrollConfig = {behavior: 'smooth',block: 'start',inline: 'nearest',}
+const hasDescription = ['Joan Pullman Observation seat',
+                        'Joan Pullman Observation 4-seat compartment',
+                        'Ruth Directors Saloon 4-seat compartment',
+                        'No 140 First Class seat'
+                      ]
 
 function getObjectFromArray(arr,compartment){
   const obj = arr.find(x => x.compartment === compartment);
   return obj
 }
 
-function deleteObjectFromArray(arr,compartment){
-  console.log(arr, id)
-  const obj = arr.find(x => x.compartment === compartment);
-  let newObj = []
-  arr.forEach((arrObj)=>{
-    if (arrObj.compartment != compartment){
-      newObj.push(arrObj)
+function deleteObjectFromArray(arr, compartment) {
+  const index = arr.findIndex((obj) => obj.compartment === compartment);
+  if (index !== -1) {
+    arr.splice(index, 1);
+  }
+  return arr;
+}
+
+function updateObjectInArray(array, cmpToUpdate, updatedObject) {
+  return array.map((item) => {
+    if (item.compartment === cmpToUpdate) {
+      // Update the properties of the matching object
+      return { ...item, ...updatedObject };
     }
-  })
-  return newObj
+    return item;
+  });
+}
+
+function delay(milliseconds) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, milliseconds);
+  });
 }
 
 function seatMapping(selector,unitTarget){
@@ -55,56 +70,36 @@ function extractNumbersFromString(str) {
 }
 
 export function processSeats(section,selector,unitTarget) {
-  if (section == 'Who' || section == 'when') {
-    cy.get('button.chakra-button').as('btn')
-  } else {
-    cy.get('button.chakra-menu__menu-button').as('btn')
-  }
-  
-  seatMapping(selector,unitTarget).then((seatsData)=>{
-    console.log("SEATS DATA ", seatsData)
-    for (let key of seatsData[0]){
-      selectSeats(key,seatsData[1])
+  return new Promise((resolve,reject)=>{
+    if (section == 'Who' || section == 'when') {
+      cy.get('button.chakra-button').as('btn')
+    } else {
+      cy.get('button.chakra-menu__menu-button').as('btn')
     }
+    
+    seatMapping(selector,unitTarget).then(async(seatsData)=>{
+      let modCapacityData = {}
+      for (let key of seatsData[0]){
+        modCapacityData = await selectSeats(key,seatsData[1])
+      }
+      resolve(modCapacityData)
+    })
   })
     
 }
 
-function findParagraphWithSpecificText(element, searchText) {
-  let result = null
-
-  for (const childNode of element.childNodes) {
-    if (childNode.nodeType === Node.ELEMENT_NODE) {
-      if (
-        childNode.tagName === 'P' &&
-        childNode.textContent.trim() === searchText
-      ) {
-        result = childNode
-        break
-      } else {
-        result = findParagraphWithSpecificText(childNode, searchText)
-        if (result) {
-          break
-        }
-      }
-    }
-  }
-  return result
-}
-
-function getTabsOrSeats(id,index){
+function getTabsOrSeats(id,index,compartment){
+  const hasDescriptionID = hasDescription.includes(compartment) ? 1 : 0;
   return Cypress.$(`.chakra-tabs__tab-panels`)
             .eq(0).children().eq(parseInt(id))
-            .children().eq(0).children().eq(index)
+            .children().eq(hasDescriptionID).children().eq(index)
             .children()
 }
- function selectSeats(key,seatData) {
-  console.log(key,seatData)
+ async function selectSeats(key,seatData) {
   let seatObj = getObjectFromArray(seatData,key)
   const compartmentPill = Cypress.$('.chakra-tabs__tablist')
   .eq(0).children().filter(
     function () {
-      console.log(Cypress.$(this).text(), seatObj.compartment)
       try {
 
         if (seatObj.compartment == undefined) {
@@ -123,7 +118,7 @@ function getTabsOrSeats(id,index){
     compartmentPill.click()
   }
 
-  const tab = getTabsOrSeats(parseInt(id),0)
+  const tab = getTabsOrSeats(parseInt(id),0,key)
   .filter(function () {
       try {
         if (seatObj.carriage == undefined) {
@@ -132,72 +127,48 @@ function getTabsOrSeats(id,index){
         return Cypress.$(this).text() === seatObj.carriage
       } catch {}
     })
-    // tab.scrollIntoView(scrollConfig)
-    // tab.click()
+    let selTab = tab.toArray()[0]
+    selTab.click()
 
-  const seat = getTabsOrSeats(parseInt(id),1)
-  .filter(function () {
-    try {
-      if (seatObj.seats == undefined) {
-        throw new Error('Fail intentionally')
-      }
-      return Cypress.$(this).find('p').text() === seatObj.seats
-    } catch {}
-  })
-  // seats.scrollIntoView(scrollConfig)
-  // seats.click()
-
-  const newCapacityJson = deleteObjectFromArray(seatData,key)
-  if (Cypress.platform != 'win32') {
-    filename = 'src/fixtures/capacity.json'
+  let seat = getTabsOrSeats(parseInt(id),1,key).eq(0).children().eq(0).children()
+              .filter(function () {
+                try {
+                  if (seatObj.seats == undefined) {
+                    throw new Error('Fail intentionally')
+                  }
+                  return Cypress.$(this).children().eq(0).children().eq(0).text() === seatObj.seats
+                } catch {}
+              })
+  let selSeat = seat.toArray()[0]
+  let retry = 5;
+  while(selSeat==undefined && retry > 0){
+    let vals = getNewKey(seatData,key)
+    seatObj = vals[0]
+    seatData = vals[1]
+    seat = getTabsOrSeats(parseInt(id),1,key).eq(0).children().eq(0).children()
+              .filter(function () {
+                try {
+                  if (seatObj.seats == undefined) {
+                    throw new Error('Fail intentionally')
+                  }
+                  return Cypress.$(this).children().eq(0).children().eq(0).text() === seatObj.seats
+                } catch {}
+              })
+    selSeat =seat.toArray()[0]
+    console.log("Retrying selseats ===> ", selSeat)
+    retry -= 1
   }
-  cy.writeFile(filename, {
-    capacities: newCapacityJson,
-  })
+  await delay(100)
+  try{
+    selSeat.click()
+    seatObj['marked'] = true;
+    return updateObjectInArray(seatData,key,seatObj)
+  }
+  catch(err){console.log("Update error ", err)}
+}
 
-  console.log("ID ===> ", id)
-  console.log("Carriage text ===>",seatObj.carriage)
-  console.log("Compartment ==> ",compartmentPill)
-  console.log("Carriage and seat ===>  ", tab, seat)
-  // 
-    // try {
-    //   seatname = data[i]['seat']['name']
-    //   if (seatname == undefined) {
-    //     throw new Error('Fail intentionally')
-    //   }
-    // } catch (error) {
-    //   seatname = JSON.parse(data[i][key]['seat'])['name']
-    // }
-    // let children = []
-    // let ps = Cypress.$('div.chakra-tabs__tab-panels')[0].children
-    // for (let i=0; i< ps.length; i++){
-    //   children.push(ps[i])
-    // }
-    // const pElementWithText = findParagraphWithSpecificText(children[id],seatname);
-    // if (pElementWithText) {
-    //   let abtn = pElementWithText.parentElement.parentElement;
-    //   if(abtn.hasAttribute('disabled') != true){
-    //     if(_max.length <= data.length){
-    //       _max.push(abtn)
-    //     }
-        
-    //   }
-    // } 
-
-  // _max.forEach((btn) => {
-  //   delay(2000).then(() => {
-  //     if (_max_clicked.includes(btn) == false) {
-  //       btn.scrollIntoView({
-  //         behavior: 'smooth', 
-  //         block: 'start', 
-  //         inline: 'nearest', 
-  //       })
-  //       btn.click()
-  //       _max_clicked.push(btn)
-  //       cy.log('clicked')
-  //     } else {
-  //       cy.log('Already clicked')
-  //     }
-  //   })
-  // })
+function getNewKey(seatData,key){
+  let modSeatData = deleteObjectFromArray(seatData,key)
+  let seatObj = getObjectFromArray(modSeatData,key)
+  return [seatObj, modSeatData]
 }
