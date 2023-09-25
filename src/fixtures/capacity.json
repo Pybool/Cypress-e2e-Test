@@ -39,7 +39,8 @@
     {
       "compartment": "Open carriage 2-seat compartment",
       "carriage": "Carriage D",
-      "seats": "Seats 1-2"
+      "seats": "Seats 1-2",
+      "marked": true
     },
     {
       "compartment": "Open carriage 4-seat compartment",
@@ -92,7 +93,8 @@
     {
       "compartment": "Semi-open 2-seat compartment",
       "carriage": "Carriage G",
-      "seats": "Seats 1-2"
+      "seats": "Seats 1-2",
+      "marked": true
     },
     {
       "compartment": "Semi-open 4-seat compartment",
@@ -117,12 +119,14 @@
     {
       "compartment": "Semi-open 2-seat compartment",
       "carriage": "Carriage G",
-      "seats": "Seats 19-20"
+      "seats": "Seats 1-2",
+      "marked": true
     },
     {
       "compartment": "Semi-open 2-seat compartment",
-      "carriage": "Carriage H",
-      "seats": "Seats 1-2"
+      "carriage": "Carriage G",
+      "seats": "Seats 1-2",
+      "marked": true
     },
     {
       "compartment": "Semi-open 4-seat compartment",
@@ -146,8 +150,9 @@
     },
     {
       "compartment": "Semi-open 2-seat compartment",
-      "carriage": "Carriage H",
-      "seats": "Seats 19-20"
+      "carriage": "Carriage G",
+      "seats": "Seats 1-2",
+      "marked": true
     },
     {
       "compartment": "No 140 First Class seat",

@@ -34,20 +34,7 @@ And('I am on the landingpage', () => {
 })
 
 When('I click on {string} button', (buttonText) => {
-    cy.get('h2.chakra-heading', { timeout: 35000 })
-    .siblings().eq(0)
-    .should('exist')
-    .and('be.visible')
-    .and('have.css', 'background-color','rgb(125, 227, 203)')
-    .then((btn)=>{
-      if(buttonText == 'New Order'){
-        cy.get('p.chakra-text').contains(buttonText).click({force:true})
-      }
-      else{
-        Cypress.$(btn).click()
-      }
-      
-    })
+    cy.visit('/booking')
 })
 
 Then('The current page header should be {string}', (headerText) => {

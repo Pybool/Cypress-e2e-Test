@@ -36,7 +36,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 27910000000
+              "duration": 27066000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I input \"1x Adult, 1x Child\" data",
             "result": {
               "status": "passed",
-              "duration": 1866000000
+              "duration": 1874000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "'Next' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 835000000
+              "duration": 816000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "'Your Party' is populated with selected option",
             "result": {
               "status": "passed",
-              "duration": 360000000
+              "duration": 399000000
             }
           }
         ]
@@ -99,7 +99,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 28957000000
+              "duration": 14189000000
             }
           },
           {
@@ -109,7 +109,7 @@
             "name": "I input \"1x Adult, 1x Child, 1x Infant, 1x Personal Assistant\" data",
             "result": {
               "status": "passed",
-              "duration": 2789000000
+              "duration": 3317000000
             }
           },
           {
@@ -119,7 +119,7 @@
             "name": "'Next' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 624000000
+              "duration": 827000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "'Your Party' is populated with selected option",
             "result": {
               "status": "passed",
-              "duration": 351000000
+              "duration": 352000000
             }
           }
         ]
@@ -162,7 +162,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 16677000000
+              "duration": 15627000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "I input \"1x Adult, 1x Child, 1x Infant\" data",
             "result": {
               "status": "passed",
-              "duration": 2053000000
+              "duration": 1972000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "'Next' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 840000000
+              "duration": 646000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "'Your Party' is populated with selected option",
             "result": {
               "status": "passed",
-              "duration": 372000000
+              "duration": 254000000
             }
           }
         ]
@@ -225,7 +225,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 16902000000
+              "duration": 13316000000
             }
           },
           {
@@ -235,7 +235,7 @@
             "name": "I input \"1x Adult, 1x Child, 1x Personal Assistant\" data",
             "result": {
               "status": "passed",
-              "duration": 2814000000
+              "duration": 1940000000
             }
           },
           {
@@ -245,7 +245,7 @@
             "name": "'Next' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 936000000
+              "duration": 765000000
             }
           },
           {
@@ -255,7 +255,7 @@
             "name": "'Your Party' is populated with selected option",
             "result": {
               "status": "passed",
-              "duration": 355000000
+              "duration": 343000000
             }
           }
         ]
@@ -288,7 +288,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 16296000000
+              "duration": 12726000000
             }
           },
           {
@@ -298,7 +298,7 @@
             "name": "I input \"1x Adult\" data",
             "result": {
               "status": "passed",
-              "duration": 677000000
+              "duration": 645000000
             }
           },
           {
@@ -308,7 +308,7 @@
             "name": "'Next' button is not active",
             "result": {
               "status": "passed",
-              "duration": 277000000
+              "duration": 289000000
             }
           }
         ]
@@ -341,7 +341,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 15671000000
+              "duration": 13778000000
             }
           },
           {
@@ -351,7 +351,7 @@
             "name": "I input \"1x Child\" data",
             "result": {
               "status": "passed",
-              "duration": 780000000
+              "duration": 671000000
             }
           },
           {
@@ -361,7 +361,7 @@
             "name": "'Next' button is not active",
             "result": {
               "status": "passed",
-              "duration": 272000000
+              "duration": 301000000
             }
           }
         ]
@@ -394,7 +394,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 16684000000
+              "duration": 13485000000
             }
           },
           {
@@ -404,7 +404,7 @@
             "name": "I input \"1x Personal Assistant\" data",
             "result": {
               "status": "passed",
-              "duration": 788000000
+              "duration": 512000000
             }
           },
           {
@@ -414,7 +414,7 @@
             "name": "'Next' button is not active",
             "result": {
               "status": "passed",
-              "duration": 419000000
+              "duration": 308000000
             }
           },
           {
@@ -424,7 +424,7 @@
             "name": "I am not able to select 'Personal Assistant'",
             "result": {
               "status": "passed",
-              "duration": 110000000
+              "duration": 104000000
             }
           }
         ]
@@ -457,7 +457,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 15455000000
+              "duration": 13593000000
             }
           },
           {
@@ -467,7 +467,7 @@
             "name": "I input \"1x Child, 1x Personal Assistant\" data",
             "result": {
               "status": "passed",
-              "duration": 1486000000
+              "duration": 1512000000
             }
           },
           {
@@ -477,7 +477,7 @@
             "name": "I am not able to select 'Personal Assistant'",
             "result": {
               "status": "passed",
-              "duration": 97000000
+              "duration": 122000000
             }
           },
           {
@@ -487,7 +487,7 @@
             "name": "'Next' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 998000000
+              "duration": 816000000
             }
           },
           {
@@ -497,7 +497,7 @@
             "name": "\"1x Child, 1x Personal Assistant\" is populated with selected option",
             "result": {
               "status": "passed",
-              "duration": 411000000
+              "duration": 522000000
             }
           },
           {
@@ -507,7 +507,7 @@
             "name": "I input '15 Nov' data for tour",
             "result": {
               "status": "passed",
-              "duration": 10749000000
+              "duration": 7326000000
             }
           },
           {
@@ -517,7 +517,7 @@
             "name": "I input time \"12:00\" data for tour",
             "result": {
               "status": "passed",
-              "duration": 3546000000
+              "duration": 1701000000
             }
           },
           {
@@ -527,7 +527,7 @@
             "name": "'Cart' Summary displays with time \"<Time>\" and date \"15 Nov\"",
             "result": {
               "status": "passed",
-              "duration": 483000000
+              "duration": 339000000
             }
           }
         ]
@@ -560,7 +560,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 16134000000
+              "duration": 13053000000
             }
           },
           {
@@ -570,7 +570,7 @@
             "name": "I input \"4x Adult, 6x Child\" data for multiple",
             "result": {
               "status": "passed",
-              "duration": 14721000000
+              "duration": 21821000000
             }
           },
           {
@@ -580,7 +580,7 @@
             "name": "Child count should remain 4",
             "result": {
               "status": "passed",
-              "duration": 1181000000
+              "duration": 1385000000
             }
           }
         ]
@@ -613,7 +613,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 29319000000
+              "duration": 15301000000
             }
           },
           {
@@ -623,7 +623,7 @@
             "name": "I input \"1x Adult, 1x Child\" data",
             "result": {
               "status": "passed",
-              "duration": 3315000000
+              "duration": 1329000000
             }
           },
           {
@@ -633,7 +633,7 @@
             "name": "'Next' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 1249000000
+              "duration": 635000000
             }
           },
           {
@@ -643,7 +643,7 @@
             "name": "I input '<Your tour>' data for tour with \"Current Date -1\"",
             "result": {
               "status": "passed",
-              "duration": 991000000
+              "duration": 1148000000
             }
           },
           {
@@ -653,7 +653,7 @@
             "name": "I am not able to select the greyed out date",
             "result": {
               "status": "passed",
-              "duration": 478000000
+              "duration": 358000000
             }
           }
         ]
@@ -686,7 +686,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 21532000000
+              "duration": 15410000000
             }
           },
           {
@@ -696,7 +696,7 @@
             "name": "I input \"1x Adult, 1x Child\" data",
             "result": {
               "status": "passed",
-              "duration": 1748000000
+              "duration": 1209000000
             }
           },
           {
@@ -706,7 +706,7 @@
             "name": "'Next' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 737000000
+              "duration": 781000000
             }
           },
           {
@@ -716,7 +716,7 @@
             "name": "\"1x Adult, 1x Child\" is populated with selected option",
             "result": {
               "status": "passed",
-              "duration": 381000000
+              "duration": 342000000
             }
           },
           {
@@ -726,7 +726,7 @@
             "name": "I input '18 Nov' data for tour",
             "result": {
               "status": "passed",
-              "duration": 9914000000
+              "duration": 7452000000
             }
           },
           {
@@ -736,7 +736,7 @@
             "name": "I input time \"09:30\" data for tour",
             "result": {
               "status": "passed",
-              "duration": 5139000000
+              "duration": 1434000000
             }
           },
           {
@@ -746,7 +746,7 @@
             "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
             "result": {
               "status": "passed",
-              "duration": 498000000
+              "duration": 289000000
             }
           }
         ]

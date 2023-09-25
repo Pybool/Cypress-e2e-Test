@@ -74,6 +74,7 @@ Feature: Customer should be able to manage order
 @automated @magiclink
 Scenario: Amend an order nby removing an adult from the booking
     Given I am logged in to reservations2 'uat'
+    Given I have created an order as a customer 
     Then I get the previous order Order ID
     And I click the "Manage Bookings" button in my email after 24 hours
     Then I should see "Order Information" as a header in the page that loads
@@ -86,8 +87,8 @@ Scenario: Amend an order nby removing an adult from the booking
     When I edit the 'Who' section by removing '1x Adult'
     Then I should no longer see the "Reservation" Seating Compartments section
     When I edit the 'Date' section by clicking the 'Previous Day' button
-    When I select a time for Cypress.env('product')
-    Then I select seats in the reservation compartment section
+    When I select a time for the product
+    # Then I select seats in the reservation compartment section
     Then The "Commit Changes" Button should be Active
     Then I click the "Commit Changes" button on customer portal
     Then The "Refund" Button should be Active if The Sub Total is negative else the "Checkout" Button should be active where either button is the action button

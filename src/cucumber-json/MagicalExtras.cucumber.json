@@ -36,7 +36,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 18800000000
+              "duration": 17492000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I input \"1x Adult, 1x Child\" data",
             "result": {
               "status": "passed",
-              "duration": 981000000
+              "duration": 1789000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "'Next' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 492000000
+              "duration": 1114000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "I input '18 Nov' data for tour for extras",
             "result": {
               "status": "passed",
-              "duration": 6439000000
+              "duration": 6311000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "I input time \"09:30\" data for tour",
             "result": {
               "status": "passed",
-              "duration": 2221000000
+              "duration": 2004000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
             "result": {
               "status": "passed",
-              "duration": 336000000
+              "duration": 266000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "I am on the extra page",
             "result": {
               "status": "passed",
-              "duration": 1677000000
+              "duration": 1509000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "I click + button '1' times in 'Additional Invitation Box'",
             "result": {
               "status": "passed",
-              "duration": 5281000000
+              "duration": 5678000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "the price in 'Additional Invitation Box' booking is updated by '£5.00'",
             "result": {
               "status": "passed",
-              "duration": 402000000
+              "duration": 790000000
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "the price for 'Additional Invitation Box' is added to the Booking Summary",
             "result": {
               "status": "passed",
-              "duration": 2478000000
+              "duration": 2960000000
             }
           }
         ]
@@ -159,7 +159,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 15247000000
+              "duration": 14785000000
             }
           },
           {
@@ -169,7 +169,7 @@
             "name": "I input \"1x Adult, 1x Child\" data",
             "result": {
               "status": "passed",
-              "duration": 1359000000
+              "duration": 1395000000
             }
           },
           {
@@ -179,7 +179,7 @@
             "name": "'Next' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 567000000
+              "duration": 572000000
             }
           },
           {
@@ -189,7 +189,7 @@
             "name": "I input '18 Nov' data for tour for extras",
             "result": {
               "status": "passed",
-              "duration": 6853000000
+              "duration": 5599000000
             }
           },
           {
@@ -199,7 +199,7 @@
             "name": "I input time \"09:30\" data for tour",
             "result": {
               "status": "passed",
-              "duration": 2127000000
+              "duration": 1441000000
             }
           },
           {
@@ -209,7 +209,7 @@
             "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
             "result": {
               "status": "passed",
-              "duration": 325000000
+              "duration": 206000000
             }
           },
           {
@@ -219,7 +219,7 @@
             "name": "I am on the extra page",
             "result": {
               "status": "passed",
-              "duration": 1920000000
+              "duration": 1234000000
             }
           },
           {
@@ -229,7 +229,7 @@
             "name": "I click + button '7' times in 'Additional Invitation Box'",
             "result": {
               "status": "passed",
-              "duration": 8815000000
+              "duration": 10477000000
             }
           },
           {
@@ -239,7 +239,7 @@
             "name": "the price in 'Additional Invitation Box' booking is updated by '£35.00'",
             "result": {
               "status": "passed",
-              "duration": 714000000
+              "duration": 1236000000
             }
           },
           {
@@ -249,7 +249,7 @@
             "name": "the price for 'Additional Invitation Box' is added to the Booking Summary",
             "result": {
               "status": "passed",
-              "duration": 3047000000
+              "duration": 3048000000
             }
           }
         ]
@@ -282,7 +282,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 15473000000
+              "duration": 15467000000
             }
           },
           {
@@ -292,7 +292,7 @@
             "name": "I input \"1x Adult, 1x Child\" data",
             "result": {
               "status": "passed",
-              "duration": 1292000000
+              "duration": 1272000000
             }
           },
           {
@@ -302,7 +302,7 @@
             "name": "'Next' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 691000000
+              "duration": 619000000
             }
           },
           {
@@ -312,7 +312,7 @@
             "name": "I input '18 Nov' data for tour for extras",
             "result": {
               "status": "passed",
-              "duration": 8744000000
+              "duration": 7420000000
             }
           },
           {
@@ -322,7 +322,7 @@
             "name": "I input time \"09:30\" data for tour",
             "result": {
               "status": "passed",
-              "duration": 4073000000
+              "duration": 2500000000
             }
           },
           {
@@ -332,7 +332,7 @@
             "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
             "result": {
               "status": "passed",
-              "duration": 371000000
+              "duration": 599000000
             }
           },
           {
@@ -342,7 +342,7 @@
             "name": "I am on the extra page",
             "result": {
               "status": "passed",
-              "duration": 4329000000
+              "duration": 4303000000
             }
           },
           {
@@ -352,7 +352,7 @@
             "name": "I click + button '1' times in 'Additional Invitation Box'",
             "result": {
               "status": "passed",
-              "duration": 8058000000
+              "duration": 6348000000
             }
           },
           {
@@ -362,7 +362,7 @@
             "name": "the packaging and postage fee is updated",
             "result": {
               "status": "passed",
-              "duration": 1133000000
+              "duration": 985000000
             }
           },
           {
@@ -372,7 +372,7 @@
             "name": "the price for 'Additional Invitation Box' is added to the Booking Summary",
             "result": {
               "status": "passed",
-              "duration": 3531000000
+              "duration": 3950000000
             }
           }
         ]
@@ -405,7 +405,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 18214000000
+              "duration": 16595000000
             }
           },
           {
@@ -415,7 +415,7 @@
             "name": "I input \"1x Adult, 1x Child\" data",
             "result": {
               "status": "passed",
-              "duration": 2097000000
+              "duration": 1233000000
             }
           },
           {
@@ -425,7 +425,7 @@
             "name": "'Next' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 835000000
+              "duration": 836000000
             }
           },
           {
@@ -435,7 +435,7 @@
             "name": "I input '18 Nov' data for tour for extras",
             "result": {
               "status": "passed",
-              "duration": 8052000000
+              "duration": 6846000000
             }
           },
           {
@@ -445,7 +445,7 @@
             "name": "I input time \"09:30\" data for tour",
             "result": {
               "status": "passed",
-              "duration": 4030000000
+              "duration": 2986000000
             }
           },
           {
@@ -455,7 +455,7 @@
             "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
             "result": {
               "status": "passed",
-              "duration": 543000000
+              "duration": 661000000
             }
           },
           {
@@ -465,7 +465,7 @@
             "name": "I am on the extra page",
             "result": {
               "status": "passed",
-              "duration": 6178000000
+              "duration": 3338000000
             }
           },
           {
@@ -475,7 +475,7 @@
             "name": "I click + button '1' times in 'Elf Jingles'",
             "result": {
               "status": "passed",
-              "duration": 7616000000
+              "duration": 5271000000
             }
           },
           {
@@ -485,7 +485,7 @@
             "name": "the price in 'Elf Jingles' booking is updated by '£30.00'",
             "result": {
               "status": "passed",
-              "duration": 506000000
+              "duration": 601000000
             }
           },
           {
@@ -495,7 +495,7 @@
             "name": "the price for 'x Jingles' is added to the Booking Summary",
             "result": {
               "status": "passed",
-              "duration": 3876000000
+              "duration": 3493000000
             }
           }
         ]
@@ -528,7 +528,7 @@
             "name": "I am on Booking Page",
             "result": {
               "status": "passed",
-              "duration": 19881000000
+              "duration": 15006000000
             }
           },
           {
@@ -538,7 +538,7 @@
             "name": "I input \"1x Adult, 1x Child\" data",
             "result": {
               "status": "passed",
-              "duration": 1381000000
+              "duration": 1305000000
             }
           },
           {
@@ -548,7 +548,7 @@
             "name": "'Next' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 706000000
+              "duration": 679000000
             }
           },
           {
@@ -558,7 +558,7 @@
             "name": "I input '18 Nov' data for tour for extras",
             "result": {
               "status": "passed",
-              "duration": 7980000000
+              "duration": 6341000000
             }
           },
           {
@@ -568,7 +568,7 @@
             "name": "I input time \"09:30\" data for tour",
             "result": {
               "status": "passed",
-              "duration": 2728000000
+              "duration": 1458000000
             }
           },
           {
@@ -578,7 +578,7 @@
             "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
             "result": {
               "status": "passed",
-              "duration": 475000000
+              "duration": 205000000
             }
           },
           {
@@ -588,7 +588,7 @@
             "name": "I am on the extra page",
             "result": {
               "status": "passed",
-              "duration": 4799000000
+              "duration": 1408000000
             }
           },
           {
@@ -598,7 +598,7 @@
             "name": "I click + button '1' times in 'Elf Jingles'",
             "result": {
               "status": "passed",
-              "duration": 9480000000
+              "duration": 5116000000
             }
           },
           {
@@ -608,7 +608,7 @@
             "name": "I click 'Add' in Cancellation Protection screen",
             "result": {
               "status": "passed",
-              "duration": 9942000000
+              "duration": 4583000000
             }
           },
           {
@@ -618,7 +618,7 @@
             "name": "a cancellation protection is added to the booking",
             "result": {
               "status": "passed",
-              "duration": 3056000000
+              "duration": 2655000000
             }
           },
           {
@@ -628,7 +628,7 @@
             "name": "the price in booking is updated with '£9.90' for cancellation",
             "result": {
               "status": "passed",
-              "duration": 846000000
+              "duration": 885000000
             }
           },
           {
@@ -638,7 +638,7 @@
             "name": "'Continue booking' button is clickable",
             "result": {
               "status": "passed",
-              "duration": 737000000
+              "duration": 1052000000
             }
           }
         ]

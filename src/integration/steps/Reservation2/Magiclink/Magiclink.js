@@ -64,7 +64,7 @@ function visitWithOrder(order){
       order = orderObj['orderId']
   }
   getMagicLinkParams().then((ref)=>{
-    DATA.REF = order
+      DATA.REF = order
       bookingUrls = `https://ullswater.booking.lakedistrict.ticknovate-uat.com/my-bookings/${order}?token=${ref}`
       cy.visit(bookingUrls)
   })
@@ -77,6 +77,19 @@ Given ('I have created an order as a customer', async ()=>{
   rs2.internalCheckOut('Checkout',"Ullswater 'Steamers'")
   
 
+})
+
+When('I create a an order', async () => {
+  cy.get('h2.chakra-heading').contains('Welcome to Reservations').should('be.visible')
+  cy.visit('/booking')
+  const data = { adults: 4, children: 4, step: '4 adults , 4 children' }
+  await rs2.startCreateOrder(data.adults, data.children)
+  core.processSeats('Who',data.step, 4).then((modCapacityData)=>{
+    console.log("Modified Capacity data ==> ", modCapacityData)
+    Cypress.env('modCapacityData', modCapacityData);
+    rs2.internalCheckOut('Checkout')
+  })
+  
 })
 
 Then ('I get the previous order Order ID',()=>{
@@ -442,7 +455,7 @@ When('I edit the {string} section by clicking the {string} button', (date,btntxt
   cy.get('button.chakra-button').contains(btntxt,{timeout:x6}).click(__force__)
 });
 
-When('I select a time for RES Single Train Ride', (type) => {
+When('I select a time for the product', (type) => {
   cy.get('h2.chakra-heading')
       .contains('Available Options',{timeout:x6})
       .parent()
@@ -496,9 +509,13 @@ Then('I should no longer see the Add-Ons section at the bottom of the page', () 
    })
 });
 
-Then('I select seats in the reservation compartment section',() => {
-  core.selectSeats('Who')
-});
+// Then('I select seats in the reservation compartment section',async() => {
+//   const data = { adults: 2, children: 2, step: '2 adults , 2 children' }
+//   core.processSeats('Who',data.step, 2).then((modCapacityData)=>{
+//     console.log("Modified Capacity data ==> ", modCapacityData)
+//     Cypress.env('modCapacityData', modCapacityData);
+//   })
+// });
 
 Then('The {string} Button should be Inactive', (btnText) => {
   cy.get('button.chakra-button').contains(btnText).should('have.attr','disabled')

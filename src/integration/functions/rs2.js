@@ -75,13 +75,17 @@ async function cancelOrderFn(lastOrderId, amend) {
               })
             } else {
               cy.visit(`/orders/${lastOrderId}/amend`).then(() => {
-                cy.get('button.chakra-button').contains('Cancel order',{timeout:x6})
+                cy.get('button.chakra-button')
+                .contains('Cancel order',{timeout:x6})
+                .should('exist').and('be.visible')
+                .and('have.css','background-color','rgb(239, 211, 204)')
+                .click({force:true})
+
     
                 cy.get('button.chakra-button', { timeout: 30000 })
                   .contains('Refund',{timeout:x6})
                   .click({ force: true })
-    
-                
+                  
                 cy.get('button.chakra-button')
                   .get('div.chakra-stack')
                   .contains('Complete refund',{timeout:x6})
@@ -117,7 +121,6 @@ export async function cancelLastOrder(amend = false) {
                     $table,
                     lastOrderId,
                   )
-
                   if (lastOrderIdFound) {
                     Cypress.config()['exists'] = 'exists'
                     cancelOrderFn(lastOrderId, amend).then(() => {

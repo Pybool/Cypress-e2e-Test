@@ -55,7 +55,9 @@ function executeFnInWindow() {
 
 When(
   'I attempt to create an order selecting {string} adult for when choosing who',
+  
   async (number) => {
+    rs2.cancelLastOrder()
     await fn(number)
   },
 )
@@ -63,6 +65,7 @@ When(
 When(
   'I attempt to create an order selecting {string} adult and {string} child for when choosing who',
   async (adults, children) => {
+    rs2.cancelLastOrder()
     await fn(adults, parseInt(children))
   },
 )
@@ -172,7 +175,7 @@ async function fn(number, secondchoice = 0) {
 }
 
 function selectSeatsByCompartments(initialIndex,compartments){
-  cy.log('Retrying compartment selection with index ', initialIndex)
+  console.log('Retrying compartment selection with index ', initialIndex, compartments)
   cy.get('button.chakra-tabs__tab').contains(compartments[initialIndex].name,{timeout:x6}).as('selected').scrollIntoView().should('exist').and('be.visible')
   cy.get('@selected').click({force:true})
   cy.get('@selected').should('have.attr', 'aria-selected', 'true')
@@ -215,6 +218,8 @@ function getCompartmentAvailable(step){
         if (step.includes('3 adults 3 children') && pills[i].innerText.includes('6-')){
           matchPill.push({name:pills[i].innerText,index:i})
         }
+
+        console.log("PILLS===> ",step.includes('3 adults 3 children'), pills[i].innerText.includes('6-'))
       }
       compartments = matchPill
       cy.window().then((win)=>{

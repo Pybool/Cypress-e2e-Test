@@ -31,7 +31,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 26818000000
+              "duration": 41546000000
             }
           },
           {
@@ -41,7 +41,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 634000000
+              "duration": 1285000000
             }
           },
           {
@@ -74,7 +74,7 @@
             "name": "I select and input in the following fields:",
             "result": {
               "status": "failed",
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'apply')\n    at getRet (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:118205:20)\n    at tryCatcher (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:4315:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise.then (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1132:17)\n    at CommandQueue.runCommand (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143427:8)\n    at next (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143627:19)\n    at <unknown> (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143648:16)\n    at tryCatcher (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1701:18)\n    at <unknown> (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:2392:25)"
+              "error_message": "CypressError: Timed out retrying after 20050ms: `cy.select()` failed because this element:\n\n`<select aria-label=\"Month\" class=\"chakra-select css-1x4xccz\">...</select>`\n\nis being covered by another element:\n\n`<div class=\"css-1fb58eh\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n    at ensureIsDescendent (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:111849:68)\n    at ensureDescendents (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:111900:5)\n    at ensureDescendentsAndScroll (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:111906:14)\n    at ensureElIsNotCovered (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:112037:5)\n    at runAllChecks (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:112217:52)\n    at retryActionability (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:112254:16)\n    at tryCatcher (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:4315:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise.attempt.Promise.try (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:4305:9)\n    at whenStable (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143192:68)\n    at <unknown> (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143133:14)\n    at tryCatcher (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at Context.eval (src/integration/functions/rs2.js:519:5)"
             }
           },
           {
@@ -96,25 +96,10 @@
             }
           },
           {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Accessibility carriage"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Joan Pullman Observation seat - All , Joan Pullman Observation 4-seat compartment - All , Closed carriage 6-seat compartment - (Carriage A and Carriage B and 1 Carriage E), Closed carriage 4-seat compartment - (Carriage A)"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
+            "arguments": [],
+            "keyword": "When ",
             "line": 12,
-            "name": "I select the following options from the Cart:",
+            "name": "I create a an order",
             "result": {
               "status": "skipped"
             }
@@ -122,169 +107,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
-            "name": "I complete the checkout process",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Accessibility carriage"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Joan Pullman Observation seat - All , Joan Pullman Observation 4-seat compartment - All"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
             "line": 16,
-            "name": "the following options should not be available for purchase:",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "capacity-level-management;capacity-adjustment",
-        "keyword": "Scenario",
-        "line": 21,
-        "name": "Capacity Adjustment",
-        "tags": [
-          {
-            "name": "@automated",
-            "line": 20
-          },
-          {
-            "name": "@capacity",
-            "line": 20
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 22,
-            "name": "I am logged in to reservations2 'uat'",
-            "result": {
-              "status": "passed",
-              "duration": 31870000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Accessibility carriage"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Joan Pullman Observation seat - All , Joan Pullman Observation 4-seat compartment - All , Closed carriage 6-seat compartment - (Carriage A and Carriage B and 1 Carriage E)"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 23,
-            "name": "I have an order for 40 Adults with the following seat selection:",
-            "result": {
-              "status": "passed",
-              "duration": 1794000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 26,
-            "name": "I reduce the group size to '6' Adults",
-            "result": {
-              "status": "passed",
-              "duration": 14011000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "I select the 'Accessible carriage' compartment option",
-            "result": {
-              "status": "passed",
-              "duration": 1571000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
-            "name": "I click 'Commit Changes' button",
-            "result": {
-              "status": "passed",
-              "duration": 981000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "I click the the refund or checkout button",
-            "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `button`, but never found it. Queried from:\n\n              > cy.get(h5.chakra-heading).contains(Total:).parent().parent()\n    at Context.eval (src/integration/steps/Reservation2/Capacity/Capacity.js:135:67)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "I process a refund or checkout",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Accessibility carriage"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Joan Pullman Observation seat - All , Joan Pullman Observation 4-seat compartment - All , Closed carriage 6-seat compartment - (Carriage A and Carriage B and 1 Carriage E)"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 31,
-            "name": "the following options should be available for purchase:",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "The 'Accessible carriage' compartment should not be available",
+            "name": "I complete the checkout process",
             "result": {
               "status": "skipped"
             }

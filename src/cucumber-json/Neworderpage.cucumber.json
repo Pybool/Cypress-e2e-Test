@@ -1,0 +1,163 @@
+[
+  {
+    "description": "As a User I want to validate the reservation page",
+    "keyword": "Feature",
+    "name": "Admin regression page load",
+    "line": 1,
+    "id": "admin-regression-page-load",
+    "tags": [],
+    "uri": "Neworderpage.feature",
+    "elements": [
+      {
+        "id": "admin-regression-page-load;on-reservationfunctional-:verify-that-the-new-order-page-is-rendered-correctly",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "On ReservationFunctional :Verify that the New Order page is rendered correctly",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@rs2",
+            "line": 4
+          },
+          {
+            "name": "@automating-validate-page",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.lakedistrict.ticknovate-uat.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:51007/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:51007/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:51007/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:51007/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:51007/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:51007/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:51007/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:51007/__cypress/runner/cypress_runner.js:1697:18)\n    at <unknown> (http://localhost:51007/__cypress/runner/cypress_runner.js:2392:25)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://localhost:51007/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (http://localhost:51007/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (http://localhost:51007/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (http://localhost:51007/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (http://localhost:51007/__cypress/runner/cypress_runner.js:162210:53)\n    at $Cypress.action (http://localhost:51007/__cypress/runner/cypress_runner.js:41015:28)\n    at Runnable.run (http://localhost:51007/__cypress/runner/cypress_runner.js:144798:13)\n    at next (http://localhost:51007/__cypress/runner/cypress_runner.js:154803:10)\n    at <unknown> (http://localhost:51007/__cypress/runner/cypress_runner.js:154847:5)\n    at timeslice (http://localhost:51007/__cypress/runner/cypress_runner.js:145082:27)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I am on the New Order page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see that the page header is \"New Order\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I should see the market selection dropdown as the first component on the card below the page header",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I should see the Travel Button next to the market selection dropdown",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I should see the Event Button next to the Travel Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I should see the Add return single trip radio after the Event Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "The Travel Button in the First Card is clicked",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Below the first card I should a second card containing a \"Swap Locations\" button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "In the \"firstLayer\" of the second card i should see a \"From\" dropdown and \"To\" dropdown",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "In the \"secondLayer\" of the second card i should see a \"Who\" dropdown and \"when\" dropdown",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "The \"Who\" and \"when\" buttons should be disabled by default if the \"To\" button was not selected",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "The Cart Section should be visible and have a header with text \"Cart\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "A \"Clear All\" Button should be visible beside the header",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
