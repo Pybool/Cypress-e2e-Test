@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 8379000000
+              "duration": 14397000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I create a an order",
             "result": {
               "status": "passed",
-              "duration": 71855000000
+              "duration": 72102000000
             }
           }
         ]

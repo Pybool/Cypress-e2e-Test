@@ -101,7 +101,6 @@ function getTabsOrSeats(id,index,compartment){
   .eq(0).children().filter(
     function () {
       try {
-
         if (seatObj.compartment == undefined) {
           throw new Error('Fail intentionally')
         }

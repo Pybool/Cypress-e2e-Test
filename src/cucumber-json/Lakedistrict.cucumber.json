@@ -36,7 +36,7 @@
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
               "status": "passed",
-              "duration": 3783000000
+              "duration": 4886000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I click User Admin on the Nav bar",
             "result": {
               "status": "passed",
-              "duration": 2353000000
+              "duration": 6929000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I click a \"All users\" tab on 'User Admin' page",
             "result": {
               "status": "passed",
-              "duration": 237000000
+              "duration": 385000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "I type \"Tayé\" in search box",
             "result": {
               "status": "passed",
-              "duration": 5136000000
+              "duration": 2085000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "Search returns result containing 'Tayé'",
             "result": {
               "status": "passed",
-              "duration": 52000000
+              "duration": 92000000
             }
           }
         ]
@@ -109,7 +109,7 @@
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
               "status": "passed",
-              "duration": 5210000000
+              "duration": 2503000000
             }
           },
           {
@@ -119,7 +119,7 @@
             "name": "I click User Admin on the Nav bar",
             "result": {
               "status": "passed",
-              "duration": 2331000000
+              "duration": 1987000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "I click a \"Admin users\" tab on 'User Admin' page",
             "result": {
               "status": "passed",
-              "duration": 282000000
+              "duration": 296000000
             }
           },
           {
@@ -139,7 +139,7 @@
             "name": "I type \"Tayé\" in search box",
             "result": {
               "status": "passed",
-              "duration": 1921000000
+              "duration": 1778000000
             }
           },
           {
@@ -149,7 +149,7 @@
             "name": "Search returns result containing 'Tayé'",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 82000000
             }
           }
         ]
@@ -182,7 +182,7 @@
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
               "status": "passed",
-              "duration": 3084000000
+              "duration": 6587000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "I click User Admin on the Nav bar",
             "result": {
               "status": "passed",
-              "duration": 2283000000
+              "duration": 6806000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "I click a \"POS users\" tab on 'User Admin' page",
             "result": {
               "status": "passed",
-              "duration": 330000000
+              "duration": 290000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "I type \"Beccy\" in search box",
             "result": {
               "status": "passed",
-              "duration": 1748000000
+              "duration": 1706000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "Search returns result containing 'Beccy'",
             "result": {
               "status": "passed",
-              "duration": 155000000
+              "duration": 67000000
             }
           }
         ]
@@ -255,7 +255,7 @@
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
               "status": "passed",
-              "duration": 2938000000
+              "duration": 2853000000
             }
           },
           {
@@ -265,7 +265,7 @@
             "name": "I click User Admin on the Nav bar",
             "result": {
               "status": "passed",
-              "duration": 1952000000
+              "duration": 3046000000
             }
           },
           {
@@ -275,7 +275,7 @@
             "name": "I click a \"Reservations users\" tab on 'User Admin' page",
             "result": {
               "status": "passed",
-              "duration": 207000000
+              "duration": 290000000
             }
           },
           {
@@ -285,7 +285,7 @@
             "name": "I type \"Tayé\" in search box",
             "result": {
               "status": "passed",
-              "duration": 1527000000
+              "duration": 1676000000
             }
           },
           {
@@ -295,7 +295,7 @@
             "name": "Search returns result containing 'Tayé'",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 76000000
             }
           }
         ]
@@ -328,7 +328,7 @@
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
               "status": "passed",
-              "duration": 2901000000
+              "duration": 2916000000
             }
           },
           {
@@ -338,7 +338,7 @@
             "name": "I click User Admin on the Nav bar",
             "result": {
               "status": "passed",
-              "duration": 1654000000
+              "duration": 2461000000
             }
           },
           {
@@ -348,7 +348,7 @@
             "name": "I click a \"Scanning app users\" tab on 'User Admin' page",
             "result": {
               "status": "passed",
-              "duration": 217000000
+              "duration": 235000000
             }
           },
           {
@@ -358,7 +358,7 @@
             "name": "I type \"Olamide\" in search box",
             "result": {
               "status": "passed",
-              "duration": 1932000000
+              "duration": 1528000000
             }
           },
           {
@@ -368,7 +368,7 @@
             "name": "Search returns result containing 'Olamide'",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 66000000
             }
           }
         ]
