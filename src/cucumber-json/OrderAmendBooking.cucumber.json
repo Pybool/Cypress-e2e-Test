@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 36949000000
+              "duration": 27434000000
             }
           },
           {
@@ -45,9 +45,8 @@
             "line": 6,
             "name": "I click the view button for an order in the orders table",
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "CypressError: `cy.get()` could not find a registered alias for: `@lastTd`.\nAvailable aliases are: `calender, o_table, tds, last`.\n    at $Cy.aliasNotFoundFor (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:131802:66)\n    at $Cy.getAlias (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:131745:12)\n    at <unknown> (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:131341:21)\n    at Object.subjectFn (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143314:16)\n    at $Cy.verifyUpcomingAssertions (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:142658:31)\n    at onRetry (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143305:15)\n    at retryQuery (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143318:10)\n    at <unknown> (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143468:17)\n    at tryCatcher (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromiseCtx (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1613:10)\n    at <unknown> (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:2382:20)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise.then (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1132:17)\n    at CommandQueue.runCommand (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143427:8)\n    at next (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143627:19)\n    at <unknown> (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143648:16)\n    at tryCatcher (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1701:18)\n    at <unknown> (https://admin.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:2392:25)\nFrom Your Spec Code:\n    at eval (src/integration/functions/rs2.js:72:19)\nat new Promise (<anonymous>)\n    at Context.eval (src/integration/functions/rs2.js:71:21)"
+              "status": "passed",
+              "duration": 104901000000
             }
           },
           {
@@ -56,7 +55,8 @@
             "line": 7,
             "name": "I ensure the order to be amended matches my last created order",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 361000000
             }
           },
           {
@@ -65,7 +65,8 @@
             "line": 8,
             "name": "I click the \"Edit Order\" Button beside \"Go to Dashboard\" button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 632000000
             }
           },
           {
@@ -74,7 +75,8 @@
             "line": 9,
             "name": "I should be taken to \"Amending Booking\" page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2158000000
             }
           },
           {
@@ -83,7 +85,8 @@
             "line": 35,
             "name": "I proceed to change route by clicking the green swap location toggle",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2721000000
             }
           },
           {
@@ -92,7 +95,8 @@
             "line": 36,
             "name": "The \"Commit Changes\" Button should be Inactive",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 206000000
             }
           },
           {
@@ -101,7 +105,8 @@
             "line": 37,
             "name": "I edit the 'Who' section by removing '1x Adult'",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3869000000
             }
           },
           {
@@ -110,7 +115,8 @@
             "line": 38,
             "name": "I edit the 'Date' section by clicking the 'Next Day' button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 33000000
             }
           },
           {
@@ -119,7 +125,8 @@
             "line": 39,
             "name": "I select a time for 'Add-Ons' Single Train ride",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2863000000
             }
           },
           {
@@ -128,7 +135,8 @@
             "line": 40,
             "name": "I select seats in the reservation compartment section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 21000000
             }
           },
           {
@@ -137,7 +145,8 @@
             "line": 41,
             "name": "The \"Commit Changes\" Button should be Active",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 230000000
             }
           },
           {
@@ -146,7 +155,8 @@
             "line": 42,
             "name": "I click the \"Commit Changes\" button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 835000000
             }
           },
           {
@@ -155,7 +165,8 @@
             "line": 43,
             "name": "The \"Refund\" Button should be Active if The Sub Total is negative else the \"Checkout\" Button should be active where either button is the action button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4573000000
             }
           },
           {
@@ -164,7 +175,8 @@
             "line": 44,
             "name": "I click the action button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2884000000
             }
           },
           {
@@ -173,16 +185,18 @@
             "line": 45,
             "name": "I process a refund or checkout",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 11975000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 46,
-            "name": "I should see that the order completed successfully",
+            "name": "I should see a \"Booking amended\" header",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8207000000
             }
           },
           {
@@ -191,7 +205,8 @@
             "line": 47,
             "name": "I ckick the view order button to verify all changes are reflected",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 16000000
             }
           }
         ]

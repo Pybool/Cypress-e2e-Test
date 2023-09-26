@@ -1,0 +1,247 @@
+[
+  {
+    "description": "As a User I want to access orders section So I view order details",
+    "keyword": "Feature",
+    "name": "User should be able to view order details",
+    "line": 3,
+    "id": "user-should-be-able-to-view-order-details",
+    "tags": [],
+    "uri": "OrderBookings.feature",
+    "elements": [
+      {
+        "id": "user-should-be-able-to-view-order-details;on-reservationfunctional-:-user-should-be-able-to-view-more-information",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "On ReservationFunctional : User should be able to view More Information",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 20
+          },
+          {
+            "name": "@order-bookings",
+            "line": 20
+          },
+          {
+            "name": "@rs2",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 17341000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I click the View button in Search Orders for a previously created order",
+            "result": {
+              "status": "passed",
+              "duration": 7557000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I click \"More Information\" dropdown",
+            "result": {
+              "status": "passed",
+              "duration": 4211000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "The \"More Information\" section displays data consistent with the order created",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-should-be-able-to-view-order-details;on-reservationfunctional-:-user-should-be-able-to-view-contact-details-information",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "On ReservationFunctional : User should be able to view Contact Details Information",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 27
+          },
+          {
+            "name": "@order-bookings",
+            "line": 27
+          },
+          {
+            "name": "@rs2",
+            "line": 27
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 16387000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I click the View button in Search Orders for a previously created order",
+            "result": {
+              "status": "passed",
+              "duration": 9639000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I click \"Contact Details\" dropdown",
+            "result": {
+              "status": "passed",
+              "duration": 4130000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "The \"Contact Details\" section displays data consistent with the order created",
+            "result": {
+              "status": "passed",
+              "duration": 1608000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-should-be-able-to-view-order-details;on-reservationfunctional-:-user-should-be-able-to-redeem-booking",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "On ReservationFunctional : User should be able to Redeem Booking",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 35
+          },
+          {
+            "name": "@order-bookings",
+            "line": 35
+          },
+          {
+            "name": "@rs2",
+            "line": 35
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 45239000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I click the View button in Search Orders for a previously created order",
+            "result": {
+              "status": "passed",
+              "duration": 4928000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I click the 'Redeem Booking' History on bookings page",
+            "result": {
+              "status": "passed",
+              "duration": 16910000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "I ensure that the 'Redeem Booking' Modal is visible and the 'Redeem OrderID' header is visible",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.readFile(\"store.txt\")` timed out after waiting `20000ms`.\n    at <unknown> (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:119304:74)\n    at tryCatcher (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1697:18)\n    at <unknown> (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:2392:25)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise.then (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1132:17)\n    at CommandQueue.runCommand (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143427:8)\n    at next (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143627:19)\n    at <unknown> (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143648:16)\n    at tryCatcher (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1701:18)\n    at <unknown> (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:2392:25)\nFrom Your Spec Code:\n    at Context.eval (src/integration/steps/Reservation2/OrderBookings/OrderBookings.js:275:11)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "I ensure that the Redeem Selected Ticket Button is disabled by default",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "I check all ticket options checkboxes",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "I ensure that the Redeem Selected Ticket Button is enabled",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "I click the Redeem Selected Ticket Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "The modal is closed and i should see Redeemed under the QR Code",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

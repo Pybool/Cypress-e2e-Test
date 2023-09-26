@@ -6,12 +6,6 @@
       "seats": "Seats 1-6"
     },
     {
-      "compartment": "Closed carriage 4-seat compartment",
-      "carriage": "Carriage B",
-      "seats": "Seats 11-14",
-      "marked": true
-    },
-    {
       "compartment": "Closed carriage 6-seat compartment",
       "carriage": "Carriage B",
       "seats": "Seats 15-20"
@@ -20,16 +14,6 @@
       "compartment": "Closed carriage 6-seat compartment",
       "carriage": "Carriage C",
       "seats": "Seats 1-6"
-    },
-    {
-      "compartment": "Closed carriage 4-seat compartment",
-      "carriage": "Carriage C",
-      "seats": "Seats 7-10"
-    },
-    {
-      "compartment": "Closed carriage 4-seat compartment",
-      "carriage": "Carriage C",
-      "seats": "Seats 11-14"
     },
     {
       "compartment": "Closed carriage 6-seat compartment",
@@ -39,41 +23,32 @@
     {
       "compartment": "Open carriage 2-seat compartment",
       "carriage": "Carriage D",
-      "seats": "Seats 1-2",
-      "marked": true
+      "seats": "Seats 1-2"
     },
     {
       "compartment": "Open carriage 4-seat compartment",
       "carriage": "Carriage D",
-      "seats": "Seats 7-10",
-      "marked": true
+      "seats": "Seats 3-6"
     },
     {
       "compartment": "Open carriage 4-seat compartment",
       "carriage": "Carriage D",
-      "seats": "Seats 7-10",
-      "marked": true
+      "seats": "Seats 7-10"
     },
     {
       "compartment": "Open carriage 4-seat compartment",
       "carriage": "Carriage D",
-      "seats": "Seats 7-10",
-      "marked": true
+      "seats": "Seats 11-14"
+    },
+    {
+      "compartment": "Open carriage 4-seat compartment",
+      "carriage": "Carriage D",
+      "seats": "Seats 15-18"
     },
     {
       "compartment": "Closed carriage 6-seat compartment",
       "carriage": "Carriage E",
       "seats": "Seats 1-6"
-    },
-    {
-      "compartment": "Closed carriage 4-seat compartment",
-      "carriage": "Carriage E",
-      "seats": "Seats 7-10"
-    },
-    {
-      "compartment": "Closed carriage 4-seat compartment",
-      "carriage": "Carriage E",
-      "seats": "Seats 11-14"
     },
     {
       "compartment": "Ruth Directors Saloon 4-seat compartment",
@@ -93,8 +68,7 @@
     {
       "compartment": "Semi-open 2-seat compartment",
       "carriage": "Carriage G",
-      "seats": "Seats 1-2",
-      "marked": true
+      "seats": "Seats 1-2"
     },
     {
       "compartment": "Semi-open 4-seat compartment",
@@ -119,14 +93,12 @@
     {
       "compartment": "Semi-open 2-seat compartment",
       "carriage": "Carriage G",
-      "seats": "Seats 1-2",
-      "marked": true
+      "seats": "Seats 1-2"
     },
     {
       "compartment": "Semi-open 2-seat compartment",
       "carriage": "Carriage G",
-      "seats": "Seats 1-2",
-      "marked": true
+      "seats": "Seats 1-2"
     },
     {
       "compartment": "Semi-open 4-seat compartment",
@@ -151,8 +123,7 @@
     {
       "compartment": "Semi-open 2-seat compartment",
       "carriage": "Carriage G",
-      "seats": "Seats 1-2",
-      "marked": true
+      "seats": "Seats 1-2"
     },
     {
       "compartment": "No 140 First Class seat",

@@ -537,7 +537,7 @@ When('I am on the Amending Booking page I click cancel order button',() => {
       expect(txt).to.include('Amending Booking')
   })
   cy.get('button.chakra-button', { timeout: 60000 }).then(($buttons) => {
-      const cancelButton = $buttons.filter(':contains("Cancel order")');
+      const cancelButton = $buttons.filter(':contains("Cancel booking")');
       if (cancelButton.length > 0) {
       cy.wrap(cancelButton)
           .click({ force: true });

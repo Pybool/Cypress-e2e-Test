@@ -66,33 +66,29 @@ async function cancelOrderFn(lastOrderId, amend) {
         .eq(1)
         .invoke('text')
         .then((txt) => {
-          if (txt == 'ordered') {
-            if (amend) {
-              return new Promise((resolve) => {
-                cy.get('@lastTd').eq(0).click({ force: true })
-                window.localStorage.setItem('actionType', 'view')
-                resolve('view')
-              })
-            } else {
-              cy.visit(`/orders/${lastOrderId}/amend`).then(() => {
+          if (txt != 'cancelled') {
+            
+            cy.visit(`/orders/${lastOrderId}/amend`).then(() => {
+              if(txt != 'cancelled'){
                 cy.get('button.chakra-button')
-                .contains('Cancel order',{timeout:x6})
+                .contains('Cancel booking',{timeout:x6})
                 .should('exist').and('be.visible')
                 .and('have.css','background-color','rgb(239, 211, 204)')
                 .click({force:true})
-
-    
-                cy.get('button.chakra-button', { timeout: 30000 })
-                  .contains('Refund',{timeout:x6})
-                  .click({ force: true })
-                  
-                cy.get('button.chakra-button')
-                  .get('div.chakra-stack')
-                  .contains('Complete refund',{timeout:x6})
-                  .click()
-                cy.visit('/booking')
-              })
-            }
+              }
+              cy.get('button.chakra-button', { timeout: 30000 })
+                .contains('Refund',{timeout:x6})
+                .click({ force: true })
+                
+              cy.get('button.chakra-button')
+                .get('div.chakra-stack')
+                .contains('Complete refund',{timeout:x6})
+                .click()
+                .then(()=>{
+                  cy.visit('/booking')
+                })
+              
+            })
           } else {
             return new Promise((resolve) => {
               cy.visit('/booking')
@@ -142,7 +138,7 @@ export async function cancelLastOrder(amend = false) {
   })
 }
 
-export function startCreateOrder(number, secondchoice,market='') {
+export function startCreateOrder(number, secondchoice,market='',time='12:50') {
   let dataObject  = DYN_DATA_OBJECT_FN('who', number)
     if (market == "Ullswater 'Steamers'"){
       dataObject =  ULLS_DYN_DATA_OBJECT_FN('who', number)
@@ -227,30 +223,31 @@ export function startCreateOrder(number, secondchoice,market='') {
     })
     resolve(1)
   }).then(async () => {
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i <= 1; i++) {
       cy.get('button.chakra-button').contains('Next Day',{timeout:x6}).click({ force: true })
     }
 
     
-    cy.get('h2.chakra-heading')
-      .contains('Available Options',{timeout:x6})
-      .parent()
-      .siblings()
-      .eq(1)
-      .find('h3')
-      .eq(0)
-      .as('singleTrainRide')
-      .parent()
-      .parent()
-      .siblings()
+    // cy.get('h2.chakra-heading')
+    //   .contains('Available Options',{timeout:x6})
+    //   .parent()
+    //   .siblings()
+    //   .eq(1)
+    //   .find('h3')
+    //   .eq(0)
+    //   .as('singleTrainRide')
+    //   .parent()
+    //   .parent()
+    //   .siblings()
    
       
-      cy.get('@singleTrainRide')
-      .parent()
-      .siblings()
-      .eq(0)
-      .children()
-      .eq(1)
+    //   cy.get('@singleTrainRide')
+    //   .parent()
+    //   .siblings()
+    //   .eq(0)
+    //   .children()
+    //   .eq(1)
+      cy.get('p.chakra-text').contains(time,{timeout:x6})
       .click({ force: true })
     
     cy.get('div.chakra-button__spinner')

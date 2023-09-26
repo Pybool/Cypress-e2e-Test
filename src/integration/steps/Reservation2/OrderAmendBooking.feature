@@ -43,5 +43,5 @@ Scenario: On ReservationFunctional : Ensuring that a booking can be amended by r
     Then The "Refund" Button should be Active if The Sub Total is negative else the "Checkout" Button should be active where either button is the action button
     Then I click the action button
     And I process a refund or checkout
-    Then I should see that the order completed successfully
+    Then I should see a "Booking amended" header
     Then I ckick the view order button to verify all changes are reflected

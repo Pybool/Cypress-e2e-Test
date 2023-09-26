@@ -4,6 +4,15 @@ import * as core from '../helpers/core'
 import { BASE_URL } from '../../../index'
 const x6 = 60000
 
+
+// beforeEach(() => {
+//   const time = '13:50'
+//   const date = '27'
+//   const entityID = '00574022-d00e-4fd9-af51-c285aa874400'
+//   cy.getCapacity(time,date,entityID)
+
+// })
+
 function cancelOrderFn(lastOrderId) {
   return cy.visit(`/orders/${lastOrderId}/amend`)
 }
@@ -56,15 +65,17 @@ async function selectOrderFromTable() {
   })
 }
 
-When('I create a an order', async () => {
-  cy.get('h2.chakra-heading').contains('Welcome to Reservations').should('be.visible')
-  cy.visit('/booking')
-  const data = { adults: 4, children: 4, step: '4 adults , 4 children' }
-  await rs2.startCreateOrder(data.adults, data.children)
-  core.processSeats('Who',data.step, 4).then((modCapacityData)=>{
-    console.log("Modified Capacity data ==> ", modCapacityData)
-    Cypress.env('modCapacityData', modCapacityData);
-    rs2.internalCheckOut('Checkout')
+When('I create a an order', () => {
+  rs2.cancelLastOrder(false).then(async() => {
+    cy.visit('/booking')
+    const data = { adults: 4, children: 4, step: '4 adults , 4 children',time:'13:50' }
+    await rs2.startCreateOrder(data.adults, data.children,'',data.time)
+    core.processSeats('Who',data.step, 4).then((modCapacityData)=>{
+      console.log("Modified Capacity data ==> ", modCapacityData)
+      Cypress.env('modCapacityData', modCapacityData);
+      rs2.internalCheckOut('Checkout')
+      rs2.cancelLastOrder(false).then(async() => {})
+    })
   })
   
 })
@@ -86,7 +97,7 @@ When(
         expect(txt).to.include('Amending Booking')
       })
     cy.get('button.chakra-button', { timeout: 60000 }).then(($buttons) => {
-      const cancelButton = $buttons.filter(':contains("Cancel order")')
+      const cancelButton = $buttons.filter(':contains("Cancel booking")')
       if (cancelButton.length > 0) {
         cy.wrap(cancelButton).click({ force: true })
       }

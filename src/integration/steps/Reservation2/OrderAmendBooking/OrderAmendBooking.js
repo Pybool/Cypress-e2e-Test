@@ -7,16 +7,16 @@ const __force__ = { force: true }
 var btnText
 const x6 = 60000
 
-beforeEach(() => {
-  const time = '13:50'
-  const date = '27'
-  const entityID = '00574022-d00e-4fd9-af51-c285aa874400'
-  cy.getCapacity(time,date,entityID)
+// beforeEach(() => {
+//   const time = '13:50'
+//   const date = '28'
+//   const entityID = '00574022-d00e-4fd9-af51-c285aa874400'
+//   cy.getCapacity(time,date,entityID)
 
-})
+// })
 
 When('I click the view button for an order in the orders table', async () => {
-  rs2.cancelLastOrder(true).then(() => {
+  rs2.cancelLastOrder(false).then(() => {
     
     cy.log('ACTION 2: ' + window.localStorage.getItem('actionType'))
     if (
@@ -29,10 +29,13 @@ When('I click the view button for an order in the orders table', async () => {
         if (currentUrl !== bookingUrl) {
           cy.visit('/booking')
         }
-        const data = { adults: 2, children: 2, step: '2 adults 2 children' }
-        await rs2.startCreateOrder(data.adults, data.children)
-        core.selectSeats('Who')
-        await rs2.internalCheckOut('Checkout')
+        const data = { adults: 2, children: 2, step: '2 adults , 2 children' ,time:'13:50' }
+        await rs2.startCreateOrder(data.adults, data.children,'',data.time)
+        core.processSeats('Who',data.step, 2).then((modCapacityData)=>{
+          console.log("Modified Capacity data ==> ", modCapacityData)
+          Cypress.env('modCapacityData', modCapacityData);
+          rs2.internalCheckOut('Checkout')
+        })
       })
     }
   })
@@ -245,18 +248,20 @@ When('I edit the {string} section by removing {string}', (section, value) => {
 When(
   'I edit the {string} section by clicking the {string} button',
   (date, btntxt) => {
-    cy.get('button.chakra-button').contains(btntxt).click(__force__)
+  //   cy.get('button.chakra-button').contains(btntxt).click(__force__)
   },
 )
 
 When('I select a time for {string} Single Train ride', () => {
-  cy.get('p.chakra-text')
-    .contains(Cypress.env('product'),{timeout:x6})
-    .parent()
-    .as('singleTrainRideAddon')
-    .find('button.chakra-button')
-    .eq(1)
-    .click(__force__)
+  // cy.get('p.chakra-text')
+  //   .contains(Cypress.env('product'),{timeout:x6})
+  //   .parent()
+  //   .as('singleTrainRideAddon')
+  //   .find('button.chakra-button')
+  //   .eq(1)
+  //   .click(__force__)
+    cy.get('p.chakra-text').contains('11:50',{timeout:x6})
+    .click({ force: true })
 })
 
 Then(
@@ -300,8 +305,12 @@ Then(
   },
 )
 
-Then('I select seats in the reservation compartment section', () => {
-  core.selectSeats('Who')
+Then('I select seats in the reservation compartment section', async() => {
+  // const data = { adults: 1, children: 2, step: '1 adults , 2 children' }
+  // core.processSeats('Who',data.step, 3).then((modCapacityData)=>{
+  //   console.log("Modified Capacity data ==> ", modCapacityData)
+  //   Cypress.env('modCapacityData', modCapacityData);
+  // })
 })
 
 Then('The {string} Button should be Inactive', (btnText) => {
@@ -323,29 +332,50 @@ Then('I click the {string} button', (btnText) => {
 Then(
   'The {string} Button should be Active if The Sub Total is negative else the {string} Button should be active where either button is the action button',
   (refund, checkout) => {
-    cy.get('p.chakra-text')
-      .contains('Sub Total:')
-      .siblings()
-      .eq(0)
-      .invoke('text')
-      .then((txt) => {
-        if (txt.includes('-')) {
-          btnText = refund
-        } else if (txt == '£0.00') {
-          btnText = checkout
-        } else {
-          btnText = checkout
-        }
-        cy.get('button.chakra-button')
-          .contains(btnText)
-          .should('not.have.attr', 'disabled')
-        cy.get('button.chakra-button').contains(btnText).should('be.visible')
+    const data = { adults: 1, children: 2, step: '1 adults , 2 children' }
+    cy.get('div.chakra-tabs__tablist').eq(0)
+    .should('exist',{timeout:60000})
+    .scrollIntoView()
+    .and('be.visible',{timeout:60000})
+    .then(()=>{
+      core.processSeats('Who',data.step, 3).then((modCapacityData)=>{
+        console.log("Modified Capacity data ==> ", modCapacityData)
+        Cypress.env('modCapacityData', modCapacityData);
       })
+  
+      cy.get('p.chakra-text')
+        .contains('Sub Total:')
+        .siblings()
+        .eq(0)
+        .invoke('text')
+        .then((txt) => {
+          if (txt.includes('-')) {
+            btnText = refund
+          } else if (txt == '£0.00') {
+            btnText = checkout
+          } else {
+            btnText = checkout
+          }
+          cy.get('button.chakra-button')
+            .contains('Commit Changes')
+            .should('not.have.attr', 'disabled')
+
+            cy.get('button.chakra-button')
+            .contains('Commit Changes').click()
+
+          cy.get('button.chakra-button')
+            .contains(btnText)
+            .should('not.have.attr', 'disabled')
+          // cy.get('button.chakra-button').contains('Refund').should('be.visible')
+        })
+    })
+    
   },
 )
 
 Then('I click the action button', () => {
-  cy.get('button.chakra-button').contains(btnText).click(__force__)
+  cy.get('h3').contains('Cart').parent().siblings().eq(2).children().last().as('btn').should('not.have.attr', 'disabled')
+  cy.get('@btn').click(__force__)
 })
 
 Then('I click the {string} button', (btnText) => {
@@ -353,19 +383,34 @@ Then('I click the {string} button', (btnText) => {
 })
 
 Then('I process a refund or checkout', () => {
-  if (btnText == 'Checkout') {
+  let btntext;
+  
+  cy.get('@btn').invoke('text').then((txt)=>{
+    if(txt=='Checkout'){
+      btntext = 'Continue to payment'
+    }
+    else{
+      btntext = 'Complete refund'
+    }
     cy.get('p.chakra-text')
-      .contains('Continue to payment',{timeout:x6})
-      .parent()
-      .parent()
-      .click(__force__)
-    
-    rs2.fillPaymentInformationForm()
-  }
+    .contains(btntext,{timeout:x6})
+    .parent()
+    .parent()
+    .click(__force__)
+    if (txt == 'Checkout') {
+      rs2.fillPaymentInformationForm()
+    }
+  })
+  
+})
+
+Then('I should see a {string} header', (header) => {
+  cy.get('span').contains(header).should('exist').and('be.visible')
+  
 })
 
 Then('I should see that the order completed successfully', () => {
-
+  
   cy.get('p.chakra-text').as('paragraphs')
   cy.get('@paragraphs')
   .contains('Order reference',{timeout:x6})

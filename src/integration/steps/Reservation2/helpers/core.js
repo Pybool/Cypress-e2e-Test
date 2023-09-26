@@ -38,8 +38,11 @@ function seatMapping(selector,unitTarget){
   return cy.fixture("capacity.json").then((json) => {
     let selectedCapacities = []
     for (let capacity of json.capacities){
+      
+      if(unitTarget==3){unitTarget=4}
+      console.log("Active capacity ==> ", capacity,String(unitTarget)+'-')
       if(capacity.compartment.includes(String(unitTarget)+'-')){
-        if(!selectedCapacities.includes(capacity.compartment)){
+        if(!selectedCapacities.includes(capacity.compartment) && capacity.marked!=true){
           selectedCapacities.push(capacity.compartment)
         }
         if(offset == selectedCapacities.length){
@@ -97,6 +100,7 @@ function getTabsOrSeats(id,index,compartment){
 }
  async function selectSeats(key,seatData) {
   let seatObj = getObjectFromArray(seatData,key)
+  
   const compartmentPill = Cypress.$('.chakra-tabs__tablist')
   .eq(0).children().filter(
     function () {
@@ -111,6 +115,15 @@ function getTabsOrSeats(id,index,compartment){
     },
   )
 
+  console.log(Cypress.$('.chakra-tabs__tablist') 
+  .children()
+  )
+
+  console.log(key, seatData, seatObj, compartmentPill)
+  if(!compartmentPill.attr('id')){
+    // seatObj['marked'] = false;
+    return updateObjectInArray(seatData,key,seatObj)
+  }
   let id = extractNumbersFromString(compartmentPill.attr('id').split("--")[1])[0]
   window.localStorage.setItem('cmpid',id[0])
   if (compartmentPill.attr('aria-selected') != 'true') {
@@ -127,7 +140,12 @@ function getTabsOrSeats(id,index,compartment){
       } catch {}
     })
     let selTab = tab.toArray()[0]
-    selTab.click()
+    if(selTab){selTab.click()}
+    else{
+      // seatObj['marked'] = false;
+      return updateObjectInArray(seatData,key,seatObj)
+    }
+    
 
   let seat = getTabsOrSeats(parseInt(id),1,key).eq(0).children().eq(0).children()
               .filter(function () {
@@ -160,7 +178,7 @@ function getTabsOrSeats(id,index,compartment){
   await delay(100)
   try{
     selSeat.click()
-    seatObj['marked'] = true;
+    // seatObj['marked'] = false;
     return updateObjectInArray(seatData,key,seatObj)
   }
   catch(err){console.log("Update error ", err)}
