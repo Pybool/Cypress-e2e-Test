@@ -49,7 +49,7 @@ When('I input {string} data', async (data) => {
 
 When('I input {string} data for multiple', async (data) => {
   choice = data
-  const arr = [] //data.split('1x')
+  const arr = [] 
   const numbs = []
   const array = data.split(',')
   array.forEach((num) => {

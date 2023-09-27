@@ -39,7 +39,6 @@ function seatMapping(selector,unitTarget){
     for (let capacity of json.capacities){
       
       if(unitTarget==3){unitTarget=4}
-      console.log("Active capacity ==> ", capacity,String(unitTarget)+'-')
       if(capacity.compartment.includes(String(unitTarget)+'-')){
         if(!selectedCapacities.includes(capacity.compartment) && capacity.marked!=true){
           selectedCapacities.push(capacity.compartment)
@@ -114,13 +113,8 @@ function getTabsOrSeats(id,index,compartment){
     },
   )
 
-  console.log(Cypress.$('.chakra-tabs__tablist') 
-  .children()
-  )
 
-  console.log(key, seatData, seatObj, compartmentPill)
   if(!compartmentPill.attr('id')){
-    // seatObj['marked'] = false;
     return updateObjectInArray(seatData,key,seatObj)
   }
   let id = extractNumbersFromString(compartmentPill.attr('id').split("--")[1])[0]
@@ -141,7 +135,6 @@ function getTabsOrSeats(id,index,compartment){
     let selTab = tab.toArray()[0]
     if(selTab){selTab.click()}
     else{
-      // seatObj['marked'] = false;
       return updateObjectInArray(seatData,key,seatObj)
     }
     
@@ -157,6 +150,7 @@ function getTabsOrSeats(id,index,compartment){
               })
   let selSeat = seat.toArray()[0]
   let retry = 5;
+
   while(selSeat==undefined && retry > 0){
     let vals = getNewKey(seatData,key)
     seatObj = vals[0]
@@ -171,16 +165,14 @@ function getTabsOrSeats(id,index,compartment){
                 } catch {}
               })
     selSeat =seat.toArray()[0]
-    console.log("Retrying selseats ===> ", selSeat)
     retry -= 1
   }
   await delay(100)
   try{
     selSeat.click()
-    // seatObj['marked'] = false;
     return updateObjectInArray(seatData,key,seatObj)
   }
-  catch(err){console.log("Update error ", err)}
+  catch(err){}
 }
 
 function getNewKey(seatData,key){

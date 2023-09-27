@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 32463000000
+              "duration": 13106000000
             }
           },
           {
@@ -45,9 +45,8 @@
             "line": 8,
             "name": "I create a an order",
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `input[name=firstname]`, but never found it.\n    at eval (src/integration/functions/rs2.js:425:9)\nat Array.forEach (<anonymous>)\n    at fillGeneralInformationForm (src/integration/functions/rs2.js:422:4)\n    at Object.internalCheckOut (src/integration/functions/rs2.js:507:2)\n    at eval (src/integration/steps/Reservation2/UserOrderCancel/UserOrderCancel.js:76:10)"
+              "status": "passed",
+              "duration": 94871000000
             }
           },
           {
@@ -56,7 +55,8 @@
             "line": 9,
             "name": "I go to the orders table and click on edit for the order",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 33086000000
             }
           },
           {
@@ -65,7 +65,8 @@
             "line": 10,
             "name": "I am on the Amending Booking page I click cancel order button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 11154000000
             }
           },
           {
@@ -74,7 +75,8 @@
             "line": 11,
             "name": "I should see \"The order will be cancelled\" with color \"rgb(217, 63, 28)\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2170000000
             }
           },
           {
@@ -83,7 +85,8 @@
             "line": 12,
             "name": "I should see a Refund Button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 708000000
             }
           },
           {
@@ -92,7 +95,8 @@
             "line": 13,
             "name": "I click on the Refund Button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 721000000
             }
           },
           {
@@ -101,7 +105,8 @@
             "line": 14,
             "name": "I should be taken to the Refund page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3361000000
             }
           },
           {
@@ -110,7 +115,8 @@
             "line": 15,
             "name": "I click the \"Complete refund\" Button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1347000000
             }
           },
           {
@@ -119,7 +125,8 @@
             "line": 16,
             "name": "I should see \"Booking cancelled\" header with color \"rgb(117, 164, 14)\" and \"Your booking has been cancelled\" header",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6482000000
             }
           }
         ]

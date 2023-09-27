@@ -49,7 +49,7 @@ import {
                 if (Cypress.$(this).text().includes(wildCard) && !Cypress.$(this).is('[disabled]')){
                     compartments.push(Cypress.$(this).text())
                 }
-            } catch(err) {console.log(err)}
+            } catch {}
             },
         )
         cy.wrap(compartments).should('have.length.at.least',val)

@@ -118,7 +118,7 @@ Then('I select {string} adult when choosing who', async(adultNum) => {
 
   cy.get('@selectedDropdown')
   .click({ force: true })
-  
+
   cy.get('input.chakra-numberinput__field').eq(0).type(parseInt(adultNum))
 })
 
@@ -141,7 +141,7 @@ When('I select the first available time in {string}', async(outboundOrReturn) =>
   else{
     cy.get('h3.chakra-heading').contains(outboundOrReturn)
     .siblings().eq(0).children().eq(0)
-    .children().eq(1).children().first().then((times)=>{console.log(times)})
+    .children().eq(1).children().first()
     .click()
   }
 })
@@ -156,7 +156,6 @@ Then('Atleast 1 time in {string} should be enabled', async(outboundOrReturn) => 
       }
   }).then(()=>{
     Cypress.env('activeReturnTimes',returnTimes)
-    console.log("Return times ==> ", Cypress.env('activeReturnTimes'))
   })
 })
 

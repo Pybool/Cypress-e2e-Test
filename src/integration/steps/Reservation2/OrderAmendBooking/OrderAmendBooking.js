@@ -7,7 +7,7 @@ const __force__ = { force: true }
 var btnText
 const x6 = 60000
 
-// beforeEach(() => {
+// BeforeEach(() => {
 //   const time = '13:50'
 //   const date = '28'
 //   const entityID = '00574022-d00e-4fd9-af51-c285aa874400'
@@ -32,7 +32,6 @@ When('I click the view button for an order in the orders table', async () => {
         const data = { adults: 2, children: 2, step: '2 adults , 2 children' ,time:'13:50' }
         await rs2.startCreateOrder(data.adults, data.children,'',data.time)
         core.processSeats('Who',data.step, 2).then((modCapacityData)=>{
-          console.log("Modified Capacity data ==> ", modCapacityData)
           Cypress.env('modCapacityData', modCapacityData);
           rs2.internalCheckOut('Checkout')
         })
@@ -248,18 +247,10 @@ When('I edit the {string} section by removing {string}', (section, value) => {
 When(
   'I edit the {string} section by clicking the {string} button',
   (date, btntxt) => {
-  //   cy.get('button.chakra-button').contains(btntxt).click(__force__)
   },
 )
 
 When('I select a time for {string} Single Train ride', () => {
-  // cy.get('p.chakra-text')
-  //   .contains(Cypress.env('product'),{timeout:x6})
-  //   .parent()
-  //   .as('singleTrainRideAddon')
-  //   .find('button.chakra-button')
-  //   .eq(1)
-  //   .click(__force__)
     cy.get('p.chakra-text').contains('11:50',{timeout:x6})
     .click({ force: true })
 })
@@ -306,11 +297,7 @@ Then(
 )
 
 Then('I select seats in the reservation compartment section', async() => {
-  // const data = { adults: 1, children: 2, step: '1 adults , 2 children' }
-  // core.processSeats('Who',data.step, 3).then((modCapacityData)=>{
-  //   console.log("Modified Capacity data ==> ", modCapacityData)
-  //   Cypress.env('modCapacityData', modCapacityData);
-  // })
+
 })
 
 Then('The {string} Button should be Inactive', (btnText) => {
@@ -339,7 +326,6 @@ Then(
     .and('be.visible',{timeout:60000})
     .then(()=>{
       core.processSeats('Who',data.step, 3).then((modCapacityData)=>{
-        console.log("Modified Capacity data ==> ", modCapacityData)
         Cypress.env('modCapacityData', modCapacityData);
       })
   
@@ -366,7 +352,6 @@ Then(
           cy.get('button.chakra-button')
             .contains(btnText)
             .should('not.have.attr', 'disabled')
-          // cy.get('button.chakra-button').contains('Refund').should('be.visible')
         })
     })
     

@@ -4,15 +4,6 @@ import * as core from '../helpers/core'
 import { BASE_URL } from '../../../index'
 const x6 = 60000
 
-
-// beforeEach(() => {
-//   const time = '13:50'
-//   const date = '27'
-//   const entityID = '00574022-d00e-4fd9-af51-c285aa874400'
-//   cy.getCapacity(time,date,entityID)
-
-// })
-
 function cancelOrderFn(lastOrderId) {
   return cy.visit(`/orders/${lastOrderId}/amend`)
 }
@@ -71,7 +62,6 @@ When('I create a an order', () => {
     const data = { adults: 4, children: 4, step: '4 adults , 4 children',time:'13:50' }
     await rs2.startCreateOrder(data.adults, data.children,'',data.time)
     core.processSeats('Who',data.step, 4).then((modCapacityData)=>{
-      console.log("Modified Capacity data ==> ", modCapacityData)
       Cypress.env('modCapacityData', modCapacityData);
       rs2.internalCheckOut('Checkout')
     })
@@ -80,6 +70,7 @@ When('I create a an order', () => {
 })
 
 Then('I go to the orders table and click on edit for the order', async () => {
+  cy.visit('/')
     cy.get('table')
     .should('exist')
     .and('be.visible')

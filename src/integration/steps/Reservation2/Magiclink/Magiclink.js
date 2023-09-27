@@ -85,7 +85,6 @@ When('I create a an order', async () => {
   const data = { adults: 4, children: 4, step: '4 adults , 4 children' }
   await rs2.startCreateOrder(data.adults, data.children)
   core.processSeats('Who',data.step, 4).then((modCapacityData)=>{
-    console.log("Modified Capacity data ==> ", modCapacityData)
     Cypress.env('modCapacityData', modCapacityData);
     rs2.internalCheckOut('Checkout')
   })
@@ -509,20 +508,12 @@ Then('I should no longer see the Add-Ons section at the bottom of the page', () 
    })
 });
 
-// Then('I select seats in the reservation compartment section',async() => {
-//   const data = { adults: 2, children: 2, step: '2 adults , 2 children' }
-//   core.processSeats('Who',data.step, 2).then((modCapacityData)=>{
-//     console.log("Modified Capacity data ==> ", modCapacityData)
-//     Cypress.env('modCapacityData', modCapacityData);
-//   })
-// });
 
 Then('The {string} Button should be Inactive', (btnText) => {
   cy.get('button.chakra-button').contains(btnText).should('have.attr','disabled')
 });
 
 Then('The {string} Button should be Active', (btnText) => {
-  // cy.get('button.chakra-button').contains(btnText).should('not.have.attr','disabled')
 });
 
 Then('I click the checkout Button', (btnText) => {

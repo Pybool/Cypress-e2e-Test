@@ -254,7 +254,6 @@ Cypress.Commands.add('getCapacity', (time,date,entityID) => {
             capacityDataObj['seats'] = Cypress.$(trs[i]).children().eq(3).find('input').val()
             capacityDataList.push(capacityDataObj)
           }
-          console.log(capacityDataList)
           let filename = 'src\\fixtures\\capacity.json'
           if (Cypress.platform != 'win32') {
             filename = 'src/fixtures/capacity.json'
