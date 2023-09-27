@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 100311000000
+              "duration": 32463000000
             }
           },
           {
@@ -46,7 +46,80 @@
             "name": "I create a an order",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 60000ms: Expected to find content: 'Next Day' within the element: <button.chakra-button.css-59u667> but never did.\n    at _callee2$ (src/integration/functions/rs2.js:224:37)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)"
+              "duration": 1000000,
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `input[name=firstname]`, but never found it.\n    at eval (src/integration/functions/rs2.js:425:9)\nat Array.forEach (<anonymous>)\n    at fillGeneralInformationForm (src/integration/functions/rs2.js:422:4)\n    at Object.internalCheckOut (src/integration/functions/rs2.js:507:2)\n    at eval (src/integration/steps/Reservation2/UserOrderCancel/UserOrderCancel.js:76:10)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I go to the orders table and click on edit for the order",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I am on the Amending Booking page I click cancel order button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see \"The order will be cancelled\" with color \"rgb(217, 63, 28)\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I should see a Refund Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click on the Refund Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should be taken to the Refund page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I click the \"Complete refund\" Button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see \"Booking cancelled\" header with color \"rgb(117, 164, 14)\" and \"Your booking has been cancelled\" header",
+            "result": {
+              "status": "skipped"
             }
           }
         ]

@@ -101,9 +101,9 @@ And('I click on {string} option', async (option) => {
 
 Then('I should see a {string} pdf file downloaded', async (file) => {
   if (Cypress.platform === 'win32') {
-    cy.readFile(`cypress\\Downloads\\${file}.pdf`).should('exist')
+    cy.readFile(`src\\Downloads\\${file}.pdf`).should('exist')
   } else {
-    cy.readFile(`cypress/Downloads/${file}.pdf`).should('exist')
+    cy.readFile(`src/Downloads/${file}.pdf`).should('exist')
   }
 })
 

@@ -207,6 +207,7 @@ export function startCreateOrder(number, secondchoice,market='',time='12:50') {
 
             if (secondchoice != 0) {
               const choices = [`${number}x Adult`, `${number}x Child`]
+              cy.get('input.chakra-numberinput__field').eq(0).type(0)
               for (let choiceidx = 0; choiceidx < choices.length; choiceidx++) {
                 arr = choices[choiceidx].split(`${number}x`)
                 text = arr[1].trim()
@@ -227,28 +228,10 @@ export function startCreateOrder(number, secondchoice,market='',time='12:50') {
       cy.get('button.chakra-button').contains('Next Day',{timeout:x6}).click({ force: true })
     }
 
-    
-    // cy.get('h2.chakra-heading')
-    //   .contains('Available Options',{timeout:x6})
-    //   .parent()
-    //   .siblings()
-    //   .eq(1)
-    //   .find('h3')
-    //   .eq(0)
-    //   .as('singleTrainRide')
-    //   .parent()
-    //   .parent()
-    //   .siblings()
-   
-      
-    //   cy.get('@singleTrainRide')
-    //   .parent()
-    //   .siblings()
-    //   .eq(0)
-    //   .children()
-    //   .eq(1)
-      cy.get('p.chakra-text').contains(time,{timeout:x6})
-      .click({ force: true })
+    cy.get('h3.chakra-heading').contains(Cypress.env('product'))
+    .parent()
+    .siblings().eq(0).children().last()
+    .click({ force: true })
     
     cy.get('div.chakra-button__spinner')
       .should('not.exist',{timeout:x6})

@@ -1,0 +1,451 @@
+[
+  {
+    "description": "As a User I want to access orders section So I view order details",
+    "keyword": "Feature",
+    "name": "User should be able to view order details",
+    "line": 3,
+    "id": "user-should-be-able-to-view-order-details",
+    "tags": [],
+    "uri": "OrderMoreDetails.feature",
+    "elements": [
+      {
+        "id": "user-should-be-able-to-view-order-details;user-should-be-able-to-perform-more-actions-on-bookings-page",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "User should be able to perform More actions on Bookings Page",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 6
+          },
+          {
+            "name": "@rs2",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 11231000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I click the View button in Search Orders for a previously created order",
+            "result": {
+              "status": "passed",
+              "duration": 6588000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click the More Actions Button beside Edit Order",
+            "result": {
+              "status": "passed",
+              "duration": 2530000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see a dropdown displayed",
+            "result": {
+              "status": "passed",
+              "duration": 130000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "The dropdown should contain an option \"Download Tickets\"",
+            "result": {
+              "status": "passed",
+              "duration": 202000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "The dropdown should contain an option \"Resend Confirmation\"",
+            "result": {
+              "status": "passed",
+              "duration": 231000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "The dropdown should contain an option \"View Message History\"",
+            "result": {
+              "status": "passed",
+              "duration": 197000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "The dropdown should contain an option \"View Redemption History\"",
+            "result": {
+              "status": "passed",
+              "duration": 177000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "The dropdown should contain an option \"View Transaction History\"",
+            "result": {
+              "status": "passed",
+              "duration": 186000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "The dropdown should contain an option \"Cancel Order\" which should have color \"rgb(217, 63, 28)\"",
+            "result": {
+              "status": "passed",
+              "duration": 163000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-should-be-able-to-view-order-details;user-should-be-able-to-perform-more-actions-on-bookings-page-clicking-on-each-option",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "User should be able to perform More actions on Bookings Page clicking on each option",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 19
+          },
+          {
+            "name": "@rs2",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I am logged in to reservations2 'uat'",
+            "result": {
+              "status": "passed",
+              "duration": 6892000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I click the View button in Search Orders for a previously created order",
+            "result": {
+              "status": "passed",
+              "duration": 4778000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I click the More Actions Button beside Edit Order",
+            "result": {
+              "status": "passed",
+              "duration": 5288000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I click on \"Download Tickets\" option",
+            "result": {
+              "status": "passed",
+              "duration": 346000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should see a \"confirmation\" pdf file downloaded",
+            "result": {
+              "status": "passed",
+              "duration": 257000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I click on \"Resend Confirmation\" option",
+            "result": {
+              "status": "passed",
+              "duration": 2037000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I should see a modal with Resend Email Header an Email address Label and and Input Field for the email and a Resend button",
+            "result": {
+              "status": "passed",
+              "duration": 2874000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I clear the email input field",
+            "result": {
+              "status": "passed",
+              "duration": 1350000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "The Resend Button should be disabled",
+            "result": {
+              "status": "passed",
+              "duration": 291000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I reenter the valid email",
+            "result": {
+              "status": "passed",
+              "duration": 2327000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "The Resend Button should be enabled",
+            "result": {
+              "status": "passed",
+              "duration": 366000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I click the Resend Button",
+            "result": {
+              "status": "passed",
+              "duration": 857000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I should see a bottom toast with Background color \"rgb(56, 161, 105)\" with title \"Email sent\" and body \"The confirmation email has been re-sent.\" and the modal should not be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 2568000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I click on \"View Message History\" option",
+            "result": {
+              "status": "passed",
+              "duration": 1152000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "I should see a modal with title \"Message History\"",
+            "result": {
+              "status": "passed",
+              "duration": 3568000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "The modal should have a table with headers \"Action, Delivery, Result\"",
+            "result": {
+              "status": "passed",
+              "duration": 2532000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I click the modal close button",
+            "result": {
+              "status": "passed",
+              "duration": 1333000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "The \"Message History\" modal should be closed",
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I click on \"View Redemption History\" option",
+            "result": {
+              "status": "passed",
+              "duration": 2017000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "I should see a modal with title \"Redemption History\"",
+            "result": {
+              "status": "passed",
+              "duration": 2037000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "I click the modal close button",
+            "result": {
+              "status": "passed",
+              "duration": 616000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "The \"Redemption History\" modal should be closed",
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "I click on \"View Transaction History\" option",
+            "result": {
+              "status": "passed",
+              "duration": 1294000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "I should see a modal with title \"Transaction History\"",
+            "result": {
+              "status": "passed",
+              "duration": 7090000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "The modal should have a table with headers \"Date, Transaction ID, Note, Provider, Method, Type, Total, Total All Time\"",
+            "result": {
+              "status": "passed",
+              "duration": 6754000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "I click the modal close button",
+            "result": {
+              "status": "passed",
+              "duration": 1623000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "The \"Transaction History\" modal should be closed",
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 51,
+            "name": "I click on \"Cancel Order\" option",
+            "result": {
+              "status": "passed",
+              "duration": 1371000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "I should be taken to \"Amending Booking\" page",
+            "result": {
+              "status": "passed",
+              "duration": 2404000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "I should see text \"The order will be cancelled\" which should have color \"rgb(217, 63, 28)\"",
+            "result": {
+              "status": "passed",
+              "duration": 908000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

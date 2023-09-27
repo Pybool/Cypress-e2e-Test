@@ -1,0 +1,77 @@
+[
+  {
+    "description": "As a User I want to click pages So all main menu loads",
+    "keyword": "Feature",
+    "name": "Admin regression page load",
+    "line": 1,
+    "id": "admin-regression-page-load",
+    "tags": [],
+    "uri": "Promos.feature",
+    "elements": [
+      {
+        "id": "admin-regression-page-load;on-lakedistrictadmin-services-products-and-combos-loads",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "On LakedistrictAdmin Services Products and Combos Loads",
+        "tags": [
+          {
+            "name": "@automates",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I am logged in to reservations2 'test'",
+            "result": {
+              "status": "passed",
+              "duration": 40235000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I click on 'New Order' button",
+            "result": {
+              "status": "passed",
+              "duration": 5148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I select the 'SA' to operate on",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I attempt to create an order selecting '2' adult and '3' child for when choosing who",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Sa' within the element: <span> but never did.\n    at _callee4$ (src/integration/steps/Reservation2/Promos/Promos.js:66:13)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at eval (src/integration/steps/Reservation2/Promos/Promos.js:131:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I ensure that a '5%' discount is applied on 'Child'",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

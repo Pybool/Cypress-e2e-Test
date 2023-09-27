@@ -9,432 +9,6 @@
     "uri": "Magiclink.feature",
     "elements": [
       {
-        "id": "customer-should-be-able-to-manage-order;customer-clicks-magic-link-after-24-hours-and-verify-the-bookings-section",
-        "keyword": "Scenario",
-        "line": 6,
-        "name": "Customer clicks magic link after 24 hours and Verify the Bookings Section",
-        "tags": [
-          {
-            "name": "@automated",
-            "line": 5
-          },
-          {
-            "name": "@magiclink",
-            "line": 5
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I am logged in to reservations2 'uat'",
-            "result": {
-              "status": "passed",
-              "duration": 20454000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "I have created an order as a customer",
-            "result": {
-              "status": "passed",
-              "duration": 81272000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "I get the previous order Order ID",
-            "result": {
-              "status": "passed",
-              "duration": 234000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
-            "result": {
-              "status": "passed",
-              "duration": 8320000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "I should see \"Bookings\" as a header in the page that loads",
-            "result": {
-              "status": "passed",
-              "duration": 6325000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "I should see \"Ticket Price\", \"Reservation\" and \"Total:\" sections under Bookings",
-            "result": {
-              "status": "passed",
-              "duration": 2001000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "I should not see The Edit button on the Page",
-            "result": {
-              "status": "passed",
-              "duration": 28000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "I should see the \"More Actions\" dropdown with \"Download Tickets\" option",
-            "result": {
-              "status": "passed",
-              "duration": 1576000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "I should see that the QrCode is \"Not Redeemed\" with \"rgb(97, 189, 63)\" Background color",
-            "result": {
-              "status": "passed",
-              "duration": 675000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "customer-should-be-able-to-manage-order;customer-clicks-magic-link-after-24-hours-and-verify-the-order-information-section",
-        "keyword": "Scenario",
-        "line": 18,
-        "name": "Customer clicks magic link after 24 hours and Verify the Order Information Section",
-        "tags": [
-          {
-            "name": "@automated",
-            "line": 17
-          },
-          {
-            "name": "@magiclink",
-            "line": 17
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 19,
-            "name": "I am logged in to reservations2 'uat'",
-            "result": {
-              "status": "passed",
-              "duration": 16887000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "I get the previous order Order ID",
-            "result": {
-              "status": "passed",
-              "duration": 251000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
-            "result": {
-              "status": "passed",
-              "duration": 4724000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "I should see \"Order Information\" as a header in the page that loads",
-            "result": {
-              "status": "passed",
-              "duration": 1227000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "I should see \"Order Details\", \"Contact Details\" and \"Billing Details\" Accordions",
-            "result": {
-              "status": "passed",
-              "duration": 12000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "I should not see The Edit button on the Page",
-            "result": {
-              "status": "passed",
-              "duration": 36000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "I should see the \"More Actions\" dropdown with \"Download Tickets\" option",
-            "result": {
-              "status": "passed",
-              "duration": 780000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "I should see that the QrCode is \"Not Redeemed\" with \"rgb(97, 189, 63)\" Background color",
-            "result": {
-              "status": "passed",
-              "duration": 290000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 27,
-            "name": "I click \"Order Details\" dropdown",
-            "result": {
-              "status": "passed",
-              "duration": 559000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 28,
-            "name": "The \"Order Details\" section displays data consistent with the order created",
-            "result": {
-              "status": "passed",
-              "duration": 301000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 29,
-            "name": "I click \"Contact Details\" dropdown",
-            "result": {
-              "status": "passed",
-              "duration": 518000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 30,
-            "name": "The \"Contact Details\" section displays data consistent with the order created",
-            "result": {
-              "status": "passed",
-              "duration": 1629000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "customer-should-be-able-to-manage-order;customer-clicks-magic-link-after-24-hours-to-verify-request-magik-link-page-sends-an-email",
-        "keyword": "Scenario",
-        "line": 34,
-        "name": "Customer clicks magic link after 24 hours to verify Request Magik link page sends an email",
-        "tags": [
-          {
-            "name": "@automated",
-            "line": 33
-          },
-          {
-            "name": "@magiclink",
-            "line": 33
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 35,
-            "name": "I am logged in to reservations2 'uat'",
-            "result": {
-              "status": "passed",
-              "duration": 12256000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 36,
-            "name": "I get the previous order Order ID",
-            "result": {
-              "status": "passed",
-              "duration": 154000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "I click the \"Manage Bookings\" button in my email after 24 hours for order \"ULOQIBOXHJM33\"",
-            "result": {
-              "status": "passed",
-              "duration": 6109000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 38,
-            "name": "The magic link takes the customer to the \"Request a magic link\" page",
-            "result": {
-              "status": "passed",
-              "duration": 2799000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "The order reference 'ULOQIBOXHJM33' is pre-populated",
-            "result": {
-              "status": "passed",
-              "duration": 80000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 40,
-            "name": "the 'Request magic link' button is clicked",
-            "result": {
-              "status": "passed",
-              "duration": 276000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 41,
-            "name": "I should see 'Magic link sent' header in the page that loads",
-            "result": {
-              "status": "passed",
-              "duration": 2722000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 42,
-            "name": "I should see body text with 'A new magic link has been sent to your email.' in the page that loads",
-            "result": {
-              "status": "passed",
-              "duration": 98000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "customer-should-be-able-to-manage-order;customer-enters-invalid-order-reference",
-        "keyword": "Scenario",
-        "line": 45,
-        "name": "Customer enters invalid order reference",
-        "tags": [
-          {
-            "name": "@automated",
-            "line": 44
-          },
-          {
-            "name": "@magiclink",
-            "line": 44
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 46,
-            "name": "I get the previous order Order ID",
-            "result": {
-              "status": "passed",
-              "duration": 710000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 47,
-            "name": "I click the \"Manage Bookings\" button in my email after 24 hours for order \"ULOQIBOXHJM33\"",
-            "result": {
-              "status": "passed",
-              "duration": 2626000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 48,
-            "name": "The magic link takes the customer to the \"Request a magic link\" page",
-            "result": {
-              "status": "passed",
-              "duration": 3387000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 49,
-            "name": "The customer enters an invalid order reference 'Invalid@Reference'",
-            "result": {
-              "status": "passed",
-              "duration": 861000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 50,
-            "name": "the 'Request magic link' button is clicked",
-            "result": {
-              "status": "passed",
-              "duration": 161000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 51,
-            "name": "I should see an error alert with title 'Something went wrong' and description 'Please, make sure you have used a valid booking reference.'",
-            "result": {
-              "status": "passed",
-              "duration": 2236000000
-            }
-          }
-        ]
-      },
-      {
         "id": "customer-should-be-able-to-manage-order;amend-an-order-nby-removing-an-adult-from-the-booking",
         "keyword": "Scenario",
         "line": 75,
@@ -458,143 +32,33 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 12923000000
+              "duration": 113179000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 77,
+            "name": "I have created an order as a customer",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 60000ms: Expected to find content: '12:50' within the element: <p.chakra-text.css-0> but never did.\n    at _callee2$ (src/integration/functions/rs2.js:251:30)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 77,
+            "line": 78,
             "name": "I get the previous order Order ID",
             "result": {
-              "status": "passed",
-              "duration": 478000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 78,
-            "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
-            "result": {
-              "status": "passed",
-              "duration": 2827000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 79,
-            "name": "I should see \"Order Information\" as a header in the page that loads",
-            "result": {
-              "status": "passed",
-              "duration": 1227000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 80,
-            "name": "I should see the \"Edit Order\" button",
-            "result": {
-              "status": "passed",
-              "duration": 155000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 81,
-            "name": "I click the \"Edit Order\" button",
-            "result": {
-              "status": "passed",
-              "duration": 697000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 82,
-            "name": "I should be taken to \"Amending Booking\" page",
-            "result": {
-              "status": "passed",
-              "duration": 2451000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 83,
-            "name": "I should see \"From,To,Who,when\" sections",
-            "result": {
-              "status": "passed",
-              "duration": 1634000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 84,
-            "name": "I should see \"Available Options\" card which should contain \"Previous Day\" and \"Next Day\"",
-            "result": {
-              "status": "passed",
-              "duration": 9147000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 85,
-            "name": "I click the Edit Order Button beside More Actions dropdown",
-            "result": {
-              "status": "passed",
-              "duration": 7048000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 86,
-            "name": "I edit the 'Who' section by removing '1x Adult'",
-            "result": {
-              "status": "passed",
-              "duration": 4576000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 87,
-            "name": "I should no longer see the \"Reservation\" Seating Compartments section",
-            "result": {
-              "status": "passed",
-              "duration": 170000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 88,
-            "name": "I edit the 'Date' section by clicking the 'Previous Day' button",
-            "result": {
-              "status": "passed",
-              "duration": 1896000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 89,
-            "name": "I select a time for Cypress.env('product')",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 90,
-            "name": "I select seats in the reservation compartment section",
+            "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
               "status": "skipped"
             }
@@ -602,8 +66,98 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 91,
-            "name": "The \"Commit Changes\" Button should be Active",
+            "line": 80,
+            "name": "I should see \"Order Information\" as a header in the page that loads",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 81,
+            "name": "I should see the \"Edit Order\" button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 82,
+            "name": "I click the \"Edit Order\" button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 83,
+            "name": "I should be taken to \"Amending Booking\" page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 84,
+            "name": "I should see \"From,To,Who,when\" sections",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 85,
+            "name": "I should see \"Available Options\" card which should contain \"Previous Day\" and \"Next Day\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 86,
+            "name": "I click the Edit Order Button beside More Actions dropdown",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 87,
+            "name": "I edit the 'Who' section by removing '1x Adult'",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 88,
+            "name": "I should no longer see the \"Reservation\" Seating Compartments section",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 89,
+            "name": "I edit the 'Date' section by clicking the 'Previous Day' button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 90,
+            "name": "I select a time for the product",
             "result": {
               "status": "skipped"
             }
@@ -612,7 +166,7 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 92,
-            "name": "I click the \"Commit Changes\" button on customer portal",
+            "name": "The \"Commit Changes\" Button should be Active",
             "result": {
               "status": "skipped"
             }
@@ -621,7 +175,7 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 93,
-            "name": "The \"Refund\" Button should be Active if The Sub Total is negative else the \"Checkout\" Button should be active where either button is the action button",
+            "name": "I click the \"Commit Changes\" button on customer portal",
             "result": {
               "status": "skipped"
             }
@@ -630,6 +184,15 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 94,
+            "name": "The \"Refund\" Button should be Active if The Sub Total is negative else the \"Checkout\" Button should be active where either button is the action button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 95,
             "name": "I click the action button",
             "result": {
               "status": "skipped"
@@ -638,7 +201,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 95,
+            "line": 96,
             "name": "I process a refund or checkout",
             "result": {
               "status": "skipped"
@@ -647,7 +210,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 96,
+            "line": 97,
             "name": "I should see that the order completed successfully",
             "result": {
               "status": "skipped"
@@ -656,7 +219,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 97,
+            "line": 98,
             "name": "I ckick the view order button to verify all changes are reflected",
             "result": {
               "status": "skipped"
@@ -667,16 +230,16 @@
       {
         "id": "customer-should-be-able-to-manage-order;customer-can-initiate-the-cancellation-process-for-a-booking-through-the-customer-portal.",
         "keyword": "Scenario",
-        "line": 101,
+        "line": 102,
         "name": "Customer can initiate the cancellation process for a booking through the customer portal.",
         "tags": [
           {
             "name": "@automated",
-            "line": 100
+            "line": 101
           },
           {
             "name": "@magiclinkcancel",
-            "line": 100
+            "line": 101
           }
         ],
         "type": "scenario",
@@ -684,57 +247,56 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 102,
+            "line": 103,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 8160000000
+              "duration": 36195000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 103,
+            "line": 104,
             "name": "I get the previous order Order ID",
             "result": {
               "status": "passed",
-              "duration": 540000000
+              "duration": 485000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 104,
+            "line": 105,
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
               "status": "passed",
-              "duration": 2351000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 105,
-            "name": "I click the \"Edit Order\" button",
-            "result": {
-              "status": "passed",
-              "duration": 1872000000
+              "duration": 8239000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 106,
-            "name": "I am on the Amending Booking page I click cancel order button",
+            "name": "I click the \"Edit Order\" button",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: expected 'BookingsPooley Bridge pier - Howtown pierOrder Information' to include 'Amending Booking'\n    at Context.eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:533:21)"
+              "error_message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `a.chakra-button`, but never found it.\n    at Context.eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:326:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 107,
+            "name": "I am on the Amending Booking page I click cancel order button",
+            "result": {
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 107,
+            "line": 108,
             "name": "I should see a Refund Button",
             "result": {
               "status": "skipped"
@@ -743,7 +305,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 108,
+            "line": 109,
             "name": "I click on the Refund Button",
             "result": {
               "status": "skipped"
@@ -752,7 +314,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 109,
+            "line": 110,
             "name": "I should be taken to the Refund page",
             "result": {
               "status": "skipped"
@@ -761,7 +323,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 110,
+            "line": 111,
             "name": "I click the \"Complete refund\" Button",
             "result": {
               "status": "skipped"
@@ -770,7 +332,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 111,
+            "line": 112,
             "name": "I should see \"Booking cancelled\" header with color \"rgb(117, 164, 14)\" and \"Your booking has been cancelled\" header",
             "result": {
               "status": "skipped"
@@ -781,16 +343,16 @@
       {
         "id": "customer-should-be-able-to-manage-order;expired-bookings-cannot-be-cancelled",
         "keyword": "Scenario",
-        "line": 114,
+        "line": 115,
         "name": "Expired bookings cannot be cancelled",
         "tags": [
           {
             "name": "@automated",
-            "line": 113
+            "line": 114
           },
           {
             "name": "@magiclinkcancel",
-            "line": 113
+            "line": 114
           }
         ],
         "type": "scenario",
@@ -798,57 +360,56 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 115,
+            "line": 116,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 8718000000
+              "duration": 28448000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 116,
+            "line": 117,
             "name": "I get the previous order Order ID",
             "result": {
               "status": "passed",
-              "duration": 465000000
+              "duration": 479000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 117,
+            "line": 118,
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
               "status": "passed",
-              "duration": 2753000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 118,
-            "name": "I click the \"Edit Order\" button",
-            "result": {
-              "status": "passed",
-              "duration": 2064000000
+              "duration": 3266000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 119,
-            "name": "I am on the Amending Booking page I click cancel order button",
+            "name": "I click the \"Edit Order\" button",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: expected 'BookingsPooley Bridge pier - Howtown pierOrder Information' to include 'Amending Booking'\n    at Context.eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:533:21)"
+              "error_message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `a.chakra-button`, but never found it.\n    at Context.eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:326:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 120,
+            "name": "I am on the Amending Booking page I click cancel order button",
+            "result": {
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 120,
+            "line": 121,
             "name": "I should see a Refund Button",
             "result": {
               "status": "skipped"
@@ -857,7 +418,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 121,
+            "line": 122,
             "name": "I click on the Refund Button",
             "result": {
               "status": "skipped"
@@ -866,7 +427,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 122,
+            "line": 123,
             "name": "I should be taken to the Refund page",
             "result": {
               "status": "skipped"
@@ -875,7 +436,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 123,
+            "line": 124,
             "name": "I click the \"Complete refund\" Button",
             "result": {
               "status": "skipped"
@@ -884,7 +445,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 124,
+            "line": 125,
             "name": "I should see \"Booking cancelled\" header with color \"rgb(117, 164, 14)\" and \"Your booking has been cancelled\" header",
             "result": {
               "status": "skipped"

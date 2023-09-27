@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 17341000000
+              "duration": 18382000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I click the View button in Search Orders for a previously created order",
             "result": {
               "status": "passed",
-              "duration": 7557000000
+              "duration": 6297000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I click \"More Information\" dropdown",
             "result": {
               "status": "passed",
-              "duration": 4211000000
+              "duration": 3797000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "The \"More Information\" section displays data consistent with the order created",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 52000000
             }
           }
         ]
@@ -99,7 +99,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 16387000000
+              "duration": 6801000000
             }
           },
           {
@@ -109,7 +109,7 @@
             "name": "I click the View button in Search Orders for a previously created order",
             "result": {
               "status": "passed",
-              "duration": 9639000000
+              "duration": 4101000000
             }
           },
           {
@@ -119,7 +119,7 @@
             "name": "I click \"Contact Details\" dropdown",
             "result": {
               "status": "passed",
-              "duration": 4130000000
+              "duration": 4352000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "The \"Contact Details\" section displays data consistent with the order created",
             "result": {
               "status": "passed",
-              "duration": 1608000000
+              "duration": 1436000000
             }
           }
         ]
@@ -162,7 +162,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 45239000000
+              "duration": 5367000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "I click the View button in Search Orders for a previously created order",
             "result": {
               "status": "passed",
-              "duration": 4928000000
+              "duration": 3747000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "I click the 'Redeem Booking' History on bookings page",
             "result": {
               "status": "passed",
-              "duration": 16910000000
+              "duration": 5838000000
             }
           },
           {
@@ -191,8 +191,8 @@
             "line": 40,
             "name": "I ensure that the 'Redeem Booking' Modal is visible and the 'Redeem OrderID' header is visible",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.readFile(\"store.txt\")` timed out after waiting `20000ms`.\n    at <unknown> (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:119304:74)\n    at tryCatcher (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1697:18)\n    at <unknown> (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:2392:25)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise.then (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1132:17)\n    at CommandQueue.runCommand (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143427:8)\n    at next (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143627:19)\n    at <unknown> (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:143648:16)\n    at tryCatcher (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:1701:18)\n    at <unknown> (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:2392:25)\nFrom Your Spec Code:\n    at Context.eval (src/integration/steps/Reservation2/OrderBookings/OrderBookings.js:275:11)"
+              "status": "passed",
+              "duration": 422000000
             }
           },
           {
@@ -201,7 +201,8 @@
             "line": 41,
             "name": "I ensure that the Redeem Selected Ticket Button is disabled by default",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 114000000
             }
           },
           {
@@ -210,7 +211,8 @@
             "line": 42,
             "name": "I check all ticket options checkboxes",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1862000000
             }
           },
           {
@@ -219,7 +221,8 @@
             "line": 43,
             "name": "I ensure that the Redeem Selected Ticket Button is enabled",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 54000000
             }
           },
           {
@@ -228,7 +231,8 @@
             "line": 44,
             "name": "I click the Redeem Selected Ticket Button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 230000000
             }
           },
           {
@@ -237,7 +241,8 @@
             "line": 45,
             "name": "The modal is closed and i should see Redeemed under the QR Code",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1434000000
             }
           }
         ]

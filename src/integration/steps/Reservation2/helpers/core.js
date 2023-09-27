@@ -20,7 +20,6 @@ function deleteObjectFromArray(arr, compartment) {
 function updateObjectInArray(array, cmpToUpdate, updatedObject) {
   return array.map((item) => {
     if (item.compartment === cmpToUpdate) {
-      // Update the properties of the matching object
       return { ...item, ...updatedObject };
     }
     return item;

@@ -74,7 +74,6 @@ When('I create a an order', () => {
       console.log("Modified Capacity data ==> ", modCapacityData)
       Cypress.env('modCapacityData', modCapacityData);
       rs2.internalCheckOut('Checkout')
-      rs2.cancelLastOrder(false).then(async() => {})
     })
   })
   
@@ -155,3 +154,7 @@ Then(
     cy.visit('/')
   },
 )
+
+after(()=>{
+  rs2.cancelLastOrder(false).then(async() => {})
+})

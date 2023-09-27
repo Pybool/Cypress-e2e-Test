@@ -20,6 +20,7 @@ import { DATA_OBJECT,DYN_DATA_OBJECT_FN,
         } from '../helpers/datafile';
 import * as core from '../helpers/core'
 const x6 = 60000
+const force = {force:true}
 
 function completeOrderExternal(url,cartToken){
   cy.request({
@@ -91,6 +92,126 @@ async function validateConfirmationPage(){
     
   })
 }
+
+When('I check the {string} checkbox', async(CheckText) => {
+  cy.get('span').contains(CheckText)
+  .siblings().eq(0)
+  .check(force)
+})
+
+When('I should see {string} and {string} sections for choosing time', async(outbound,Return) => {
+  [outbound,Return].forEach((val)=>{
+    cy.get('h3').contains(val)
+    .should('exist')
+    .and('be.visible')
+  })
+})
+
+Then('I select {string} adult when choosing who', async(adultNum) => {
+  cy.get('div.chakra-card', { timeout: 30000 })
+    .find('button > p')
+    .contains('Who',{timeout:x6})
+    .parent()
+    .as('selectedDropdown')
+    .should('be.enabled')
+    .and('be.visible')
+
+  cy.get('@selectedDropdown')
+  .click({ force: true })
+  
+  cy.get('input.chakra-numberinput__field').eq(0).type(parseInt(adultNum))
+})
+
+Then('I should see available times in {string} all {string}', async(outboundOrReturn,isEnabled) => {
+  cy.get('h3.chakra-heading').contains(outboundOrReturn)
+  .siblings().eq(0).children().eq(0)
+  .children().eq(1).children().as(`${outboundOrReturn}-times`).each(($el)=>{
+    if(isEnabled=='Enabled'){
+      cy.wrap($el).should('not.have.attr','disabled')
+    }
+    else{cy.wrap($el).should('have.attr','disabled')}
+  })
+})
+
+When('I select the first available time in {string}', async(outboundOrReturn) => {
+  if(outboundOrReturn=='Return Options'){
+    let el = Cypress.env('activeReturnTimes')[0]
+    cy.wrap(el).click()
+  }
+  else{
+    cy.get('h3.chakra-heading').contains(outboundOrReturn)
+    .siblings().eq(0).children().eq(0)
+    .children().eq(1).children().first().then((times)=>{console.log(times)})
+    .click()
+  }
+})
+
+Then('Atleast 1 time in {string} should be enabled', async(outboundOrReturn) => {
+  let returnTimes = []
+  cy.get('h3.chakra-heading').contains(outboundOrReturn)
+  .siblings().eq(0).children().eq(0)
+  .children().eq(1).children().each(($el)=>{
+      if(!$el.is('[disabled]')){
+        returnTimes.push($el)
+      }
+  }).then(()=>{
+    Cypress.env('activeReturnTimes',returnTimes)
+    console.log("Return times ==> ", Cypress.env('activeReturnTimes'))
+  })
+})
+
+Then('The {string} button should be {string}', async(cartBtnText,isEnabled) => {
+  let beEnabled = 'not.be.enabled'
+  if (isEnabled == 'Enabled'){beEnabled = 'be.enabled'}
+  cy.get('button').contains(cartBtnText).should(beEnabled)
+  if(isEnabled == 'Enabled'){
+    cy.get('button').contains(cartBtnText).click()
+  }
+})
+
+Then('In the reservation modal i should see {string} with its compartments', async(route) => {
+  cy.get('h3').contains(route).as('routeCompartment')
+  .scrollIntoView().should('exist').and('be.visible')
+
+  cy.get('@routeCompartment')
+  .siblings().eq(0)
+  .children().eq(0)
+  .children().eq(2)
+  .scrollIntoView()
+  .click()
+
+  cy.get('@routeCompartment')
+  .siblings().eq(0)
+  .children().eq(1)
+  .children().eq(2)
+  .children().eq(0)
+  .children().eq(1)
+  .find('button')
+  .eq(0)
+  .click()
+  
+})
+
+Then('I checkout and pay', async() => {
+  rs2.internalCheckOut()
+})
+
+after(()=>{
+  rs2.cancelLastOrder()
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 When('I make a new Booking with the information from datasource', async() => {
 cy.get('div.chakra-card',{timeout:15000}).get("div.chakra-stack").find('button').eq(0).should('exist').click({force:true})
@@ -211,7 +332,6 @@ And('The {string} button should be active and i proceed to checkout by paying by
 
 
 And('The {string} button should be active and i proceed to checkout internally', async(button) => {
-  
   rs2.internalCheckOut(button);
 })
 
