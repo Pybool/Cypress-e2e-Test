@@ -35,8 +35,8 @@
             "line": 6,
             "name": "I am on Booking Page",
             "result": {
-              "status": "passed",
-              "duration": 27066000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `span[class^=\"inlinetextbox_layout_\"]`, but never found it. Queried from:\n\n              > <body>\n    at _callee$ (src/integration/functions/lapland_helper.js:5:5)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at btndivspan (src/integration/functions/lapland_helper.js:2:32)"
             }
           },
           {
@@ -45,8 +45,7 @@
             "line": 7,
             "name": "I input \"1x Adult, 1x Child\" data",
             "result": {
-              "status": "passed",
-              "duration": 1874000000
+              "status": "skipped"
             }
           },
           {
@@ -55,8 +54,7 @@
             "line": 8,
             "name": "'Next' button is clicked",
             "result": {
-              "status": "passed",
-              "duration": 816000000
+              "status": "skipped"
             }
           },
           {
@@ -65,8 +63,7 @@
             "line": 9,
             "name": "'Your Party' is populated with selected option",
             "result": {
-              "status": "passed",
-              "duration": 399000000
+              "status": "skipped"
             }
           }
         ]
@@ -98,8 +95,8 @@
             "line": 6,
             "name": "I am on Booking Page",
             "result": {
-              "status": "passed",
-              "duration": 14189000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `span[class^=\"inlinetextbox_layout_\"]`, but never found it. Queried from:\n\n              > <body>\n    at _callee$ (src/integration/functions/lapland_helper.js:5:5)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at btndivspan (src/integration/functions/lapland_helper.js:2:32)"
             }
           },
           {
@@ -108,8 +105,7 @@
             "line": 7,
             "name": "I input \"1x Adult, 1x Child, 1x Infant, 1x Personal Assistant\" data",
             "result": {
-              "status": "passed",
-              "duration": 3317000000
+              "status": "skipped"
             }
           },
           {
@@ -118,8 +114,7 @@
             "line": 8,
             "name": "'Next' button is clicked",
             "result": {
-              "status": "passed",
-              "duration": 827000000
+              "status": "skipped"
             }
           },
           {
@@ -128,8 +123,7 @@
             "line": 9,
             "name": "'Your Party' is populated with selected option",
             "result": {
-              "status": "passed",
-              "duration": 352000000
+              "status": "skipped"
             }
           }
         ]
@@ -161,8 +155,8 @@
             "line": 6,
             "name": "I am on Booking Page",
             "result": {
-              "status": "passed",
-              "duration": 15627000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `span[class^=\"inlinetextbox_layout_\"]`, but never found it. Queried from:\n\n              > <body>\n    at _callee$ (src/integration/functions/lapland_helper.js:5:5)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at btndivspan (src/integration/functions/lapland_helper.js:2:32)"
             }
           },
           {
@@ -171,8 +165,7 @@
             "line": 7,
             "name": "I input \"1x Adult, 1x Child, 1x Infant\" data",
             "result": {
-              "status": "passed",
-              "duration": 1972000000
+              "status": "skipped"
             }
           },
           {
@@ -181,8 +174,7 @@
             "line": 8,
             "name": "'Next' button is clicked",
             "result": {
-              "status": "passed",
-              "duration": 646000000
+              "status": "skipped"
             }
           },
           {
@@ -191,8 +183,7 @@
             "line": 9,
             "name": "'Your Party' is populated with selected option",
             "result": {
-              "status": "passed",
-              "duration": 254000000
+              "status": "skipped"
             }
           }
         ]
@@ -224,8 +215,8 @@
             "line": 6,
             "name": "I am on Booking Page",
             "result": {
-              "status": "passed",
-              "duration": 13316000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `span[class^=\"inlinetextbox_layout_\"]`, but never found it. Queried from:\n\n              > <body>\n    at _callee$ (src/integration/functions/lapland_helper.js:5:5)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at btndivspan (src/integration/functions/lapland_helper.js:2:32)"
             }
           },
           {
@@ -234,8 +225,7 @@
             "line": 7,
             "name": "I input \"1x Adult, 1x Child, 1x Personal Assistant\" data",
             "result": {
-              "status": "passed",
-              "duration": 1940000000
+              "status": "skipped"
             }
           },
           {
@@ -244,8 +234,7 @@
             "line": 8,
             "name": "'Next' button is clicked",
             "result": {
-              "status": "passed",
-              "duration": 765000000
+              "status": "skipped"
             }
           },
           {
@@ -254,8 +243,7 @@
             "line": 9,
             "name": "'Your Party' is populated with selected option",
             "result": {
-              "status": "passed",
-              "duration": 343000000
+              "status": "skipped"
             }
           }
         ]
@@ -287,8 +275,8 @@
             "line": 22,
             "name": "I am on Booking Page",
             "result": {
-              "status": "passed",
-              "duration": 12726000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `span[class^=\"inlinetextbox_layout_\"]`, but never found it. Queried from:\n\n              > <body>\n    at _callee$ (src/integration/functions/lapland_helper.js:5:5)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at btndivspan (src/integration/functions/lapland_helper.js:2:32)"
             }
           },
           {
@@ -297,8 +285,7 @@
             "line": 23,
             "name": "I input \"1x Adult\" data",
             "result": {
-              "status": "passed",
-              "duration": 645000000
+              "status": "skipped"
             }
           },
           {
@@ -307,8 +294,7 @@
             "line": 24,
             "name": "'Next' button is not active",
             "result": {
-              "status": "passed",
-              "duration": 289000000
+              "status": "skipped"
             }
           }
         ]
@@ -340,8 +326,8 @@
             "line": 32,
             "name": "I am on Booking Page",
             "result": {
-              "status": "passed",
-              "duration": 13778000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `span[class^=\"inlinetextbox_layout_\"]`, but never found it. Queried from:\n\n              > <body>\n    at _callee$ (src/integration/functions/lapland_helper.js:5:5)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at btndivspan (src/integration/functions/lapland_helper.js:2:32)"
             }
           },
           {
@@ -350,8 +336,7 @@
             "line": 33,
             "name": "I input \"1x Child\" data",
             "result": {
-              "status": "passed",
-              "duration": 671000000
+              "status": "skipped"
             }
           },
           {
@@ -360,8 +345,7 @@
             "line": 34,
             "name": "'Next' button is not active",
             "result": {
-              "status": "passed",
-              "duration": 301000000
+              "status": "skipped"
             }
           }
         ]
@@ -393,8 +377,8 @@
             "line": 44,
             "name": "I am on Booking Page",
             "result": {
-              "status": "passed",
-              "duration": 13485000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `span[class^=\"inlinetextbox_layout_\"]`, but never found it. Queried from:\n\n              > <body>\n    at _callee$ (src/integration/functions/lapland_helper.js:5:5)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at btndivspan (src/integration/functions/lapland_helper.js:2:32)"
             }
           },
           {
@@ -403,8 +387,7 @@
             "line": 45,
             "name": "I input \"1x Personal Assistant\" data",
             "result": {
-              "status": "passed",
-              "duration": 512000000
+              "status": "skipped"
             }
           },
           {
@@ -413,8 +396,7 @@
             "line": 46,
             "name": "'Next' button is not active",
             "result": {
-              "status": "passed",
-              "duration": 308000000
+              "status": "skipped"
             }
           },
           {
@@ -423,8 +405,7 @@
             "line": 47,
             "name": "I am not able to select 'Personal Assistant'",
             "result": {
-              "status": "passed",
-              "duration": 104000000
+              "status": "skipped"
             }
           }
         ]
@@ -456,8 +437,8 @@
             "line": 57,
             "name": "I am on Booking Page",
             "result": {
-              "status": "passed",
-              "duration": 13593000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `span[class^=\"inlinetextbox_layout_\"]`, but never found it. Queried from:\n\n              > <body>\n    at _callee$ (src/integration/functions/lapland_helper.js:5:5)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at btndivspan (src/integration/functions/lapland_helper.js:2:32)"
             }
           },
           {
@@ -466,8 +447,7 @@
             "line": 58,
             "name": "I input \"1x Child, 1x Personal Assistant\" data",
             "result": {
-              "status": "passed",
-              "duration": 1512000000
+              "status": "skipped"
             }
           },
           {
@@ -476,8 +456,7 @@
             "line": 59,
             "name": "I am not able to select 'Personal Assistant'",
             "result": {
-              "status": "passed",
-              "duration": 122000000
+              "status": "skipped"
             }
           },
           {
@@ -486,8 +465,7 @@
             "line": 60,
             "name": "'Next' button is clicked",
             "result": {
-              "status": "passed",
-              "duration": 816000000
+              "status": "skipped"
             }
           },
           {
@@ -496,8 +474,7 @@
             "line": 61,
             "name": "\"1x Child, 1x Personal Assistant\" is populated with selected option",
             "result": {
-              "status": "passed",
-              "duration": 522000000
+              "status": "skipped"
             }
           },
           {
@@ -506,8 +483,7 @@
             "line": 62,
             "name": "I input '15 Nov' data for tour",
             "result": {
-              "status": "passed",
-              "duration": 7326000000
+              "status": "skipped"
             }
           },
           {
@@ -516,8 +492,7 @@
             "line": 63,
             "name": "I input time \"12:00\" data for tour",
             "result": {
-              "status": "passed",
-              "duration": 1701000000
+              "status": "skipped"
             }
           },
           {
@@ -526,8 +501,7 @@
             "line": 64,
             "name": "'Cart' Summary displays with time \"<Time>\" and date \"15 Nov\"",
             "result": {
-              "status": "passed",
-              "duration": 339000000
+              "status": "skipped"
             }
           }
         ]
@@ -559,8 +533,8 @@
             "line": 73,
             "name": "I am on Booking Page",
             "result": {
-              "status": "passed",
-              "duration": 13053000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `span[class^=\"inlinetextbox_layout_\"]`, but never found it. Queried from:\n\n              > <body>\n    at _callee$ (src/integration/functions/lapland_helper.js:5:5)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at btndivspan (src/integration/functions/lapland_helper.js:2:32)"
             }
           },
           {
@@ -569,8 +543,7 @@
             "line": 74,
             "name": "I input \"4x Adult, 6x Child\" data for multiple",
             "result": {
-              "status": "passed",
-              "duration": 21821000000
+              "status": "skipped"
             }
           },
           {
@@ -579,8 +552,7 @@
             "line": 75,
             "name": "Child count should remain 4",
             "result": {
-              "status": "passed",
-              "duration": 1385000000
+              "status": "skipped"
             }
           }
         ]
@@ -612,8 +584,8 @@
             "line": 84,
             "name": "I am on Booking Page",
             "result": {
-              "status": "passed",
-              "duration": 15301000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `span[class^=\"inlinetextbox_layout_\"]`, but never found it. Queried from:\n\n              > <body>\n    at _callee$ (src/integration/functions/lapland_helper.js:5:5)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at btndivspan (src/integration/functions/lapland_helper.js:2:32)"
             }
           },
           {
@@ -622,8 +594,7 @@
             "line": 85,
             "name": "I input \"1x Adult, 1x Child\" data",
             "result": {
-              "status": "passed",
-              "duration": 1329000000
+              "status": "skipped"
             }
           },
           {
@@ -632,8 +603,7 @@
             "line": 86,
             "name": "'Next' button is clicked",
             "result": {
-              "status": "passed",
-              "duration": 635000000
+              "status": "skipped"
             }
           },
           {
@@ -642,8 +612,7 @@
             "line": 87,
             "name": "I input '<Your tour>' data for tour with \"Current Date -1\"",
             "result": {
-              "status": "passed",
-              "duration": 1148000000
+              "status": "skipped"
             }
           },
           {
@@ -652,8 +621,7 @@
             "line": 88,
             "name": "I am not able to select the greyed out date",
             "result": {
-              "status": "passed",
-              "duration": 358000000
+              "status": "skipped"
             }
           }
         ]
@@ -685,8 +653,8 @@
             "line": 98,
             "name": "I am on Booking Page",
             "result": {
-              "status": "passed",
-              "duration": 15410000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `span[class^=\"inlinetextbox_layout_\"]`, but never found it. Queried from:\n\n              > <body>\n    at _callee$ (src/integration/functions/lapland_helper.js:5:5)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at btndivspan (src/integration/functions/lapland_helper.js:2:32)"
             }
           },
           {
@@ -695,8 +663,7 @@
             "line": 99,
             "name": "I input \"1x Adult, 1x Child\" data",
             "result": {
-              "status": "passed",
-              "duration": 1209000000
+              "status": "skipped"
             }
           },
           {
@@ -705,8 +672,7 @@
             "line": 100,
             "name": "'Next' button is clicked",
             "result": {
-              "status": "passed",
-              "duration": 781000000
+              "status": "skipped"
             }
           },
           {
@@ -715,8 +681,7 @@
             "line": 101,
             "name": "\"1x Adult, 1x Child\" is populated with selected option",
             "result": {
-              "status": "passed",
-              "duration": 342000000
+              "status": "skipped"
             }
           },
           {
@@ -725,8 +690,7 @@
             "line": 102,
             "name": "I input '18 Nov' data for tour",
             "result": {
-              "status": "passed",
-              "duration": 7452000000
+              "status": "skipped"
             }
           },
           {
@@ -735,8 +699,7 @@
             "line": 103,
             "name": "I input time \"09:30\" data for tour",
             "result": {
-              "status": "passed",
-              "duration": 1434000000
+              "status": "skipped"
             }
           },
           {
@@ -745,8 +708,7 @@
             "line": 104,
             "name": "'Cart' Summary displays with time \"<Time>\" and date \"18 Nov\"",
             "result": {
-              "status": "passed",
-              "duration": 289000000
+              "status": "skipped"
             }
           }
         ]
