@@ -1,6 +1,5 @@
 import { defineConfig } from 'cypress'
 import dotenv from 'dotenv'
-
 dotenv.config()
 const cucumber = require('cypress-cucumber-preprocessor').default
 const getCompareSnapshotsPlugin = require('cypress-image-diff-js/dist/plugin')
