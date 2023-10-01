@@ -353,7 +353,7 @@ async function createTopDirs(){
   for(let i = 0 ; i < topDir.length;i++){
     const section = getSectionObject(sectionsList, topDir[i]);
     if(section == undefined){
-      let response = await axios.post(
+      await axios.post(
         `${options.url}/index.php?/api/v2/add_section/${projectId}`,
         { "suite_id": suiteId, "name": topDir[i] },
         opt

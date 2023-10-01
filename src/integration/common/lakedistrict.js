@@ -1,13 +1,11 @@
 import { Given, And, Then, When } from 'cypress-cucumber-preprocessor/steps'
 import { BASE_URL } from '../index'
 import { setBaseUrl } from './generic'
-
 require('dotenv').config()
-const envFIle = process.env
-const username = envFIle.username || 'taye.oyelekan@ticknovate.com'
-const password = envFIle.backendpassword || 'NtU6$TC4'
+const username = Cypress.env('ADMIN_USER')
+const password = Cypress.env('ADMIN_PASS')
 
-const pwds = { lakedistrict: 'Radio9*981tai' }
+const pwds = { lakedistrict: Cypress.env('LAKE_DISTRICT_PASS') }
 setBaseUrl('lakedistrict', BASE_URL)
 
 Given('I am a user on Admin Page for {string}', (env) => {

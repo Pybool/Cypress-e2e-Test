@@ -75,7 +75,7 @@ And('I click the {string} button', async (buttonText) => {
 })
 
 And(
-  'I enter a {string}, {string} and enter other relevant details for {string} section after clicking {string}',
+  'I enter a {string}, {string} and enter other relevant details for {string} menu and {string}',
   async (name, external_id, section, add) => {
     const unique_external_id = `${generateID()}`
     if (!['Combos', 'Promos', 'Extras', 'User Admin'].includes(section)) {
@@ -190,7 +190,6 @@ And(
     }).as('postRequest')
 
     cy.get('main').find('button').contains('Save').click({ force: true })
-
     cy.wait('@postRequest').then((interception) => {
       const response = interception.response
       expect(String(response.statusCode)).to.eq('200')

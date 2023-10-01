@@ -479,8 +479,6 @@ export function internalCheckOut(checkout='',market='') {
     .should('not.have.attr', 'disabled',{timeout:x6})
     cy.get('footer.chakra-modal__footer').find('button').click({ force: true })
   }
-  
-
   cy.get('div[class^="chakra-stack"]')
     .find('button', { timeout: 30000 })
     .contains('Checkout',{timeout:x6})

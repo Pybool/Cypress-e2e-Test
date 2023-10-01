@@ -1,10 +1,10 @@
 export const BASE_URL = {
   rs2: {
-    qa4: 'https://reservations.default-qa4.ticknovate-test.com/',
-    uat: 'https://reservations.lakedistrict.ticknovate-uat.com/',
+    qa4: Cypress.env('RES2_QA4'),
+    uat: Cypress.env('RES2_UAT'),
   },
-  backend: 'https://admin.default-demo.ticknovate-test.com',
-  'backend-uat': 'https://admin.lakedistrict.ticknovate-uat.com',
-  lapland: 'https://lapland.reservations.lapland.ticknovate-uat.com/',
-  lakedistrict: 'https://admin.default-qa3.ticknovate-test.com/',
+  backend: Cypress.env('ADMIN_URL_TEST'),
+  'backend-uat': Cypress.env('ADMIN_URL_UAT'),
+  lapland: Cypress.env('TENANT_ADMIN_URL_LAPLAND'),
+  lakedistrict:  Cypress.env('TENANT_ADMIN_URL_LAKEDISTRICT')
 }

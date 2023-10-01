@@ -3,12 +3,10 @@ import { BASE_URL } from '../index'
 import { btndivspan } from '../functions/lapland_helper'
 import { setBaseUrl } from './generic'
 require('dotenv').config()
+const username = Cypress.env('ADMIN_USER')
+const password = Cypress.env('LAKE_DISTRICT_PASS')
 const x6 = 60000
-
-const envFIle = process.env
-const username = envFIle.username || 'taye.oyelekan@ticknovate.com'
-const password = envFIle.laplandpassword || 'Radio9*981tai'
-var choice
+let choice;
 
 setBaseUrl('lapland', BASE_URL)
 

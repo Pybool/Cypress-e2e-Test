@@ -35,8 +35,9 @@
             "line": 6,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 4645000000
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -45,8 +46,7 @@
             "line": 7,
             "name": "I click on the \"Services\" link",
             "result": {
-              "status": "passed",
-              "duration": 7061000000
+              "status": "skipped"
             }
           },
           {
@@ -55,8 +55,7 @@
             "line": 8,
             "name": "I click the \"Add a new service\" button",
             "result": {
-              "status": "passed",
-              "duration": 944000000
+              "status": "skipped"
             }
           },
           {
@@ -65,8 +64,7 @@
             "line": 9,
             "name": "I enter a \"Testing Taye Service\", \"testing_taye_service\" and enter other relevant details for \"Services\" section after clicking \"Add a new service\"",
             "result": {
-              "status": "passed",
-              "duration": 5409000000
+              "status": "skipped"
             }
           },
           {
@@ -75,8 +73,7 @@
             "line": 10,
             "name": "I click the Save button The record should have been created on post request to \"https://gkpisjt2j0.execute-api.eu-west-1.amazonaws.com/test/services\"",
             "result": {
-              "status": "passed",
-              "duration": 2186000000
+              "status": "skipped"
             }
           }
         ]
@@ -108,8 +105,8 @@
             "line": 6,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 3321000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -118,8 +115,7 @@
             "line": 7,
             "name": "I click on the \"Combos\" link",
             "result": {
-              "status": "passed",
-              "duration": 2618000000
+              "status": "skipped"
             }
           },
           {
@@ -128,8 +124,7 @@
             "line": 8,
             "name": "I click the \"Add a new combo\" button",
             "result": {
-              "status": "passed",
-              "duration": 374000000
+              "status": "skipped"
             }
           },
           {
@@ -138,8 +133,7 @@
             "line": 9,
             "name": "I enter a \"Testing Taye Combo\", \"testing_taye_combo\" and enter other relevant details for \"Combos\" section after clicking \"Add a new combo\"",
             "result": {
-              "status": "passed",
-              "duration": 2740000000
+              "status": "skipped"
             }
           },
           {
@@ -148,8 +142,7 @@
             "line": 10,
             "name": "I click the Save button The record should have been created on post request to \"https://gkpisjt2j0.execute-api.eu-west-1.amazonaws.com/test/combos\"",
             "result": {
-              "status": "passed",
-              "duration": 1509000000
+              "status": "skipped"
             }
           }
         ]
@@ -181,8 +174,8 @@
             "line": 6,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 3206000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -191,8 +184,7 @@
             "line": 7,
             "name": "I click on the \"Promos\" link",
             "result": {
-              "status": "passed",
-              "duration": 3158000000
+              "status": "skipped"
             }
           },
           {
@@ -201,8 +193,7 @@
             "line": 8,
             "name": "I click the \"Add a new promotion\" button",
             "result": {
-              "status": "passed",
-              "duration": 328000000
+              "status": "skipped"
             }
           },
           {
@@ -211,8 +202,7 @@
             "line": 9,
             "name": "I enter a \"Testing Taye Promotion\", \"testing_taye_promotion\" and enter other relevant details for \"Promos\" section after clicking \"Add a new promotion\"",
             "result": {
-              "status": "passed",
-              "duration": 2693000000
+              "status": "skipped"
             }
           },
           {
@@ -221,8 +211,7 @@
             "line": 10,
             "name": "I click the Save button The record should have been created on post request to \"https://gkpisjt2j0.execute-api.eu-west-1.amazonaws.com/test/promotions\"",
             "result": {
-              "status": "passed",
-              "duration": 1884000000
+              "status": "skipped"
             }
           }
         ]
@@ -254,8 +243,8 @@
             "line": 6,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 3086000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -264,8 +253,7 @@
             "line": 7,
             "name": "I click on the \"Extras\" link",
             "result": {
-              "status": "passed",
-              "duration": 2383000000
+              "status": "skipped"
             }
           },
           {
@@ -274,8 +262,7 @@
             "line": 8,
             "name": "I click the \"Create a New Add-on\" button",
             "result": {
-              "status": "passed",
-              "duration": 413000000
+              "status": "skipped"
             }
           },
           {
@@ -284,8 +271,7 @@
             "line": 9,
             "name": "I enter a \"Testing Taye Add-on\", \"testing_taye_Add-on\" and enter other relevant details for \"Extras\" section after clicking \"Create a New Add-on\"",
             "result": {
-              "status": "passed",
-              "duration": 5968000000
+              "status": "skipped"
             }
           },
           {
@@ -294,8 +280,7 @@
             "line": 10,
             "name": "I click the Save button The record should have been created on post request to \"https://gkpisjt2j0.execute-api.eu-west-1.amazonaws.com/test/addons\"",
             "result": {
-              "status": "passed",
-              "duration": 1851000000
+              "status": "skipped"
             }
           }
         ]
@@ -327,8 +312,8 @@
             "line": 6,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 9431000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -337,8 +322,7 @@
             "line": 7,
             "name": "I click on the \"Extras\" link",
             "result": {
-              "status": "passed",
-              "duration": 2597000000
+              "status": "skipped"
             }
           },
           {
@@ -347,8 +331,7 @@
             "line": 8,
             "name": "I click the \"Add a new recommendation\" button",
             "result": {
-              "status": "passed",
-              "duration": 1099000000
+              "status": "skipped"
             }
           },
           {
@@ -357,8 +340,7 @@
             "line": 9,
             "name": "I enter a \"Testing Taye recommendations\", \"testing_taye_ recommendations\" and enter other relevant details for \"Extras\" section after clicking \"Add a new recommendation\"",
             "result": {
-              "status": "passed",
-              "duration": 5765000000
+              "status": "skipped"
             }
           },
           {
@@ -367,8 +349,7 @@
             "line": 10,
             "name": "I click the Save button The record should have been created on post request to \"https://gkpisjt2j0.execute-api.eu-west-1.amazonaws.com/test/recommendations\"",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 1st request to the route: `postRequest`. No request ever occurred.\n    at cypressErr (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:75187:18)\n    at Object.errByPath (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:75242:10)\n    at checkForXhr (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:134821:84)\n    at <unknown> (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:134844:28)\n    at tryCatcher (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:4315:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise.then (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:1132:17)\n    at next (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:143627:39)\n    at <unknown> (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:143648:16)\n    at tryCatcher (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:1701:18)\n    at <unknown> (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:2392:25)\nFrom Your Spec Code:\n    at Context.eval (src/integration/steps/Admin/Lakedistrict/AddProducts/AddProducts.js:194:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "skipped"
             }
           }
         ]
@@ -400,8 +381,8 @@
             "line": 6,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 4230000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -410,8 +391,7 @@
             "line": 7,
             "name": "I click on the \"User Admin\" link",
             "result": {
-              "status": "passed",
-              "duration": 3005000000
+              "status": "skipped"
             }
           },
           {
@@ -420,8 +400,7 @@
             "line": 8,
             "name": "I click the \"Add a new user\" button",
             "result": {
-              "status": "passed",
-              "duration": 487000000
+              "status": "skipped"
             }
           },
           {
@@ -430,8 +409,7 @@
             "line": 9,
             "name": "I enter a \"Testing Taye User\", \"testing_taye_user\" and enter other relevant details for \"User Admin\" section after clicking \"Add a new user\"",
             "result": {
-              "status": "passed",
-              "duration": 4961000000
+              "status": "skipped"
             }
           },
           {
@@ -440,8 +418,7 @@
             "line": 10,
             "name": "I click the Save button The record should have been created on post request to \"https://gkpisjt2j0.execute-api.eu-west-1.amazonaws.com/test/users/profiles\"",
             "result": {
-              "status": "passed",
-              "duration": 1728000000
+              "status": "skipped"
             }
           }
         ]
@@ -473,8 +450,8 @@
             "line": 23,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 4805000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -483,8 +460,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 2365000000
+              "status": "skipped"
             }
           },
           {
@@ -493,8 +469,7 @@
             "line": 25,
             "name": "I click a 'Sales report' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 554000000
+              "status": "skipped"
             }
           },
           {
@@ -503,8 +478,7 @@
             "line": 26,
             "name": "I click \"Sales Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 857000000
+              "status": "skipped"
             }
           },
           {
@@ -513,8 +487,7 @@
             "line": 27,
             "name": "The \"Sales Report\" is downloaded",
             "result": {
-              "status": "passed",
-              "duration": 581000000
+              "status": "skipped"
             }
           }
         ]
@@ -546,8 +519,8 @@
             "line": 23,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 4886000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -556,8 +529,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 2493000000
+              "status": "skipped"
             }
           },
           {
@@ -566,8 +538,7 @@
             "line": 25,
             "name": "I click a 'Functions manifest' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 494000000
+              "status": "skipped"
             }
           },
           {
@@ -576,8 +547,7 @@
             "line": 26,
             "name": "I click \"Manifest Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 711000000
+              "status": "skipped"
             }
           },
           {
@@ -586,8 +556,7 @@
             "line": 27,
             "name": "The \"Manifest Report\" is downloaded",
             "result": {
-              "status": "passed",
-              "duration": 377000000
+              "status": "skipped"
             }
           }
         ]
@@ -619,8 +588,8 @@
             "line": 23,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 24477000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -629,8 +598,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 3074000000
+              "status": "skipped"
             }
           },
           {
@@ -639,8 +607,7 @@
             "line": 25,
             "name": "I click a 'Yield report' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 600000000
+              "status": "skipped"
             }
           },
           {
@@ -649,8 +616,7 @@
             "line": 26,
             "name": "I click \"Yield Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 860000000
+              "status": "skipped"
             }
           },
           {
@@ -659,8 +625,7 @@
             "line": 27,
             "name": "The \"Yield Report\" is downloaded",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 20000ms: `cy.readFile(\"src\\downloads\\Yield Report.xlsx\")` failed because the file does not exist at the following path:\n\n`C:\\Users\\emmanuel\\Documents\\Cypress Work reviewed\\e2e\\cypress\\src\\downloads\\Yield Report.xlsx`\n    at Context.eval (src/integration/steps/Admin/Lakedistrict/AddProducts/AddProducts.js:223:50)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "skipped"
             }
           }
         ]
@@ -692,8 +657,8 @@
             "line": 23,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 4854000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -702,8 +667,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 3119000000
+              "status": "skipped"
             }
           },
           {
@@ -712,8 +676,7 @@
             "line": 25,
             "name": "I click a 'External Orders report' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 745000000
+              "status": "skipped"
             }
           },
           {
@@ -722,8 +685,7 @@
             "line": 26,
             "name": "I click \"External Orders Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 1167000000
+              "status": "skipped"
             }
           },
           {
@@ -732,8 +694,7 @@
             "line": 27,
             "name": "The \"External Orders Report\" is downloaded",
             "result": {
-              "status": "passed",
-              "duration": 627000000
+              "status": "skipped"
             }
           }
         ]
@@ -765,8 +726,8 @@
             "line": 23,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 4395000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -775,8 +736,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 2777000000
+              "status": "skipped"
             }
           },
           {
@@ -785,8 +745,7 @@
             "line": 25,
             "name": "I click a 'Payments summary report' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 616000000
+              "status": "skipped"
             }
           },
           {
@@ -795,8 +754,7 @@
             "line": 26,
             "name": "I click \"Payments Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 819000000
+              "status": "skipped"
             }
           },
           {
@@ -805,8 +763,7 @@
             "line": 27,
             "name": "The \"Payments Report\" is downloaded",
             "result": {
-              "status": "passed",
-              "duration": 580000000
+              "status": "skipped"
             }
           }
         ]
@@ -838,8 +795,8 @@
             "line": 23,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 4238000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -848,8 +805,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 2965000000
+              "status": "skipped"
             }
           },
           {
@@ -858,8 +814,7 @@
             "line": 25,
             "name": "I click a 'Order updates report' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 953000000
+              "status": "skipped"
             }
           },
           {
@@ -868,8 +823,7 @@
             "line": 26,
             "name": "I click \"Order Updates Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 992000000
+              "status": "skipped"
             }
           },
           {
@@ -878,8 +832,7 @@
             "line": 27,
             "name": "The \"Order Updates Report\" is downloaded",
             "result": {
-              "status": "passed",
-              "duration": 446000000
+              "status": "skipped"
             }
           }
         ]
@@ -911,8 +864,8 @@
             "line": 23,
             "name": "I am a user on Admin Page for 'lakedistrict'",
             "result": {
-              "status": "passed",
-              "duration": 4180000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n    at Context.type (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:114293:68)\n    at wrapped (https://admin.default-qa3.ticknovate-test.com/__cypress/runner/cypress_runner.js:137583:19)\nFrom Your Spec Code:\n    at Context.eval (src/support/commands.js:274:21)"
             }
           },
           {
@@ -921,8 +874,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 2496000000
+              "status": "skipped"
             }
           },
           {
@@ -931,8 +883,7 @@
             "line": 25,
             "name": "I click a 'Newsletter subscription report' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 585000000
+              "status": "skipped"
             }
           },
           {
@@ -941,8 +892,7 @@
             "line": 26,
             "name": "I click \"Newsletter Subscriptions Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 909000000
+              "status": "skipped"
             }
           },
           {
@@ -951,8 +901,7 @@
             "line": 27,
             "name": "The \"Newsletter Subscriptions Report\" is downloaded",
             "result": {
-              "status": "passed",
-              "duration": 416000000
+              "status": "skipped"
             }
           }
         ]

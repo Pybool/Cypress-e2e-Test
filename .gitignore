@@ -5,5 +5,7 @@ src/videos
 src/screenshots
 public
 downloads
+cypress.env.json
+testrail.js
 
 

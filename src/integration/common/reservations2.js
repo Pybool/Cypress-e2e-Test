@@ -1,11 +1,11 @@
 import { Given, And, Then, When } from 'cypress-cucumber-preprocessor/steps'
 import { BASE_URL } from '../index'
 const x6 = 60000
-const username = 'taye.oyelekan@ticknovate.com'
+const username = Cypress.env('ADMIN_USER')
 const password = {
-  rs2: '?oJd96oL',
-  uat: 'Radio9*981tai',
-  test: 'Radio9*981tai',
+  rs2: Cypress.env('RS2_PASS'),
+  uat: Cypress.env('LAKE_DISTRICT_PASS'),
+  test: Cypress.env('LAKE_DISTRICT_PASS'),
 }
 
 const setBaseUrl = (name, env = '') => {
