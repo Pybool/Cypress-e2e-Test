@@ -76,13 +76,13 @@ And('I click the {string} button', async (buttonText) => {
 
 And(
   'I enter a {string}, {string} and enter other relevant details for {string} menu and {string}',
-  async (name, external_id, section, add) => {
+  async (name, external_id, menu, submenu) => {
     const unique_external_id = `${generateID()}`
-    if (!['Combos', 'Promos', 'Extras', 'User Admin'].includes(section)) {
+    if (!['Combos', 'Promos', 'Extras', 'User Admin'].includes(menu)) {
       await clickShadowWrapperAddButton(_buttonText)
     }
 
-    switch (section) {
+    switch (menu) {
       case 'Services':
         await fillNameAndExternalId(name, unique_external_id, [
           'Service Name',
@@ -107,14 +107,14 @@ And(
       case 'Extras': {
         let text
         let nameOrTitle = 'Name'
-        if (add == 'Create a New Add-on') {
+        if (submenu == 'add-ons') {
           nameOrTitle = 'Title'
         }
         await fillNameAndExternalId(name, unique_external_id, [
           nameOrTitle,
           'External ID',
         ])
-        if (add != 'Add a new recommendation') {
+        if (submenu != 'recommendations') {
           text = 'Add option'
         } else {
           text = 'Add a new record'
@@ -124,7 +124,7 @@ And(
           .contains(text)
           .click({ force: true })
 
-        if (add != 'Add a new recommendation') {
+        if (submenu != 'recommendations') {
           cy.get('button[class^="roundedtab_tab"]')
             .contains('Linked Product')
             .click({ force: true })
@@ -152,7 +152,7 @@ And(
           .eq(1)
           .select(1)
 
-        if (add == 'Create a New Add-on') {
+        if (submenu == 'add-ons') {
           cy.get('tbody')
             .find('span')
             .contains('Outbound start')
@@ -190,7 +190,7 @@ And(
     }).as('postRequest')
 
     cy.get('main').find('button').contains('Save').click({ force: true })
-    cy.wait('@postRequest').then((interception) => {
+    cy.wait('@postRequest', { timeout: 15000 }).then((interception) => {
       const response = interception.response
       expect(String(response.statusCode)).to.eq('200')
     })

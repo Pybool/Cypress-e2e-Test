@@ -4,7 +4,7 @@ const path = require('path')
 const reportPath = path.join('reports', 'cucumber-html-report.html')
 
 report.generate({
-  jsonDir: 'src/cucumber-json', // ** Path of .json file **//
+  jsonDir: 'src/cucumber-json',
   reportPath: reportPath,
   metadata: {
     browser: {

@@ -32,7 +32,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 11231000000
+              "duration": 14171000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I click the View button in Search Orders for a previously created order",
             "result": {
               "status": "passed",
-              "duration": 6588000000
+              "duration": 6883000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I click the More Actions Button beside Edit Order",
             "result": {
               "status": "passed",
-              "duration": 2530000000
+              "duration": 3672000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I should see a dropdown displayed",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 231000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "The dropdown should contain an option \"Download Tickets\"",
             "result": {
               "status": "passed",
-              "duration": 202000000
+              "duration": 306000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "The dropdown should contain an option \"Resend Confirmation\"",
             "result": {
               "status": "passed",
-              "duration": 231000000
+              "duration": 333000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "The dropdown should contain an option \"View Message History\"",
             "result": {
               "status": "passed",
-              "duration": 197000000
+              "duration": 278000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "The dropdown should contain an option \"View Redemption History\"",
             "result": {
               "status": "passed",
-              "duration": 177000000
+              "duration": 347000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "The dropdown should contain an option \"View Transaction History\"",
             "result": {
               "status": "passed",
-              "duration": 186000000
+              "duration": 308000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "The dropdown should contain an option \"Cancel Order\" which should have color \"rgb(217, 63, 28)\"",
             "result": {
               "status": "passed",
-              "duration": 163000000
+              "duration": 546000000
             }
           }
         ]
@@ -151,7 +151,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 6892000000
+              "duration": 61558000000
             }
           },
           {
@@ -161,7 +161,7 @@
             "name": "I click the View button in Search Orders for a previously created order",
             "result": {
               "status": "passed",
-              "duration": 4778000000
+              "duration": 16242000000
             }
           },
           {
@@ -171,7 +171,7 @@
             "name": "I click the More Actions Button beside Edit Order",
             "result": {
               "status": "passed",
-              "duration": 5288000000
+              "duration": 12836000000
             }
           },
           {
@@ -181,7 +181,7 @@
             "name": "I click on \"Download Tickets\" option",
             "result": {
               "status": "passed",
-              "duration": 346000000
+              "duration": 2041000000
             }
           },
           {
@@ -191,7 +191,7 @@
             "name": "I should see a \"confirmation\" pdf file downloaded",
             "result": {
               "status": "passed",
-              "duration": 257000000
+              "duration": 1540000000
             }
           },
           {
@@ -201,7 +201,7 @@
             "name": "I click on \"Resend Confirmation\" option",
             "result": {
               "status": "passed",
-              "duration": 2037000000
+              "duration": 4305000000
             }
           },
           {
@@ -211,7 +211,7 @@
             "name": "I should see a modal with Resend Email Header an Email address Label and and Input Field for the email and a Resend button",
             "result": {
               "status": "passed",
-              "duration": 2874000000
+              "duration": 9599000000
             }
           },
           {
@@ -221,7 +221,7 @@
             "name": "I clear the email input field",
             "result": {
               "status": "passed",
-              "duration": 1350000000
+              "duration": 4805000000
             }
           },
           {
@@ -231,7 +231,7 @@
             "name": "The Resend Button should be disabled",
             "result": {
               "status": "passed",
-              "duration": 291000000
+              "duration": 1263000000
             }
           },
           {
@@ -241,7 +241,7 @@
             "name": "I reenter the valid email",
             "result": {
               "status": "passed",
-              "duration": 2327000000
+              "duration": 11121000000
             }
           },
           {
@@ -251,7 +251,7 @@
             "name": "The Resend Button should be enabled",
             "result": {
               "status": "passed",
-              "duration": 366000000
+              "duration": 1325000000
             }
           },
           {
@@ -261,7 +261,7 @@
             "name": "I click the Resend Button",
             "result": {
               "status": "passed",
-              "duration": 857000000
+              "duration": 3491000000
             }
           },
           {
@@ -271,7 +271,7 @@
             "name": "I should see a bottom toast with Background color \"rgb(56, 161, 105)\" with title \"Email sent\" and body \"The confirmation email has been re-sent.\" and the modal should not be displayed",
             "result": {
               "status": "passed",
-              "duration": 2568000000
+              "duration": 3555000000
             }
           },
           {
@@ -281,7 +281,7 @@
             "name": "I click on \"View Message History\" option",
             "result": {
               "status": "passed",
-              "duration": 1152000000
+              "duration": 4798000000
             }
           },
           {
@@ -291,7 +291,7 @@
             "name": "I should see a modal with title \"Message History\"",
             "result": {
               "status": "passed",
-              "duration": 3568000000
+              "duration": 6324000000
             }
           },
           {
@@ -301,7 +301,7 @@
             "name": "The modal should have a table with headers \"Action, Delivery, Result\"",
             "result": {
               "status": "passed",
-              "duration": 2532000000
+              "duration": 7689000000
             }
           },
           {
@@ -311,7 +311,7 @@
             "name": "I click the modal close button",
             "result": {
               "status": "passed",
-              "duration": 1333000000
+              "duration": 2643000000
             }
           },
           {
@@ -321,7 +321,7 @@
             "name": "The \"Message History\" modal should be closed",
             "result": {
               "status": "passed",
-              "duration": 32000000
+              "duration": 27000000
             }
           },
           {
@@ -331,7 +331,7 @@
             "name": "I click on \"View Redemption History\" option",
             "result": {
               "status": "passed",
-              "duration": 2017000000
+              "duration": 3783000000
             }
           },
           {
@@ -341,7 +341,7 @@
             "name": "I should see a modal with title \"Redemption History\"",
             "result": {
               "status": "passed",
-              "duration": 2037000000
+              "duration": 6857000000
             }
           },
           {
@@ -351,7 +351,7 @@
             "name": "I click the modal close button",
             "result": {
               "status": "passed",
-              "duration": 616000000
+              "duration": 2168000000
             }
           },
           {
@@ -361,7 +361,7 @@
             "name": "The \"Redemption History\" modal should be closed",
             "result": {
               "status": "passed",
-              "duration": 36000000
+              "duration": 41000000
             }
           },
           {
@@ -371,7 +371,7 @@
             "name": "I click on \"View Transaction History\" option",
             "result": {
               "status": "passed",
-              "duration": 1294000000
+              "duration": 3113000000
             }
           },
           {
@@ -381,7 +381,7 @@
             "name": "I should see a modal with title \"Transaction History\"",
             "result": {
               "status": "passed",
-              "duration": 7090000000
+              "duration": 9520000000
             }
           },
           {
@@ -391,7 +391,7 @@
             "name": "The modal should have a table with headers \"Date, Transaction ID, Note, Provider, Method, Type, Total, Total All Time\"",
             "result": {
               "status": "passed",
-              "duration": 6754000000
+              "duration": 25568000000
             }
           },
           {
@@ -401,7 +401,7 @@
             "name": "I click the modal close button",
             "result": {
               "status": "passed",
-              "duration": 1623000000
+              "duration": 6725000000
             }
           },
           {
@@ -411,7 +411,7 @@
             "name": "The \"Transaction History\" modal should be closed",
             "result": {
               "status": "passed",
-              "duration": 52000000
+              "duration": 210000000
             }
           },
           {
@@ -421,7 +421,7 @@
             "name": "I click on \"Cancel Order\" option",
             "result": {
               "status": "passed",
-              "duration": 1371000000
+              "duration": 3538000000
             }
           },
           {
@@ -431,7 +431,7 @@
             "name": "I should be taken to \"Amending Booking\" page",
             "result": {
               "status": "passed",
-              "duration": 2404000000
+              "duration": 6121000000
             }
           },
           {
@@ -441,7 +441,7 @@
             "name": "I should see text \"The order will be cancelled\" which should have color \"rgb(217, 63, 28)\"",
             "result": {
               "status": "passed",
-              "duration": 908000000
+              "duration": 2821000000
             }
           }
         ]

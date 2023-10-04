@@ -32,7 +32,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 113179000000
+              "duration": 89712000000
             }
           },
           {
@@ -41,8 +41,8 @@
             "line": 77,
             "name": "I have created an order as a customer",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 60000ms: Expected to find content: '12:50' within the element: <p.chakra-text.css-0> but never did.\n    at _callee2$ (src/integration/functions/rs2.js:251:30)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)"
+              "status": "passed",
+              "duration": 125025000000
             }
           },
           {
@@ -51,7 +51,8 @@
             "line": 78,
             "name": "I get the previous order Order ID",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 604000000
             }
           },
           {
@@ -60,7 +61,8 @@
             "line": 79,
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7614000000
             }
           },
           {
@@ -69,7 +71,8 @@
             "line": 80,
             "name": "I should see \"Order Information\" as a header in the page that loads",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4536000000
             }
           },
           {
@@ -78,7 +81,8 @@
             "line": 81,
             "name": "I should see the \"Edit Order\" button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 514000000
             }
           },
           {
@@ -87,7 +91,8 @@
             "line": 82,
             "name": "I click the \"Edit Order\" button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1389000000
             }
           },
           {
@@ -96,7 +101,8 @@
             "line": 83,
             "name": "I should be taken to \"Amending Booking\" page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 15421000000
             }
           },
           {
@@ -105,7 +111,8 @@
             "line": 84,
             "name": "I should see \"From,To,Who,when\" sections",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4193000000
             }
           },
           {
@@ -114,7 +121,8 @@
             "line": 85,
             "name": "I should see \"Available Options\" card which should contain \"Previous Day\" and \"Next Day\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6430000000
             }
           },
           {
@@ -123,7 +131,8 @@
             "line": 86,
             "name": "I click the Edit Order Button beside More Actions dropdown",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 11242000000
             }
           },
           {
@@ -132,7 +141,8 @@
             "line": 87,
             "name": "I edit the 'Who' section by removing '1x Adult'",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 10461000000
             }
           },
           {
@@ -141,7 +151,8 @@
             "line": 88,
             "name": "I should no longer see the \"Reservation\" Seating Compartments section",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 318000000
             }
           },
           {
@@ -150,7 +161,8 @@
             "line": 89,
             "name": "I edit the 'Date' section by clicking the 'Previous Day' button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2582000000
             }
           },
           {
@@ -159,7 +171,8 @@
             "line": 90,
             "name": "I select a time for the product",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4011000000
             }
           },
           {
@@ -168,7 +181,8 @@
             "line": 92,
             "name": "The \"Commit Changes\" Button should be Active",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 16000000
             }
           },
           {
@@ -177,7 +191,8 @@
             "line": 93,
             "name": "I click the \"Commit Changes\" button on customer portal",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3487000000
             }
           },
           {
@@ -186,7 +201,9 @@
             "line": 94,
             "name": "The \"Refund\" Button should be Active if The Sub Total is negative else the \"Checkout\" Button should be active where either button is the action button",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find content: 'Checkout' within the element: <button.chakra-button.css-8e40qi> but never did.\n    at Context.eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:609:57)"
             }
           },
           {
@@ -251,7 +268,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 36195000000
+              "duration": 21100000000
             }
           },
           {
@@ -261,7 +278,7 @@
             "name": "I get the previous order Order ID",
             "result": {
               "status": "passed",
-              "duration": 485000000
+              "duration": 196000000
             }
           },
           {
@@ -271,7 +288,7 @@
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
               "status": "passed",
-              "duration": 8239000000
+              "duration": 8317000000
             }
           },
           {
@@ -280,8 +297,8 @@
             "line": 106,
             "name": "I click the \"Edit Order\" button",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `a.chakra-button`, but never found it.\n    at Context.eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:326:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 4896000000
             }
           },
           {
@@ -290,7 +307,8 @@
             "line": 107,
             "name": "I am on the Amending Booking page I click cancel order button",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: expected 'BookingsPooley Bridge pier - Howtown pierOrder Information' to include 'Amending Booking'\n    at Context.eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:529:21)"
             }
           },
           {
@@ -364,7 +382,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 28448000000
+              "duration": 34006000000
             }
           },
           {
@@ -374,7 +392,7 @@
             "name": "I get the previous order Order ID",
             "result": {
               "status": "passed",
-              "duration": 479000000
+              "duration": 695000000
             }
           },
           {
@@ -384,7 +402,7 @@
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
               "status": "passed",
-              "duration": 3266000000
+              "duration": 8520000000
             }
           },
           {
@@ -393,8 +411,8 @@
             "line": 119,
             "name": "I click the \"Edit Order\" button",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `a.chakra-button`, but never found it.\n    at Context.eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:326:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 2039000000
             }
           },
           {
@@ -403,7 +421,8 @@
             "line": 120,
             "name": "I am on the Amending Booking page I click cancel order button",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: expected 'BookingsPooley Bridge pier - Howtown pierOrder Information' to include 'Amending Booking'\n    at Context.eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:529:21)"
             }
           },
           {

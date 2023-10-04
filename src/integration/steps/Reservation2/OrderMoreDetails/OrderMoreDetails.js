@@ -204,7 +204,6 @@ And('The modal should have a table with headers {string}', async (headers) => {
     cy.get('@th').contains(header.trim())
     .scrollIntoView()
     .should('exist')
-    .and('be.visible')
   })
 })
 

@@ -11,12 +11,12 @@ Feature: Add Product and Services
 
         Examples:
             | menu       | submenu         | add                      | Name                         | External ID                  | URL                    |
-            | Services   |                 | Add a new service        | Testing Taye Service         | testing_taye_service         | /admin/services        |
-            | Combos     |                 | Add a new combo          | Testing Taye Combo           | testing_taye_combo           | /admin/combos          |
-            | Promos     |                 | Add a new promotion      | Testing Taye Promotion       | testing_taye_promotion       | /admin/promotions      |
-            | Extras     | add-ons         | Create a New Add-on      | Testing Taye Add-on          | testing_taye_Add-on          | /admin/addons          |
-            | Extras     | recommendations | Add a new recommendation | Testing Taye Recommendations | testing_taye_recommendations | /admin/recommendations |
-            | User Admin |                 | Add a new user           | Testing Taye User            | testing_taye_user            | /admin/users/profiles  |
+            | Services   |                 | Add a new service        | Testing Taye Service         | testing_taye_service         | /test/services        |
+            | Combos     |                 | Add a new combo          | Testing Taye Combo           | testing_taye_combo           | /test/combos          |
+            | Promos     |                 | Add a new promotion      | Testing Taye Promotion       | testing_taye_promotion       | /test/promotions      |
+            | Extras     | add-ons         | Create a New Add-on      | Testing Taye Add-on          | testing_taye_Add-on          | /test/addons          |
+            | Extras     | recommendations | Add a new recommendation | Testing Taye Recommendations | testing_taye_recommendations | /test/recommendations |
+            | User Admin |                 | Add a new user           | Testing Taye User            | testing_taye_user            | /test/users/profiles  |
 
     @automated @lakedistrict-admin @products
     Scenario Outline: On LakedistrictAdmin User should be able to download Reports

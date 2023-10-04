@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 12437000000
+              "duration": 7706000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1434000000
+              "duration": 1439000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I attempt to create an order selecting '2' adult and '2' child for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 25621000000
+              "duration": 23709000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "For '2 adults 2 children' I select the needed compartments and choose appropriate seats for each respectively",
             "result": {
               "status": "passed",
-              "duration": 6718000000
+              "duration": 9449000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "The 'Add Seats' button should be active and i proceed to checkout internally",
             "result": {
               "status": "passed",
-              "duration": 47360000000
+              "duration": 49138000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "I confirm the new order matches with the information from datasource",
             "result": {
               "status": "passed",
-              "duration": 5926000000
+              "duration": 6235000000
             }
           }
         ]
@@ -123,7 +123,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 26273000000
+              "duration": 10029000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 2780000000
+              "duration": 2072000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "I attempt to create an order selecting '2' adult and '2' child for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 38193000000
+              "duration": 20778000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "For '2 adults 2 children' I select the needed compartments and choose appropriate seats for each respectively",
             "result": {
               "status": "passed",
-              "duration": 11185000000
+              "duration": 6732000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "The 'Add Seats' button should be active and i proceed to checkout by paying by till",
             "result": {
               "status": "passed",
-              "duration": 7226000000
+              "duration": 3136000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "I confirm the new order is displayed in the orders table",
             "result": {
               "status": "passed",
-              "duration": 25692000000
+              "duration": 7248000000
             }
           }
         ]
@@ -206,7 +206,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 17316000000
+              "duration": 7778000000
             }
           },
           {
@@ -216,7 +216,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 4054000000
+              "duration": 1853000000
             }
           },
           {
@@ -226,7 +226,7 @@
             "name": "I attempt to create an order selecting '1' adult for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 29452000000
+              "duration": 15068000000
             }
           },
           {
@@ -236,7 +236,7 @@
             "name": "The 'Joan Pullman Observation 4-seat compartment' pill is not displayed in the select reservation modal",
             "result": {
               "status": "passed",
-              "duration": 2118000000
+              "duration": 1340000000
             }
           }
         ]
@@ -269,7 +269,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 16000000000
+              "duration": 16101000000
             }
           },
           {
@@ -279,7 +279,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1500000000
+              "duration": 915000000
             }
           },
           {
@@ -289,7 +289,7 @@
             "name": "I check the 'Add return single trip' checkbox",
             "result": {
               "status": "passed",
-              "duration": 8858000000
+              "duration": 15171000000
             }
           },
           {
@@ -299,7 +299,7 @@
             "name": "I should see 'Outbound Options' and 'Return Options' sections for choosing time",
             "result": {
               "status": "passed",
-              "duration": 677000000
+              "duration": 338000000
             }
           },
           {
@@ -309,7 +309,7 @@
             "name": "I select '2' adult when choosing who",
             "result": {
               "status": "passed",
-              "duration": 2946000000
+              "duration": 2416000000
             }
           },
           {
@@ -319,7 +319,7 @@
             "name": "I should see available times in 'Outbound Options' all 'Enabled'",
             "result": {
               "status": "passed",
-              "duration": 2511000000
+              "duration": 3856000000
             }
           },
           {
@@ -329,7 +329,7 @@
             "name": "I should see available times in 'Return Options' all 'Disabled'",
             "result": {
               "status": "passed",
-              "duration": 1080000000
+              "duration": 1454000000
             }
           },
           {
@@ -339,7 +339,7 @@
             "name": "I select the first available time in 'Outbound Options'",
             "result": {
               "status": "passed",
-              "duration": 2153000000
+              "duration": 1996000000
             }
           },
           {
@@ -349,7 +349,7 @@
             "name": "Atleast 1 time in 'Return Options' should be enabled",
             "result": {
               "status": "passed",
-              "duration": 756000000
+              "duration": 663000000
             }
           },
           {
@@ -359,7 +359,7 @@
             "name": "The 'Add To Cart' button should be 'Disabled'",
             "result": {
               "status": "passed",
-              "duration": 253000000
+              "duration": 338000000
             }
           },
           {
@@ -368,8 +368,8 @@
             "line": 42,
             "name": "I select the first available time in 'Return Options'",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `undefined`\n\nThe previous command that ran was:\n\n  > `cy.wrap()`\n    at isElement (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:144418:58)\n    at validateType (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:144267:14)\n    at Object.isType (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:144298:7)\n    at $Cy.pushSubject (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:138009:22)\n    at wrapped (https://reservations.lakedistrict.ticknovate-uat.com/__cypress/runner/cypress_runner.js:137582:19)\nFrom Your Spec Code:\n    at _callee5$ (src/integration/steps/Reservation2/CreateOrders/CreateOrders.js:139:16)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at Context.eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at Context.eval (src/integration/steps/Reservation2/CreateOrders/CreateOrders.js:147:1)"
+              "status": "passed",
+              "duration": 906000000
             }
           },
           {
@@ -378,7 +378,8 @@
             "line": 43,
             "name": "The 'Add To Cart' button should be 'Enabled'",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4451000000
             }
           },
           {
@@ -387,7 +388,8 @@
             "line": 44,
             "name": "In the reservation modal i should see 'Dalegarth station - Ravenglass station' with its compartments",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6147000000
             }
           },
           {
@@ -396,7 +398,8 @@
             "line": 45,
             "name": "In the reservation modal i should see 'Ravenglass station - Dalegarth station' with its compartments",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12943000000
             }
           },
           {
@@ -405,7 +408,8 @@
             "line": 46,
             "name": "I checkout and pay",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 69308000000
             }
           }
         ]

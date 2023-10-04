@@ -327,7 +327,8 @@ When ('I click the {string} button', (btntxt)=>{
 })
 
 When ('I click the {string} button on customer portal', (btntxt)=>{
-  cy.get('button.chakra-button').contains(btntxt,{timeout:x6}).click(__force__)
+  cy.get('button.chakra-button').contains(btntxt,{timeout:x6}).should('be.enabled')
+  .scrollIntoView().click(__force__)
 })
 
 Then ('I should be taken to {string} page', (page)=>{ 
@@ -528,7 +529,7 @@ When('I am on the Amending Booking page I click cancel order button',() => {
       expect(txt).to.include('Amending Booking')
   })
   cy.get('button.chakra-button', { timeout: 60000 }).then(($buttons) => {
-      const cancelButton = $buttons.filter(':contains("Cancel booking")');
+      const cancelButton = $buttons.filter(':contains("Cancel order")');
       if (cancelButton.length > 0) {
       cy.wrap(cancelButton)
           .click({ force: true });
@@ -593,6 +594,7 @@ Then(
       .eq(0)
       .invoke('text')
       .then((txt) => {
+        alert(txt)
         if (txt.includes('-')) {
           btnText = refund
         } else if (txt == '£0.00') {
@@ -600,6 +602,7 @@ Then(
         } else {
           btnText = checkout
         }
+        alert(btnText)
         cy.get('button.chakra-button')
           .contains(btnText)
           .should('not.have.attr', 'disabled')

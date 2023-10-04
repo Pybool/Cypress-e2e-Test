@@ -71,7 +71,7 @@ async function cancelOrderFn(lastOrderId, amend) {
             cy.visit(`/orders/${lastOrderId}/amend`).then(() => {
               if(txt != 'cancelled'){
                 cy.get('button.chakra-button')
-                .contains('Cancel booking',{timeout:x6})
+                .contains('Cancel order',{timeout:x6})
                 .should('exist').and('be.visible')
                 .and('have.css','background-color','rgb(239, 211, 204)')
                 .click({force:true})
@@ -228,7 +228,7 @@ export function startCreateOrder(number, secondchoice,market='',time='12:50') {
       cy.get('button.chakra-button').contains('Next Day',{timeout:x6}).click({ force: true })
     }
 
-    cy.get('h3.chakra-heading').contains(Cypress.env('product'))
+    cy.get('h3.chakra-heading').eq(0)
     .parent()
     .siblings().eq(0).children().last()
     .click({ force: true })
@@ -292,104 +292,6 @@ export function startCreateOrderInLine(data) {
     cy.get('@whobtn').click({ force: true })
   }
   selectDate()
-}
-
-export function selectCompartments(step) {
-  const keyVals = {
-    '3 adults 4 children': fourChildrenThreeAdults,
-    '2 adults 2 children': twoChildrentwoAdults,
-    '3 adults 4 children in closed carriages':
-      fourChildrenThreeAdultsClosedCarriage,
-    '3 adults 4 children in semi-open carriages':
-      fourChildrenThreeAdultsSemiOpenCarriage,
-    '3 adults 4 children in open carriages':
-      fourChildrenThreeAdultsOpenCarriage,
-    '3 adults 4 children in Accessible carriages':
-      fourChildrenThreeAdultsAccessibleCarriage,
-  }
-
-  cy.get('h3.chakra-heading')
-    .contains('Single train ride',{timeout:x6})
-    .as('singleTrainRide')
-    .parent()
-    .parent()
-    .siblings()
-    .its('length')
-    .then((len) => {
-      if (len == 2) {
-        cy.get('@singleTrainRide')
-          .parent()
-          .siblings()
-          .eq(0)
-          .children()
-          .eq(1)
-          .click({ force: true })
-      } else if (len == 3) {
-        cy.get('@singleTrainRide')
-          .parent()
-          .parent()
-          .siblings()
-
-          .eq(2)
-          .find('h3.chakra-heading')
-          .contains('Single train ride',{timeout:x6})
-          .parent()
-          .siblings()
-          .eq(0)
-          .children()
-          .eq(1)
-          .click({ force: true })
-      }
-    })
-
-  cy.get('button.chakra-button')
-    .contains('Add To Cart',{timeout:x6})
-    .click({ force: true })
-  for (let i = 0; i < keyVals[step].selections.length; i++) {
-    cy.get('button.chakra-tabs__tab').as('selected')
-    cy.get('selected')
-      .should('exist')
-      .and('be.visible')
-      .contains(keyVals[step].selections[i].compartment,{timeout:x6})
-      .scrollIntoView()
-    cy.get('@selected').click({ force: true })
-    cy.get('@selected').should('have.attr', 'aria-selected', 'true')
-    cy.get('button.chakra-tabs__tab')
-      .contains(keyVals[step].selections[i].comps,{timeout:x6})
-      .as('tab')
-      .then((button) => {
-        const element = button[0]
-        element.click()
-      })
-
-    cy.get('@tab').should('have.attr', 'aria-selected', 'true')
-    cy.get('@tab')
-      .invoke('text')
-      .then(() => {
-        cy.get('@tab').click({ force: true })
-      })
-
-    for (let s = 0; s < keyVals[step].selections[i].seats.length; s++) {
-      cy.get('div.chakra-tabs__tab-panels').as('seat')
-      cy.get('@seat').find('p')
-      cy.get('@seat')
-        .contains(keyVals[step].selections[i].seats[s],{timeout:x6})
-        .parent()
-        .parent()
-
-      cy.get('@seat').scrollIntoView()
-      cy.get('@seat').then(($seat) => {
-        const isDisabled = Cypress.$($seat).prop('disabled')
-        if (isDisabled) {
-          cy.log('Seat is disabled')
-        } else {
-          cy.get('@seat').trigger('mousedown')
-          cy.get('@seat').trigger('mouseup')
-          cy.get('@seat').click({ force: true })
-        }
-      })
-    }
-  }
 }
 
 export function fillGeneralInformationForm(market = '') {

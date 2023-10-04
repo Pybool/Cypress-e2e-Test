@@ -13,7 +13,7 @@
     "lint:debug": "DEBUG=eslint:cli-engine eslint --quiet './**/*.{js,tsx,jsx,ts}'",
     "lint:report": "eslint --quiet --output-file eslint_report.json --format json './**/*.{js,tsx,jsx,ts}'",
     "start:regression-QA4": "cypress run -e TAGS='@automated' --headed --env testenv=rs2,module=qa4",
-    "start:regression-UAT": "cypress run -e TAGS='@automated' --headed --env testenv=rs2,module=uat",
+    "start:regression-UAT": "cypress run -e TAGS='@automated' --headed --env testenv=rs2,module=uat,product='RES Single Train Ride'",
     "generate:report": "node cucumber-html-report.js",
     "initialize:testrail": "node testrail.js --init",
     "update:testrail-sections": "node testrail.js --init_",

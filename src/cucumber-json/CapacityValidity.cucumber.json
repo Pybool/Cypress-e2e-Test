@@ -27,9 +27,8 @@
             "line": 6,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.chakra-input`, but never found it.\n    at Context.eval (src/integration/common/reservations2.js:18:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 10182000000
             }
           },
           {
@@ -38,7 +37,8 @@
             "line": 7,
             "name": "I click on 'New Order' button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1067000000
             }
           },
           {
@@ -47,7 +47,8 @@
             "line": 8,
             "name": "I attempt to create an order selecting '2' adult for when choosing who",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 18308000000
             }
           },
           {
@@ -56,7 +57,8 @@
             "line": 9,
             "name": "The '4-seat compartment' compartments are displayed in the select reservation modal",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2805000000
             }
           },
           {
@@ -65,7 +67,8 @@
             "line": 10,
             "name": "I close the compartments modal",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 458000000
             }
           },
           {
@@ -74,7 +77,8 @@
             "line": 11,
             "name": "I attempt to create an order selecting '1' adult for when choosing who",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 15783000000
             }
           },
           {
@@ -83,7 +87,8 @@
             "line": 12,
             "name": "The '4-seat compartment' compartments are not displayed in the select reservation modal",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4290000000
             }
           }
         ]
@@ -107,8 +112,8 @@
             "line": 16,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.chakra-input`, but never found it.\n    at Context.eval (src/integration/common/reservations2.js:18:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 7830000000
             }
           },
           {
@@ -117,7 +122,8 @@
             "line": 17,
             "name": "I click on 'New Order' button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1547000000
             }
           },
           {
@@ -126,7 +132,8 @@
             "line": 18,
             "name": "I attempt to create an order selecting '1' adult for when choosing who",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12675000000
             }
           },
           {
@@ -135,7 +142,8 @@
             "line": 19,
             "name": "The 'Joan Pullman Observation seat' compartments are displayed in the select reservation modal",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2760000000
             }
           }
         ]
@@ -159,8 +167,8 @@
             "line": 23,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.chakra-input`, but never found it.\n    at Context.eval (src/integration/common/reservations2.js:18:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 5671000000
             }
           },
           {
@@ -169,7 +177,8 @@
             "line": 24,
             "name": "I click on 'New Order' button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 824000000
             }
           },
           {
@@ -178,7 +187,8 @@
             "line": 25,
             "name": "I attempt to create an order selecting '4' adult for when choosing who",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 16375000000
             }
           },
           {
@@ -187,7 +197,8 @@
             "line": 26,
             "name": "The '6-seat compartment' compartments are displayed in the select reservation modal",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3027000000
             }
           },
           {
@@ -196,7 +207,8 @@
             "line": 27,
             "name": "I close the compartments modal",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 329000000
             }
           },
           {
@@ -205,7 +217,8 @@
             "line": 28,
             "name": "I attempt to create an order selecting '2' adult for when choosing who",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 19477000000
             }
           },
           {
@@ -214,7 +227,8 @@
             "line": 29,
             "name": "The '6-seat compartment' compartments are not displayed in the select reservation modal",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4655000000
             }
           }
         ]

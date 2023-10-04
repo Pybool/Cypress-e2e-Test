@@ -19,10 +19,7 @@ module.exports = defineConfig({
     chromeWebSecurity: false,
     videoCompression: false,
     specPattern: '**/*.feature',
-    env: {
-        
-    },
-
+    env: {},
     viewportHeight: 700,
     viewportWidth: 1240,
     fileServerFolder: '.',
@@ -30,7 +27,7 @@ module.exports = defineConfig({
     videosFolder: './src/videos',
     screenshotsFolder: './src/screenshots',
     fixturesFolder: './src/fixtures',
-    downloadsFolder: process.env.TEST_DOWNLOADS_FOLDER,
+    downloadsFolder: './src/downloads',
     experimentalMemoryManagement:true,
     numTestsKeptInMemory: 3,
     video:false,
