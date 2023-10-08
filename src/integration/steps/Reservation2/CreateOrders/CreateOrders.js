@@ -195,18 +195,9 @@ Then('I checkout and pay', async() => {
   rs2.internalCheckOut()
 })
 
-after(()=>{
-  rs2.cancelLastOrder()
-})
-
-
-
-
-
-
-
-
-
+// after(()=>{
+//   rs2.cancelLastOrder()
+// })
 
 
 
@@ -357,7 +348,7 @@ Then('The {string} pill is displayed in the select reservation modal with {strin
 })
 
 async function fn(number,secondchoice=0){
-    await rs2.startCreateOrder(number,secondchoice)
+    await rs2.startCreateOrder(number,secondchoice)    
 }
 
 function getCompartmentAvailable(step){
@@ -445,19 +436,21 @@ Then('For {string} I select the needed compartments and choose appropriate seats
 })
 
 Then('I confirm the new order is displayed in the orders table', async() => {
-  return cy.readFile('store.txt').then((lastOrderId)=>{  
+  return cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
+    const lastOrderId = data
     if(lastOrderId != false && lastOrderId != undefined){
-        return cy.visit('/').then(()=>{
-          return cy.get('table.chakra-table', { timeout: 30000 }).as('o_table').then(async ($table) => {
-              const hasRows = $table.find('tr').length > 1;          
-              if (hasRows) {            
-                  const lastOrderIdFound = rs2.containsStringInCells($table, lastOrderId);
-                if (lastOrderIdFound) {
-                    expect(true).to.be.true
-                } 
+      return cy.visit('/').then(()=>{
+        return cy.get('table.chakra-table', { timeout: 30000 }).as('o_table').then(async ($table) => {
+            const hasRows = $table.find('tr').length > 1;          
+            if (hasRows) {            
+                const lastOrderIdFound = rs2.containsStringInCells($table, lastOrderId);
+              if (lastOrderIdFound) {
+                  expect(true).to.be.true
               } 
-          });
-        })        
-    }
+            } 
+        });
+      })        
+  }
   })
+
 })

@@ -9,7 +9,8 @@ function cancelOrderFn(lastOrderId) {
 }
 
 async function selectOrderFromTable() {
-  return cy.readFile('store.txt').then((lastOrderId) => {
+  return cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
+    const lastOrderId = data
     if (!lastOrderId && lastOrderId != undefined) {
       return cy.url().then(async (currentUrl) => {
         const orderUrl = Cypress.config('baseUrl', BASE_URL['rs2']['uat']) + '/'
@@ -56,18 +57,18 @@ async function selectOrderFromTable() {
   })
 }
 
-When('I create a an order', () => {
-  rs2.cancelLastOrder(false).then(async() => {
-    cy.visit('/booking')
-    const data = { adults: 4, children: 4, step: '4 adults , 4 children',time:'13:50' }
-    await rs2.startCreateOrder(data.adults, data.children,'',data.time)
-    core.processSeats('Who',data.step, 4).then((modCapacityData)=>{
-      Cypress.env('modCapacityData', modCapacityData);
-      rs2.internalCheckOut('Checkout')
-    })
+
+When('I create a an order', async () => {
+  cy.get('h2.chakra-heading').contains('Welcome to Reservations').should('be.visible')
+  cy.visit('/booking')
+  const data = { adults: 4, children: 4, step: '4 adults , 4 children' }
+  await rs2.startCreateOrder(data.adults, data.children)
+  core.processSeats('Who',data.step, 4).then((modCapacityData)=>{
+    Cypress.env('modCapacityData', modCapacityData);
+    rs2.internalCheckOut('Checkout')
   })
-  
 })
+
 
 Then('I go to the orders table and click on edit for the order', async () => {
   cy.visit('/')

@@ -8,7 +8,21 @@ module.exports = defineConfig({
   projectId: 'expian-e2e-cy',
   e2e: {
     setupNodeEvents(on, config) {
-      on('file:preprocessor', cucumber()), getCompareSnapshotsPlugin(on, config)
+      on('file:preprocessor', cucumber()), getCompareSnapshotsPlugin(on, config),
+      on('task', {
+        storeData({ key, value }) {
+          globalThis.myData = globalThis.myData || {};
+          globalThis.myData[key] = value;
+          return null;
+        },
+      });
+      
+      on('task', {
+        getData({ key }) {
+          const value = globalThis.myData?.[key];
+          return value || ''; // Return the retrieved data
+        },
+      });
     },
     testIsolation: true,
     retries: {

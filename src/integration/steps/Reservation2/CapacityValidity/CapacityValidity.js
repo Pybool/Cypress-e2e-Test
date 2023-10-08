@@ -40,7 +40,7 @@ import {
 
     cy.get('p.chakra-text').contains('Select Reservation')
     .eq(0).should('be.visible').then(()=>{
-        cy.wait(1000) //This wait is essential as compartments that should be present appear first before disappering
+        cy.wait(1000) //This wait is essential as compartments that should not be present appear first before disappering
         Cypress.$('.chakra-tabs__tablist')
             .eq(0).children().filter(
             function () {

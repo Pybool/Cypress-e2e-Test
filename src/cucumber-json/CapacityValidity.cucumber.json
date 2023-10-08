@@ -28,7 +28,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 10182000000
+              "duration": 14034000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1067000000
+              "duration": 1086000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "I attempt to create an order selecting '2' adult for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 18308000000
+              "duration": 30071000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "The '4-seat compartment' compartments are displayed in the select reservation modal",
             "result": {
               "status": "passed",
-              "duration": 2805000000
+              "duration": 3969000000
             }
           },
           {
@@ -68,7 +68,7 @@
             "name": "I close the compartments modal",
             "result": {
               "status": "passed",
-              "duration": 458000000
+              "duration": 493000000
             }
           },
           {
@@ -78,7 +78,7 @@
             "name": "I attempt to create an order selecting '1' adult for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 15783000000
+              "duration": 18374000000
             }
           },
           {
@@ -88,7 +88,7 @@
             "name": "The '4-seat compartment' compartments are not displayed in the select reservation modal",
             "result": {
               "status": "passed",
-              "duration": 4290000000
+              "duration": 4998000000
             }
           }
         ]
@@ -113,7 +113,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 7830000000
+              "duration": 9331000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1547000000
+              "duration": 2434000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "I attempt to create an order selecting '1' adult for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 12675000000
+              "duration": 15007000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "The 'Joan Pullman Observation seat' compartments are displayed in the select reservation modal",
             "result": {
               "status": "passed",
-              "duration": 2760000000
+              "duration": 3122000000
             }
           }
         ]
@@ -168,7 +168,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 5671000000
+              "duration": 7643000000
             }
           },
           {
@@ -178,7 +178,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 824000000
+              "duration": 926000000
             }
           },
           {
@@ -188,7 +188,7 @@
             "name": "I attempt to create an order selecting '4' adult for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 16375000000
+              "duration": 20153000000
             }
           },
           {
@@ -198,7 +198,7 @@
             "name": "The '6-seat compartment' compartments are displayed in the select reservation modal",
             "result": {
               "status": "passed",
-              "duration": 3027000000
+              "duration": 3828000000
             }
           },
           {
@@ -208,7 +208,7 @@
             "name": "I close the compartments modal",
             "result": {
               "status": "passed",
-              "duration": 329000000
+              "duration": 482000000
             }
           },
           {
@@ -218,7 +218,7 @@
             "name": "I attempt to create an order selecting '2' adult for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 19477000000
+              "duration": 24804000000
             }
           },
           {
@@ -228,7 +228,7 @@
             "name": "The '6-seat compartment' compartments are not displayed in the select reservation modal",
             "result": {
               "status": "passed",
-              "duration": 4655000000
+              "duration": 4930000000
             }
           }
         ]

@@ -43,7 +43,8 @@ When('I click the view button for an order in the orders table', async () => {
 Then(
   'I ensure the order to be amended matches my last created order',
   async () => {
-    cy.readFile('store.txt').then((lastOrderId) => {
+    cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
+      const lastOrderId = data
       cy.url().then((url) => {
         window.localStorage.setItem('lastOrderID', lastOrderId)
         const extractedOrderId = url.split('/').pop()
@@ -117,7 +118,7 @@ And(
 
 And('At least a time selection must be selected', () => {
   cy.get('p.chakra-text')
-    .contains(Cypress.env('product'),{timeout:x6})
+    .contains(Cypress.env('product') || Cypress.env('product2'),{timeout:x6})
     .parent()
     .as('singleTrainRideAddon')
     .siblings()
@@ -236,12 +237,13 @@ When('I edit the {string} section by removing {string}', (section, value) => {
   }
 
   const filePath = 'cypress/integration/steps/Reservation2/OrderAmendBooking/amendStore.txt'
-  cy.writeFile(filePath, {
+  const data = {
     orderId: window.localStorage.getItem('lastOrderID'),
     data: {
-      sections: [{ sectionName: section, actions: ['remove'], value: [value] }],
+      sections: [{ sectionName: section, actions: ['remove'], value: [data] }],
     },
-  })
+  }
+  cy.task('storeData', { key: 'amendStore', value: data });
 })
 
 When(

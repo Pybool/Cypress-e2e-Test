@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 7689000000
+              "duration": 98519000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I click the view button for an order in the orders table",
             "result": {
               "status": "passed",
-              "duration": 88244000000
+              "duration": 101594000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I ensure the order to be amended matches my last created order",
             "result": {
               "status": "passed",
-              "duration": 318000000
+              "duration": 715000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "I click the \"Edit Order\" Button beside \"Go to Dashboard\" button",
             "result": {
               "status": "passed",
-              "duration": 738000000
+              "duration": 837000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "I should be taken to \"Amending Booking\" page",
             "result": {
               "status": "passed",
-              "duration": 3092000000
+              "duration": 1738000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "I proceed to change route by clicking the green swap location toggle",
             "result": {
               "status": "passed",
-              "duration": 2105000000
+              "duration": 4106000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "The \"Commit Changes\" Button should be Inactive",
             "result": {
               "status": "passed",
-              "duration": 269000000
+              "duration": 500000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "I edit the 'Who' section by removing '1x Adult'",
             "result": {
               "status": "passed",
-              "duration": 2691000000
+              "duration": 5243000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "I edit the 'Date' section by clicking the 'Next Day' button",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 10000000
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "I select a time for 'Add-Ons' Single Train ride",
             "result": {
               "status": "passed",
-              "duration": 2513000000
+              "duration": 4106000000
             }
           },
           {
@@ -136,7 +136,7 @@
             "name": "I select seats in the reservation compartment section",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 7000000
             }
           },
           {
@@ -146,7 +146,7 @@
             "name": "The \"Commit Changes\" Button should be Active",
             "result": {
               "status": "passed",
-              "duration": 373000000
+              "duration": 554000000
             }
           },
           {
@@ -156,7 +156,7 @@
             "name": "I click the \"Commit Changes\" button",
             "result": {
               "status": "passed",
-              "duration": 743000000
+              "duration": 1274000000
             }
           },
           {
@@ -166,7 +166,7 @@
             "name": "The \"Refund\" Button should be Active if The Sub Total is negative else the \"Checkout\" Button should be active where either button is the action button",
             "result": {
               "status": "passed",
-              "duration": 5054000000
+              "duration": 6745000000
             }
           },
           {
@@ -176,7 +176,7 @@
             "name": "I click the action button",
             "result": {
               "status": "passed",
-              "duration": 2814000000
+              "duration": 4961000000
             }
           },
           {
@@ -186,7 +186,7 @@
             "name": "I process a refund or checkout",
             "result": {
               "status": "passed",
-              "duration": 6877000000
+              "duration": 5906000000
             }
           },
           {
@@ -196,7 +196,7 @@
             "name": "I should see a \"Booking amended\" header",
             "result": {
               "status": "passed",
-              "duration": 3753000000
+              "duration": 2166000000
             }
           },
           {

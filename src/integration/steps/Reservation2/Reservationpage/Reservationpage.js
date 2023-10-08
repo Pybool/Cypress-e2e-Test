@@ -198,7 +198,8 @@ And(
 )
 
 When('I click on the a row in the table for an order ID', () => {
-  cy.readFile('store.txt').then((lastOrderId)=>{  
+  cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
+    const lastOrderId = data
     cy.get('table.chakra-table', { timeout: 30000 }).as('o_table').then(async ($table) => {
       const hasRows = $table.find('tr').length > 1;          
       if (hasRows) {            
@@ -272,7 +273,8 @@ And('The Order Preview widget {string} should contains a Name Label and the name
   .and('be.visible')
   .siblings().eq(0).as('customerNameEl')
 
-  cy.readFile('store.txt').then((lastOrderId)=>{  
+  cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
+    const lastOrderId = data
     cy.get('td').contains(lastOrderId,{timeout:x6})
     .parent()
     .siblings()

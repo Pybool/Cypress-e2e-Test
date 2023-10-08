@@ -73,7 +73,7 @@ function visitWithOrder(order){
 Given ('I have created an order as a customer', async ()=>{
   cy.visit('/booking')
   const data = { adults: 2, children: 2, step: '2 adults 2 children' }
-  await rs2.startCreateOrder(data.adults, data.children,"Ullswater 'Steamers'")
+  await rs2.startCreateOrder(data.adults, data.children,"Ullswater 'Steamers'",3)
   rs2.internalCheckOut('Checkout',"Ullswater 'Steamers'")
   
 
@@ -88,11 +88,11 @@ When('I create a an order', async () => {
     Cypress.env('modCapacityData', modCapacityData);
     rs2.internalCheckOut('Checkout')
   })
-  
 })
 
 Then ('I get the previous order Order ID',()=>{
-  cy.readFile('store.txt').then((lastOrderId)=>{  
+  cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
+    const lastOrderId = data
     orderObj['orderId'] = lastOrderId
   })
 })
@@ -420,19 +420,19 @@ When('I edit the {string} section by removing {string}', (section, value) => {
       }
   }
 
-  const filePath = 'cypress/integration/steps/reservation2_tests/OrdersAmendBooking/amendStore.txt';
-  cy.writeFile(filePath, 
-      {
-          'orderId':window.localStorage.getItem('lastOrderID'),
-          'data':{
-                  'sections':[
-                                  {   'sectionName':section,
-                                      'actions':['remove'],
-                                      'value':[value]
-                                  }
-                              ]
-                 }
-      });
+  const data = {
+                  'orderId':window.localStorage.getItem('lastOrderID'),
+                  'data':{
+                          'sections':[
+                                          {   'sectionName':section,
+                                              'actions':['remove'],
+                                              'value':[data]
+                                          }
+                                      ]
+                        }
+                }
+  cy.task('storeData', { key: 'magiklinklastOrderID', value: data });
+
 
 });
 
@@ -451,8 +451,10 @@ Then ('I click the Edit Order Button beside More Actions dropdown',()=>{
 })
 
 When('I edit the {string} section by clicking the {string} button', (date,btntxt) => {
-  btntxt = 'Previous Day'
-  cy.get('button.chakra-button').contains(btntxt,{timeout:x6}).click(__force__)
+  btntxt = 'Next Day'
+  for(let i = 0; i < 3; i++){
+    cy.get('button.chakra-button').contains(btntxt,{timeout:x6}).click(__force__)
+  }
 });
 
 When('I select a time for the product', (type) => {
@@ -525,9 +527,7 @@ Then('I click the checkout Button', (btnText) => {
 });
 
 When('I am on the Amending Booking page I click cancel order button',() => {
-  cy.get('h2.chakra-heading').invoke('text').then((txt)=>{
-      expect(txt).to.include('Amending Booking')
-  })
+  cy.get('h2.chakra-heading').contains(`Amending Booking: ${ DATA.REF}`, { timeout: 60000 })
   cy.get('button.chakra-button', { timeout: 60000 }).then(($buttons) => {
       const cancelButton = $buttons.filter(':contains("Cancel order")');
       if (cancelButton.length > 0) {
@@ -542,11 +542,12 @@ Then('I should see {string} with color {string}',(txt,color) => {
   cy.get('@txt').should('have.css','color',color)
 })
 
-And('I should see a Refund Button',() => {
-  cy.get('button.chakra-button', { timeout: 30000 })
-  .contains('Refund').as('refundBtn')
-  .should('exist')
-  .and('be.visible')
+And('I should not see a Refund Button',() => {
+  cy.get('h5').contains('Total:').parent().parent().siblings().last().then((btn)=>{
+    console.log(Cypress.$(btn))
+    const txt = Cypress.$(btn)[0].innerText
+    expect(txt.includes('Refund')).to.eq(false)
+  })
 })
 
 And('I click on the Refund Button', () => {
@@ -588,20 +589,18 @@ Then(
   'The {string} Button should be Active if The Sub Total is negative else the {string} Button should be active where either button is the action button',
   (refund, checkout) => {
     let btnText;
+    cy.wait(4000)
     cy.get('p.chakra-text')
       .contains('Sub Total:')
       .siblings()
       .eq(0)
       .invoke('text')
       .then((txt) => {
-        alert(txt)
         if (txt.includes('-')) {
           btnText = refund
         } else if (txt == '£0.00') {
           btnText = checkout
-        } else {
-          btnText = checkout
-        }
+        } 
         alert(btnText)
         cy.get('button.chakra-button')
           .contains(btnText)

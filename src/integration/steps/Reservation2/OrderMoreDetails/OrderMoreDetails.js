@@ -3,8 +3,8 @@ const x6 = 60000
 Then(
   'I click the View button in Search Orders for a previously created order',
   async () => {
-    cy.readFile('store.txt').then((content) => {
-      const lastOrder_id = content
+    cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
+      const lastOrder_id = data
       Cypress.config()['orderId'] = lastOrder_id
 
       cy.get('table.chakra-table', { timeout: 20000 })
@@ -51,8 +51,9 @@ Then(
             .contains('View Order Details',{timeout:x6})
             .click({ force: true })
           }
-        })
+      })
     })
+
   },
 )
 
@@ -216,7 +217,8 @@ Then('The {string} modal should be closed', async (option) => {
 })
 
 Then('I should be taken to {string} page', async (page) => {
-  cy.readFile('store.txt').then((content) => {
+  cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
+    const content = data
     cy.get('h2.chakra-heading')
     .contains(`Amending Booking: ${content}`)
     .as('page')

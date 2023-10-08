@@ -35,8 +35,7 @@ function resetAndClick(text,number){
 }
 
 export function saveToSessionStorage(key, value) {
-  const filePath = 'store.txt'
-  cy.writeFile(filePath, value)
+  cy.task('storeData', { key: 'lastOrderID', value: value });
 }
 
 export function containsStringInCells($table, searchString) {
@@ -52,63 +51,67 @@ export function containsStringInCells($table, searchString) {
 }
 
 async function cancelOrderFn(lastOrderId, amend) {
-  cy.readFile('store.txt').then((content) => {
-      cy.get('table.chakra-table', { timeout: 20000 })
-      .find('tr > td')
-      .contains(content)
-      .parent()
-      .children()
-      .as('tds')
-      .last()
-      .as('last')
 
-      return cy.get('@tds')
-        .eq(1)
-        .invoke('text')
-        .then((txt) => {
-          if (txt != 'cancelled') {
-            
-            cy.visit(`/orders/${lastOrderId}/amend`).then(() => {
-              if(txt != 'cancelled'){
-                cy.get('button.chakra-button')
-                .contains('Cancel order',{timeout:x6})
-                .should('exist').and('be.visible')
-                .and('have.css','background-color','rgb(239, 211, 204)')
-                .click({force:true})
-              }
-              cy.get('button.chakra-button', { timeout: 30000 })
-                .contains('Refund',{timeout:x6})
-                .click({ force: true })
-                
+  cy.task('getData', { key: 'lastOrderID' }).then((data) => {
+    const content = data;
+    cy.get('table.chakra-table', { timeout: 20000 })
+    .find('tr > td')
+    .contains(content)
+    .parent()
+    .children()
+    .as('tds')
+    .last()
+    .as('last')
+
+    return cy.get('@tds')
+      .eq(1)
+      .invoke('text')
+      .then((txt) => {
+        if (txt != 'cancelled') {
+          
+          cy.visit(`/orders/${lastOrderId}/amend`).then(() => {
+            if(txt != 'cancelled'){
               cy.get('button.chakra-button')
-                .get('div.chakra-stack')
-                .contains('Complete refund',{timeout:x6})
-                .click()
-                .then(()=>{
-                  cy.visit('/booking')
-                })
+              .contains('Cancel order',{timeout:x6})
+              .should('exist').and('be.visible')
+              .and('have.css','background-color','rgb(239, 211, 204)')
+              .click({force:true})
+            }
+            cy.get('button.chakra-button', { timeout: 30000 })
+              .contains('Refund',{timeout:x6})
+              .click({ force: true })
               
-            })
-          } else {
-            return new Promise((resolve) => {
-              cy.visit('/booking')
-              window.localStorage.setItem('actionType', 'new')
-              resolve('new')
-            })
-          }
-      })
-  })
+            cy.get('button.chakra-button')
+              .get('div.chakra-stack')
+              .contains('Complete refund',{timeout:x6})
+              .click()
+              .then(()=>{
+                cy.visit('/booking')
+              })
+            
+          })
+        } else {
+          return new Promise((resolve) => {
+            cy.visit('/booking')
+            window.localStorage.setItem('actionType', 'new')
+            resolve('new')
+          })
+        }
+    })
+    
+  });
+
 }
 
 export async function cancelLastOrder(amend = false) {
-  return cy.readFile('store.txt').then((lastOrderId) => {
+  cy.task('getData', { key: 'lastOrderID' }).then((data) => {
+    const lastOrderId = data;
     if (lastOrderId != false && lastOrderId != undefined) {
-      return cy.url().then(async (currentUrl) => {
+      cy.url().then(async (currentUrl) => {
         const orderUrl = Cypress.config('baseUrl', BASE_URL['rs2']['uat']) + '/'
         if (currentUrl !== orderUrl) {
-          return cy.visit('/').then(() => {
-            return cy
-              .get('table.chakra-table', { timeout: 30000 })
+          cy.visit('/').then(() => {
+            cy.get('table.chakra-table', { timeout: 30000 })
               .as('o_table')
               .then(async ($table) => {
                 const hasRows = $table.find('tr').length > 1
@@ -136,6 +139,7 @@ export async function cancelLastOrder(amend = false) {
       })
     }
   })
+
 }
 
 export function startCreateOrder(number, secondchoice,market='',time='12:50') {
@@ -224,7 +228,7 @@ export function startCreateOrder(number, secondchoice,market='',time='12:50') {
     })
     resolve(1)
   }).then(async () => {
-    for (let i = 0; i <= 1; i++) {
+    for (let i = 0; i < 3; i++) {
       cy.get('button.chakra-button').contains('Next Day',{timeout:x6}).click({ force: true })
     }
 

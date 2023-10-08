@@ -14,8 +14,8 @@ function toSentenceCase(str) {
 When(
   'I click the View button in Search Orders for a previously created order',
   async () => {
-    cy.readFile('store.txt').then((content) => {
-      const lastOrder_id = content
+    cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
+      const lastOrder_id = data
       Cypress.config()['orderId'] = lastOrder_id
       cy.get('table.chakra-table', { timeout: 20000 })
         .find('tr > td')
@@ -25,9 +25,7 @@ When(
         .as('tds')
         .last()
         .as('last')
-      
-      
-
+    
       cy.get('@tds')
         .eq(1)
         .invoke('text')
@@ -38,6 +36,7 @@ When(
         .eq(0)
         .click()
       cy.visit(Cypress.config().baseUrl + `orders/${lastOrder_id}`)
+      
     })
   },
 )
@@ -272,8 +271,8 @@ Then(
       .and('be.visible')
       .invoke('text')
       .then((headertxt) => {
-        cy.readFile('store.txt').then((content) => { 
-          expect(headertxt).to.eq(`Redeem ${content}`)
+        cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
+          expect(headertxt).to.eq(`Redeem ${data}`)
         })
       })
   },
