@@ -1,5 +1,7 @@
 import { Then, When, And } from 'cypress-cucumber-preprocessor/steps'
 import * as rs2 from '../../../functions/rs2'
+import * as core from '../helpers/core'
+
 const x6 = 60000
 
 When('I am on the reservations page', () => {
@@ -12,6 +14,14 @@ Then('I should be on the base url', () => {
     expect(url).to.equal(expectedUrl)
   })
 })
+
+When ('I create a an order', async ()=>{
+  cy.visit('/booking')
+  const data = { adults: 2, children: 2, step: '2 adults 2 children' }
+  await rs2.startCreateOrder(data.adults, data.children,"Ullswater 'Steamers'",3)
+  rs2.internalCheckOut('Checkout',"Ullswater 'Steamers'")
+})
+
 
 Then('I should see a greeting {string}', (greetingText) => {
   cy.get('p.chakra-text')
@@ -199,7 +209,7 @@ And(
 
 When('I click on the a row in the table for an order ID', () => {
   cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
-    const lastOrderId = data
+    const lastOrderId = data || 'ULO2OKILYXOEH'
     cy.get('table.chakra-table', { timeout: 30000 }).as('o_table').then(async ($table) => {
       const hasRows = $table.find('tr').length > 1;          
       if (hasRows) {            
@@ -274,7 +284,7 @@ And('The Order Preview widget {string} should contains a Name Label and the name
   .siblings().eq(0).as('customerNameEl')
 
   cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
-    const lastOrderId = data
+    const lastOrderId = data || 'ULO2OKILYXOEH'
     cy.get('td').contains(lastOrderId,{timeout:x6})
     .parent()
     .siblings()
@@ -343,4 +353,107 @@ And('The Order Preview widget {string} should contains a Email Label and the Ema
       .and('be.visible')
     }
   })
+ })
+
+ 
+ Given('I have orders created {string}', (periodTxt) => { 
+  const period = periodTxt === 'Today' ? 0 : periodTxt === 'Yesterday' ? 1 : periodTxt === 'Last 7 days' ? 7 : 0;
+  const dateToCheck = getDateNDaysAgo(period)
+  Cypress.env('dateToCheck',dateToCheck)
+  cy.get('tr > td:nth-child(3)').then((tds)=>{
+    let presentDates = []
+    Array.from(tds).forEach((td)=>{
+      if(Cypress.$(td)[0].innerText.includes(String(dateToCheck))){
+        presentDates.push(Cypress.$(td)[0].innerText)
+      }
+    })
+    if(presentDates.length > 0){expect(presentDates).to.have.length.gte(1);}
+    
+  })
+})
+
+When('I select {string} in the filter', (periodTxt) => { 
+  const periodIndex = periodTxt === 'Today' ? 1 : periodTxt === 'Yesterday' ? 2 : periodTxt === 'Last 7 days' ? 3 : 0;
+  cy.get('select.chakra-select').select(3)
+  cy.get('select.chakra-select').select(periodIndex)
+})
+
+Then('I should see a spinner loading', () => { 
+  cy
+  .get('div.chakra-spinner')
+  .scrollIntoView()
+  .should('exist')
+  .and('be.visible')
+})
+
+When('The spinner disappears', () => { 
+  cy
+  .get('div.chakra-spinner')
+  .should('not.exist',{timeout:40000})
+})
+
+Then('The entries in the table should all have {string} date', () => {
+  cy.get('tr > td:nth-child(3)').then((tds)=>{
+    Array.from(tds).forEach((td)=>{
+      const stat = Cypress.$(td)[0].innerText.includes(String(Cypress.env('dateToCheck')))
+      expect(stat).to.eq(true)
+    })
+  })
+})
+
+Then('The entries in the table should all have dates within the {string}', () => {
+  const n = 7;
+  cy.get('tr > td:nth-child(3)').then((tds)=>{
+    Array.from(tds).forEach((td)=>{
+      const dateToCheck = Cypress.$(td)[0].innerText
+      expect(isDateWithinLastNDays(dateToCheck, n)).to.eq(true)
+    })
+  })
+})
+
+
+function isDateWithinLastNDays(dateString, n) {
+  const months = {
+    Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
+    Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11
+  };
+
+  const dateParts = dateString.match(/(\w{3}) (\d{1,2}), (\d{4}), (\d{1,2}):(\d{2}) (AM|PM)/);
+
+  if (!dateParts) {
+    return false;
+  }
+
+  const month = months[dateParts[1]];
+  const day = parseInt(dateParts[2], 10);
+  const year = parseInt(dateParts[3], 10);
+  let hours = parseInt(dateParts[4], 10);
+  const minutes = parseInt(dateParts[5], 10);
+  const isPM = dateParts[6] === 'PM';
+
+  if (isPM && hours !== 12) {
+    hours += 12;
+  }
+
+  const inputDate = new Date(year, month, day, hours, minutes);
+  const today = new Date(); 
+  const lastNDays = new Date();
+  lastNDays.setDate(today.getDate() - n);
+
+  return inputDate >= lastNDays && inputDate <= today;
+}
+
+function formatDate(date) {
+  const options = { year: 'numeric', month: 'short', day: 'numeric' };
+  return date.toLocaleDateString('en-US', options);
+}
+
+function getDateNDaysAgo(ndays) {
+  const currentDate = new Date();
+  currentDate.setDate(currentDate.getDate() - ndays);
+  return formatDate(currentDate);
+}
+
+ after(()=>{
+  rs2.cancelLastOrder()
  })

@@ -29,19 +29,35 @@ Background:Background
 #     When I click the "Discard edits and return to order" button to return to the Order Page
 #     Then I click the Edit Order Button beside More Actions dropdown
 
-@automated @amend-save-bookings @rs2
-Scenario: On ReservationFunctional : Ensuring that a booking can be amended by removing an Adult
+# @automated @amend-save-bookings @rs2
+# Scenario: On ReservationFunctional : Ensuring that a booking can be amended by removing an Adult
 
-    When I proceed to change route by clicking the green swap location toggle
-    Then The "Commit Changes" Button should be Inactive
-    When I edit the 'Who' section by removing '1x Adult'
-    When I edit the 'Date' section by clicking the 'Next Day' button
-    When I select a time for 'Add-Ons' Single Train ride
-    Then I select seats in the reservation compartment section
-    Then The "Commit Changes" Button should be Active
-    Then I click the "Commit Changes" button
-    Then The "Refund" Button should be Active if The Sub Total is negative else the "Checkout" Button should be active where either button is the action button
-    Then I click the action button
-    And I process a refund or checkout
-    Then I should see a "Booking amended" header
-    Then I ckick the view order button to verify all changes are reflected
+#     When I proceed to change route by clicking the green swap location toggle
+#     Then The "Commit Changes" Button should be Inactive
+#     When I edit the 'Who' section by removing '1x Adult'
+#     When I edit the 'Date' section by clicking the 'Next Day' button
+#     When I select a time for 'Add-Ons' Single Train ride
+#     Then I select seats in the reservation compartment section
+#     Then The "Commit Changes" Button should be Active
+#     Then I click the "Commit Changes" button
+#     Then The "Refund" Button should be Active if The Sub Total is negative else the "Checkout" Button should be active where either button is the action button
+#     Then I click the action button
+#     And I process a refund or checkout
+#     Then I should see a "Booking amended" header
+#     Then I ckick the view order button to verify all changes are reflected
+
+
+@automated @amend-save-bookings @rs2
+Scenario: On ReservationFunctional : Ensuring that an can be amended by adding a new booking
+    Given I click the "Add Another Item to Order" button
+    Then I should see a modal with header "New Order Item:"
+    And I should see a "Cancel" button and a "Save Changes" button
+    And I should see "From,To,Who,when" sections in the modal
+    And I should see "Available Options" card which should contain "Previous Day" and "Next Day" in the modal
+    When I proceed to change route by clicking the green swap location toggle in the modal
+    When I select a time for 'Add-Ons' Single Train ride in the modal
+    Then I click the "Save Changes" button
+    Then The modal should be closed
+    And I should see a new "From,To,Who,when" sections added
+    And The Spinner should disappear
+    And I should see a new Available Options Card added

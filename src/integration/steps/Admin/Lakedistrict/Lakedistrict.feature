@@ -3,7 +3,7 @@ Feature: Admin regression page load
 
     @automated @lakedistrict-admin  @lakedistrict-admin-nav
     Scenario Outline: On LakedistrictAdmin Tab Menus in User Administration page is searchable
-        Given I am a user on Admin Page for 'lakedistrict'
+        Given I am a user on Admin Page
         When I click User Admin on the Nav bar
         Then I click a "<User Admin>" tab on 'User Admin' page
         And I type "<Search phrase>" in search box

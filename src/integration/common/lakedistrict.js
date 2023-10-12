@@ -6,13 +6,13 @@ const username = Cypress.env('ADMIN_USER')
 const password = Cypress.env('ADMIN_PASS')
 
 const pwds = { lakedistrict: Cypress.env('LAKE_DISTRICT_PASS') }
-setBaseUrl('lakedistrict', BASE_URL)
+setBaseUrl(Cypress.env('module'), BASE_URL)
 
-Given('I am a user on Admin Page for {string}', (env) => {
-  setBaseUrl('lakedistrict', BASE_URL)
+Given('I am a user on Admin Page', () => {
+  setBaseUrl(Cypress.env('module'), BASE_URL)
   cy.visit('/blocks/tickets')
   cy.get('#username').fastType(username)
-  cy.get('#password').fastType(pwds[env])
+  cy.get('#password').fastType(Cypress.env('LAKE_DISTRICT_PASS'))
   cy.get('button').contains('Login').click()
 })
 

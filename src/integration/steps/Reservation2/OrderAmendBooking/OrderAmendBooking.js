@@ -7,16 +7,8 @@ const __force__ = { force: true }
 var btnText
 const x6 = 60000
 
-// BeforeEach(() => {
-//   const time = '13:50'
-//   const date = '28'
-//   const entityID = '00574022-d00e-4fd9-af51-c285aa874400'
-//   cy.getCapacity(time,date,entityID)
-
-// })
-
 When('I click the view button for an order in the orders table', async () => {
-  rs2.cancelLastOrder(false).then(() => {
+  // rs2.cancelLastOrder(false).then(() => {
     
     cy.log('ACTION 2: ' + window.localStorage.getItem('actionType'))
     if (
@@ -29,15 +21,12 @@ When('I click the view button for an order in the orders table', async () => {
         if (currentUrl !== bookingUrl) {
           cy.visit('/booking')
         }
-        const data = { adults: 2, children: 2, step: '2 adults , 2 children' ,time:'13:50' }
-        await rs2.startCreateOrder(data.adults, data.children,'',data.time)
-        core.processSeats('Who',data.step, 2).then((modCapacityData)=>{
-          Cypress.env('modCapacityData', modCapacityData);
-          rs2.internalCheckOut('Checkout')
-        })
+        const data = { adults: 2, children: 2, step: '2 adults 2 children' }
+        await rs2.startCreateOrder(data.adults, data.children,"Ullswater 'Steamers'",3)
+        rs2.internalCheckOut('Checkout',"Ullswater 'Steamers'")
       })
     }
-  })
+  // })
 })
 
 Then(
@@ -424,3 +413,144 @@ Then(
   'I ckick the view order button to verify all changes are reflected',
   () => {},
 )
+
+Given(
+  'I click the {string} button',
+  (btnTxt) => {
+    cy.get('button.chakra-button').contains(btnTxt).click()
+  },
+)
+
+Then(
+  'I should see a modal with header {string}',
+  (headerTxt) => {
+    cy.get('header.chakra-modal__header').contains(headerTxt).should('exist').and('be.visible')
+  },
+)
+
+And(
+  'I should see a {string} button and a {string} button',
+  (cancelBtn,saveBtn) => {
+    cy.get('button.chakra-button')
+    .contains(cancelBtn)
+    .should('exist')
+    .and('be.visible')
+
+    cy.get('button.chakra-button')
+    .contains(saveBtn)
+    .should('exist')
+    .and('be.visible')
+  },
+)
+
+And('I should see {string} sections in the modal', (sections) => {
+  const sectionsList = sections.split(',')
+  sectionsList.forEach((section) => {
+    if (section == 'Who' || section == 'when') {
+      cy.get('div.chakra-modal__content-container')
+      .find('button.chakra-button').as('btn')
+    } else {
+      cy.get('div.chakra-modal__content-container')
+      .find('button.chakra-menu__menu-button').as('btn')
+    }
+    cy.get('@btn')
+      .find('p')
+      .contains(section.trim())
+      .should('exist')
+      .and('be.visible')
+  })
+})
+
+And('I should see a new {string} sections added', (sections) => {
+  const sectionsList = sections.split(',')
+  sectionsList.forEach((section) => {
+    if (section == 'Who' || section == 'when') {
+      cy.get('button.chakra-button').as('btn')
+    } else {
+      cy.get('button.chakra-menu__menu-button').as('btn')
+    }
+    cy.get('@btn')
+      .find('p')
+      .contains(section.trim())
+      .should('exist')
+      .and('be.visible')
+  })
+})
+
+And(
+  'I should see {string} card which should contain {string} and {string} in the modal',
+  (cardName, previousBtn, nextBtn) => {
+    
+    cy.get('div.chakra-modal__content-container')
+    .find('h2.chakra-heading', { timeout: 30000 })
+    .contains(cardName)
+
+    cy.get('div.chakra-modal__content-container')
+    .find('button.chakra-button')
+      .contains(previousBtn,{timeout:x6})
+      .should('exist')
+      .scrollIntoView()
+      .and('be.visible')
+
+    cy.get('div.chakra-modal__content-container')
+    .find('button.chakra-button')
+      .contains(nextBtn,{timeout:x6})
+      .should('exist')
+      .and('be.visible')
+  },
+)
+
+When(
+  'I proceed to change route by clicking the green swap location toggle in the modal',
+  () => {
+    cy.get('div.chakra-modal__content-container')
+    .find("button[aria-label='Swap Locations']")
+    .click()
+  },
+)
+
+When('I select a time for {string} Single Train ride in the modal', () => {
+  cy.get('div.chakra-modal__content-container')
+  .find('h2.chakra-heading')
+  .contains('Available Options',{timeout:x6})
+  .parent()
+  .siblings().last()
+  .find('button').last()
+  .click()
+
+  cy.get('div.chakra-modal__content-container')
+  .find('button.chakra-button')
+  .contains("Save Changes",{timeout:x6})
+  .should('be.enabled')
+  .click({ force: true })
+})
+
+Then('I click the {string} button', (btnText) => {
+  
+})
+
+Then('The modal should be closed', () => {
+  cy.get('div.chakra-modal__content-container')
+  .should('not.exist')
+})
+
+And('The Spinner should disappear', () => {
+  cy.get('button')
+  .contains('Commit Changes')
+  .siblings()
+  .last().as('section')
+  .children().eq(0)
+  .should('not.be.visible')
+})
+
+And('I should see a new Available Options Card added', () => {
+  cy.get('@section').find('h2.chakra-heading').contains('Available Options')
+})
+
+
+
+
+
+
+
+

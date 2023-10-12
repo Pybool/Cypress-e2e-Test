@@ -3,7 +3,7 @@ Feature: Add Product and Services
 
     @automated @lakedistrict-admin @products
     Scenario Outline: On LakedistrictAdmin User should be able to add items
-        Given I am a user on Admin Page for 'lakedistrict'
+        Given I am a user on Admin Page
         When I click on the "<menu>" menu link
         And I click the "<add>" button
         And I enter a "<Name>", "<External ID>" and enter other relevant details for "<menu>" menu and "<submenu>"
@@ -20,7 +20,7 @@ Feature: Add Product and Services
 
     @automated @lakedistrict-admin @products
     Scenario Outline: On LakedistrictAdmin User should be able to download Reports
-        Given I am a user on Admin Page for 'lakedistrict'
+        Given I am a user on Admin Page
         And I am a user on Report page
         When I click a '<Report menu>' on 'Reports' page
         And I click "<Download>" report

@@ -195,14 +195,6 @@ Then('I checkout and pay', async() => {
   rs2.internalCheckOut()
 })
 
-// after(()=>{
-//   rs2.cancelLastOrder()
-// })
-
-
-
-
-
 When('I make a new Booking with the information from datasource', async() => {
 cy.get('div.chakra-card',{timeout:15000}).get("div.chakra-stack").find('button').eq(0).should('exist').click({force:true})
 return new Promise((resolve,reject)=>{
