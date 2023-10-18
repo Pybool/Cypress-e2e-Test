@@ -1,0 +1,737 @@
+[
+  {
+    "description": "    As a User I want to validate reports page",
+    "keyword": "Feature",
+    "name": "Add Product and Services",
+    "line": 1,
+    "id": "add-product-and-services",
+    "tags": [],
+    "uri": "Reports.feature",
+    "elements": [
+      {
+        "id": "add-product-and-services;validate-the-sales-report-page-for-\"markets-and-channels\"-section",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Validate the Sales Report page for \"Markets and channels\" section",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 4
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 4
+          },
+          {
+            "name": "@products",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 2845000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 3150000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I click a 'Sales report' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 980000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see a header with text \"Sales report\"",
+            "result": {
+              "status": "passed",
+              "duration": 281000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I should see a section \"Markets and channels\"",
+            "result": {
+              "status": "passed",
+              "duration": 446000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Under \"Markets and channels\" I should see \"Filter markets\" \"Filter channels\" and \"Filter sources\" dropdowns",
+            "result": {
+              "status": "passed",
+              "duration": 1200000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I select all for \"Filter markets\" \"Filter channels\" and \"Filter sources\" dropdowns for \"Markets and channels\"",
+            "result": {
+              "status": "passed",
+              "duration": 8012000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see pills matching the contents of what is in the dropdown for \"Markets and channels\"",
+            "result": {
+              "status": "passed",
+              "duration": 11488000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I click the \"-\" icon on any pill",
+            "result": {
+              "status": "passed",
+              "duration": 2661000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "The pill should disappear",
+            "result": {
+              "status": "passed",
+              "duration": 517000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I click on the \"-\" icon on any dropdown",
+            "result": {
+              "status": "passed",
+              "duration": 1353000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "All pills for that dropdown should disappear",
+            "result": {
+              "status": "passed",
+              "duration": 124000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-product-and-services;validate-the-sales-report-page-for-\"products-and-services\"-section",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Validate the Sales Report page for \"Products and services\" section",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 19
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 19
+          },
+          {
+            "name": "@products",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 9367000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 3289000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I click a 'Sales report' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 565000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see a header with text \"Sales report\"",
+            "result": {
+              "status": "passed",
+              "duration": 278000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I should see a section \"Products and services\"",
+            "result": {
+              "status": "passed",
+              "duration": 316000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Under \"Products and services\" I should see \"Filter products\" \"Filter services\" and \"Filter service type\" dropdowns",
+            "result": {
+              "status": "passed",
+              "duration": 1042000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I select all for \"Filter products\" \"Filter services\" and \"Filter service type\" dropdowns for \"Products and services\"",
+            "result": {
+              "status": "passed",
+              "duration": 15560000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "I should see pills matching the contents of what is in the dropdown for \"Products and services\"",
+            "result": {
+              "status": "passed",
+              "duration": 5157000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "I click the \"-\" icon on any pill",
+            "result": {
+              "status": "passed",
+              "duration": 2430000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "The pill should disappear",
+            "result": {
+              "status": "passed",
+              "duration": 620000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I click on the \"-\" icon on any dropdown",
+            "result": {
+              "status": "passed",
+              "duration": 1246000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "All pills for that dropdown should disappear",
+            "result": {
+              "status": "passed",
+              "duration": 203000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-product-and-services;on-lakedistrictadmin-user-should-be-able-to-download-reports",
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "On LakedistrictAdmin User should be able to download Reports",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 35
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 35
+          },
+          {
+            "name": "@products",
+            "line": 35
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 3429000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 2687000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I click a 'Sales report' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 343000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "I click \"Sales Report\" report",
+            "result": {
+              "status": "passed",
+              "duration": 711000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "The \"Sales Report\" is downloaded",
+            "result": {
+              "status": "passed",
+              "duration": 3369000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-product-and-services;on-lakedistrictadmin-user-should-be-able-to-download-reports",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "On LakedistrictAdmin User should be able to download Reports",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 35
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 35
+          },
+          {
+            "name": "@products",
+            "line": 35
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 9742000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 7059000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I click a 'Functions manifest' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 487000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "I click \"Manifest Report\" report",
+            "result": {
+              "status": "passed",
+              "duration": 417000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "The \"Manifest Report\" is downloaded",
+            "result": {
+              "status": "passed",
+              "duration": 4870000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-product-and-services;on-lakedistrictadmin-user-should-be-able-to-download-reports",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "On LakedistrictAdmin User should be able to download Reports",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 35
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 35
+          },
+          {
+            "name": "@products",
+            "line": 35
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 9269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 7837000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I click a 'Yield report' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 480000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "I click \"Yield Report\" report",
+            "result": {
+              "status": "passed",
+              "duration": 448000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "The \"Yield Report\" is downloaded",
+            "result": {
+              "status": "passed",
+              "duration": 1311000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-product-and-services;on-lakedistrictadmin-user-should-be-able-to-download-reports",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "On LakedistrictAdmin User should be able to download Reports",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 35
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 35
+          },
+          {
+            "name": "@products",
+            "line": 35
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 4074000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 4349000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I click a 'External Orders report' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 434000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "I click \"External Orders Report\" report",
+            "result": {
+              "status": "passed",
+              "duration": 415000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "The \"External Orders Report\" is downloaded",
+            "result": {
+              "status": "passed",
+              "duration": 1471000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-product-and-services;on-lakedistrictadmin-user-should-be-able-to-download-reports",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "On LakedistrictAdmin User should be able to download Reports",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 35
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 35
+          },
+          {
+            "name": "@products",
+            "line": 35
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 3242000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 5646000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I click a 'Payments summary report' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 428000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "I click \"Payments Report\" report",
+            "result": {
+              "status": "passed",
+              "duration": 506000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "The \"Payments Report\" is downloaded",
+            "result": {
+              "status": "passed",
+              "duration": 2663000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-product-and-services;on-lakedistrictadmin-user-should-be-able-to-download-reports",
+        "keyword": "Scenario",
+        "line": 50,
+        "name": "On LakedistrictAdmin User should be able to download Reports",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 35
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 35
+          },
+          {
+            "name": "@products",
+            "line": 35
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 7630000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 2687000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I click a 'Newsletter subscription report' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 331000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "I click \"Newsletter Subscriptions Report\" report",
+            "result": {
+              "status": "passed",
+              "duration": 594000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "The \"Newsletter Subscriptions Report\" is downloaded",
+            "result": {
+              "status": "passed",
+              "duration": 683000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

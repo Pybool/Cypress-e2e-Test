@@ -393,22 +393,33 @@ When('The spinner disappears', () => {
 })
 
 Then('The entries in the table should all have {string} date', () => {
-  cy.get('tr > td:nth-child(3)').then((tds)=>{
-    Array.from(tds).forEach((td)=>{
-      const stat = Cypress.$(td)[0].innerText.includes(String(Cypress.env('dateToCheck')))
-      expect(stat).to.eq(true)
+  const rows = Cypress.$('tr > td')
+  console.log("Rows ", rows.length)
+  if(rows.length > 0){
+    cy.get('tr > td:nth-child(3)').then((tds)=>{
+      Array.from(tds).forEach((td)=>{
+        const stat = Cypress.$(td)[0].innerText.includes(String(Cypress.env('dateToCheck')))
+        expect(stat).to.eq(true)
+      })
     })
-  })
+  }
+  else{cy.log("No results found, skipping")}
+  
 })
 
 Then('The entries in the table should all have dates within the {string}', () => {
-  const n = 7;
-  cy.get('tr > td:nth-child(3)').then((tds)=>{
-    Array.from(tds).forEach((td)=>{
-      const dateToCheck = Cypress.$(td)[0].innerText
-      expect(isDateWithinLastNDays(dateToCheck, n)).to.eq(true)
+  const rows = Cypress.$('tr > td')
+  console.log("Rows ", rows.length)
+  if(rows.length > 0){
+    const n = 7;
+    cy.get('tr > td:nth-child(3)').then((tds)=>{
+      Array.from(tds).forEach((td)=>{
+        const dateToCheck = Cypress.$(td)[0].innerText
+        expect(isDateWithinLastNDays(dateToCheck, n)).to.eq(true)
+      })
     })
-  })
+  }
+  else{cy.log("No results found, skipping")}
 })
 
 

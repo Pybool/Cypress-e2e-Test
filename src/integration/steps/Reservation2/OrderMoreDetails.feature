@@ -6,6 +6,7 @@ As a User I want to access orders section So I view order details
 @automated @rs2
 Scenario: User should be able to perform More actions on Bookings Page
     Given I am logged in to reservations2 'uat'
+    Given I have created an order as a customer
     Then I click the View button in Search Orders for a previously created order
     When I click the More Actions Button beside Edit Order
     Then I should see a dropdown displayed

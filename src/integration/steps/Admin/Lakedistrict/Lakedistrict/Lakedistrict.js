@@ -4,13 +4,16 @@ const x6 = 60000
 Given('I am an Admin User', () => {})
 
 When ('I click User Admin on the Nav bar', () => {
-  cy.get('span').contains('User Admin',{timeout:x6}).parent().click({force:true})
+  cy.get('[class^="appstatus_busy_"]').should('not.exist')
+  cy.get('span').contains('User Admin',{timeout:x6}).parent().should('be.visible').click({force:true})
 })
 
 Then('I click a {string} on {string} page', (submenu) => {
+  // cy.get('[class^="appstatus_busy_"]').should('not.be.visible')
   cy.get('ul[class^="sidenavigation_options"]')
     .find('li')
     .contains(submenu)
+    .should('be.visible')
     .click({ force: true })
 })
 
@@ -83,19 +86,26 @@ Then('{string} tabs is clickable', (capacity) => {
 })
 
 When('I click a {string} tab on {string} page', (tab) => {
+  cy.get('[class^="appstatus_busy_"]').should('not.exist')
   if (tab == 'Capacity') {
     return cy
       .get('ul[class^="sidenavigation_options"]')
       .find('li')
       .contains(tab)
+      .should('be.visible')
       .click({ force: true })
   }
-
+  
   cy.get("div[class^='view_layout_']")
     .find('button[class^="roundedtab_tab"]')
     .contains(tab)
+    
     .click({ force: true })
+
 })
+
+
+    
 
 Then('The {string} tab page loads up as expected', (capacity) => {
   cy.get('button[class^="roundedtab_tab"]')

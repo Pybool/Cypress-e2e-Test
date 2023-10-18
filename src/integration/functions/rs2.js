@@ -378,7 +378,7 @@ export function fillPaymentInformationForm() {
     })
 }
 
-export function internalCheckOut(checkout='',market='') {
+export function internalCheckOut(checkout='',market='',mailpay=false) {
   if(market==''){
     cy.get('footer.chakra-modal__footer')
     .find('button')
@@ -392,7 +392,19 @@ export function internalCheckOut(checkout='',market='') {
     .click({ force: true })
 
   fillGeneralInformationForm(market)
-  fillPaymentInformationForm()
+  if(!mailpay){
+    fillPaymentInformationForm()
+  }
+  else{
+    cy.get('p').contains('Via Email').parent().click()
+    cy.get('select.chakra-select').select(1)
+    cy.get('p').contains('Send Email').parent().parent().should('be.enabled').then(($btn)=>{
+      cy.wrap($btn).click()
+
+      cy.get('span').contains('Payment request sent via email').should('exist').and('be.visible')
+    })
+  }
+  
 }
 
 export function selectDate() {

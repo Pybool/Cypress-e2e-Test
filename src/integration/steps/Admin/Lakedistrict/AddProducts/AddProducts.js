@@ -16,19 +16,6 @@ async function clickAddButton(buttonText) {
     .click({ force: true })
 }
 
-async function downloadReport(buttonText) {
-  cy.get("div[class^='view_layout_']")
-    .find('button[class^="ctabutton_button_"]')
-    .contains(buttonText)
-    .should('exist')
-    .scrollIntoView()
-    .and('be.visible')
-    .should('have.css','background-color', 'rgb(96, 191, 61)')
-    .click({ force: true })
-}
-
-
-
 async function clickShadowWrapperAddButton(buttonText) {
   cy.get("div[class^='shadowwrapper_layout_']")
     .find('button[class^="ctabutton_button_"]')
@@ -196,39 +183,3 @@ And(
     })
   },
 )
-
-And('I am a user on Report page', () => {
-  cy.get('li[class^="navigator_wrapper_"]')
-    .find('a>span')
-    .contains('Reports')
-    .as('selectedlink')
-  cy.get('@selectedlink').click({ force: true })
-})
-
-And('I click {string} report', async () => {
-  await downloadReport('Download report')
-})
-
-When('I click a {string} on {string} page', (submenu) => {
-  cy.get('ul[class^="sidenavigation_options"]')
-    .find('li')
-    .contains(submenu)
-    .click({ force: true })
-})
-
-Then('The {string} is downloaded', (report) => {
-  if(report != 'Yield Report'){
-    if (Cypress.platform === 'win32') {
-      cy.log('Running on Windows platform.')
-      cy.readFile(`src\\downloads\\${report}.xlsx`).should('exist')
-    } else {
-      cy.log('Not running on Windows platform.')
-      cy.readFile(`src/downloads/${report}.xlsx`).should('exist')
-    }
-  }
-  else{
-    // cy.get('p').contains('Report is generating and will be sent to your email address.').should('exist').and('be.visible')
-  }
-  
-})
-;

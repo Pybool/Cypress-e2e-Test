@@ -15,4 +15,4 @@ Feature: Admin regression page load
             | Admin users        | Tayé          |
             | POS users          | Beccy         |
             | Reservations users | Tayé          |
-            | Scanning app users | Olamide       |
+            | Scanning app users | Beccy       |

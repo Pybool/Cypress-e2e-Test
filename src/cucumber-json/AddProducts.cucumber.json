@@ -11,6 +11,152 @@
       {
         "id": "add-product-and-services;on-lakedistrictadmin-user-should-be-able-to-download-reports",
         "keyword": "Scenario",
+        "line": 31,
+        "name": "On LakedistrictAdmin User should be able to download Reports",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 21
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 21
+          },
+          {
+            "name": "@products",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 43384000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 2740000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I click a 'Sales report' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 197000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I click \"Sales Report\" report",
+            "result": {
+              "status": "passed",
+              "duration": 355000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "The \"Sales Report\" is downloaded",
+            "result": {
+              "status": "passed",
+              "duration": 2530000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-product-and-services;on-lakedistrictadmin-user-should-be-able-to-download-reports",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "On LakedistrictAdmin User should be able to download Reports",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 21
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 21
+          },
+          {
+            "name": "@products",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 42604000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 2006000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I click a 'Functions manifest' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 328000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I click \"Manifest Report\" report",
+            "result": {
+              "status": "passed",
+              "duration": 356000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "The \"Manifest Report\" is downloaded",
+            "result": {
+              "status": "passed",
+              "duration": 1557000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-product-and-services;on-lakedistrictadmin-user-should-be-able-to-download-reports",
+        "keyword": "Scenario",
         "line": 33,
         "name": "On LakedistrictAdmin User should be able to download Reports",
         "tags": [
@@ -36,7 +182,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 88298000000
+              "duration": 2811000000
             }
           },
           {
@@ -46,7 +192,7 @@
             "name": "I am a user on Report page",
             "result": {
               "status": "passed",
-              "duration": 5046000000
+              "duration": 2057000000
             }
           },
           {
@@ -56,7 +202,7 @@
             "name": "I click a 'Yield report' on 'Reports' page",
             "result": {
               "status": "passed",
-              "duration": 312000000
+              "duration": 315000000
             }
           },
           {
@@ -66,7 +212,7 @@
             "name": "I click \"Yield Report\" report",
             "result": {
               "status": "passed",
-              "duration": 330000000
+              "duration": 567000000
             }
           },
           {
@@ -75,8 +221,227 @@
             "line": 27,
             "name": "The \"Yield Report\" is downloaded",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find content: 'Report is generating and will be sent to your email address.' within the element: <p.textbox_layout_RAhpI> but never did.\n    at Context.eval (src/integration/steps/Admin/Lakedistrict/AddProducts/AddProducts.js:230:89)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 1979000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-product-and-services;on-lakedistrictadmin-user-should-be-able-to-download-reports",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "On LakedistrictAdmin User should be able to download Reports",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 21
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 21
+          },
+          {
+            "name": "@products",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 43140000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 2490000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I click a 'External Orders report' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 172000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I click \"External Orders Report\" report",
+            "result": {
+              "status": "passed",
+              "duration": 290000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "The \"External Orders Report\" is downloaded",
+            "result": {
+              "status": "passed",
+              "duration": 1293000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-product-and-services;on-lakedistrictadmin-user-should-be-able-to-download-reports",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "On LakedistrictAdmin User should be able to download Reports",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 21
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 21
+          },
+          {
+            "name": "@products",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 2605000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 2456000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I click a 'Payments summary report' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 27384000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I click \"Payments Report\" report",
+            "result": {
+              "status": "passed",
+              "duration": 264000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "The \"Payments Report\" is downloaded",
+            "result": {
+              "status": "passed",
+              "duration": 1395000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-product-and-services;on-lakedistrictadmin-user-should-be-able-to-download-reports",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "On LakedistrictAdmin User should be able to download Reports",
+        "tags": [
+          {
+            "name": "@automated",
+            "line": 21
+          },
+          {
+            "name": "@lakedistrict-admin",
+            "line": 21
+          },
+          {
+            "name": "@products",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I am a user on Admin Page",
+            "result": {
+              "status": "passed",
+              "duration": 2982000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I am a user on Report page",
+            "result": {
+              "status": "passed",
+              "duration": 1800000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I click a 'Newsletter subscription report' on 'Reports' page",
+            "result": {
+              "status": "passed",
+              "duration": 311000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I click \"Newsletter Subscriptions Report\" report",
+            "result": {
+              "status": "passed",
+              "duration": 267000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "The \"Newsletter Subscriptions Report\" is downloaded",
+            "result": {
+              "status": "passed",
+              "duration": 1804000000
             }
           }
         ]

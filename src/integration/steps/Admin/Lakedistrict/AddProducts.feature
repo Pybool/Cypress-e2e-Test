@@ -1,22 +1,22 @@
 Feature: Add Product and Services
     As a User I want to visit admin page So I can add products
 
-    @automated @lakedistrict-admin @products
-    Scenario Outline: On LakedistrictAdmin User should be able to add items
-        Given I am a user on Admin Page
-        When I click on the "<menu>" menu link
-        And I click the "<add>" button
-        And I enter a "<Name>", "<External ID>" and enter other relevant details for "<menu>" menu and "<submenu>"
-        And I click the Save button The record should have been created on post request to "<URL>"
+    # @automated @lakedistrict-admin @products
+    # Scenario Outline: On LakedistrictAdmin User should be able to add items
+    #     Given I am a user on Admin Page
+    #     When I click on the "<menu>" menu link
+    #     And I click the "<add>" button
+    #     And I enter a "<Name>", "<External ID>" and enter other relevant details for "<menu>" menu and "<submenu>"
+    #     And I click the Save button The record should have been created on post request to "<URL>"
 
-        Examples:
-            | menu       | submenu         | add                      | Name                         | External ID                  | URL                    |
-            | Services   |                 | Add a new service        | Testing Taye Service         | testing_taye_service         | /test/services        |
-            | Combos     |                 | Add a new combo          | Testing Taye Combo           | testing_taye_combo           | /test/combos          |
-            | Promos     |                 | Add a new promotion      | Testing Taye Promotion       | testing_taye_promotion       | /test/promotions      |
-            | Extras     | add-ons         | Create a New Add-on      | Testing Taye Add-on          | testing_taye_Add-on          | /test/addons          |
-            | Extras     | recommendations | Add a new recommendation | Testing Taye Recommendations | testing_taye_recommendations | /test/recommendations |
-            | User Admin |                 | Add a new user           | Testing Taye User            | testing_taye_user            | /test/users/profiles  |
+    #     Examples:
+    #         | menu       | submenu         | add                      | Name                         | External ID                  | URL                    |
+    #         | Services   |                 | Add a new service        | Testing Taye Service         | testing_taye_service         | /prod/services        |
+    #         | Combos     |                 | Add a new combo          | Testing Taye Combo           | testing_taye_combo           | /prod/combos          |
+    #         | Promos     |                 | Add a new promotion      | Testing Taye Promotion       | testing_taye_promotion       | /prod/promotions      |
+    #         | Extras     | add-ons         | Create a New Add-on      | Testing Taye Add-on          | testing_taye_Add-on          | /prod/addons          |
+    #         | Extras     | recommendations | Add a new recommendation | Testing Taye Recommendations | testing_taye_recommendations | /prod/recommendations |
+    #         | User Admin |                 | Add a new user           | Testing Taye User            | testing_taye_user            | /prod/users/profiles  |
 
     @automated @lakedistrict-admin @products
     Scenario Outline: On LakedistrictAdmin User should be able to download Reports

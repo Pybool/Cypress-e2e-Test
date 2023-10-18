@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 18944000000
+              "duration": 5733000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I click the View button in Search Orders for a previously created order",
             "result": {
               "status": "passed",
-              "duration": 14779000000
+              "duration": 3118000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I click \"More Information\" dropdown",
             "result": {
               "status": "passed",
-              "duration": 5068000000
+              "duration": 3102000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 8597000000
+              "duration": 4474000000
             }
           },
           {
@@ -109,7 +109,7 @@
             "name": "I click the View button in Search Orders for a previously created order",
             "result": {
               "status": "passed",
-              "duration": 6287000000
+              "duration": 3955000000
             }
           },
           {
@@ -119,7 +119,7 @@
             "name": "I click \"Contact Details\" dropdown",
             "result": {
               "status": "passed",
-              "duration": 5699000000
+              "duration": 3234000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "The \"Contact Details\" section displays data consistent with the order created",
             "result": {
               "status": "passed",
-              "duration": 1822000000
+              "duration": 1001000000
             }
           }
         ]
@@ -162,7 +162,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 10911000000
+              "duration": 49025000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "I click the View button in Search Orders for a previously created order",
             "result": {
               "status": "passed",
-              "duration": 7320000000
+              "duration": 4048000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "I click the 'Redeem Booking' History on bookings page",
             "result": {
               "status": "passed",
-              "duration": 8640000000
+              "duration": 5521000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "I ensure that the 'Redeem Booking' Modal is visible and the 'Redeem OrderID' header is visible",
             "result": {
               "status": "passed",
-              "duration": 800000000
+              "duration": 796000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "I ensure that the Redeem Selected Ticket Button is disabled by default",
             "result": {
               "status": "passed",
-              "duration": 101000000
+              "duration": 85000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "I check all ticket options checkboxes",
             "result": {
               "status": "passed",
-              "duration": 2154000000
+              "duration": 1147000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "I ensure that the Redeem Selected Ticket Button is enabled",
             "result": {
               "status": "passed",
-              "duration": 94000000
+              "duration": 115000000
             }
           },
           {
@@ -232,7 +232,7 @@
             "name": "I click the Redeem Selected Ticket Button",
             "result": {
               "status": "passed",
-              "duration": 576000000
+              "duration": 406000000
             }
           },
           {
@@ -242,7 +242,7 @@
             "name": "The modal is closed and i should see Redeemed under the QR Code",
             "result": {
               "status": "passed",
-              "duration": 2225000000
+              "duration": 1403000000
             }
           }
         ]

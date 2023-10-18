@@ -88,6 +88,7 @@ And('I am logged in', () => {
 })
 
 When('I click on the {string} menu link', (link) => {
+  cy.get('[class^="appstatus_busy_"]').should('not.exist')
   if (link != 'Logout') {
     cy.get('li[class^="navigator_wrapper_"]')
       .find('a>span')

@@ -601,7 +601,6 @@ Then(
         } else if (txt == '£0.00') {
           btnText = checkout
         } 
-        alert(btnText)
         cy.get('button.chakra-button')
           .contains(btnText)
           .should('not.have.attr', 'disabled')

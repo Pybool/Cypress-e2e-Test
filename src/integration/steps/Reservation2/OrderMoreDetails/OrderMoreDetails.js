@@ -1,13 +1,25 @@
 import { And, Then, When } from 'cypress-cucumber-preprocessor/steps'
+import * as rs2 from '../../../functions/rs2'
 const x6 = 60000
+
+Given ('I have created an order as a customer', async ()=>{
+  cy.visit('/booking')
+  const data = { adults: 2, children: 2, step: '2 adults 2 children' }
+  await rs2.startCreateOrder(data.adults, data.children,"Ullswater 'Steamers'",3)
+  rs2.internalCheckOut('Checkout',"Ullswater 'Steamers'")
+  
+
+})
+
 Then(
   'I click the View button in Search Orders for a previously created order',
   async () => {
+    cy.visit('/')
     cy.task('getData', { key: 'lastOrderID' }).then((data) => { 
       const lastOrder_id = data
       Cypress.config()['orderId'] = lastOrder_id
 
-      cy.get('table.chakra-table', { timeout: 20000 })
+      cy.get('table.chakra-table', { timeout: 30000 })
         .find('tr > td')
         .then(($tds) => {
           const lastOrderRow = $tds.filter((index, element) => {
