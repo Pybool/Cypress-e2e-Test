@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 9290000000
+              "duration": 6728000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I create a an order",
             "result": {
               "status": "passed",
-              "duration": 90151000000
+              "duration": 56347000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I am on the reservations page",
             "result": {
               "status": "passed",
-              "duration": 1603000000
+              "duration": 980000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "I should be on the base url",
             "result": {
               "status": "passed",
-              "duration": 38000000
+              "duration": 22000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "I should see a greeting \"Hi Tayé\"",
             "result": {
               "status": "passed",
-              "duration": 5137000000
+              "duration": 2703000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "I should see that the page header is \"Welcome to Reservations\"",
             "result": {
               "status": "passed",
-              "duration": 839000000
+              "duration": 426000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "I should see the New Order button having an Icon on the top right of the page",
             "result": {
               "status": "passed",
-              "duration": 867000000
+              "duration": 795000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "Below the New Order button i should see three buttons \"New Order\" and \"Search Orders\" and \"Scan QR\" on the page",
             "result": {
               "status": "passed",
-              "duration": 1687000000
+              "duration": 1611000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "Below the three buttons I should see a search bar with placeholder text \"Search Order Reference\" in grey color",
             "result": {
               "status": "passed",
-              "duration": 316000000
+              "duration": 271000000
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "Beside the search bar I should see a Date Filter Having Values \"Today\" and \"Yesterday\" and \"Last 7 days\" and \"Last 30 days\" in dropdown",
             "result": {
               "status": "passed",
-              "duration": 1894000000
+              "duration": 1600000000
             }
           },
           {
@@ -136,7 +136,7 @@
             "name": "Below The search bar I should see a table having \"5\" headers with texts \"Reference\", \"Status\", \"Order Placed\", \"Name\", \"Phone Number\" as headers",
             "result": {
               "status": "passed",
-              "duration": 5665000000
+              "duration": 5086000000
             }
           },
           {
@@ -146,7 +146,7 @@
             "name": "If there are no records in the table i should see \"No results for your search.\" in table",
             "result": {
               "status": "passed",
-              "duration": 323000000
+              "duration": 258000000
             }
           },
           {
@@ -156,7 +156,7 @@
             "name": "If there are records i should not see \"No results for your search.\" in table",
             "result": {
               "status": "passed",
-              "duration": 1623000000
+              "duration": 1280000000
             }
           }
         ]
@@ -189,7 +189,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 16422000000
+              "duration": 7052000000
             }
           },
           {
@@ -199,7 +199,7 @@
             "name": "I am on the reservations page",
             "result": {
               "status": "passed",
-              "duration": 2431000000
+              "duration": 807000000
             }
           },
           {
@@ -209,7 +209,7 @@
             "name": "I should be on the base url",
             "result": {
               "status": "passed",
-              "duration": 109000000
+              "duration": 15000000
             }
           },
           {
@@ -219,7 +219,7 @@
             "name": "I click on the a row in the table for an order ID",
             "result": {
               "status": "passed",
-              "duration": 7178000000
+              "duration": 4369000000
             }
           },
           {
@@ -229,7 +229,7 @@
             "name": "I should see the Order Preview widget",
             "result": {
               "status": "passed",
-              "duration": 2257000000
+              "duration": 1136000000
             }
           },
           {
@@ -239,7 +239,7 @@
             "name": "The Order Preview widget should contain \"Customer Details:\" \"Booking Details:\" \"Ticket Details:\" and \"Total:\" section",
             "result": {
               "status": "passed",
-              "duration": 1638000000
+              "duration": 1132000000
             }
           },
           {
@@ -249,7 +249,7 @@
             "name": "The Order Preview widget should have a \"View Order Details\" button with background colors \"rgb(125, 227, 203)\"",
             "result": {
               "status": "passed",
-              "duration": 366000000
+              "duration": 226000000
             }
           }
         ]
@@ -282,7 +282,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 7463000000
+              "duration": 6058000000
             }
           },
           {
@@ -292,7 +292,7 @@
             "name": "I am on the reservations page",
             "result": {
               "status": "passed",
-              "duration": 1046000000
+              "duration": 782000000
             }
           },
           {
@@ -302,7 +302,7 @@
             "name": "I should be on the base url",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 17000000
             }
           },
           {
@@ -312,7 +312,7 @@
             "name": "I click on the a row in the table for an order ID",
             "result": {
               "status": "passed",
-              "duration": 6900000000
+              "duration": 4510000000
             }
           },
           {
@@ -322,7 +322,7 @@
             "name": "I should see the Order Preview widget",
             "result": {
               "status": "passed",
-              "duration": 2625000000
+              "duration": 1229000000
             }
           },
           {
@@ -332,7 +332,7 @@
             "name": "The Order Preview widget \"Customer Details:\" should contains a Name Label and the name in the Table matches the name on the Label value",
             "result": {
               "status": "passed",
-              "duration": 2595000000
+              "duration": 1531000000
             }
           },
           {
@@ -342,7 +342,7 @@
             "name": "The Order Preview widget \"Customer Details:\" should contains a Email Label and the Email should be a valid Email Address",
             "result": {
               "status": "passed",
-              "duration": 578000000
+              "duration": 538000000
             }
           }
         ]
@@ -375,7 +375,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 9354000000
+              "duration": 5570000000
             }
           },
           {
@@ -385,7 +385,7 @@
             "name": "I am on the reservations page",
             "result": {
               "status": "passed",
-              "duration": 1443000000
+              "duration": 812000000
             }
           },
           {
@@ -395,7 +395,7 @@
             "name": "I should be on the base url",
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 13000000
             }
           },
           {
@@ -405,7 +405,7 @@
             "name": "I click on the a row in the table for an order ID",
             "result": {
               "status": "passed",
-              "duration": 7165000000
+              "duration": 4304000000
             }
           },
           {
@@ -415,7 +415,7 @@
             "name": "I should see the Order Preview widget",
             "result": {
               "status": "passed",
-              "duration": 2711000000
+              "duration": 1113000000
             }
           },
           {
@@ -425,7 +425,7 @@
             "name": "The \"Booking Details:\" section in Booking Redemption shows \"Tickets not redeemed\" The \"Redeem Booking\" button does show and Vice Versa",
             "result": {
               "status": "passed",
-              "duration": 1086000000
+              "duration": 633000000
             }
           }
         ]
@@ -450,7 +450,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 8356000000
+              "duration": 6767000000
             }
           },
           {
@@ -460,7 +460,7 @@
             "name": "I am on the reservations page",
             "result": {
               "status": "passed",
-              "duration": 2823000000
+              "duration": 733000000
             }
           },
           {
@@ -470,7 +470,7 @@
             "name": "I should be on the base url",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 17000000
             }
           },
           {
@@ -480,7 +480,7 @@
             "name": "I have orders created \"Today\"",
             "result": {
               "status": "passed",
-              "duration": 7682000000
+              "duration": 3085000000
             }
           },
           {
@@ -490,7 +490,7 @@
             "name": "I select \"Today\" in the filter",
             "result": {
               "status": "passed",
-              "duration": 1254000000
+              "duration": 1093000000
             }
           },
           {
@@ -500,7 +500,7 @@
             "name": "I should see a spinner loading",
             "result": {
               "status": "passed",
-              "duration": 172000000
+              "duration": 109000000
             }
           },
           {
@@ -510,7 +510,7 @@
             "name": "The spinner disappears",
             "result": {
               "status": "passed",
-              "duration": 1275000000
+              "duration": 970000000
             }
           },
           {
@@ -520,7 +520,7 @@
             "name": "The entries in the table should all have \"Today\" date",
             "result": {
               "status": "passed",
-              "duration": 1225000000
+              "duration": 506000000
             }
           }
         ]
@@ -545,7 +545,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 12304000000
+              "duration": 5698000000
             }
           },
           {
@@ -555,7 +555,7 @@
             "name": "I am on the reservations page",
             "result": {
               "status": "passed",
-              "duration": 1515000000
+              "duration": 868000000
             }
           },
           {
@@ -565,7 +565,7 @@
             "name": "I should be on the base url",
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 20000000
             }
           },
           {
@@ -575,7 +575,7 @@
             "name": "I have orders created \"Yesterday\"",
             "result": {
               "status": "passed",
-              "duration": 8427000000
+              "duration": 3528000000
             }
           },
           {
@@ -585,7 +585,7 @@
             "name": "I select \"Yesterday\" in the filter",
             "result": {
               "status": "passed",
-              "duration": 2144000000
+              "duration": 966000000
             }
           },
           {
@@ -595,7 +595,7 @@
             "name": "I should see a spinner loading",
             "result": {
               "status": "passed",
-              "duration": 321000000
+              "duration": 106000000
             }
           },
           {
@@ -605,7 +605,7 @@
             "name": "The spinner disappears",
             "result": {
               "status": "passed",
-              "duration": 1917000000
+              "duration": 929000000
             }
           },
           {
@@ -615,7 +615,7 @@
             "name": "The entries in the table should all have \"Yesterday\" date",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 453000000
             }
           }
         ]
@@ -640,7 +640,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 15522000000
+              "duration": 6122000000
             }
           },
           {
@@ -650,7 +650,7 @@
             "name": "I am on the reservations page",
             "result": {
               "status": "passed",
-              "duration": 2133000000
+              "duration": 734000000
             }
           },
           {
@@ -660,7 +660,7 @@
             "name": "I should be on the base url",
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 15000000
             }
           },
           {
@@ -670,7 +670,7 @@
             "name": "I have orders created \"Last 7 days\"",
             "result": {
               "status": "passed",
-              "duration": 5815000000
+              "duration": 3177000000
             }
           },
           {
@@ -680,7 +680,7 @@
             "name": "I select \"Last 7 days\" in the filter",
             "result": {
               "status": "passed",
-              "duration": 1129000000
+              "duration": 897000000
             }
           },
           {
@@ -690,7 +690,7 @@
             "name": "I should see a spinner loading",
             "result": {
               "status": "passed",
-              "duration": 236000000
+              "duration": 143000000
             }
           },
           {
@@ -700,7 +700,7 @@
             "name": "The spinner disappears",
             "result": {
               "status": "passed",
-              "duration": 701000000
+              "duration": 629000000
             }
           },
           {
@@ -710,7 +710,7 @@
             "name": "The entries in the table should all have dates within the \"Last 7 days\"",
             "result": {
               "status": "passed",
-              "duration": 2066000000
+              "duration": 942000000
             }
           }
         ]

@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 6130000000
+              "duration": 4800000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 981000000
+              "duration": 720000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I attempt to create an order selecting '2' adult and '2' child for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 16383000000
+              "duration": 32209000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "For '2 adults 2 children' I select the needed compartments and choose appropriate seats for each respectively",
             "result": {
               "status": "passed",
-              "duration": 6389000000
+              "duration": 11160000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "The 'Add Seats' button should be active and i proceed to checkout internally",
             "result": {
               "status": "passed",
-              "duration": 33832000000
+              "duration": 73078000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "I confirm the new order matches with the information from datasource",
             "result": {
               "status": "passed",
-              "duration": 5903000000
+              "duration": 3648000000
             }
           }
         ]
@@ -123,7 +123,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 6733000000
+              "duration": 5444000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1412000000
+              "duration": 780000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "I attempt to create an order selecting '2' adult and '2' child for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 23094000000
+              "duration": 22283000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "For '2 adults 2 children' I select the needed compartments and choose appropriate seats for each respectively",
             "result": {
               "status": "passed",
-              "duration": 9702000000
+              "duration": 3776000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "The 'Add Seats' button should be active and i proceed to checkout by paying by till",
             "result": {
               "status": "passed",
-              "duration": 3443000000
+              "duration": 1604000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "I confirm the new order is displayed in the orders table",
             "result": {
               "status": "passed",
-              "duration": 6163000000
+              "duration": 14383000000
             }
           }
         ]
@@ -206,7 +206,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 6272000000
+              "duration": 5482000000
             }
           },
           {
@@ -216,7 +216,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 3337000000
+              "duration": 1631000000
             }
           },
           {
@@ -226,7 +226,7 @@
             "name": "I attempt to create an order selecting '1' adult for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 20870000000
+              "duration": 19400000000
             }
           },
           {
@@ -236,7 +236,7 @@
             "name": "The 'Joan Pullman Observation 4-seat compartment' pill is not displayed in the select reservation modal",
             "result": {
               "status": "passed",
-              "duration": 2435000000
+              "duration": 924000000
             }
           }
         ]
@@ -269,7 +269,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 7961000000
+              "duration": 22144000000
             }
           },
           {
@@ -279,7 +279,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 991000000
+              "duration": 1344000000
             }
           },
           {
@@ -289,7 +289,7 @@
             "name": "I check the 'Add return single trip' checkbox",
             "result": {
               "status": "passed",
-              "duration": 4371000000
+              "duration": 12759000000
             }
           },
           {
@@ -299,7 +299,7 @@
             "name": "I should see 'Outbound Options' and 'Return Options' sections for choosing time",
             "result": {
               "status": "passed",
-              "duration": 338000000
+              "duration": 93000000
             }
           },
           {
@@ -309,7 +309,7 @@
             "name": "I select '2' adult when choosing who",
             "result": {
               "status": "passed",
-              "duration": 4748000000
+              "duration": 11407000000
             }
           },
           {
@@ -319,7 +319,7 @@
             "name": "I should see available times in 'Outbound Options' all 'Enabled'",
             "result": {
               "status": "passed",
-              "duration": 5413000000
+              "duration": 3519000000
             }
           },
           {
@@ -329,7 +329,7 @@
             "name": "I should see available times in 'Return Options' all 'Disabled'",
             "result": {
               "status": "passed",
-              "duration": 2568000000
+              "duration": 280000000
             }
           },
           {
@@ -339,7 +339,7 @@
             "name": "I select the first available time in 'Outbound Options'",
             "result": {
               "status": "passed",
-              "duration": 5136000000
+              "duration": 626000000
             }
           },
           {
@@ -349,7 +349,7 @@
             "name": "Atleast 1 time in 'Return Options' should be enabled",
             "result": {
               "status": "passed",
-              "duration": 1521000000
+              "duration": 211000000
             }
           },
           {
@@ -359,7 +359,7 @@
             "name": "The 'Add To Cart' button should be 'Disabled'",
             "result": {
               "status": "passed",
-              "duration": 353000000
+              "duration": 79000000
             }
           },
           {
@@ -369,7 +369,7 @@
             "name": "I select the first available time in 'Return Options'",
             "result": {
               "status": "passed",
-              "duration": 1153000000
+              "duration": 250000000
             }
           },
           {
@@ -379,7 +379,7 @@
             "name": "The 'Add To Cart' button should be 'Enabled'",
             "result": {
               "status": "passed",
-              "duration": 3817000000
+              "duration": 2523000000
             }
           },
           {
@@ -389,7 +389,7 @@
             "name": "In the reservation modal i should see 'Dalegarth station - Ravenglass station' with its compartments",
             "result": {
               "status": "passed",
-              "duration": 8160000000
+              "duration": 1638000000
             }
           },
           {
@@ -399,7 +399,7 @@
             "name": "In the reservation modal i should see 'Ravenglass station - Dalegarth station' with its compartments",
             "result": {
               "status": "passed",
-              "duration": 5755000000
+              "duration": 1782000000
             }
           },
           {
@@ -409,7 +409,7 @@
             "name": "I checkout and pay",
             "result": {
               "status": "passed",
-              "duration": 51906000000
+              "duration": 28071000000
             }
           }
         ]

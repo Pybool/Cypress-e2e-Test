@@ -12,19 +12,12 @@
     "lint:fix": "prettier --write . && eslint './**/*.{js,tsx,jsx,ts}' --fix",
     "lint:debug": "DEBUG=eslint:cli-engine eslint --quiet './**/*.{js,tsx,jsx,ts}'",
     "lint:report": "eslint --quiet --output-file eslint_report.json --format json './**/*.{js,tsx,jsx,ts}'",
-    "start:regression-QA4": "cypress run -e TAGS='@automated' --headed --env testenv=rs2,module=qa4",
-    "start:regression-UAT": "cypress run -e TAGS='@automated' --headed --env testenv=rs2,module=uat,product='RES Single Train Ride'",
+    "start:regression-QA": "cypress run -e TAGS='@automated' --headed --env testenv=rs2,module=qa4",
+    "start:regression-UAT": "cypress run -e TAGS='@automated' --headless --env testenv=rs2,module=uat,product='RES Single Train Ride'",
     "generate:report": "node cucumber-html-report.js",
     "initialize:testrail": "node testrail.js --init",
-    "update:testrail-sections": "node testrail.js --init_",
-    "export:reports": "node testrail.js --export",
-    "test:reservation:vr": "cypress run -e TAGS='@visual-regression' --headless",
-    "test:reservation:functional": "cypress run -e TAGS='@rs2-functionall' --headed --no-exit",
-    "test:admin:lakedistrict": "cypress run -e TAGS='@lakedistrict-admin' --headless",
-    "test:admin:forsea": "cypress run -e TAGS='@backend' --headless",
-    "test:admin": "cypress run -e TAGS='@admin' --headless",
-    "test:lapland": "cypress run -e TAGS='@lapland' --headless",
-    "test:forsea": "cypress run -e TAGS='@forsea' --headless"
+    "update:testrail-sections": "node testrail.js --createsubdirs",
+    "export:reports": "node testrail.js --export"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,

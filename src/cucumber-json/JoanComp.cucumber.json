@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 5744000000
+              "duration": 8521000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1031000000
+              "duration": 1393000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I attempt to create an order selecting '4' adult for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 33503000000
+              "duration": 68827000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "The 'Joan Pullman Observation 4-seat compartment' pill is displayed in the select reservation modal with 'Joan Comp. 1' selected",
             "result": {
               "status": "passed",
-              "duration": 6319000000
+              "duration": 4861000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "I click The 'Seats 1-4' button",
             "result": {
               "status": "passed",
-              "duration": 768000000
+              "duration": 2138000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "The 'Add Seats' button should be active",
             "result": {
               "status": "passed",
-              "duration": 139000000
+              "duration": 409000000
             }
           }
         ]
@@ -119,7 +119,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 7556000000
+              "duration": 8903000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1224000000
+              "duration": 899000000
             }
           },
           {
@@ -139,7 +139,7 @@
             "name": "I attempt to create an order selecting '2' adult and '2' child for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 26661000000
+              "duration": 41476000000
             }
           },
           {
@@ -149,7 +149,7 @@
             "name": "The 'Joan Pullman Observation 4-seat compartment' pill is displayed in the select reservation modal with 'Joan Comp. 2' selected",
             "result": {
               "status": "passed",
-              "duration": 3857000000
+              "duration": 3630000000
             }
           },
           {
@@ -159,7 +159,7 @@
             "name": "I click The 'Seats 5-8' button",
             "result": {
               "status": "passed",
-              "duration": 1249000000
+              "duration": 1399000000
             }
           },
           {
@@ -169,7 +169,7 @@
             "name": "The 'Add Seats' button should be active",
             "result": {
               "status": "passed",
-              "duration": 245000000
+              "duration": 280000000
             }
           }
         ]
@@ -202,7 +202,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 7158000000
+              "duration": 10792000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1073000000
+              "duration": 910000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "I attempt to create an order selecting '3' adult and '3' child for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 26783000000
+              "duration": 37231000000
             }
           },
           {
@@ -232,7 +232,7 @@
             "name": "For '3 adults 3 children in closed carriages' I select the needed compartments and choose appropriate seats for each respectively",
             "result": {
               "status": "passed",
-              "duration": 5392000000
+              "duration": 21879000000
             }
           },
           {
@@ -242,7 +242,7 @@
             "name": "The 'Add Seats' button should be active and i proceed to checkout internally",
             "result": {
               "status": "passed",
-              "duration": 32926000000
+              "duration": 114885000000
             }
           }
         ]
@@ -275,7 +275,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 54740000000
+              "duration": 54991000000
             }
           },
           {
@@ -285,7 +285,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1554000000
+              "duration": 1943000000
             }
           },
           {
@@ -295,7 +295,7 @@
             "name": "I attempt to create an order selecting '3' adult and '3' child for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 41990000000
+              "duration": 90391000000
             }
           },
           {
@@ -305,7 +305,7 @@
             "name": "For '3 adults 3 children in semi-open carriages' I select the needed compartments and choose appropriate seats for each respectively",
             "result": {
               "status": "passed",
-              "duration": 9800000000
+              "duration": 13276000000
             }
           },
           {
@@ -315,7 +315,7 @@
             "name": "The 'Add Seats' button should be active and i proceed to checkout internally",
             "result": {
               "status": "passed",
-              "duration": 45056000000
+              "duration": 49542000000
             }
           }
         ]
@@ -348,7 +348,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 51768000000
+              "duration": 65510000000
             }
           },
           {
@@ -358,7 +358,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1804000000
+              "duration": 3268000000
             }
           },
           {
@@ -368,7 +368,7 @@
             "name": "I attempt to create an order selecting '3' adult and '3' child for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 37542000000
+              "duration": 63784000000
             }
           },
           {
@@ -378,7 +378,7 @@
             "name": "For '3 adults 3 children in open carriages' I select the needed compartments and choose appropriate seats for each respectively",
             "result": {
               "status": "passed",
-              "duration": 9745000000
+              "duration": 11052000000
             }
           },
           {
@@ -388,7 +388,7 @@
             "name": "The 'Add Seats' button should be active and i proceed to checkout internally",
             "result": {
               "status": "passed",
-              "duration": 41890000000
+              "duration": 77322000000
             }
           }
         ]
@@ -421,7 +421,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 6138000000
+              "duration": 10521000000
             }
           },
           {
@@ -431,7 +431,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 993000000
+              "duration": 1946000000
             }
           },
           {
@@ -441,7 +441,7 @@
             "name": "I attempt to create an order selecting '3' adult and '3' child for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 45348000000
+              "duration": 56774000000
             }
           },
           {
@@ -451,7 +451,7 @@
             "name": "For '3 adults 3 children in Accessible carriages' I select the needed compartments and choose appropriate seats for each respectively",
             "result": {
               "status": "passed",
-              "duration": 5917000000
+              "duration": 5585000000
             }
           }
         ]

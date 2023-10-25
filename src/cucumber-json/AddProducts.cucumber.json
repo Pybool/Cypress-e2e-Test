@@ -36,7 +36,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 43384000000
+              "duration": 4850000000
             }
           },
           {
@@ -45,8 +45,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 2740000000
+              "status": "undefined"
             }
           },
           {
@@ -55,8 +54,7 @@
             "line": 25,
             "name": "I click a 'Sales report' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 197000000
+              "status": "skipped"
             }
           },
           {
@@ -65,8 +63,7 @@
             "line": 26,
             "name": "I click \"Sales Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 355000000
+              "status": "skipped"
             }
           },
           {
@@ -75,8 +72,7 @@
             "line": 27,
             "name": "The \"Sales Report\" is downloaded",
             "result": {
-              "status": "passed",
-              "duration": 2530000000
+              "status": "skipped"
             }
           }
         ]
@@ -109,7 +105,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 42604000000
+              "duration": 4128000000
             }
           },
           {
@@ -118,8 +114,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 2006000000
+              "status": "undefined"
             }
           },
           {
@@ -128,8 +123,7 @@
             "line": 25,
             "name": "I click a 'Functions manifest' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 328000000
+              "status": "skipped"
             }
           },
           {
@@ -138,8 +132,7 @@
             "line": 26,
             "name": "I click \"Manifest Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 356000000
+              "status": "skipped"
             }
           },
           {
@@ -148,8 +141,7 @@
             "line": 27,
             "name": "The \"Manifest Report\" is downloaded",
             "result": {
-              "status": "passed",
-              "duration": 1557000000
+              "status": "skipped"
             }
           }
         ]
@@ -182,7 +174,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 2811000000
+              "duration": 4375000000
             }
           },
           {
@@ -191,8 +183,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 2057000000
+              "status": "undefined"
             }
           },
           {
@@ -201,8 +192,7 @@
             "line": 25,
             "name": "I click a 'Yield report' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 315000000
+              "status": "skipped"
             }
           },
           {
@@ -211,8 +201,7 @@
             "line": 26,
             "name": "I click \"Yield Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 567000000
+              "status": "skipped"
             }
           },
           {
@@ -221,8 +210,7 @@
             "line": 27,
             "name": "The \"Yield Report\" is downloaded",
             "result": {
-              "status": "passed",
-              "duration": 1979000000
+              "status": "skipped"
             }
           }
         ]
@@ -255,7 +243,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 43140000000
+              "duration": 4821000000
             }
           },
           {
@@ -264,8 +252,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 2490000000
+              "status": "undefined"
             }
           },
           {
@@ -274,8 +261,7 @@
             "line": 25,
             "name": "I click a 'External Orders report' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 172000000
+              "status": "skipped"
             }
           },
           {
@@ -284,8 +270,7 @@
             "line": 26,
             "name": "I click \"External Orders Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 290000000
+              "status": "skipped"
             }
           },
           {
@@ -294,8 +279,7 @@
             "line": 27,
             "name": "The \"External Orders Report\" is downloaded",
             "result": {
-              "status": "passed",
-              "duration": 1293000000
+              "status": "skipped"
             }
           }
         ]
@@ -328,7 +312,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 2605000000
+              "duration": 5460000000
             }
           },
           {
@@ -337,8 +321,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 2456000000
+              "status": "undefined"
             }
           },
           {
@@ -347,8 +330,7 @@
             "line": 25,
             "name": "I click a 'Payments summary report' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 27384000000
+              "status": "skipped"
             }
           },
           {
@@ -357,8 +339,7 @@
             "line": 26,
             "name": "I click \"Payments Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 264000000
+              "status": "skipped"
             }
           },
           {
@@ -367,8 +348,7 @@
             "line": 27,
             "name": "The \"Payments Report\" is downloaded",
             "result": {
-              "status": "passed",
-              "duration": 1395000000
+              "status": "skipped"
             }
           }
         ]
@@ -401,7 +381,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 2982000000
+              "duration": 4875000000
             }
           },
           {
@@ -410,8 +390,7 @@
             "line": 24,
             "name": "I am a user on Report page",
             "result": {
-              "status": "passed",
-              "duration": 1800000000
+              "status": "undefined"
             }
           },
           {
@@ -420,8 +399,7 @@
             "line": 25,
             "name": "I click a 'Newsletter subscription report' on 'Reports' page",
             "result": {
-              "status": "passed",
-              "duration": 311000000
+              "status": "skipped"
             }
           },
           {
@@ -430,8 +408,7 @@
             "line": 26,
             "name": "I click \"Newsletter Subscriptions Report\" report",
             "result": {
-              "status": "passed",
-              "duration": 267000000
+              "status": "skipped"
             }
           },
           {
@@ -440,8 +417,7 @@
             "line": 27,
             "name": "The \"Newsletter Subscriptions Report\" is downloaded",
             "result": {
-              "status": "passed",
-              "duration": 1804000000
+              "status": "skipped"
             }
           }
         ]

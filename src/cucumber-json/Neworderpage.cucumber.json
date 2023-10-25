@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 5499000000
+              "duration": 6092000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I am on the New Order page",
             "result": {
               "status": "passed",
-              "duration": 798000000
+              "duration": 1126000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I should see that the page header is \"New Order\"",
             "result": {
               "status": "passed",
-              "duration": 2601000000
+              "duration": 24254000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "I should see the market selection dropdown as the first component on the card below the page header",
             "result": {
               "status": "passed",
-              "duration": 576000000
+              "duration": 359000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "I should see the Travel Button next to the market selection dropdown",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 97000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "I should see the Event Button next to the Travel Button",
             "result": {
               "status": "passed",
-              "duration": 179000000
+              "duration": 124000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "I should see the Add return single trip radio after the Event Button",
             "result": {
               "status": "passed",
-              "duration": 668000000
+              "duration": 384000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "The Travel Button in the First Card is clicked",
             "result": {
               "status": "passed",
-              "duration": 996000000
+              "duration": 433000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "Below the first card I should a second card containing a \"Swap Locations\" button",
             "result": {
               "status": "passed",
-              "duration": 688000000
+              "duration": 380000000
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "In the \"firstLayer\" of the second card i should see a \"From\" dropdown and \"To\" dropdown",
             "result": {
               "status": "passed",
-              "duration": 952000000
+              "duration": 395000000
             }
           },
           {
@@ -136,7 +136,7 @@
             "name": "In the \"secondLayer\" of the second card i should see a \"Who\" dropdown and \"when\" dropdown",
             "result": {
               "status": "passed",
-              "duration": 1011000000
+              "duration": 787000000
             }
           },
           {
@@ -146,7 +146,7 @@
             "name": "The \"Who\" and \"when\" buttons should be disabled by default if the \"To\" button was not selected",
             "result": {
               "status": "passed",
-              "duration": 1674000000
+              "duration": 1356000000
             }
           },
           {
@@ -156,7 +156,7 @@
             "name": "The Cart Section should be visible and have a header with text \"Cart\"",
             "result": {
               "status": "passed",
-              "duration": 235000000
+              "duration": 331000000
             }
           },
           {
@@ -166,7 +166,7 @@
             "name": "A \"Clear All\" Button should be visible beside the header",
             "result": {
               "status": "passed",
-              "duration": 359000000
+              "duration": 350000000
             }
           }
         ]

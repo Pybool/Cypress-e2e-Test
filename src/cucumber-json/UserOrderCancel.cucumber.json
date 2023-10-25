@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 31580000000
+              "duration": 6679000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I create a an order",
             "result": {
               "status": "passed",
-              "duration": 112571000000
+              "duration": 66377000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I go to the orders table and click on edit for the order",
             "result": {
               "status": "passed",
-              "duration": 33003000000
+              "duration": 7378000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "I am on the Amending Booking page I click cancel order button",
             "result": {
               "status": "passed",
-              "duration": 11531000000
+              "duration": 5059000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "I should see \"The order will be cancelled\" with color \"rgb(217, 63, 28)\"",
             "result": {
               "status": "passed",
-              "duration": 1766000000
+              "duration": 1609000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "I should see a Refund Button",
             "result": {
               "status": "passed",
-              "duration": 568000000
+              "duration": 521000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "I click on the Refund Button",
             "result": {
               "status": "passed",
-              "duration": 441000000
+              "duration": 525000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "I should be taken to the Refund page",
             "result": {
               "status": "passed",
-              "duration": 5812000000
+              "duration": 2737000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "I click the \"Complete refund\" Button",
             "result": {
               "status": "passed",
-              "duration": 937000000
+              "duration": 1538000000
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "I should see \"Booking cancelled\" header with color \"rgb(117, 164, 14)\" and \"Your booking has been cancelled\" header",
             "result": {
               "status": "passed",
-              "duration": 25169000000
+              "duration": 3967000000
             }
           }
         ]

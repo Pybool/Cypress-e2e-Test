@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 71014000000
+              "duration": 69522000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I click the view button for an order in the orders table",
             "result": {
               "status": "passed",
-              "duration": 80983000000
+              "duration": 103804000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I ensure the order to be amended matches my last created order",
             "result": {
               "status": "passed",
-              "duration": 563000000
+              "duration": 28000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "I click the \"Edit Order\" Button beside \"Go to Dashboard\" button",
             "result": {
               "status": "passed",
-              "duration": 903000000
+              "duration": 892000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "I should be taken to \"Amending Booking\" page",
             "result": {
               "status": "passed",
-              "duration": 1463000000
+              "duration": 1180000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "I should see \"From,To,Who,when\" sections",
             "result": {
               "status": "passed",
-              "duration": 2589000000
+              "duration": 2166000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "I should see \"Available Options\" card which should contain \"Previous Day\" and \"Next Day\"",
             "result": {
               "status": "passed",
-              "duration": 4505000000
+              "duration": 11510000000
             }
           },
           {
@@ -106,7 +106,6 @@
             "name": "At least a time selection must be selected",
             "result": {
               "status": "failed",
-              "duration": 1000000,
               "error_message": "AssertionError: Timed out retrying after 60000ms: Expected to find content: 'RES Single Train Ride' within the element: <p.chakra-text.css-0> but never did.\n    at Context.eval (src/integration/steps/Reservation2/OrderAmendBooking/OrderAmendBooking.js:110:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
@@ -266,7 +265,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 52126000000
+              "duration": 49627000000
             }
           },
           {
@@ -275,8 +274,8 @@
             "line": 6,
             "name": "I click the view button for an order in the orders table",
             "result": {
-              "status": "passed",
-              "duration": 107513000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `div.chakra-card`, but never found it.\n    at Object.startCreateOrder (src/integration/functions/rs2.js:150:5)\n    at _callee$ (src/integration/steps/Reservation2/OrderAmendBooking/OrderAmendBooking.js:25:18)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at Context.eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)"
             }
           },
           {
@@ -285,8 +284,7 @@
             "line": 7,
             "name": "I ensure the order to be amended matches my last created order",
             "result": {
-              "status": "passed",
-              "duration": 680000000
+              "status": "skipped"
             }
           },
           {
@@ -295,8 +293,7 @@
             "line": 8,
             "name": "I click the \"Edit Order\" Button beside \"Go to Dashboard\" button",
             "result": {
-              "status": "passed",
-              "duration": 1389000000
+              "status": "skipped"
             }
           },
           {
@@ -305,8 +302,7 @@
             "line": 9,
             "name": "I should be taken to \"Amending Booking\" page",
             "result": {
-              "status": "passed",
-              "duration": 1904000000
+              "status": "skipped"
             }
           },
           {
@@ -315,8 +311,7 @@
             "line": 35,
             "name": "I proceed to change route by clicking the green swap location toggle",
             "result": {
-              "status": "passed",
-              "duration": 3205000000
+              "status": "skipped"
             }
           },
           {
@@ -325,8 +320,7 @@
             "line": 36,
             "name": "The \"Commit Changes\" Button should be Inactive",
             "result": {
-              "status": "passed",
-              "duration": 630000000
+              "status": "skipped"
             }
           },
           {
@@ -335,8 +329,7 @@
             "line": 37,
             "name": "I edit the 'Who' section by removing '1x Adult'",
             "result": {
-              "status": "passed",
-              "duration": 6262000000
+              "status": "skipped"
             }
           },
           {
@@ -345,8 +338,7 @@
             "line": 38,
             "name": "I edit the 'Date' section by clicking the 'Next Day' button",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           },
           {
@@ -355,8 +347,7 @@
             "line": 39,
             "name": "I select a time for 'Add-Ons' Single Train ride",
             "result": {
-              "status": "passed",
-              "duration": 3175000000
+              "status": "skipped"
             }
           },
           {
@@ -365,8 +356,7 @@
             "line": 40,
             "name": "I select seats in the reservation compartment section",
             "result": {
-              "status": "passed",
-              "duration": 8000000
+              "status": "skipped"
             }
           },
           {
@@ -375,8 +365,7 @@
             "line": 41,
             "name": "The \"Commit Changes\" Button should be Active",
             "result": {
-              "status": "passed",
-              "duration": 593000000
+              "status": "skipped"
             }
           },
           {
@@ -385,8 +374,7 @@
             "line": 42,
             "name": "I click the \"Commit Changes\" button",
             "result": {
-              "status": "passed",
-              "duration": 1413000000
+              "status": "skipped"
             }
           },
           {
@@ -395,8 +383,7 @@
             "line": 43,
             "name": "The \"Refund\" Button should be Active if The Sub Total is negative else the \"Checkout\" Button should be active where either button is the action button",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `div.chakra-tabs__tablist`, but never found it.\n    at Context.eval (src/integration/steps/Reservation2/OrderAmendBooking/OrderAmendBooking.js:314:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "skipped"
             }
           },
           {
@@ -465,7 +452,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 58032000000
+              "duration": 121538000000
             }
           },
           {
@@ -475,7 +462,7 @@
             "name": "I click the view button for an order in the orders table",
             "result": {
               "status": "passed",
-              "duration": 146961000000
+              "duration": 108882000000
             }
           },
           {
@@ -485,7 +472,7 @@
             "name": "I ensure the order to be amended matches my last created order",
             "result": {
               "status": "passed",
-              "duration": 819000000
+              "duration": 695000000
             }
           },
           {
@@ -495,7 +482,7 @@
             "name": "I click the \"Edit Order\" Button beside \"Go to Dashboard\" button",
             "result": {
               "status": "passed",
-              "duration": 1778000000
+              "duration": 1318000000
             }
           },
           {
@@ -505,7 +492,7 @@
             "name": "I should be taken to \"Amending Booking\" page",
             "result": {
               "status": "passed",
-              "duration": 2701000000
+              "duration": 2073000000
             }
           },
           {
@@ -515,7 +502,7 @@
             "name": "I click the \"Add Another Item to Order\" button",
             "result": {
               "status": "passed",
-              "duration": 4759000000
+              "duration": 3911000000
             }
           },
           {
@@ -525,7 +512,7 @@
             "name": "I should see a modal with header \"New Order Item:\"",
             "result": {
               "status": "passed",
-              "duration": 2028000000
+              "duration": 903000000
             }
           },
           {
@@ -535,7 +522,7 @@
             "name": "I should see a \"Cancel\" button and a \"Save Changes\" button",
             "result": {
               "status": "passed",
-              "duration": 2400000000
+              "duration": 1607000000
             }
           },
           {
@@ -545,7 +532,7 @@
             "name": "I should see \"From,To,Who,when\" sections in the modal",
             "result": {
               "status": "passed",
-              "duration": 8720000000
+              "duration": 7061000000
             }
           },
           {
@@ -555,7 +542,7 @@
             "name": "I should see \"Available Options\" card which should contain \"Previous Day\" and \"Next Day\" in the modal",
             "result": {
               "status": "passed",
-              "duration": 9401000000
+              "duration": 4652000000
             }
           },
           {
@@ -565,7 +552,7 @@
             "name": "I proceed to change route by clicking the green swap location toggle in the modal",
             "result": {
               "status": "passed",
-              "duration": 2493000000
+              "duration": 1676000000
             }
           },
           {
@@ -575,7 +562,7 @@
             "name": "I select a time for 'Add-Ons' Single Train ride in the modal",
             "result": {
               "status": "passed",
-              "duration": 11973000000
+              "duration": 8847000000
             }
           },
           {
@@ -585,7 +572,7 @@
             "name": "I click the \"Save Changes\" button",
             "result": {
               "status": "passed",
-              "duration": 1464000000
+              "duration": 1618000000
             }
           },
           {
@@ -595,7 +582,7 @@
             "name": "The modal should be closed",
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 26000000
             }
           },
           {

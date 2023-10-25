@@ -36,7 +36,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 3688000000
+              "duration": 4418000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I click User Admin on the Nav bar",
             "result": {
               "status": "passed",
-              "duration": 3131000000
+              "duration": 3917000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I click a \"All users\" tab on 'User Admin' page",
             "result": {
               "status": "passed",
-              "duration": 551000000
+              "duration": 352000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "I type \"Tayé\" in search box",
             "result": {
               "status": "passed",
-              "duration": 1336000000
+              "duration": 1088000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "Search returns result containing 'Tayé'",
             "result": {
               "status": "passed",
-              "duration": 109000000
+              "duration": 101000000
             }
           }
         ]
@@ -109,7 +109,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 4259000000
+              "duration": 2693000000
             }
           },
           {
@@ -119,7 +119,7 @@
             "name": "I click User Admin on the Nav bar",
             "result": {
               "status": "passed",
-              "duration": 2932000000
+              "duration": 2394000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "I click a \"Admin users\" tab on 'User Admin' page",
             "result": {
               "status": "passed",
-              "duration": 263000000
+              "duration": 294000000
             }
           },
           {
@@ -139,7 +139,7 @@
             "name": "I type \"Tayé\" in search box",
             "result": {
               "status": "passed",
-              "duration": 1441000000
+              "duration": 1123000000
             }
           },
           {
@@ -149,7 +149,7 @@
             "name": "Search returns result containing 'Tayé'",
             "result": {
               "status": "passed",
-              "duration": 110000000
+              "duration": 119000000
             }
           }
         ]
@@ -182,7 +182,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 3528000000
+              "duration": 3262000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "I click User Admin on the Nav bar",
             "result": {
               "status": "passed",
-              "duration": 3005000000
+              "duration": 4585000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "I click a \"POS users\" tab on 'User Admin' page",
             "result": {
               "status": "passed",
-              "duration": 507000000
+              "duration": 252000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "I type \"Beccy\" in search box",
             "result": {
               "status": "passed",
-              "duration": 866000000
+              "duration": 871000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "Search returns result containing 'Beccy'",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 76000000
             }
           }
         ]
@@ -255,7 +255,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 2994000000
+              "duration": 2954000000
             }
           },
           {
@@ -265,7 +265,7 @@
             "name": "I click User Admin on the Nav bar",
             "result": {
               "status": "passed",
-              "duration": 2721000000
+              "duration": 2925000000
             }
           },
           {
@@ -275,7 +275,7 @@
             "name": "I click a \"Reservations users\" tab on 'User Admin' page",
             "result": {
               "status": "passed",
-              "duration": 477000000
+              "duration": 280000000
             }
           },
           {
@@ -285,7 +285,7 @@
             "name": "I type \"Tayé\" in search box",
             "result": {
               "status": "passed",
-              "duration": 1111000000
+              "duration": 1081000000
             }
           },
           {
@@ -295,7 +295,7 @@
             "name": "Search returns result containing 'Tayé'",
             "result": {
               "status": "passed",
-              "duration": 92000000
+              "duration": 96000000
             }
           }
         ]
@@ -328,7 +328,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 3005000000
+              "duration": 3377000000
             }
           },
           {
@@ -338,7 +338,7 @@
             "name": "I click User Admin on the Nav bar",
             "result": {
               "status": "passed",
-              "duration": 2513000000
+              "duration": 3042000000
             }
           },
           {
@@ -348,7 +348,7 @@
             "name": "I click a \"Scanning app users\" tab on 'User Admin' page",
             "result": {
               "status": "passed",
-              "duration": 417000000
+              "duration": 243000000
             }
           },
           {
@@ -358,7 +358,7 @@
             "name": "I type \"Beccy\" in search box",
             "result": {
               "status": "passed",
-              "duration": 888000000
+              "duration": 1069000000
             }
           },
           {
@@ -368,7 +368,7 @@
             "name": "Search returns result containing 'Beccy'",
             "result": {
               "status": "passed",
-              "duration": 111000000
+              "duration": 115000000
             }
           }
         ]

@@ -32,7 +32,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 5674000000
+              "duration": 6573000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I have created an order as a customer",
             "result": {
               "status": "passed",
-              "duration": 50971000000
+              "duration": 87999000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I get the previous order Order ID",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 201000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
               "status": "passed",
-              "duration": 3613000000
+              "duration": 24597000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "I should see \"Bookings\" as a header in the page that loads",
             "result": {
               "status": "passed",
-              "duration": 1885000000
+              "duration": 23658000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "I should see \"Ticket Price\", \"Reservation\" and \"Total:\" sections under Bookings",
             "result": {
               "status": "passed",
-              "duration": 1777000000
+              "duration": 2304000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "I should not see The Edit button on the Page",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 27000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "I should see the \"More Actions\" dropdown with \"Download Tickets\" option",
             "result": {
               "status": "passed",
-              "duration": 1575000000
+              "duration": 2050000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "I should see that the QrCode is \"Not Redeemed\" with \"rgb(97, 189, 63)\" Background color",
             "result": {
               "status": "passed",
-              "duration": 565000000
+              "duration": 779000000
             }
           }
         ]
@@ -141,7 +141,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 6378000000
+              "duration": 7139000000
             }
           },
           {
@@ -151,7 +151,7 @@
             "name": "I get the previous order Order ID",
             "result": {
               "status": "passed",
-              "duration": 53000000
+              "duration": 146000000
             }
           },
           {
@@ -161,7 +161,7 @@
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
               "status": "passed",
-              "duration": 2853000000
+              "duration": 6700000000
             }
           },
           {
@@ -171,7 +171,7 @@
             "name": "I should see \"Order Information\" as a header in the page that loads",
             "result": {
               "status": "passed",
-              "duration": 1346000000
+              "duration": 1356000000
             }
           },
           {
@@ -181,7 +181,7 @@
             "name": "I should see \"Order Details\", \"Contact Details\" and \"Billing Details\" Accordions",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 3000000
             }
           },
           {
@@ -191,7 +191,7 @@
             "name": "I should not see The Edit button on the Page",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 7000000
             }
           },
           {
@@ -201,7 +201,7 @@
             "name": "I should see the \"More Actions\" dropdown with \"Download Tickets\" option",
             "result": {
               "status": "passed",
-              "duration": 504000000
+              "duration": 365000000
             }
           },
           {
@@ -211,7 +211,7 @@
             "name": "I should see that the QrCode is \"Not Redeemed\" with \"rgb(97, 189, 63)\" Background color",
             "result": {
               "status": "passed",
-              "duration": 219000000
+              "duration": 214000000
             }
           },
           {
@@ -221,7 +221,7 @@
             "name": "I click \"Order Details\" dropdown",
             "result": {
               "status": "passed",
-              "duration": 321000000
+              "duration": 395000000
             }
           },
           {
@@ -231,7 +231,7 @@
             "name": "The \"Order Details\" section displays data consistent with the order created",
             "result": {
               "status": "passed",
-              "duration": 219000000
+              "duration": 342000000
             }
           },
           {
@@ -241,7 +241,7 @@
             "name": "I click \"Contact Details\" dropdown",
             "result": {
               "status": "passed",
-              "duration": 306000000
+              "duration": 381000000
             }
           },
           {
@@ -251,7 +251,7 @@
             "name": "The \"Contact Details\" section displays data consistent with the order created",
             "result": {
               "status": "passed",
-              "duration": 1209000000
+              "duration": 1610000000
             }
           }
         ]
@@ -280,7 +280,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 5941000000
+              "duration": 6095000000
             }
           },
           {
@@ -290,7 +290,7 @@
             "name": "I get the previous order Order ID",
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 69000000
             }
           },
           {
@@ -300,7 +300,7 @@
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours for order \"ULOQIBOXHJM33\"",
             "result": {
               "status": "passed",
-              "duration": 2542000000
+              "duration": 2423000000
             }
           },
           {
@@ -310,7 +310,7 @@
             "name": "The magic link takes the customer to the \"Request a magic link\" page",
             "result": {
               "status": "passed",
-              "duration": 832000000
+              "duration": 868000000
             }
           },
           {
@@ -320,7 +320,7 @@
             "name": "The order reference 'ULOQIBOXHJM33' is pre-populated",
             "result": {
               "status": "passed",
-              "duration": 50000000
+              "duration": 44000000
             }
           },
           {
@@ -330,7 +330,7 @@
             "name": "the 'Request magic link' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 161000000
+              "duration": 199000000
             }
           },
           {
@@ -340,7 +340,7 @@
             "name": "I should see 'Magic link sent' header in the page that loads",
             "result": {
               "status": "passed",
-              "duration": 471000000
+              "duration": 588000000
             }
           },
           {
@@ -350,7 +350,7 @@
             "name": "I should see body text with 'A new magic link has been sent to your email.' in the page that loads",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 59000000
             }
           }
         ]
@@ -379,7 +379,7 @@
             "name": "I get the previous order Order ID",
             "result": {
               "status": "passed",
-              "duration": 214000000
+              "duration": 222000000
             }
           },
           {
@@ -389,7 +389,7 @@
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours for order \"ULOQIBOXHJM33\"",
             "result": {
               "status": "passed",
-              "duration": 1524000000
+              "duration": 1248000000
             }
           },
           {
@@ -399,7 +399,7 @@
             "name": "The magic link takes the customer to the \"Request a magic link\" page",
             "result": {
               "status": "passed",
-              "duration": 623000000
+              "duration": 350000000
             }
           },
           {
@@ -409,7 +409,7 @@
             "name": "The customer enters an invalid order reference 'Invalid@Reference'",
             "result": {
               "status": "passed",
-              "duration": 911000000
+              "duration": 1013000000
             }
           },
           {
@@ -419,7 +419,7 @@
             "name": "the 'Request magic link' button is clicked",
             "result": {
               "status": "passed",
-              "duration": 148000000
+              "duration": 79000000
             }
           },
           {
@@ -429,7 +429,7 @@
             "name": "I should see an error alert with title 'Something went wrong' and description 'Please, make sure you have used a valid booking reference.'",
             "result": {
               "status": "passed",
-              "duration": 619000000
+              "duration": 325000000
             }
           }
         ]
@@ -458,7 +458,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 5220000000
+              "duration": 9385000000
             }
           },
           {
@@ -468,7 +468,7 @@
             "name": "I get the previous order Order ID",
             "result": {
               "status": "passed",
-              "duration": 97000000
+              "duration": 69000000
             }
           },
           {
@@ -478,7 +478,7 @@
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
               "status": "passed",
-              "duration": 2787000000
+              "duration": 2252000000
             }
           },
           {
@@ -488,7 +488,7 @@
             "name": "I should see \"Order Information\" as a header in the page that loads",
             "result": {
               "status": "passed",
-              "duration": 1132000000
+              "duration": 654000000
             }
           },
           {
@@ -498,7 +498,7 @@
             "name": "I click the \"Edit Order\" button",
             "result": {
               "status": "passed",
-              "duration": 194000000
+              "duration": 193000000
             }
           },
           {
@@ -508,7 +508,7 @@
             "name": "I should be taken to \"Amending Booking\" page",
             "result": {
               "status": "passed",
-              "duration": 1730000000
+              "duration": 12088000000
             }
           },
           {
@@ -518,7 +518,7 @@
             "name": "I should see \"From,To,Who,when\" sections",
             "result": {
               "status": "passed",
-              "duration": 612000000
+              "duration": 453000000
             }
           },
           {
@@ -528,7 +528,7 @@
             "name": "I should see \"Available Options\" card which should contain \"Previous Day\" and \"Next Day\"",
             "result": {
               "status": "passed",
-              "duration": 6194000000
+              "duration": 6821000000
             }
           },
           {
@@ -538,7 +538,7 @@
             "name": "I click the Edit Order Button beside More Actions dropdown",
             "result": {
               "status": "passed",
-              "duration": 5474000000
+              "duration": 2652000000
             }
           },
           {
@@ -548,7 +548,7 @@
             "name": "I edit the 'Who' section by removing '1x Adult'",
             "result": {
               "status": "passed",
-              "duration": 3773000000
+              "duration": 2204000000
             }
           },
           {
@@ -558,7 +558,7 @@
             "name": "I should no longer see the \"Reservation\" Seating Compartments section",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 46000000
             }
           },
           {
@@ -568,7 +568,7 @@
             "name": "I click the \"Discard edits and return to order\" button to return to the Order Page",
             "result": {
               "status": "passed",
-              "duration": 501000000
+              "duration": 423000000
             }
           },
           {
@@ -578,7 +578,7 @@
             "name": "I click the Edit Order Button beside More Actions dropdown",
             "result": {
               "status": "passed",
-              "duration": 3440000000
+              "duration": 3638000000
             }
           },
           {
@@ -588,7 +588,7 @@
             "name": "I edit the 'Date' section by clicking the 'Previous Day' button",
             "result": {
               "status": "passed",
-              "duration": 4892000000
+              "duration": 3701000000
             }
           },
           {
@@ -598,7 +598,7 @@
             "name": "I should no longer see the \"Reservation\" Seating Compartments section",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 41000000
             }
           },
           {
@@ -608,7 +608,7 @@
             "name": "I click the \"Discard edits and return to order\" button to return to the Order Page",
             "result": {
               "status": "passed",
-              "duration": 535000000
+              "duration": 344000000
             }
           },
           {
@@ -618,7 +618,7 @@
             "name": "I click the Edit Order Button beside More Actions dropdown",
             "result": {
               "status": "passed",
-              "duration": 3289000000
+              "duration": 5897000000
             }
           }
         ]
@@ -647,7 +647,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 6857000000
+              "duration": 6413000000
             }
           },
           {
@@ -657,7 +657,7 @@
             "name": "I get the previous order Order ID",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 53000000
             }
           },
           {
@@ -667,7 +667,7 @@
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
               "status": "passed",
-              "duration": 2785000000
+              "duration": 2218000000
             }
           },
           {
@@ -677,7 +677,7 @@
             "name": "I click the \"Edit Order\" button",
             "result": {
               "status": "passed",
-              "duration": 1464000000
+              "duration": 1143000000
             }
           },
           {
@@ -687,7 +687,7 @@
             "name": "I am on the Amending Booking page I click cancel order button",
             "result": {
               "status": "passed",
-              "duration": 1246000000
+              "duration": 1542000000
             }
           },
           {
@@ -697,7 +697,7 @@
             "name": "I should not see a Refund Button",
             "result": {
               "status": "passed",
-              "duration": 529000000
+              "duration": 258000000
             }
           }
         ]

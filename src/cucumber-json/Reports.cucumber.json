@@ -36,7 +36,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 2845000000
+              "duration": 4559000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I am a user on Report page",
             "result": {
               "status": "passed",
-              "duration": 3150000000
+              "duration": 3269000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I click a 'Sales report' on 'Reports' page",
             "result": {
               "status": "passed",
-              "duration": 980000000
+              "duration": 558000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "I should see a header with text \"Sales report\"",
             "result": {
               "status": "passed",
-              "duration": 281000000
+              "duration": 244000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "I should see a section \"Markets and channels\"",
             "result": {
               "status": "passed",
-              "duration": 446000000
+              "duration": 349000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "Under \"Markets and channels\" I should see \"Filter markets\" \"Filter channels\" and \"Filter sources\" dropdowns",
             "result": {
               "status": "passed",
-              "duration": 1200000000
+              "duration": 1375000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "I select all for \"Filter markets\" \"Filter channels\" and \"Filter sources\" dropdowns for \"Markets and channels\"",
             "result": {
               "status": "passed",
-              "duration": 8012000000
+              "duration": 10016000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "I should see pills matching the contents of what is in the dropdown for \"Markets and channels\"",
             "result": {
               "status": "passed",
-              "duration": 11488000000
+              "duration": 22240000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "I click the \"-\" icon on any pill",
             "result": {
               "status": "passed",
-              "duration": 2661000000
+              "duration": 3314000000
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "The pill should disappear",
             "result": {
               "status": "passed",
-              "duration": 517000000
+              "duration": 429000000
             }
           },
           {
@@ -136,7 +136,7 @@
             "name": "I click on the \"-\" icon on any dropdown",
             "result": {
               "status": "passed",
-              "duration": 1353000000
+              "duration": 1334000000
             }
           },
           {
@@ -146,7 +146,7 @@
             "name": "All pills for that dropdown should disappear",
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 126000000
             }
           }
         ]
@@ -179,7 +179,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 9367000000
+              "duration": 2931000000
             }
           },
           {
@@ -189,7 +189,7 @@
             "name": "I am a user on Report page",
             "result": {
               "status": "passed",
-              "duration": 3289000000
+              "duration": 2806000000
             }
           },
           {
@@ -199,7 +199,7 @@
             "name": "I click a 'Sales report' on 'Reports' page",
             "result": {
               "status": "passed",
-              "duration": 565000000
+              "duration": 270000000
             }
           },
           {
@@ -209,7 +209,7 @@
             "name": "I should see a header with text \"Sales report\"",
             "result": {
               "status": "passed",
-              "duration": 278000000
+              "duration": 112000000
             }
           },
           {
@@ -219,7 +219,7 @@
             "name": "I should see a section \"Products and services\"",
             "result": {
               "status": "passed",
-              "duration": 316000000
+              "duration": 308000000
             }
           },
           {
@@ -229,7 +229,7 @@
             "name": "Under \"Products and services\" I should see \"Filter products\" \"Filter services\" and \"Filter service type\" dropdowns",
             "result": {
               "status": "passed",
-              "duration": 1042000000
+              "duration": 980000000
             }
           },
           {
@@ -239,7 +239,7 @@
             "name": "I select all for \"Filter products\" \"Filter services\" and \"Filter service type\" dropdowns for \"Products and services\"",
             "result": {
               "status": "passed",
-              "duration": 15560000000
+              "duration": 14251000000
             }
           },
           {
@@ -249,7 +249,7 @@
             "name": "I should see pills matching the contents of what is in the dropdown for \"Products and services\"",
             "result": {
               "status": "passed",
-              "duration": 5157000000
+              "duration": 4759000000
             }
           },
           {
@@ -259,7 +259,7 @@
             "name": "I click the \"-\" icon on any pill",
             "result": {
               "status": "passed",
-              "duration": 2430000000
+              "duration": 2010000000
             }
           },
           {
@@ -269,7 +269,7 @@
             "name": "The pill should disappear",
             "result": {
               "status": "passed",
-              "duration": 620000000
+              "duration": 446000000
             }
           },
           {
@@ -279,7 +279,7 @@
             "name": "I click on the \"-\" icon on any dropdown",
             "result": {
               "status": "passed",
-              "duration": 1246000000
+              "duration": 1413000000
             }
           },
           {
@@ -289,7 +289,7 @@
             "name": "All pills for that dropdown should disappear",
             "result": {
               "status": "passed",
-              "duration": 203000000
+              "duration": 135000000
             }
           }
         ]
@@ -322,7 +322,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 3429000000
+              "duration": 4018000000
             }
           },
           {
@@ -332,7 +332,7 @@
             "name": "I am a user on Report page",
             "result": {
               "status": "passed",
-              "duration": 2687000000
+              "duration": 2444000000
             }
           },
           {
@@ -342,7 +342,7 @@
             "name": "I click a 'Sales report' on 'Reports' page",
             "result": {
               "status": "passed",
-              "duration": 343000000
+              "duration": 307000000
             }
           },
           {
@@ -352,7 +352,7 @@
             "name": "I click \"Sales Report\" report",
             "result": {
               "status": "passed",
-              "duration": 711000000
+              "duration": 545000000
             }
           },
           {
@@ -362,7 +362,7 @@
             "name": "The \"Sales Report\" is downloaded",
             "result": {
               "status": "passed",
-              "duration": 3369000000
+              "duration": 3466000000
             }
           }
         ]
@@ -395,7 +395,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 9742000000
+              "duration": 2789000000
             }
           },
           {
@@ -405,7 +405,7 @@
             "name": "I am a user on Report page",
             "result": {
               "status": "passed",
-              "duration": 7059000000
+              "duration": 2139000000
             }
           },
           {
@@ -415,7 +415,7 @@
             "name": "I click a 'Functions manifest' on 'Reports' page",
             "result": {
               "status": "passed",
-              "duration": 487000000
+              "duration": 331000000
             }
           },
           {
@@ -425,7 +425,7 @@
             "name": "I click \"Manifest Report\" report",
             "result": {
               "status": "passed",
-              "duration": 417000000
+              "duration": 408000000
             }
           },
           {
@@ -435,7 +435,7 @@
             "name": "The \"Manifest Report\" is downloaded",
             "result": {
               "status": "passed",
-              "duration": 4870000000
+              "duration": 678000000
             }
           }
         ]
@@ -468,7 +468,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 9269000000
+              "duration": 2675000000
             }
           },
           {
@@ -478,7 +478,7 @@
             "name": "I am a user on Report page",
             "result": {
               "status": "passed",
-              "duration": 7837000000
+              "duration": 2379000000
             }
           },
           {
@@ -488,7 +488,7 @@
             "name": "I click a 'Yield report' on 'Reports' page",
             "result": {
               "status": "passed",
-              "duration": 480000000
+              "duration": 276000000
             }
           },
           {
@@ -498,7 +498,7 @@
             "name": "I click \"Yield Report\" report",
             "result": {
               "status": "passed",
-              "duration": 448000000
+              "duration": 327000000
             }
           },
           {
@@ -508,7 +508,7 @@
             "name": "The \"Yield Report\" is downloaded",
             "result": {
               "status": "passed",
-              "duration": 1311000000
+              "duration": 799000000
             }
           }
         ]
@@ -541,7 +541,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 4074000000
+              "duration": 2987000000
             }
           },
           {
@@ -551,7 +551,7 @@
             "name": "I am a user on Report page",
             "result": {
               "status": "passed",
-              "duration": 4349000000
+              "duration": 2793000000
             }
           },
           {
@@ -561,7 +561,7 @@
             "name": "I click a 'External Orders report' on 'Reports' page",
             "result": {
               "status": "passed",
-              "duration": 434000000
+              "duration": 349000000
             }
           },
           {
@@ -571,7 +571,7 @@
             "name": "I click \"External Orders Report\" report",
             "result": {
               "status": "passed",
-              "duration": 415000000
+              "duration": 361000000
             }
           },
           {
@@ -581,7 +581,7 @@
             "name": "The \"External Orders Report\" is downloaded",
             "result": {
               "status": "passed",
-              "duration": 1471000000
+              "duration": 949000000
             }
           }
         ]
@@ -614,7 +614,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 3242000000
+              "duration": 2837000000
             }
           },
           {
@@ -624,7 +624,7 @@
             "name": "I am a user on Report page",
             "result": {
               "status": "passed",
-              "duration": 5646000000
+              "duration": 2252000000
             }
           },
           {
@@ -634,7 +634,7 @@
             "name": "I click a 'Payments summary report' on 'Reports' page",
             "result": {
               "status": "passed",
-              "duration": 428000000
+              "duration": 333000000
             }
           },
           {
@@ -644,7 +644,7 @@
             "name": "I click \"Payments Report\" report",
             "result": {
               "status": "passed",
-              "duration": 506000000
+              "duration": 370000000
             }
           },
           {
@@ -654,7 +654,7 @@
             "name": "The \"Payments Report\" is downloaded",
             "result": {
               "status": "passed",
-              "duration": 2663000000
+              "duration": 525000000
             }
           }
         ]
@@ -687,7 +687,7 @@
             "name": "I am a user on Admin Page",
             "result": {
               "status": "passed",
-              "duration": 7630000000
+              "duration": 2372000000
             }
           },
           {
@@ -697,7 +697,7 @@
             "name": "I am a user on Report page",
             "result": {
               "status": "passed",
-              "duration": 2687000000
+              "duration": 2349000000
             }
           },
           {
@@ -707,7 +707,7 @@
             "name": "I click a 'Newsletter subscription report' on 'Reports' page",
             "result": {
               "status": "passed",
-              "duration": 331000000
+              "duration": 358000000
             }
           },
           {
@@ -717,7 +717,7 @@
             "name": "I click \"Newsletter Subscriptions Report\" report",
             "result": {
               "status": "passed",
-              "duration": 594000000
+              "duration": 368000000
             }
           },
           {
@@ -727,7 +727,7 @@
             "name": "The \"Newsletter Subscriptions Report\" is downloaded",
             "result": {
               "status": "passed",
-              "duration": 683000000
+              "duration": 551000000
             }
           }
         ]
