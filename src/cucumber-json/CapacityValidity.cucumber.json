@@ -28,7 +28,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 36183000000
+              "duration": 74602000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1942000000
+              "duration": 18414000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "I attempt to create an order selecting '2' adult for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 18462000000
+              "duration": 40187000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "The '4-seat compartment' compartments are displayed in the select reservation modal",
             "result": {
               "status": "passed",
-              "duration": 1972000000
+              "duration": 7330000000
             }
           },
           {
@@ -68,7 +68,7 @@
             "name": "I close the compartments modal",
             "result": {
               "status": "passed",
-              "duration": 153000000
+              "duration": 711000000
             }
           },
           {
@@ -77,8 +77,9 @@
             "line": 11,
             "name": "I attempt to create an order selecting '1' adult for when choosing who",
             "result": {
-              "status": "passed",
-              "duration": 8966000000
+              "status": "failed",
+              "duration": 2000000,
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `children`, but never found it. Queried from:\n\n              > cy.get(h3.chakra-heading).eq(0).parent().siblings().eq(0)\n    at _callee2$ (src/integration/functions/rs2.js:237:22)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)"
             }
           },
           {
@@ -87,8 +88,7 @@
             "line": 12,
             "name": "The '4-seat compartment' compartments are not displayed in the select reservation modal",
             "result": {
-              "status": "passed",
-              "duration": 2475000000
+              "status": "skipped"
             }
           }
         ]
@@ -113,7 +113,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 8412000000
+              "duration": 34666000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 968000000
+              "duration": 7086000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "I attempt to create an order selecting '1' adult for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 11424000000
+              "duration": 61147000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "The 'Joan Pullman Observation seat' compartments are displayed in the select reservation modal",
             "result": {
               "status": "passed",
-              "duration": 2051000000
+              "duration": 10742000000
             }
           }
         ]
@@ -168,7 +168,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 7620000000
+              "duration": 83680000000
             }
           },
           {
@@ -178,7 +178,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 2905000000
+              "duration": 5418000000
             }
           },
           {
@@ -188,7 +188,7 @@
             "name": "I attempt to create an order selecting '4' adult for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 10645000000
+              "duration": 55395000000
             }
           },
           {
@@ -198,7 +198,7 @@
             "name": "The '6-seat compartment' compartments are displayed in the select reservation modal",
             "result": {
               "status": "passed",
-              "duration": 2104000000
+              "duration": 8242000000
             }
           },
           {
@@ -208,7 +208,7 @@
             "name": "I close the compartments modal",
             "result": {
               "status": "passed",
-              "duration": 211000000
+              "duration": 1729000000
             }
           },
           {
@@ -217,8 +217,8 @@
             "line": 28,
             "name": "I attempt to create an order selecting '2' adult for when choosing who",
             "result": {
-              "status": "passed",
-              "duration": 11139000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `children`, but never found it. Queried from:\n\n              > cy.get(h3.chakra-heading).eq(0).parent().siblings().eq(0)\n    at _callee2$ (src/integration/functions/rs2.js:237:22)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)"
             }
           },
           {
@@ -227,8 +227,7 @@
             "line": 29,
             "name": "The '6-seat compartment' compartments are not displayed in the select reservation modal",
             "result": {
-              "status": "passed",
-              "duration": 2605000000
+              "status": "skipped"
             }
           }
         ]

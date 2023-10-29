@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 4800000000
+              "duration": 273009000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 720000000
+              "duration": 1714000000
             }
           },
           {
@@ -55,8 +55,9 @@
             "line": 8,
             "name": "I attempt to create an order selecting '2' adult and '2' child for when choosing who",
             "result": {
-              "status": "passed",
-              "duration": 32209000000
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "AssertionError: Timed out retrying after 60000ms: Expected to find content: 'Next Day' within the element: <button.chakra-button.css-59u667> but never did.\n    at _callee2$ (src/integration/functions/rs2.js:232:37)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)"
             }
           },
           {
@@ -65,8 +66,7 @@
             "line": 9,
             "name": "For '2 adults 2 children' I select the needed compartments and choose appropriate seats for each respectively",
             "result": {
-              "status": "passed",
-              "duration": 11160000000
+              "status": "skipped"
             }
           },
           {
@@ -75,8 +75,7 @@
             "line": 10,
             "name": "The 'Add Seats' button should be active and i proceed to checkout internally",
             "result": {
-              "status": "passed",
-              "duration": 73078000000
+              "status": "skipped"
             }
           },
           {
@@ -85,8 +84,7 @@
             "line": 11,
             "name": "I confirm the new order matches with the information from datasource",
             "result": {
-              "status": "passed",
-              "duration": 3648000000
+              "status": "skipped"
             }
           }
         ]
@@ -123,7 +121,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 5444000000
+              "duration": 100406000000
             }
           },
           {
@@ -133,7 +131,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 780000000
+              "duration": 12272000000
             }
           },
           {
@@ -143,7 +141,7 @@
             "name": "I attempt to create an order selecting '2' adult and '2' child for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 22283000000
+              "duration": 98412000000
             }
           },
           {
@@ -152,8 +150,8 @@
             "line": 18,
             "name": "For '2 adults 2 children' I select the needed compartments and choose appropriate seats for each respectively",
             "result": {
-              "status": "passed",
-              "duration": 3776000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 60000ms: Expected to find content: 'RES Single Train Ride' within the element: <h3.chakra-heading.css-1sdxj22> but never did.\n    at Context.eval (src/integration/steps/Reservation2/CreateOrders/CreateOrders.js:409:34)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -162,8 +160,7 @@
             "line": 19,
             "name": "The 'Add Seats' button should be active and i proceed to checkout by paying by till",
             "result": {
-              "status": "passed",
-              "duration": 1604000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +169,7 @@
             "line": 20,
             "name": "I confirm the new order is displayed in the orders table",
             "result": {
-              "status": "passed",
-              "duration": 14383000000
+              "status": "skipped"
             }
           }
         ]
@@ -206,7 +202,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 5482000000
+              "duration": 34625000000
             }
           },
           {
@@ -216,7 +212,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1631000000
+              "duration": 19348000000
             }
           },
           {
@@ -226,7 +222,7 @@
             "name": "I attempt to create an order selecting '1' adult for when choosing who",
             "result": {
               "status": "passed",
-              "duration": 19400000000
+              "duration": 59621000000
             }
           },
           {
@@ -236,7 +232,7 @@
             "name": "The 'Joan Pullman Observation 4-seat compartment' pill is not displayed in the select reservation modal",
             "result": {
               "status": "passed",
-              "duration": 924000000
+              "duration": 7894000000
             }
           }
         ]
@@ -269,7 +265,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 22144000000
+              "duration": 64197000000
             }
           },
           {
@@ -279,7 +275,7 @@
             "name": "I click on 'New Order' button",
             "result": {
               "status": "passed",
-              "duration": 1344000000
+              "duration": 1697000000
             }
           },
           {
@@ -289,7 +285,7 @@
             "name": "I check the 'Add return single trip' checkbox",
             "result": {
               "status": "passed",
-              "duration": 12759000000
+              "duration": 8281000000
             }
           },
           {
@@ -299,7 +295,7 @@
             "name": "I should see 'Outbound Options' and 'Return Options' sections for choosing time",
             "result": {
               "status": "passed",
-              "duration": 93000000
+              "duration": 1344000000
             }
           },
           {
@@ -309,7 +305,7 @@
             "name": "I select '2' adult when choosing who",
             "result": {
               "status": "passed",
-              "duration": 11407000000
+              "duration": 7421000000
             }
           },
           {
@@ -318,8 +314,8 @@
             "line": 37,
             "name": "I should see available times in 'Outbound Options' all 'Enabled'",
             "result": {
-              "status": "passed",
-              "duration": 3519000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `children`, but never found it. Queried from:\n\n              > cy.get(h3.chakra-heading).contains(Outbound Options).siblings().eq(0)\n    at _callee4$ (src/integration/steps/Reservation2/CreateOrders/CreateOrders.js:127:20)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at Context.eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)\n    at Context.eval (src/integration/steps/Reservation2/CreateOrders/CreateOrders.js:134:1)"
             }
           },
           {
@@ -328,8 +324,7 @@
             "line": 38,
             "name": "I should see available times in 'Return Options' all 'Disabled'",
             "result": {
-              "status": "passed",
-              "duration": 280000000
+              "status": "skipped"
             }
           },
           {
@@ -338,8 +333,7 @@
             "line": 39,
             "name": "I select the first available time in 'Outbound Options'",
             "result": {
-              "status": "passed",
-              "duration": 626000000
+              "status": "skipped"
             }
           },
           {
@@ -348,8 +342,7 @@
             "line": 40,
             "name": "Atleast 1 time in 'Return Options' should be enabled",
             "result": {
-              "status": "passed",
-              "duration": 211000000
+              "status": "skipped"
             }
           },
           {
@@ -358,8 +351,7 @@
             "line": 41,
             "name": "The 'Add To Cart' button should be 'Disabled'",
             "result": {
-              "status": "passed",
-              "duration": 79000000
+              "status": "skipped"
             }
           },
           {
@@ -368,8 +360,7 @@
             "line": 42,
             "name": "I select the first available time in 'Return Options'",
             "result": {
-              "status": "passed",
-              "duration": 250000000
+              "status": "skipped"
             }
           },
           {
@@ -378,8 +369,7 @@
             "line": 43,
             "name": "The 'Add To Cart' button should be 'Enabled'",
             "result": {
-              "status": "passed",
-              "duration": 2523000000
+              "status": "skipped"
             }
           },
           {
@@ -388,8 +378,7 @@
             "line": 44,
             "name": "In the reservation modal i should see 'Dalegarth station - Ravenglass station' with its compartments",
             "result": {
-              "status": "passed",
-              "duration": 1638000000
+              "status": "skipped"
             }
           },
           {
@@ -398,8 +387,7 @@
             "line": 45,
             "name": "In the reservation modal i should see 'Ravenglass station - Dalegarth station' with its compartments",
             "result": {
-              "status": "passed",
-              "duration": 1782000000
+              "status": "skipped"
             }
           },
           {
@@ -408,8 +396,7 @@
             "line": 46,
             "name": "I checkout and pay",
             "result": {
-              "status": "passed",
-              "duration": 28071000000
+              "status": "skipped"
             }
           }
         ]

@@ -31,8 +31,9 @@
             "line": 7,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "passed",
-              "duration": 6573000000
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.lakedistrict.ticknovate-uat.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -41,8 +42,7 @@
             "line": 8,
             "name": "I have created an order as a customer",
             "result": {
-              "status": "passed",
-              "duration": 87999000000
+              "status": "skipped"
             }
           },
           {
@@ -51,8 +51,7 @@
             "line": 9,
             "name": "I get the previous order Order ID",
             "result": {
-              "status": "passed",
-              "duration": 201000000
+              "status": "skipped"
             }
           },
           {
@@ -61,8 +60,7 @@
             "line": 10,
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
-              "status": "passed",
-              "duration": 24597000000
+              "status": "skipped"
             }
           },
           {
@@ -71,8 +69,7 @@
             "line": 11,
             "name": "I should see \"Bookings\" as a header in the page that loads",
             "result": {
-              "status": "passed",
-              "duration": 23658000000
+              "status": "skipped"
             }
           },
           {
@@ -81,8 +78,7 @@
             "line": 12,
             "name": "I should see \"Ticket Price\", \"Reservation\" and \"Total:\" sections under Bookings",
             "result": {
-              "status": "passed",
-              "duration": 2304000000
+              "status": "skipped"
             }
           },
           {
@@ -91,8 +87,7 @@
             "line": 13,
             "name": "I should not see The Edit button on the Page",
             "result": {
-              "status": "passed",
-              "duration": 27000000
+              "status": "skipped"
             }
           },
           {
@@ -101,8 +96,7 @@
             "line": 14,
             "name": "I should see the \"More Actions\" dropdown with \"Download Tickets\" option",
             "result": {
-              "status": "passed",
-              "duration": 2050000000
+              "status": "skipped"
             }
           },
           {
@@ -111,8 +105,7 @@
             "line": 15,
             "name": "I should see that the QrCode is \"Not Redeemed\" with \"rgb(97, 189, 63)\" Background color",
             "result": {
-              "status": "passed",
-              "duration": 779000000
+              "status": "skipped"
             }
           }
         ]
@@ -140,8 +133,8 @@
             "line": 19,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "passed",
-              "duration": 7139000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.lakedistrict.ticknovate-uat.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -150,8 +143,7 @@
             "line": 20,
             "name": "I get the previous order Order ID",
             "result": {
-              "status": "passed",
-              "duration": 146000000
+              "status": "skipped"
             }
           },
           {
@@ -160,8 +152,7 @@
             "line": 21,
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
-              "status": "passed",
-              "duration": 6700000000
+              "status": "skipped"
             }
           },
           {
@@ -170,8 +161,7 @@
             "line": 22,
             "name": "I should see \"Order Information\" as a header in the page that loads",
             "result": {
-              "status": "passed",
-              "duration": 1356000000
+              "status": "skipped"
             }
           },
           {
@@ -180,8 +170,7 @@
             "line": 23,
             "name": "I should see \"Order Details\", \"Contact Details\" and \"Billing Details\" Accordions",
             "result": {
-              "status": "passed",
-              "duration": 3000000
+              "status": "skipped"
             }
           },
           {
@@ -190,8 +179,7 @@
             "line": 24,
             "name": "I should not see The Edit button on the Page",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -200,8 +188,7 @@
             "line": 25,
             "name": "I should see the \"More Actions\" dropdown with \"Download Tickets\" option",
             "result": {
-              "status": "passed",
-              "duration": 365000000
+              "status": "skipped"
             }
           },
           {
@@ -210,8 +197,7 @@
             "line": 26,
             "name": "I should see that the QrCode is \"Not Redeemed\" with \"rgb(97, 189, 63)\" Background color",
             "result": {
-              "status": "passed",
-              "duration": 214000000
+              "status": "skipped"
             }
           },
           {
@@ -220,8 +206,7 @@
             "line": 27,
             "name": "I click \"Order Details\" dropdown",
             "result": {
-              "status": "passed",
-              "duration": 395000000
+              "status": "skipped"
             }
           },
           {
@@ -230,8 +215,7 @@
             "line": 28,
             "name": "The \"Order Details\" section displays data consistent with the order created",
             "result": {
-              "status": "passed",
-              "duration": 342000000
+              "status": "skipped"
             }
           },
           {
@@ -240,8 +224,7 @@
             "line": 29,
             "name": "I click \"Contact Details\" dropdown",
             "result": {
-              "status": "passed",
-              "duration": 381000000
+              "status": "skipped"
             }
           },
           {
@@ -250,8 +233,7 @@
             "line": 30,
             "name": "The \"Contact Details\" section displays data consistent with the order created",
             "result": {
-              "status": "passed",
-              "duration": 1610000000
+              "status": "skipped"
             }
           }
         ]
@@ -279,8 +261,8 @@
             "line": 34,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "passed",
-              "duration": 6095000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.lakedistrict.ticknovate-uat.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -289,8 +271,7 @@
             "line": 35,
             "name": "I get the previous order Order ID",
             "result": {
-              "status": "passed",
-              "duration": 69000000
+              "status": "skipped"
             }
           },
           {
@@ -299,8 +280,7 @@
             "line": 36,
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours for order \"ULOQIBOXHJM33\"",
             "result": {
-              "status": "passed",
-              "duration": 2423000000
+              "status": "skipped"
             }
           },
           {
@@ -309,8 +289,7 @@
             "line": 37,
             "name": "The magic link takes the customer to the \"Request a magic link\" page",
             "result": {
-              "status": "passed",
-              "duration": 868000000
+              "status": "skipped"
             }
           },
           {
@@ -319,8 +298,7 @@
             "line": 38,
             "name": "The order reference 'ULOQIBOXHJM33' is pre-populated",
             "result": {
-              "status": "passed",
-              "duration": 44000000
+              "status": "skipped"
             }
           },
           {
@@ -329,8 +307,7 @@
             "line": 39,
             "name": "the 'Request magic link' button is clicked",
             "result": {
-              "status": "passed",
-              "duration": 199000000
+              "status": "skipped"
             }
           },
           {
@@ -339,8 +316,7 @@
             "line": 40,
             "name": "I should see 'Magic link sent' header in the page that loads",
             "result": {
-              "status": "passed",
-              "duration": 588000000
+              "status": "skipped"
             }
           },
           {
@@ -349,8 +325,7 @@
             "line": 41,
             "name": "I should see body text with 'A new magic link has been sent to your email.' in the page that loads",
             "result": {
-              "status": "passed",
-              "duration": 59000000
+              "status": "skipped"
             }
           }
         ]
@@ -379,7 +354,7 @@
             "name": "I get the previous order Order ID",
             "result": {
               "status": "passed",
-              "duration": 222000000
+              "duration": 2905000000
             }
           },
           {
@@ -388,8 +363,8 @@
             "line": 46,
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours for order \"ULOQIBOXHJM33\"",
             "result": {
-              "status": "passed",
-              "duration": 1248000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://ullswater.booking.lakedistrict.ticknovate-uat.com/my-bookings/ULOQIBOXHJM33?token=undefined\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND ullswater.booking.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at eval (src/integration/steps/Reservation2/Magiclink/Magiclink.js:69:9)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND ullswater.booking.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -398,8 +373,7 @@
             "line": 47,
             "name": "The magic link takes the customer to the \"Request a magic link\" page",
             "result": {
-              "status": "passed",
-              "duration": 350000000
+              "status": "skipped"
             }
           },
           {
@@ -408,8 +382,7 @@
             "line": 48,
             "name": "The customer enters an invalid order reference 'Invalid@Reference'",
             "result": {
-              "status": "passed",
-              "duration": 1013000000
+              "status": "skipped"
             }
           },
           {
@@ -418,8 +391,7 @@
             "line": 49,
             "name": "the 'Request magic link' button is clicked",
             "result": {
-              "status": "passed",
-              "duration": 79000000
+              "status": "skipped"
             }
           },
           {
@@ -428,8 +400,7 @@
             "line": 50,
             "name": "I should see an error alert with title 'Something went wrong' and description 'Please, make sure you have used a valid booking reference.'",
             "result": {
-              "status": "passed",
-              "duration": 325000000
+              "status": "skipped"
             }
           }
         ]
@@ -457,8 +428,8 @@
             "line": 55,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "passed",
-              "duration": 9385000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.lakedistrict.ticknovate-uat.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -467,8 +438,7 @@
             "line": 56,
             "name": "I get the previous order Order ID",
             "result": {
-              "status": "passed",
-              "duration": 69000000
+              "status": "skipped"
             }
           },
           {
@@ -477,8 +447,7 @@
             "line": 57,
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
-              "status": "passed",
-              "duration": 2252000000
+              "status": "skipped"
             }
           },
           {
@@ -487,8 +456,7 @@
             "line": 58,
             "name": "I should see \"Order Information\" as a header in the page that loads",
             "result": {
-              "status": "passed",
-              "duration": 654000000
+              "status": "skipped"
             }
           },
           {
@@ -497,8 +465,7 @@
             "line": 59,
             "name": "I click the \"Edit Order\" button",
             "result": {
-              "status": "passed",
-              "duration": 193000000
+              "status": "skipped"
             }
           },
           {
@@ -507,8 +474,7 @@
             "line": 60,
             "name": "I should be taken to \"Amending Booking\" page",
             "result": {
-              "status": "passed",
-              "duration": 12088000000
+              "status": "skipped"
             }
           },
           {
@@ -517,8 +483,7 @@
             "line": 61,
             "name": "I should see \"From,To,Who,when\" sections",
             "result": {
-              "status": "passed",
-              "duration": 453000000
+              "status": "skipped"
             }
           },
           {
@@ -527,8 +492,7 @@
             "line": 62,
             "name": "I should see \"Available Options\" card which should contain \"Previous Day\" and \"Next Day\"",
             "result": {
-              "status": "passed",
-              "duration": 6821000000
+              "status": "skipped"
             }
           },
           {
@@ -537,8 +501,7 @@
             "line": 63,
             "name": "I click the Edit Order Button beside More Actions dropdown",
             "result": {
-              "status": "passed",
-              "duration": 2652000000
+              "status": "skipped"
             }
           },
           {
@@ -547,8 +510,7 @@
             "line": 64,
             "name": "I edit the 'Who' section by removing '1x Adult'",
             "result": {
-              "status": "passed",
-              "duration": 2204000000
+              "status": "skipped"
             }
           },
           {
@@ -557,8 +519,7 @@
             "line": 65,
             "name": "I should no longer see the \"Reservation\" Seating Compartments section",
             "result": {
-              "status": "passed",
-              "duration": 46000000
+              "status": "skipped"
             }
           },
           {
@@ -567,8 +528,7 @@
             "line": 66,
             "name": "I click the \"Discard edits and return to order\" button to return to the Order Page",
             "result": {
-              "status": "passed",
-              "duration": 423000000
+              "status": "skipped"
             }
           },
           {
@@ -577,8 +537,7 @@
             "line": 67,
             "name": "I click the Edit Order Button beside More Actions dropdown",
             "result": {
-              "status": "passed",
-              "duration": 3638000000
+              "status": "skipped"
             }
           },
           {
@@ -587,8 +546,7 @@
             "line": 68,
             "name": "I edit the 'Date' section by clicking the 'Previous Day' button",
             "result": {
-              "status": "passed",
-              "duration": 3701000000
+              "status": "skipped"
             }
           },
           {
@@ -597,8 +555,7 @@
             "line": 69,
             "name": "I should no longer see the \"Reservation\" Seating Compartments section",
             "result": {
-              "status": "passed",
-              "duration": 41000000
+              "status": "skipped"
             }
           },
           {
@@ -607,8 +564,7 @@
             "line": 70,
             "name": "I click the \"Discard edits and return to order\" button to return to the Order Page",
             "result": {
-              "status": "passed",
-              "duration": 344000000
+              "status": "skipped"
             }
           },
           {
@@ -617,8 +573,7 @@
             "line": 71,
             "name": "I click the Edit Order Button beside More Actions dropdown",
             "result": {
-              "status": "passed",
-              "duration": 5897000000
+              "status": "skipped"
             }
           }
         ]
@@ -646,8 +601,8 @@
             "line": 115,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "passed",
-              "duration": 6413000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.lakedistrict.ticknovate-uat.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -656,8 +611,7 @@
             "line": 116,
             "name": "I get the previous order Order ID",
             "result": {
-              "status": "passed",
-              "duration": 53000000
+              "status": "skipped"
             }
           },
           {
@@ -666,8 +620,7 @@
             "line": 117,
             "name": "I click the \"Manage Bookings\" button in my email after 24 hours",
             "result": {
-              "status": "passed",
-              "duration": 2218000000
+              "status": "skipped"
             }
           },
           {
@@ -676,8 +629,7 @@
             "line": 118,
             "name": "I click the \"Edit Order\" button",
             "result": {
-              "status": "passed",
-              "duration": 1143000000
+              "status": "skipped"
             }
           },
           {
@@ -686,8 +638,7 @@
             "line": 119,
             "name": "I am on the Amending Booking page I click cancel order button",
             "result": {
-              "status": "passed",
-              "duration": 1542000000
+              "status": "skipped"
             }
           },
           {
@@ -696,8 +647,7 @@
             "line": 120,
             "name": "I should not see a Refund Button",
             "result": {
-              "status": "passed",
-              "duration": 258000000
+              "status": "skipped"
             }
           }
         ]

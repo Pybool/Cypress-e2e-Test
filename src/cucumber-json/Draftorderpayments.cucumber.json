@@ -36,7 +36,7 @@
             "name": "I am logged in to reservations2 'uat'",
             "result": {
               "status": "passed",
-              "duration": 49423000000
+              "duration": 71215000000
             }
           },
           {
@@ -45,8 +45,9 @@
             "line": 8,
             "name": "I have created an order as a customer",
             "result": {
-              "status": "passed",
-              "duration": 58800000000
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "AssertionError: Timed out retrying after 60000ms: Expected to find content: 'Via Card (SagePay)' within the element: <p.chakra-text.css-0> but never did.\n    at fillGeneralInformationForm (src/integration/functions/rs2.js:332:5)\n    at Object.internalCheckOut (src/integration/functions/rs2.js:394:2)\n    at _callee$ (src/integration/steps/Reservation2/Draftorderpayments/Draftorderpayments.js:15:8)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)"
             }
           },
           {
@@ -55,8 +56,7 @@
             "line": 9,
             "name": "I am on the reservations page",
             "result": {
-              "status": "passed",
-              "duration": 6148000000
+              "status": "skipped"
             }
           },
           {
@@ -65,8 +65,7 @@
             "line": 10,
             "name": "I should be on the base url",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           },
           {
@@ -75,8 +74,7 @@
             "line": 11,
             "name": "I click on the a row in the table for a draft order",
             "result": {
-              "status": "passed",
-              "duration": 9242000000
+              "status": "skipped"
             }
           },
           {
@@ -85,8 +83,7 @@
             "line": 12,
             "name": "I should see the Order Preview widget",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `h1.chakra-heading`, but never found it.\n    at Context.eval (src/integration/steps/Reservation2/Draftorderpayments/Draftorderpayments.js:34:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "skipped"
             }
           },
           {

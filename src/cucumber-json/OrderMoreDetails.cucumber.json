@@ -31,8 +31,9 @@
             "line": 8,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "passed",
-              "duration": 6043000000
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.lakedistrict.ticknovate-uat.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -41,8 +42,7 @@
             "line": 9,
             "name": "I have created an order as a customer",
             "result": {
-              "status": "passed",
-              "duration": 61543000000
+              "status": "skipped"
             }
           },
           {
@@ -51,8 +51,7 @@
             "line": 10,
             "name": "I click the View button in Search Orders for a previously created order",
             "result": {
-              "status": "passed",
-              "duration": 9543000000
+              "status": "skipped"
             }
           },
           {
@@ -61,8 +60,7 @@
             "line": 11,
             "name": "I click the More Actions Button beside Edit Order",
             "result": {
-              "status": "passed",
-              "duration": 2918000000
+              "status": "skipped"
             }
           },
           {
@@ -71,8 +69,7 @@
             "line": 12,
             "name": "I should see a dropdown displayed",
             "result": {
-              "status": "passed",
-              "duration": 247000000
+              "status": "skipped"
             }
           },
           {
@@ -81,8 +78,7 @@
             "line": 13,
             "name": "The dropdown should contain an option \"Download Tickets\"",
             "result": {
-              "status": "passed",
-              "duration": 382000000
+              "status": "skipped"
             }
           },
           {
@@ -91,8 +87,7 @@
             "line": 14,
             "name": "The dropdown should contain an option \"Resend Confirmation\"",
             "result": {
-              "status": "passed",
-              "duration": 391000000
+              "status": "skipped"
             }
           },
           {
@@ -101,8 +96,7 @@
             "line": 15,
             "name": "The dropdown should contain an option \"View Message History\"",
             "result": {
-              "status": "passed",
-              "duration": 456000000
+              "status": "skipped"
             }
           },
           {
@@ -111,8 +105,7 @@
             "line": 16,
             "name": "The dropdown should contain an option \"View Redemption History\"",
             "result": {
-              "status": "passed",
-              "duration": 458000000
+              "status": "skipped"
             }
           },
           {
@@ -121,8 +114,7 @@
             "line": 17,
             "name": "The dropdown should contain an option \"View Transaction History\"",
             "result": {
-              "status": "passed",
-              "duration": 440000000
+              "status": "skipped"
             }
           },
           {
@@ -131,8 +123,7 @@
             "line": 18,
             "name": "The dropdown should contain an option \"Cancel Order\" which should have color \"rgb(217, 63, 28)\"",
             "result": {
-              "status": "passed",
-              "duration": 543000000
+              "status": "skipped"
             }
           }
         ]
@@ -160,8 +151,8 @@
             "line": 22,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "passed",
-              "duration": 7555000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.lakedistrict.ticknovate-uat.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -170,8 +161,7 @@
             "line": 23,
             "name": "I click the View button in Search Orders for a previously created order",
             "result": {
-              "status": "passed",
-              "duration": 7596000000
+              "status": "skipped"
             }
           },
           {
@@ -180,8 +170,7 @@
             "line": 24,
             "name": "I click the More Actions Button beside Edit Order",
             "result": {
-              "status": "passed",
-              "duration": 2030000000
+              "status": "skipped"
             }
           },
           {
@@ -190,8 +179,7 @@
             "line": 25,
             "name": "I click on \"Download Tickets\" option",
             "result": {
-              "status": "passed",
-              "duration": 346000000
+              "status": "skipped"
             }
           },
           {
@@ -200,8 +188,7 @@
             "line": 26,
             "name": "I should see a \"confirmation\" pdf file downloaded",
             "result": {
-              "status": "passed",
-              "duration": 1177000000
+              "status": "skipped"
             }
           },
           {
@@ -210,8 +197,7 @@
             "line": 27,
             "name": "I click on \"Resend Confirmation\" option",
             "result": {
-              "status": "passed",
-              "duration": 5435000000
+              "status": "skipped"
             }
           },
           {
@@ -220,8 +206,7 @@
             "line": 28,
             "name": "I should see a modal with Resend Email Header an Email address Label and and Input Field for the email and a Resend button",
             "result": {
-              "status": "passed",
-              "duration": 9916000000
+              "status": "skipped"
             }
           },
           {
@@ -230,8 +215,7 @@
             "line": 29,
             "name": "I clear the email input field",
             "result": {
-              "status": "passed",
-              "duration": 2807000000
+              "status": "skipped"
             }
           },
           {
@@ -240,8 +224,7 @@
             "line": 30,
             "name": "The Resend Button should be disabled",
             "result": {
-              "status": "passed",
-              "duration": 1181000000
+              "status": "skipped"
             }
           },
           {
@@ -250,8 +233,7 @@
             "line": 31,
             "name": "I reenter the valid email",
             "result": {
-              "status": "passed",
-              "duration": 8158000000
+              "status": "skipped"
             }
           },
           {
@@ -260,8 +242,7 @@
             "line": 32,
             "name": "The Resend Button should be enabled",
             "result": {
-              "status": "passed",
-              "duration": 1233000000
+              "status": "skipped"
             }
           },
           {
@@ -270,8 +251,7 @@
             "line": 33,
             "name": "I click the Resend Button",
             "result": {
-              "status": "passed",
-              "duration": 3796000000
+              "status": "skipped"
             }
           },
           {
@@ -280,8 +260,7 @@
             "line": 34,
             "name": "I should see a bottom toast with Background color \"rgb(56, 161, 105)\" with title \"Email sent\" and body \"The confirmation email has been re-sent.\" and the modal should not be displayed",
             "result": {
-              "status": "passed",
-              "duration": 4506000000
+              "status": "skipped"
             }
           },
           {
@@ -290,8 +269,7 @@
             "line": 35,
             "name": "I click on \"View Message History\" option",
             "result": {
-              "status": "passed",
-              "duration": 4079000000
+              "status": "skipped"
             }
           },
           {
@@ -300,8 +278,7 @@
             "line": 36,
             "name": "I should see a modal with title \"Message History\"",
             "result": {
-              "status": "passed",
-              "duration": 7082000000
+              "status": "skipped"
             }
           },
           {
@@ -310,8 +287,7 @@
             "line": 37,
             "name": "The modal should have a table with headers \"Action, Delivery, Result\"",
             "result": {
-              "status": "passed",
-              "duration": 7842000000
+              "status": "skipped"
             }
           },
           {
@@ -320,8 +296,7 @@
             "line": 38,
             "name": "I click the modal close button",
             "result": {
-              "status": "passed",
-              "duration": 2897000000
+              "status": "skipped"
             }
           },
           {
@@ -330,8 +305,7 @@
             "line": 39,
             "name": "The \"Message History\" modal should be closed",
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "skipped"
             }
           },
           {
@@ -340,8 +314,7 @@
             "line": 41,
             "name": "I click on \"View Redemption History\" option",
             "result": {
-              "status": "passed",
-              "duration": 6535000000
+              "status": "skipped"
             }
           },
           {
@@ -350,8 +323,7 @@
             "line": 42,
             "name": "I should see a modal with title \"Redemption History\"",
             "result": {
-              "status": "passed",
-              "duration": 8621000000
+              "status": "skipped"
             }
           },
           {
@@ -360,8 +332,7 @@
             "line": 43,
             "name": "I click the modal close button",
             "result": {
-              "status": "passed",
-              "duration": 3221000000
+              "status": "skipped"
             }
           },
           {
@@ -370,8 +341,7 @@
             "line": 44,
             "name": "The \"Redemption History\" modal should be closed",
             "result": {
-              "status": "passed",
-              "duration": 34000000
+              "status": "skipped"
             }
           },
           {
@@ -380,8 +350,7 @@
             "line": 46,
             "name": "I click on \"View Transaction History\" option",
             "result": {
-              "status": "passed",
-              "duration": 4068000000
+              "status": "skipped"
             }
           },
           {
@@ -390,8 +359,7 @@
             "line": 47,
             "name": "I should see a modal with title \"Transaction History\"",
             "result": {
-              "status": "passed",
-              "duration": 6901000000
+              "status": "skipped"
             }
           },
           {
@@ -400,8 +368,7 @@
             "line": 48,
             "name": "The modal should have a table with headers \"Date, Transaction ID, Note, Provider, Method, Type, Total, Total All Time\"",
             "result": {
-              "status": "passed",
-              "duration": 21012000000
+              "status": "skipped"
             }
           },
           {
@@ -410,8 +377,7 @@
             "line": 49,
             "name": "I click the modal close button",
             "result": {
-              "status": "passed",
-              "duration": 4442000000
+              "status": "skipped"
             }
           },
           {
@@ -420,8 +386,7 @@
             "line": 50,
             "name": "The \"Transaction History\" modal should be closed",
             "result": {
-              "status": "passed",
-              "duration": 17000000
+              "status": "skipped"
             }
           },
           {
@@ -430,8 +395,7 @@
             "line": 52,
             "name": "I click on \"Cancel Order\" option",
             "result": {
-              "status": "passed",
-              "duration": 3499000000
+              "status": "skipped"
             }
           },
           {
@@ -440,8 +404,7 @@
             "line": 53,
             "name": "I should be taken to \"Amending Booking\" page",
             "result": {
-              "status": "passed",
-              "duration": 8526000000
+              "status": "skipped"
             }
           },
           {
@@ -450,8 +413,7 @@
             "line": 54,
             "name": "I should see text \"The order will be cancelled\" which should have color \"rgb(217, 63, 28)\"",
             "result": {
-              "status": "passed",
-              "duration": 3540000000
+              "status": "skipped"
             }
           }
         ]

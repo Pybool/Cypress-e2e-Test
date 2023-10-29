@@ -35,8 +35,9 @@
             "line": 6,
             "name": "I am a user on Admin Page",
             "result": {
-              "status": "passed",
-              "duration": 4418000000
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://admin.lakedistrict.ticknovate-uat.com/blocks/tickets\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND admin.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/lakedistrict.js:13:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND admin.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -45,8 +46,7 @@
             "line": 7,
             "name": "I click User Admin on the Nav bar",
             "result": {
-              "status": "passed",
-              "duration": 3917000000
+              "status": "skipped"
             }
           },
           {
@@ -55,8 +55,7 @@
             "line": 8,
             "name": "I click a \"All users\" tab on 'User Admin' page",
             "result": {
-              "status": "passed",
-              "duration": 352000000
+              "status": "skipped"
             }
           },
           {
@@ -65,8 +64,7 @@
             "line": 9,
             "name": "I type \"Tayé\" in search box",
             "result": {
-              "status": "passed",
-              "duration": 1088000000
+              "status": "skipped"
             }
           },
           {
@@ -75,8 +73,7 @@
             "line": 10,
             "name": "Search returns result containing 'Tayé'",
             "result": {
-              "status": "passed",
-              "duration": 101000000
+              "status": "skipped"
             }
           }
         ]
@@ -108,8 +105,8 @@
             "line": 6,
             "name": "I am a user on Admin Page",
             "result": {
-              "status": "passed",
-              "duration": 2693000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://admin.lakedistrict.ticknovate-uat.com/blocks/tickets\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND admin.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/lakedistrict.js:13:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND admin.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -118,8 +115,7 @@
             "line": 7,
             "name": "I click User Admin on the Nav bar",
             "result": {
-              "status": "passed",
-              "duration": 2394000000
+              "status": "skipped"
             }
           },
           {
@@ -128,8 +124,7 @@
             "line": 8,
             "name": "I click a \"Admin users\" tab on 'User Admin' page",
             "result": {
-              "status": "passed",
-              "duration": 294000000
+              "status": "skipped"
             }
           },
           {
@@ -138,8 +133,7 @@
             "line": 9,
             "name": "I type \"Tayé\" in search box",
             "result": {
-              "status": "passed",
-              "duration": 1123000000
+              "status": "skipped"
             }
           },
           {
@@ -148,8 +142,7 @@
             "line": 10,
             "name": "Search returns result containing 'Tayé'",
             "result": {
-              "status": "passed",
-              "duration": 119000000
+              "status": "skipped"
             }
           }
         ]
@@ -181,8 +174,8 @@
             "line": 6,
             "name": "I am a user on Admin Page",
             "result": {
-              "status": "passed",
-              "duration": 3262000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://admin.lakedistrict.ticknovate-uat.com/blocks/tickets\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND admin.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/lakedistrict.js:13:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND admin.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -191,8 +184,7 @@
             "line": 7,
             "name": "I click User Admin on the Nav bar",
             "result": {
-              "status": "passed",
-              "duration": 4585000000
+              "status": "skipped"
             }
           },
           {
@@ -201,8 +193,7 @@
             "line": 8,
             "name": "I click a \"POS users\" tab on 'User Admin' page",
             "result": {
-              "status": "passed",
-              "duration": 252000000
+              "status": "skipped"
             }
           },
           {
@@ -211,8 +202,7 @@
             "line": 9,
             "name": "I type \"Beccy\" in search box",
             "result": {
-              "status": "passed",
-              "duration": 871000000
+              "status": "skipped"
             }
           },
           {
@@ -221,8 +211,7 @@
             "line": 10,
             "name": "Search returns result containing 'Beccy'",
             "result": {
-              "status": "passed",
-              "duration": 76000000
+              "status": "skipped"
             }
           }
         ]
@@ -254,8 +243,8 @@
             "line": 6,
             "name": "I am a user on Admin Page",
             "result": {
-              "status": "passed",
-              "duration": 2954000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://admin.lakedistrict.ticknovate-uat.com/blocks/tickets\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND admin.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/lakedistrict.js:13:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND admin.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -264,8 +253,7 @@
             "line": 7,
             "name": "I click User Admin on the Nav bar",
             "result": {
-              "status": "passed",
-              "duration": 2925000000
+              "status": "skipped"
             }
           },
           {
@@ -274,8 +262,7 @@
             "line": 8,
             "name": "I click a \"Reservations users\" tab on 'User Admin' page",
             "result": {
-              "status": "passed",
-              "duration": 280000000
+              "status": "skipped"
             }
           },
           {
@@ -284,8 +271,7 @@
             "line": 9,
             "name": "I type \"Tayé\" in search box",
             "result": {
-              "status": "passed",
-              "duration": 1081000000
+              "status": "skipped"
             }
           },
           {
@@ -294,8 +280,7 @@
             "line": 10,
             "name": "Search returns result containing 'Tayé'",
             "result": {
-              "status": "passed",
-              "duration": 96000000
+              "status": "skipped"
             }
           }
         ]
@@ -327,8 +312,8 @@
             "line": 6,
             "name": "I am a user on Admin Page",
             "result": {
-              "status": "passed",
-              "duration": 3377000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://admin.lakedistrict.ticknovate-uat.com/blocks/tickets\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND admin.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/lakedistrict.js:13:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND admin.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -337,8 +322,7 @@
             "line": 7,
             "name": "I click User Admin on the Nav bar",
             "result": {
-              "status": "passed",
-              "duration": 3042000000
+              "status": "skipped"
             }
           },
           {
@@ -347,8 +331,7 @@
             "line": 8,
             "name": "I click a \"Scanning app users\" tab on 'User Admin' page",
             "result": {
-              "status": "passed",
-              "duration": 243000000
+              "status": "skipped"
             }
           },
           {
@@ -357,8 +340,7 @@
             "line": 9,
             "name": "I type \"Beccy\" in search box",
             "result": {
-              "status": "passed",
-              "duration": 1069000000
+              "status": "skipped"
             }
           },
           {
@@ -367,8 +349,7 @@
             "line": 10,
             "name": "Search returns result containing 'Beccy'",
             "result": {
-              "status": "passed",
-              "duration": 115000000
+              "status": "skipped"
             }
           }
         ]

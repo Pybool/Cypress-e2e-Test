@@ -35,8 +35,8 @@
             "line": 6,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "passed",
-              "duration": 6092000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.lakedistrict.ticknovate-uat.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -45,8 +45,7 @@
             "line": 7,
             "name": "I am on the New Order page",
             "result": {
-              "status": "passed",
-              "duration": 1126000000
+              "status": "skipped"
             }
           },
           {
@@ -55,8 +54,7 @@
             "line": 8,
             "name": "I should see that the page header is \"New Order\"",
             "result": {
-              "status": "passed",
-              "duration": 24254000000
+              "status": "skipped"
             }
           },
           {
@@ -65,8 +63,7 @@
             "line": 9,
             "name": "I should see the market selection dropdown as the first component on the card below the page header",
             "result": {
-              "status": "passed",
-              "duration": 359000000
+              "status": "skipped"
             }
           },
           {
@@ -75,8 +72,7 @@
             "line": 10,
             "name": "I should see the Travel Button next to the market selection dropdown",
             "result": {
-              "status": "passed",
-              "duration": 97000000
+              "status": "skipped"
             }
           },
           {
@@ -85,8 +81,7 @@
             "line": 11,
             "name": "I should see the Event Button next to the Travel Button",
             "result": {
-              "status": "passed",
-              "duration": 124000000
+              "status": "skipped"
             }
           },
           {
@@ -95,8 +90,7 @@
             "line": 12,
             "name": "I should see the Add return single trip radio after the Event Button",
             "result": {
-              "status": "passed",
-              "duration": 384000000
+              "status": "skipped"
             }
           },
           {
@@ -105,8 +99,7 @@
             "line": 13,
             "name": "The Travel Button in the First Card is clicked",
             "result": {
-              "status": "passed",
-              "duration": 433000000
+              "status": "skipped"
             }
           },
           {
@@ -115,8 +108,7 @@
             "line": 14,
             "name": "Below the first card I should a second card containing a \"Swap Locations\" button",
             "result": {
-              "status": "passed",
-              "duration": 380000000
+              "status": "skipped"
             }
           },
           {
@@ -125,8 +117,7 @@
             "line": 16,
             "name": "In the \"firstLayer\" of the second card i should see a \"From\" dropdown and \"To\" dropdown",
             "result": {
-              "status": "passed",
-              "duration": 395000000
+              "status": "skipped"
             }
           },
           {
@@ -135,8 +126,7 @@
             "line": 17,
             "name": "In the \"secondLayer\" of the second card i should see a \"Who\" dropdown and \"when\" dropdown",
             "result": {
-              "status": "passed",
-              "duration": 787000000
+              "status": "skipped"
             }
           },
           {
@@ -145,8 +135,7 @@
             "line": 18,
             "name": "The \"Who\" and \"when\" buttons should be disabled by default if the \"To\" button was not selected",
             "result": {
-              "status": "passed",
-              "duration": 1356000000
+              "status": "skipped"
             }
           },
           {
@@ -155,8 +144,7 @@
             "line": 19,
             "name": "The Cart Section should be visible and have a header with text \"Cart\"",
             "result": {
-              "status": "passed",
-              "duration": 331000000
+              "status": "skipped"
             }
           },
           {
@@ -165,8 +153,7 @@
             "line": 20,
             "name": "A \"Clear All\" Button should be visible beside the header",
             "result": {
-              "status": "passed",
-              "duration": 350000000
+              "status": "skipped"
             }
           }
         ]

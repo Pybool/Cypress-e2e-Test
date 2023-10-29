@@ -35,8 +35,9 @@
             "line": 7,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "passed",
-              "duration": 6679000000
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.lakedistrict.ticknovate-uat.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:64813/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:64813/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:64813/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64813/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64813/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64813/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64813/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64813/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64813/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64813/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.lakedistrict.ticknovate-uat.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -45,8 +46,7 @@
             "line": 8,
             "name": "I create a an order",
             "result": {
-              "status": "passed",
-              "duration": 66377000000
+              "status": "skipped"
             }
           },
           {
@@ -55,8 +55,7 @@
             "line": 9,
             "name": "I go to the orders table and click on edit for the order",
             "result": {
-              "status": "passed",
-              "duration": 7378000000
+              "status": "skipped"
             }
           },
           {
@@ -65,8 +64,7 @@
             "line": 10,
             "name": "I am on the Amending Booking page I click cancel order button",
             "result": {
-              "status": "passed",
-              "duration": 5059000000
+              "status": "skipped"
             }
           },
           {
@@ -75,8 +73,7 @@
             "line": 11,
             "name": "I should see \"The order will be cancelled\" with color \"rgb(217, 63, 28)\"",
             "result": {
-              "status": "passed",
-              "duration": 1609000000
+              "status": "skipped"
             }
           },
           {
@@ -85,8 +82,7 @@
             "line": 12,
             "name": "I should see a Refund Button",
             "result": {
-              "status": "passed",
-              "duration": 521000000
+              "status": "skipped"
             }
           },
           {
@@ -95,8 +91,7 @@
             "line": 13,
             "name": "I click on the Refund Button",
             "result": {
-              "status": "passed",
-              "duration": 525000000
+              "status": "skipped"
             }
           },
           {
@@ -105,8 +100,7 @@
             "line": 14,
             "name": "I should be taken to the Refund page",
             "result": {
-              "status": "passed",
-              "duration": 2737000000
+              "status": "skipped"
             }
           },
           {
@@ -115,8 +109,7 @@
             "line": 15,
             "name": "I click the \"Complete refund\" Button",
             "result": {
-              "status": "passed",
-              "duration": 1538000000
+              "status": "skipped"
             }
           },
           {
@@ -125,8 +118,7 @@
             "line": 16,
             "name": "I should see \"Booking cancelled\" header with color \"rgb(117, 164, 14)\" and \"Your booking has been cancelled\" header",
             "result": {
-              "status": "passed",
-              "duration": 3967000000
+              "status": "skipped"
             }
           }
         ]
