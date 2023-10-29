@@ -4,8 +4,6 @@ import { setBaseUrl } from './generic'
 const username = Cypress.env('ADMIN_USER')
 const password = Cypress.env('ADMIN_PASS')
 
-console.log("ENV FILE ====> ", username, password)
-
 const pwds = { lakedistrict: Cypress.env('LAKE_DISTRICT_PASS') }
 
 Given('I am an Admin User', () => {
