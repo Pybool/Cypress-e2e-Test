@@ -544,7 +544,6 @@ Then('I should see {string} with color {string}',(txt,color) => {
 
 And('I should not see a Refund Button',() => {
   cy.get('h5').contains('Total:').parent().parent().siblings().last().then((btn)=>{
-    console.log(Cypress.$(btn))
     const txt = Cypress.$(btn)[0].innerText
     expect(txt.includes('Refund')).to.eq(false)
   })

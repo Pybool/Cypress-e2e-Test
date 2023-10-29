@@ -394,7 +394,6 @@ When('The spinner disappears', () => {
 
 Then('The entries in the table should all have {string} date', () => {
   const rows = Cypress.$('tr > td')
-  console.log("Rows ", rows.length)
   if(rows.length > 0){
     cy.get('tr > td:nth-child(3)').then((tds)=>{
       Array.from(tds).forEach((td)=>{
@@ -409,7 +408,6 @@ Then('The entries in the table should all have {string} date', () => {
 
 Then('The entries in the table should all have dates within the {string}', () => {
   const rows = Cypress.$('tr > td')
-  console.log("Rows ", rows.length)
   if(rows.length > 0){
     const n = 7;
     cy.get('tr > td:nth-child(3)').then((tds)=>{
