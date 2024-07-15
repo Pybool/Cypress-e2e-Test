@@ -1,0 +1,6 @@
+{
+  "stepDefinitions": ["cypress/stepDefinitions/*.js"],
+  "json": {
+    "enabled": true
+  }
+}

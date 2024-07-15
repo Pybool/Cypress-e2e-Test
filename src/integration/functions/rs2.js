@@ -400,7 +400,6 @@ export function internalCheckOut(checkout='',market='',mailpay=false) {
     cy.get('select.chakra-select').select(1)
     cy.get('p').contains('Send Email').parent().parent().should('be.enabled').then(($btn)=>{
       cy.wrap($btn).click()
-
       cy.get('span').contains('Payment request sent via email').should('exist').and('be.visible')
     })
   }

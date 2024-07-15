@@ -304,7 +304,7 @@ function clickAddSeatsAndCheckout(){
         completeOrderExternal(url,cartToken)
       }
       catch(err){}
-    }) 
+  }) 
 }
 
 And('The {string} button should be active and i proceed to checkout by paying by till', async(button) => {

@@ -45,36 +45,3 @@ Scenario: On ReservationFunctional :Verify that if Booking Details shows Redeeme
     When I click on the a row in the table for an order ID
     Then I should see the Order Preview widget 
     When The "Booking Details:" section in Booking Redemption shows "Tickets not redeemed" The "Redeem Booking" button does show and Vice Versa
-
-@automated 
-Scenario: verify that the date search filter works correctly when today is selected
-    Given I am logged in to reservations2 'uat'
-    When I am on the reservations page
-    Then I should be on the base url
-    Given I have orders created "Today"
-    When I select "Today" in the filter
-    Then I should see a spinner loading
-    When The spinner disappears
-    Then The entries in the table should all have "Today" date
-
-@automated 
-Scenario: verify that the date search filter works correctly when yesterday is selected
-    Given I am logged in to reservations2 'uat'
-    When I am on the reservations page
-    Then I should be on the base url
-    Given I have orders created "Yesterday"
-    When I select "Yesterday" in the filter
-    Then I should see a spinner loading
-    When The spinner disappears
-    Then The entries in the table should all have "Yesterday" date
-
-@automated 
-Scenario: verify that the date search filter works correctly when last 7 days is selected
-    Given I am logged in to reservations2 'uat'
-    When I am on the reservations page
-    Then I should be on the base url
-    Given I have orders created "Last 7 days"
-    When I select "Last 7 days" in the filter
-    Then I should see a spinner loading
-    When The spinner disappears
-    Then The entries in the table should all have dates within the "Last 7 days"

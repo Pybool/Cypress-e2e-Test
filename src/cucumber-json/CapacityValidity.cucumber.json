@@ -27,8 +27,8 @@
             "line": 6,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "passed",
-              "duration": 74602000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.default-qa4.ticknovate-test.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.default-qa4.ticknovate-test.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:53880/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:53880/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:53880/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:53880/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:53880/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:53880/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:53880/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:53880/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:53880/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:53880/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:53880/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:53880/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.default-qa4.ticknovate-test.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -37,8 +37,7 @@
             "line": 7,
             "name": "I click on 'New Order' button",
             "result": {
-              "status": "passed",
-              "duration": 18414000000
+              "status": "skipped"
             }
           },
           {
@@ -47,8 +46,7 @@
             "line": 8,
             "name": "I attempt to create an order selecting '2' adult for when choosing who",
             "result": {
-              "status": "passed",
-              "duration": 40187000000
+              "status": "skipped"
             }
           },
           {
@@ -57,8 +55,7 @@
             "line": 9,
             "name": "The '4-seat compartment' compartments are displayed in the select reservation modal",
             "result": {
-              "status": "passed",
-              "duration": 7330000000
+              "status": "skipped"
             }
           },
           {
@@ -67,8 +64,7 @@
             "line": 10,
             "name": "I close the compartments modal",
             "result": {
-              "status": "passed",
-              "duration": 711000000
+              "status": "skipped"
             }
           },
           {
@@ -77,9 +73,7 @@
             "line": 11,
             "name": "I attempt to create an order selecting '1' adult for when choosing who",
             "result": {
-              "status": "failed",
-              "duration": 2000000,
-              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `children`, but never found it. Queried from:\n\n              > cy.get(h3.chakra-heading).eq(0).parent().siblings().eq(0)\n    at _callee2$ (src/integration/functions/rs2.js:237:22)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)"
+              "status": "skipped"
             }
           },
           {
@@ -112,8 +106,8 @@
             "line": 16,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "passed",
-              "duration": 34666000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.default-qa4.ticknovate-test.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.default-qa4.ticknovate-test.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:53880/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:53880/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:53880/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:53880/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:53880/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:53880/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:53880/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:53880/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:53880/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:53880/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:53880/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:53880/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.default-qa4.ticknovate-test.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -122,8 +116,7 @@
             "line": 17,
             "name": "I click on 'New Order' button",
             "result": {
-              "status": "passed",
-              "duration": 7086000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +125,7 @@
             "line": 18,
             "name": "I attempt to create an order selecting '1' adult for when choosing who",
             "result": {
-              "status": "passed",
-              "duration": 61147000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +134,7 @@
             "line": 19,
             "name": "The 'Joan Pullman Observation seat' compartments are displayed in the select reservation modal",
             "result": {
-              "status": "passed",
-              "duration": 10742000000
+              "status": "skipped"
             }
           }
         ]
@@ -167,8 +158,8 @@
             "line": 23,
             "name": "I am logged in to reservations2 'uat'",
             "result": {
-              "status": "passed",
-              "duration": 83680000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reservations.default-qa4.ticknovate-test.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND reservations.default-qa4.ticknovate-test.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:53880/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:53880/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:53880/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:53880/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:53880/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:53880/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:53880/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:53880/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:53880/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:53880/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:53880/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:53880/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (src/integration/common/reservations2.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND reservations.default-qa4.ticknovate-test.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)"
             }
           },
           {
@@ -177,8 +168,7 @@
             "line": 24,
             "name": "I click on 'New Order' button",
             "result": {
-              "status": "passed",
-              "duration": 5418000000
+              "status": "skipped"
             }
           },
           {
@@ -187,8 +177,7 @@
             "line": 25,
             "name": "I attempt to create an order selecting '4' adult for when choosing who",
             "result": {
-              "status": "passed",
-              "duration": 55395000000
+              "status": "skipped"
             }
           },
           {
@@ -197,8 +186,7 @@
             "line": 26,
             "name": "The '6-seat compartment' compartments are displayed in the select reservation modal",
             "result": {
-              "status": "passed",
-              "duration": 8242000000
+              "status": "skipped"
             }
           },
           {
@@ -207,8 +195,7 @@
             "line": 27,
             "name": "I close the compartments modal",
             "result": {
-              "status": "passed",
-              "duration": 1729000000
+              "status": "skipped"
             }
           },
           {
@@ -217,8 +204,7 @@
             "line": 28,
             "name": "I attempt to create an order selecting '2' adult for when choosing who",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `children`, but never found it. Queried from:\n\n              > cy.get(h3.chakra-heading).eq(0).parent().siblings().eq(0)\n    at _callee2$ (src/integration/functions/rs2.js:237:22)\n    at tryCatch (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:0)\n    at Generator.eval (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:0)\n    at Generator.eval [as next] (node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:0)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:0)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:0)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:0)\nat new Promise (<anonymous>)\n    at eval (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:0)"
+              "status": "skipped"
             }
           },
           {
