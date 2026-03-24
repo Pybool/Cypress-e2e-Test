@@ -44,7 +44,7 @@ Make sure to set the following configuration parameters in your `cypress.env.jso
   "SERVER_BASE_URL": "",
   "TEST_DOWNLOADS_FOLDER": "",
   "ORDER_DAYS_FROM_TODAY": 1,
-  "TEST_PRODUCT": "Taye Test Event"
+  "TEST_PRODUCT": "Eko Test Event"
 }
 ```
 
@@ -133,6 +133,6 @@ find . -type f \( -name "*.js" -o -name "*.jsx" -o -name "*.ts" -o -name "*.tsx"
 ## Authors:
 
 ```
-1: Taye Oyelekan
+1: Emmanuel Eko
 2: Expian
 ```
